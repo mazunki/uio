@@ -8,7 +8,10 @@
 		iii.	Hva ville du gjort for å få programmet til å fungere hvis du hadde mer tid?
 
 
-2a) Innleveringen var ganske lett, så jeg valgte å gjøre den så grundig som jeg kunne med tanke på den kunnskapen jeg hadde fra før av. 
+
+a) Oppgavene var ganske greie som introduksjonsoppgaver, men enkelte oppgaver var litt dårlig forklart. Utropstegn noen steder, mens ikke andre, gjorde at oppgaven ikke var entydig.
+
+Innleveringen var ganske lett, med tanke på at jeg kan Python fra før av, så jeg valgte å gjøre den så grundig som jeg kunne med tanke på den kunnskapen jeg hadde fra før av.
 Jeg følgte konvensjonene ved PEP-8 (except 4-spaces, because tabs!), PEP-257, og til en viss grad PEP-20.
 
-2b) Jeg brukte nøyaktig 2 timer på oppgaven. Verken mer eller mindre.
+b) Jeg brukte nøyaktig 2 timer på oppgaven. Verken mer eller mindre.
