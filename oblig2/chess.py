@@ -10,6 +10,7 @@
   immediate checkmate.
 """
 
+# Language holders
 KING = "King"
 QUEEN = "Queen"
 ROOK = "Rook"
@@ -17,12 +18,23 @@ BISHOP = "Bishop"
 KNIGHT = "Knight"
 PAWN = "Pawn"
 COLOURS = WHITE, BLACK = "White", "Black"
+# Board values
+SIZE = SIZE_X, SIZE_Y = 8, 8
+translate_symbol = {KING: "K", QUEEN: "Q", ROOK: "R", BISHOP: "B", KNIGHT: "N", PAWN: "P"}
+# Relative coordinates
+UP, DOWN = 1, -1
+LEFT, RIGHT = 1, -1
+DIRECTIONS = NORTH, SOUTH, WEST, EAST = N,S,W,E = "N", "S", "W", "E"
+NW, NE, SW, SE = N+W, N+E, S+W, S+E
+
+# Helper rows
 FRONT_ROW = {WHITE: "2", BLACK: "7"}
 BACK_ROW = {WHITE: "1", BLACK: "8"}
 
+# algebraic => matrix
 translate_x = {"a": 0,	"b": 1,		"c": 2,		"d": 3,		"e": 4,		"f": 5,		"g": 6,		"h": 7}
 translate_y = {"8": 0,	"7": 1,		"6": 2,		"5": 3,		"4": 4,		"3": 5,		"2": 6,		"1": 7}
-translate_symbol = {KING: "K", QUEEN: "Q", ROOK: "R", BISHOP: "B", KNIGHT: "N", PAWN: "P"}
+
 
 
 ##########################
@@ -47,8 +59,12 @@ class Piece:
 			if self.position.x is not None and self.position.y is not None:
 				self.game[self.position.y][self.position.x] = translate_symbol[self.figure]
 
+	def get_moves(self):
+		return self.position.filter(self.moves)
+
 
 class King(Piece):
+	moves = [N, S, W, E, NW, NE, SW, SE]
 	def __init__(self, game, colour, position=None):
 		if not position:
 			if colour == WHITE:
@@ -57,6 +73,7 @@ class King(Piece):
 				position = Coordinate.fromTuple(4, 0)  # e8
 
 		super().__init__(game=game, figure=KING, colour=colour, position=position)
+		self.moves = King.moves
 
 class Queen(Piece):
 	def __init__(self, game, colour, position=None):
@@ -115,7 +132,7 @@ class Pawn(Piece):
 
 class Board:
 	def __init__(self):
-		self.game = [[" " for _ in range(8)] for _ in range(8)]
+		self.game = [[" " for _ in range(SIZE_X)] for _ in range(SIZE_Y)]
 
 	def __str__(self):
 		fmt = "|".join('{{:{}}}'.format(x) for x in [1]*8)
@@ -168,6 +185,31 @@ class Coordinate:
 	def fromAlgebraic(cls, algebraic):
 		return cls(algebraic)
 
+	def filter(self, moves):
+		actual_moves = list()  # doesn't consider other pieces blocking way
+
+		for move in moves:
+			sprinter = move[0] == "*"
+			if sprinter:
+				move.pop(0)
+
+			rel_x, rel_y =  0, 0
+			for step in move:
+				if step == "N":
+					rel_y += UP
+				elif step == "S":
+					rel_y += DOWN
+
+				elif step == "W":
+					rel_x += LEFT
+				elif step == "E":
+					rel_x += RIGHT
+
+			if 0 <= self.x + rel_x < SIZE_X:
+				if 0 <= self.y + rel_y < SIZE_Y:
+					actual_moves.append(move)
+
+		print(f"{self} moves: {actual_moves}")
 
 	@staticmethod
 	def get_tuple(alg_x_, alg_y_):
@@ -222,6 +264,8 @@ for colour in [WHITE, BLACK]:
 		my_pawns.append(new_pawn)
 
 	figurines[colour] = {KING:king, QUEEN:queen, PAWN:my_pawns, ROOK:my_rooks, BISHOP:my_bishops, KNIGHT:my_knights}
+
+	king.get_moves()
 
 print(game)
 
