@@ -17,6 +17,8 @@ BISHOP = "Bishop"
 KNIGHT = "Knight"
 PAWN = "Pawn"
 WHITE, BLACK = "White", "Black"
+FRONT_ROW = {WHITE: "2", BLACK: "7"}
+BACK_ROW = {WHITE: "1", BLACK: "8"}
 
 translate_x = {"a": 0,	"b": 1,		"c": 2,		"d": 3,		"e": 4,		"f": 5,		"g": 6,		"h": 7}
 translate_y = {"8": 0,	"7": 1,		"6": 2,		"5": 3,		"4": 4,		"3": 5,		"2": 6,		"1": 7}
@@ -68,17 +70,44 @@ class Queen(Piece):
 		super().__init__(game=game, figure=QUEEN, colour=colour, position=position)
 
 
+class Rook(Piece):
+	def __init__(self, game, colour, position):
+		super().__init__(game=game, figure=ROOK, colour=colour, position=position)
+		self.index = self.position.x
+
+	@staticmethod
+	def rook_starts(colour):
+		return [y+BACK_ROW[colour] for y in list("ah")]
+
+
+class Bishop(Piece):
+	def __init__(self, game, colour, position):
+		super().__init__(game=game, figure=BISHOP, colour=colour, position=position)
+		self.index = self.position.x
+
+	@staticmethod
+	def bishop_starts(colour):
+		return [y+BACK_ROW[colour] for y in list("cf")]
+
+
+class Knight(Piece):
+	def __init__(self, game, colour, position):
+		super().__init__(game=game, figure=KNIGHT, colour=colour, position=position)
+		self.index = self.position.x
+
+	@staticmethod
+	def knight_starts(colour):
+		return [y+BACK_ROW[colour] for y in list("bg")]
+
+
 class Pawn(Piece):
 	def __init__(self, game, colour, position):
 		super().__init__(game=game, figure=PAWN, colour=colour, position=position)
-	
+		self.index = self.position.x
+
 	@staticmethod
 	def pawn_starts(colour):
-		if colour == WHITE:
-			row = "2"
-		elif colour == BLACK:
-			row = "7"
-		return [y+row for y in list("abcdefgh")]
+		return [y+FRONT_ROW[colour] for y in list("abcdefgh")]
 
 
 ################
@@ -173,7 +202,23 @@ for colour in [WHITE, BLACK]:
 	queen = Queen(game, colour)
 	my_pawns = list()
 	for pawn_pos in Pawn.pawn_starts(colour):
-		new_pawn = Pawn(game, colour, Coordinate(pawn_pos))
+		new_pawn = Pawn(game, colour, pawn_pos)
+		my_pawns.append(new_pawn)
+
+	my_rooks = list()
+	for rook_pos in Rook.rook_starts(colour):
+		new_rook = Rook(game, colour, rook_pos)
+		my_rooks.append(new_rook)
+
+	my_bishops = list()
+	for bishop_pos in Bishop.bishop_starts(colour):
+		new_bishop = Bishop(game, colour, bishop_pos)
+		my_bishops.append(new_bishop)
+
+	my_knights = list()
+	for knight_pos in Knight.knight_starts(colour):
+		new_knight = Knight(game, colour, knight_pos)
+		my_knights.append(new_knight)
 
 	print(king)
 	print(repr(king.position))
