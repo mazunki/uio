@@ -6,8 +6,8 @@
   or by giving the set of movements according to FIDE's standard algebraic notation.
   Check Appendix C at https://www.fide.com/fide/handbook.html?id=171&view=article
 
-  The output will be a list of movements possible to do checkmate. None if there is no
-  immediate checkmate.
+  The output will be a list of movements possible for any piece. Takes into account
+  checking, capturing and illegal moves.
 """
 
 # Language holders
@@ -17,11 +17,12 @@ ROOK = "Rook"
 BISHOP = "Bishop"
 KNIGHT = "Knight"
 PAWN = "Pawn"
-LAND = ""
+LAND = " "
 COLOURS = WHITE, BLACK = "White", "Black"
 # Board values
 SIZE = SIZE_X, SIZE_Y = 8, 8
 translate_symbol = {KING: "K", QUEEN: "Q", ROOK: "R", BISHOP: "B", KNIGHT: "N", PAWN: "P", LAND: "-"}
+translate_algebra = {KING: "K", QUEEN: "Q", ROOK: "R", BISHOP: "B", KNIGHT: "N", PAWN: ""}
 # Relative coordinates
 UP, DOWN = -1, 1
 LEFT, RIGHT = 1, -1
@@ -29,6 +30,7 @@ DIRECTIONS = NORTH, SOUTH, WEST, EAST = N,S,W,E = "N", "S", "W", "E"
 NW, NE, SW, SE = N+W, N+E, S+W, S+E
 SPRINT = "*"
 CAPTURE = "x"
+CHECCK = "#"
 
 # Helper rows
 FRONT_ROW = {WHITE: "2", BLACK: "7"}
@@ -52,22 +54,29 @@ class Piece:
 		self.colour = colour
 		self.position = position if isinstance(position, Coordinate) else Coordinate(position)
 
-	def __str__(self):
+	def __repr__(self):
 		return f"{self.colour} {self.figure} @ {self.position}"
+
+	def __str__(self):
+		return translate_symbol[self.figure]
 
 	def __setattr__(self, name, value):
 		self.__dict__[name] = value
 		if name == "position":
 			# TODO: update alg_x, alg_y
 			if self.position.x is not None and self.position.y is not None:
-				self.game[self.position.y][self.position.x] = translate_symbol[self.figure]
+				self.game[self.position.y][self.position.x] = self
 
 	def get_moves(self):
-		return self.position.filter(self.moves, game=self.game)
+		rel_destinations = self.position.filter(self.moves, self.capture_moves, game=self.game, colour=self.colour)
+		coords = [str(self.position + dest) for dest in rel_destinations]
+		notation_mov = [Coordinate.fromAlgebraic(target).algebraic_movement(self.figure) for target in coords]
+		return notation_mov
 
 
 class King(Piece):
 	moves = [N, S, W, E, NW, NE, SW, SE]
+	capture_moves = moves
 	def __init__(self, game, colour, position=None):
 		if not position:
 			if colour == WHITE:
@@ -77,8 +86,10 @@ class King(Piece):
 
 		super().__init__(game=game, figure=KING, colour=colour, position=position)
 
+
 class Queen(Piece):
 	moves = [SPRINT+direction for direction in [N, S, W, E, NW, NE, SW, SE]]
+	capture_moves = moves
 	def __init__(self, game, colour, position=None):
 		if not position:
 			if colour == WHITE:
@@ -91,6 +102,7 @@ class Queen(Piece):
 
 class Rook(Piece):
 	moves = [SPRINT+direction for direction in [N,S,W,E]]
+	capture_moves = moves
 	def __init__(self, game, colour, position):
 		super().__init__(game=game, figure=ROOK, colour=colour, position=position)
 		self.index = self.position.x
@@ -102,6 +114,7 @@ class Rook(Piece):
 
 class Bishop(Piece):
 	moves = [SPRINT+direction for direction in [NW, NE, SW, SE]]
+	capture_moves = moves
 	def __init__(self, game, colour, position):
 		super().__init__(game=game, figure=BISHOP, colour=colour, position=position)
 		self.index = self.position.x
@@ -113,6 +126,7 @@ class Bishop(Piece):
 
 class Knight(Piece):
 	moves = [2*N+W, 2*S+W, 2*N+E, 2*S+W, 2*W+N, 2*W+S, 2*E+N, 2*E+S]
+	capture_moves = moves
 	def __init__(self, game, colour, position):
 		super().__init__(game=game, figure=KNIGHT, colour=colour, position=position)
 		self.index = self.position.x
@@ -126,10 +140,14 @@ class Pawn(Piece):
 	def __init__(self, game, colour, position):
 		super().__init__(game=game, figure=PAWN, colour=colour, position=position)
 		self.index = self.position.x
+		
+		self.moves = [N] if self.colour == WHITE else [S]
+		self.capture_moves = [NW, NE] if self.colour == WHITE else [SW, SE]
 
 	@staticmethod
 	def pawn_starts(colour):
 		return [y+FRONT_ROW[colour] for y in list("abcdefgh")]
+
 
 
 #################
@@ -141,16 +159,26 @@ class Board:
 		self.game = [[LAND for _ in range(SIZE_X)] for _ in range(SIZE_Y)]
 
 	def __str__(self):
-		fmt = "|".join('{{:{}}}'.format(x) for x in [1]*8)
-		table = [fmt.format(*row) for row in self.game]
+		width = 3
 
-		return "\n|"+"|\n|".join(table) + "|\n\n"
+		clean_matrix = [[str(pos) for pos in row] for row in self.game]
+		lineformat = f"|{{:^{width}}}"*8 + "|"
+		table = [lineformat.format(*row) for row in clean_matrix]
+		return f" {{:^{width}}}".format("_"*width)*8 + "\n"\
+				+ "\n".join(table) + "\n"\
+				+ f" {{:^{width}}}".format("‾"*width)*8
 
-	def __getitem__(self, i):
-		return self.game[i]
+	def __repr__(self):
+		return [col for col in row in self.game]
+
+	def __getitem__(self, row):
+		return self.game[row]
 
 
 class Coordinate:
+	"""
+		TODO: Create abstract class where boundaries don't matter, for relative coordinates.
+	"""
 	def __init__(self, algebraic):
 		"""
 			TODO: Check the order of values. Swap them if necessary. Input could be in `yx` format.
@@ -197,11 +225,12 @@ class Coordinate:
 		rel_y = relation.count(N)*UP + relation.count(S)*DOWN
 		return (rel_x, rel_y)
 
-	def filter(self, moves, game=None):
+
+
+	def filter(self, moves, capture_moves, game=None, colour=None, figure=None):
 		actual_moves = list()  # doesn't consider other pieces blocking way
 
-		for direction in moves:
-
+		for direction in moves + capture_moves:
 			sprinter = direction[0] == "*"
 			if sprinter:
 				direction = direction[1:]
@@ -218,22 +247,25 @@ class Coordinate:
 				elif step == "E":
 					rel_x += RIGHT
 
-			if sprinter:
-				distance = 1
-				while (0 <= self.x + rel_x*distance < SIZE_X) and (0 <= self.y + rel_y*distance < SIZE_Y):
-					actual_moves.append(direction*distance)
+			distance = 1
+			while (0 <= self.x + rel_x*distance < SIZE_X) and (0 <= self.y + rel_y*distance < SIZE_Y):
+				if 0 <= self.y + rel_y < SIZE_Y:
+					new_x = self.x + rel_x*distance
+					new_y = self.y + rel_y*distance
 
-					# by adding a game, we can check for pieces blocking the way
-					if game:
-						#print(f"{direction*distance} => {game[self.y + rel_y*distance][self.x + rel_x*distance]}")
-						if game[self.y + rel_y*distance][self.x + rel_x*distance] is not LAND:
-							distance = SIZE_X * SIZE_Y  # overloading
-
-					distance += 1
-			else:			
-				if 0 <= self.x + rel_x < SIZE_X:
-					if 0 <= self.y + rel_y < SIZE_Y:
+				if direction in moves:
+					if game[new_y][new_x] == LAND:
 						actual_moves.append(direction)
+				elif direction in capture_moves:
+					if (game[new_y][new_x] is not LAND) and (game[new_y][new_x].colour is not colour):
+						actual_moves.append(direction)
+
+
+				#print(f"{direction*distance} => {game[new_y][new_x]}")
+				if (game[new_y][new_x] is not LAND) or not sprinter:
+					distance = SIZE_X * SIZE_Y  # overloading
+
+				distance += 1
 
 		return actual_moves
 
@@ -262,7 +294,20 @@ class Coordinate:
 
 		new_x = self.x + other[0]
 		new_y = self.y + other[1]
+		
 		return Coordinate.fromTuple(new_x, new_y)
+
+	def algebraic_movement(self, figure):
+		self.figure = translate_algebra[figure]
+		if game[self.y][self.x] is LAND:
+			self.capture = ""
+		elif game[self.y][self.x] is KING:
+			self.capture = CHECK
+		else:
+			self.capture = CAPTURE
+
+		return self.figure + self.capture + str(self)
+
 
 
 #######################
@@ -300,7 +345,7 @@ for colour in [WHITE, BLACK]:
 
 
 #print("pony")
-print(figurines[WHITE][KNIGHT][0], [str(figurines[WHITE][KNIGHT][0].position + possible) for possible in figurines[WHITE][KNIGHT][0].get_moves()])
+print(repr(figurines[WHITE][PAWN][0]), figurines[WHITE][PAWN][0].get_moves())
 
 print(game)
 
@@ -311,6 +356,6 @@ for colour in COLOURS:
 		
 		try:
 			for piece in pieces:
-				print("\t\t", piece)
+				print("\t\t", repr(piece))
 		except:
-			print("\t\t", pieces)
+			print("\t\t", repr(pieces))
