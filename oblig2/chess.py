@@ -56,6 +56,15 @@ class King(Piece):
 
 		super().__init__(game=game, figure=KING, colour=colour, position=position)
 
+class Queen(Piece)
+	def __init__(self, game, colour):
+		if colour == WHITE:
+			position = Coordinate("d1")
+		elif colour == BLACK:
+			position = Coordinate("d8")
+
+		super().__init__(game=game, figure=QUEEN, colour=colour, position=position)
+
 
 class Pawn(Piece):
 	def __init__(self, game, colour, position):
