@@ -112,7 +112,7 @@ class Bishop(Piece):
 
 
 class Knight(Piece):
-	moves = [2*N+W, 2*S+W, 2*N+E, 2*N+W, 2*W+N, 2*W+S, 2*E+N, 2*E+S]
+	moves = [2*N+W, 2*S+W, 2*N+E, 2*S+W, 2*W+N, 2*W+S, 2*E+N, 2*E+S]
 	def __init__(self, game, colour, position):
 		super().__init__(game=game, figure=KNIGHT, colour=colour, position=position)
 		self.index = self.position.x
