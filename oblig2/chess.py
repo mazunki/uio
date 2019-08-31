@@ -26,6 +26,7 @@ UP, DOWN = 1, -1
 LEFT, RIGHT = 1, -1
 DIRECTIONS = NORTH, SOUTH, WEST, EAST = N,S,W,E = "N", "S", "W", "E"
 NW, NE, SW, SE = N+W, N+E, S+W, S+E
+SPRINT = "*"
 
 # Helper rows
 FRONT_ROW = {WHITE: "2", BLACK: "7"}
@@ -76,6 +77,7 @@ class King(Piece):
 		self.moves = King.moves
 
 class Queen(Piece):
+	moves = [SPRINT+direction for direction in [N, S, W, E, NW, NE, SW, SE]]
 	def __init__(self, game, colour, position=None):
 		if not position:
 			if colour == WHITE:
@@ -189,9 +191,10 @@ class Coordinate:
 		actual_moves = list()  # doesn't consider other pieces blocking way
 
 		for move in moves:
+
 			sprinter = move[0] == "*"
 			if sprinter:
-				move.pop(0)
+				move = move[1:]
 
 			rel_x, rel_y =  0, 0
 			for step in move:
@@ -205,9 +208,15 @@ class Coordinate:
 				elif step == "E":
 					rel_x += RIGHT
 
-			if 0 <= self.x + rel_x < SIZE_X:
-				if 0 <= self.y + rel_y < SIZE_Y:
-					actual_moves.append(move)
+			if sprinter:
+				step = 1
+				while (0 <= self.x + rel_x*step < SIZE_X) and (0 <= self.y + rel_y*step < SIZE_Y):
+					actual_moves.append(move*step)
+					step += 1
+			else:			
+				if 0 <= self.x + rel_x < SIZE_X:
+					if 0 <= self.y + rel_y < SIZE_Y:
+						actual_moves.append(move)
 
 		print(f"{self} moves: {actual_moves}")
 
@@ -265,7 +274,7 @@ for colour in [WHITE, BLACK]:
 
 	figurines[colour] = {KING:king, QUEEN:queen, PAWN:my_pawns, ROOK:my_rooks, BISHOP:my_bishops, KNIGHT:my_knights}
 
-	king.get_moves()
+	queen.get_moves()
 
 print(game)
 
