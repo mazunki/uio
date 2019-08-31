@@ -223,9 +223,6 @@ for colour in [WHITE, BLACK]:
 
 	figurines[colour] = {KING:king, QUEEN:queen, PAWN:my_pawns, ROOK:my_rooks, BISHOP:my_bishops, KNIGHT:my_knights}
 
-	print(king)
-	print(repr(king.position))
-
 print(game)
 
 for colour in COLOURS:
