@@ -17,16 +17,18 @@ ROOK = "Rook"
 BISHOP = "Bishop"
 KNIGHT = "Knight"
 PAWN = "Pawn"
+LAND = ""
 COLOURS = WHITE, BLACK = "White", "Black"
 # Board values
 SIZE = SIZE_X, SIZE_Y = 8, 8
-translate_symbol = {KING: "K", QUEEN: "Q", ROOK: "R", BISHOP: "B", KNIGHT: "N", PAWN: "P"}
+translate_symbol = {KING: "K", QUEEN: "Q", ROOK: "R", BISHOP: "B", KNIGHT: "N", PAWN: "P", LAND: "-"}
 # Relative coordinates
-UP, DOWN = 1, -1
+UP, DOWN = -1, 1
 LEFT, RIGHT = 1, -1
 DIRECTIONS = NORTH, SOUTH, WEST, EAST = N,S,W,E = "N", "S", "W", "E"
 NW, NE, SW, SE = N+W, N+E, S+W, S+E
 SPRINT = "*"
+CAPTURE = "x"
 
 # Helper rows
 FRONT_ROW = {WHITE: "2", BLACK: "7"}
@@ -61,7 +63,7 @@ class Piece:
 				self.game[self.position.y][self.position.x] = translate_symbol[self.figure]
 
 	def get_moves(self):
-		return self.position.filter(self.moves)
+		return self.position.filter(self.moves, game=self.game)
 
 
 class King(Piece):
@@ -74,7 +76,6 @@ class King(Piece):
 				position = Coordinate.fromTuple(4, 0)  # e8
 
 		super().__init__(game=game, figure=KING, colour=colour, position=position)
-		self.moves = King.moves
 
 class Queen(Piece):
 	moves = [SPRINT+direction for direction in [N, S, W, E, NW, NE, SW, SE]]
@@ -89,6 +90,7 @@ class Queen(Piece):
 
 
 class Rook(Piece):
+	moves = [SPRINT+direction for direction in [N,S,W,E]]
 	def __init__(self, game, colour, position):
 		super().__init__(game=game, figure=ROOK, colour=colour, position=position)
 		self.index = self.position.x
@@ -99,6 +101,7 @@ class Rook(Piece):
 
 
 class Bishop(Piece):
+	moves = [SPRINT+direction for direction in [NW, NE, SW, SE]]
 	def __init__(self, game, colour, position):
 		super().__init__(game=game, figure=BISHOP, colour=colour, position=position)
 		self.index = self.position.x
@@ -109,6 +112,7 @@ class Bishop(Piece):
 
 
 class Knight(Piece):
+	moves = [2*N+W, 2*S+W, 2*N+E, 2*N+W, 2*W+N, 2*W+S, 2*E+N, 2*E+S]
 	def __init__(self, game, colour, position):
 		super().__init__(game=game, figure=KNIGHT, colour=colour, position=position)
 		self.index = self.position.x
@@ -128,13 +132,13 @@ class Pawn(Piece):
 		return [y+FRONT_ROW[colour] for y in list("abcdefgh")]
 
 
-################
-#  Board setup #
-################
+#################
+#  Board setup  #
+#################
 
 class Board:
 	def __init__(self):
-		self.game = [[" " for _ in range(SIZE_X)] for _ in range(SIZE_Y)]
+		self.game = [[LAND for _ in range(SIZE_X)] for _ in range(SIZE_Y)]
 
 	def __str__(self):
 		fmt = "|".join('{{:{}}}'.format(x) for x in [1]*8)
@@ -187,17 +191,17 @@ class Coordinate:
 	def fromAlgebraic(cls, algebraic):
 		return cls(algebraic)
 
-	def filter(self, moves):
+	def filter(self, moves, game=None):
 		actual_moves = list()  # doesn't consider other pieces blocking way
 
-		for move in moves:
+		for direction in moves:
 
-			sprinter = move[0] == "*"
+			sprinter = direction[0] == "*"
 			if sprinter:
-				move = move[1:]
+				direction = direction[1:]
 
 			rel_x, rel_y =  0, 0
-			for step in move:
+			for step in direction:
 				if step == "N":
 					rel_y += UP
 				elif step == "S":
@@ -209,14 +213,21 @@ class Coordinate:
 					rel_x += RIGHT
 
 			if sprinter:
-				step = 1
-				while (0 <= self.x + rel_x*step < SIZE_X) and (0 <= self.y + rel_y*step < SIZE_Y):
-					actual_moves.append(move*step)
-					step += 1
+				distance = 1
+				while (0 <= self.x + rel_x*distance < SIZE_X) and (0 <= self.y + rel_y*distance < SIZE_Y):
+					actual_moves.append(direction*distance)
+
+					# by adding a game, we can check for pieces blocking the way
+					if game:
+						#print(f"{direction*distance} => {game[self.y + rel_y*distance][self.x + rel_x*distance]}")
+						if game[self.y + rel_y*distance][self.x + rel_x*distance] is not LAND:
+							distance = SIZE_X * SIZE_Y  # overloading
+
+					distance += 1
 			else:			
 				if 0 <= self.x + rel_x < SIZE_X:
 					if 0 <= self.y + rel_y < SIZE_Y:
-						actual_moves.append(move)
+						actual_moves.append(direction)
 
 		print(f"{self} moves: {actual_moves}")
 
@@ -274,7 +285,9 @@ for colour in [WHITE, BLACK]:
 
 	figurines[colour] = {KING:king, QUEEN:queen, PAWN:my_pawns, ROOK:my_rooks, BISHOP:my_bishops, KNIGHT:my_knights}
 
-	queen.get_moves()
+
+
+figurines[WHITE][KNIGHT][0].get_moves()
 
 print(game)
 
