@@ -20,7 +20,15 @@ WHITE, BLACK = "White", "Black"
 
 translate_x = {"a": 0,	"b": 1,		"c": 2,		"d": 3,		"e": 4,		"f": 5,		"g": 6,		"h": 7}
 translate_y = {"8": 0,	"7": 1,		"6": 2,		"5": 3,		"4": 4,		"3": 5,		"2": 6,		"1": 7}
-START_WHITE = {"a1", "a2", }
+translate_symbol = {KING: "K", QUEEN: "Q", ROOK: "R", BISHOP: "B", KNIGHT: "N", PAWN: "P"}
+
+
+def gen_pieces():
+
+	# white
+	pawns = []
+
+
 
 class Coordinate():
 	def __init__(self, algebraic):
@@ -29,6 +37,8 @@ class Coordinate():
 		"""
 		self.alg_x = algebraic[0]
 		self.alg_y = algebraic[1]
+
+		self.x, self.y = None, None
 
 		self.x, self.y = self.get_tuple(self.alg_x, self.alg_y)
 		self.tuple = self.x, self.y
@@ -83,28 +93,57 @@ class Coordinate():
 		return str(self.get_tuple(self.alg_x, self.alg_y))
 
 class Piece:
-	def __init__(self, figure, colour, position):
+	def __init__(self, game, figure, colour, position):
 		self.figure = figure
 		self.colour = colour
 		self.position = position
+		self.game = game
 
 	def __str__(self):
 		return f"{self.colour} {self.figure} @ {self.position}"
 
+	def __setattr__(self, name, value):
+		self.__dict__[name] = value
+		if name == "position":
+			# TODO: update alg_x, alg_y
+			if self.position.x is not None and self.position.y is not None:
+				self.game[self.position.y][self.position.x] = translate_symbol[self.figure]
+
 class King(Piece):
-	def __init__(self, colour):
+	def __init__(self, game, colour):
+		self.game = game
+		self.colour = colour
+
 		if colour == WHITE:
 			position = Coordinate("e1")  # 4, 7
 		elif colour == BLACK:
 			position = Coordinate.fromTuple(4, 0)  # e8
-		super().__init__(figure=KING, colour=colour, position=position)
+
+		super().__init__(game=game, figure=KING, colour=colour, position=position)
 
 
+class Board():
+	def __init__(self):
+		self.game = [["-" for _ in range(8)] for _ in range(8)]
+
+	def __str__(self):
+		fmt = " ".join('{{:{}}}'.format(x) for x in [1]*8)
+		table = [fmt.format(*row) for row in self.game]
+
+		return "\n".join(table) + "\n\n"
+
+	def __getitem__(self, i):
+		return self.game[i]
+
+
+game = Board()
 
 # tests
-my_king = King(WHITE)
-their_king = King(BLACK)
+my_king = King(game, WHITE)
+their_king = King(game, BLACK)
 print(my_king)
 print(repr(my_king.position))
 print(their_king)
 print(repr(their_king.position))
+
+print(game)
