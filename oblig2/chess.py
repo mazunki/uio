@@ -16,14 +16,13 @@ ROOK = "Rook"
 BISHOP = "Bishop"
 KNIGHT = "Knight"
 PAWN = "Pawn"
-WHITE, BLACK = "White", "Black"
+COLOURS = WHITE, BLACK = "White", "Black"
 FRONT_ROW = {WHITE: "2", BLACK: "7"}
 BACK_ROW = {WHITE: "1", BLACK: "8"}
 
 translate_x = {"a": 0,	"b": 1,		"c": 2,		"d": 3,		"e": 4,		"f": 5,		"g": 6,		"h": 7}
 translate_y = {"8": 0,	"7": 1,		"6": 2,		"5": 3,		"4": 4,		"3": 5,		"2": 6,		"1": 7}
 translate_symbol = {KING: "K", QUEEN: "Q", ROOK: "R", BISHOP: "B", KNIGHT: "N", PAWN: "P"}
-
 
 
 ##########################
@@ -196,14 +195,11 @@ class Coordinate:
 #######################
 
 game = Board()
+figurines = dict()
 
 for colour in [WHITE, BLACK]:
 	king = King(game, colour)
 	queen = Queen(game, colour)
-	my_pawns = list()
-	for pawn_pos in Pawn.pawn_starts(colour):
-		new_pawn = Pawn(game, colour, pawn_pos)
-		my_pawns.append(new_pawn)
 
 	my_rooks = list()
 	for rook_pos in Rook.rook_starts(colour):
@@ -220,7 +216,25 @@ for colour in [WHITE, BLACK]:
 		new_knight = Knight(game, colour, knight_pos)
 		my_knights.append(new_knight)
 
+	my_pawns = list()
+	for pawn_pos in Pawn.pawn_starts(colour):
+		new_pawn = Pawn(game, colour, pawn_pos)
+		my_pawns.append(new_pawn)
+
+	figurines[colour] = {KING:king, QUEEN:queen, PAWN:my_pawns, ROOK:my_rooks, BISHOP:my_bishops, KNIGHT:my_knights}
+
 	print(king)
 	print(repr(king.position))
 
 print(game)
+
+for colour in COLOURS:
+	print(colour)
+	for figure_type, pieces in figurines[colour].items():
+		print("\t", figure_type)
+		
+		try:
+			for piece in pieces:
+				print("\t\t", piece)
+		except:
+			print("\t\t", pieces)
