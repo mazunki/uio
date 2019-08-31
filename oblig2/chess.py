@@ -23,14 +23,72 @@ translate_y = {"8": 0,	"7": 1,		"6": 2,		"5": 3,		"4": 4,		"3": 5,		"2": 6,		"1"
 translate_symbol = {KING: "K", QUEEN: "Q", ROOK: "R", BISHOP: "B", KNIGHT: "N", PAWN: "P"}
 
 
-def gen_pieces():
 
-	# white
-	pawns = []
+##########################
+#  Definition of pieces  #
+##########################
+
+class Piece:
+	def __init__(self, game, figure, colour, position):
+		self.game = game
+
+		self.figure = figure
+		self.colour = colour
+		self.position = position
+
+	def __str__(self):
+		return f"{self.colour} {self.figure} @ {self.position}"
+
+	def __setattr__(self, name, value):
+		self.__dict__[name] = value
+		if name == "position":
+			# TODO: update alg_x, alg_y
+			if self.position.x is not None and self.position.y is not None:
+				self.game[self.position.y][self.position.x] = translate_symbol[self.figure]
 
 
+class King(Piece):
+	def __init__(self, game, colour):
+		if colour == WHITE:
+			position = Coordinate("e1")  # 4, 7
+		elif colour == BLACK:
+			position = Coordinate.fromTuple(4, 0)  # e8
 
-class Coordinate():
+		super().__init__(game=game, figure=KING, colour=colour, position=position)
+
+
+class Pawn(Piece):
+	def __init__(self, game, colour, position):
+		super().__init__(game=game, figure=PAWN, colour=colour, position=position)
+	
+	@staticmethod
+	def pawn_starts(colour):
+		if colour == WHITE:
+			row = "2"
+		elif colour == BLACK:
+			row = "7"
+		return [y+row for y in list("abcdefgh")]
+
+
+################
+#  Board setup #
+################
+
+class Board:
+	def __init__(self):
+		self.game = [[" " for _ in range(8)] for _ in range(8)]
+
+	def __str__(self):
+		fmt = "|".join('{{:{}}}'.format(x) for x in [1]*8)
+		table = [fmt.format(*row) for row in self.game]
+
+		return "\n|"+"|\n|".join(table) + "|\n\n"
+
+	def __getitem__(self, i):
+		return self.game[i]
+
+
+class Coordinate:
 	def __init__(self, algebraic):
 		"""
 			TODO: Check the order of values. Swap them if necessary. Input could be in `yx` format.
@@ -92,64 +150,19 @@ class Coordinate():
 	def __repr__(self):
 		return str(self.get_tuple(self.alg_x, self.alg_y))
 
-class Piece:
-	def __init__(self, game, figure, colour, position):
-		self.game = game
 
-		self.figure = figure
-		self.colour = colour
-		self.position = position
-
-	def __str__(self):
-		return f"{self.colour} {self.figure} @ {self.position}"
-
-	def __setattr__(self, name, value):
-		self.__dict__[name] = value
-		if name == "position":
-			# TODO: update alg_x, alg_y
-			if self.position.x is not None and self.position.y is not None:
-				self.game[self.position.y][self.position.x] = translate_symbol[self.figure]
-
-class King(Piece):
-	def __init__(self, game, colour):
-		if colour == WHITE:
-			position = Coordinate("e1")  # 4, 7
-		elif colour == BLACK:
-			position = Coordinate.fromTuple(4, 0)  # e8
-
-		super().__init__(game=game, figure=KING, colour=colour, position=position)
-
-def pawn_starts(colour):
-	if colour == WHITE:
-		return [y+"2" for y in list("abcdefgh")]
-	elif colour == BLACK:
-		return [y+"7" for y in list("abcdefgh")]
-
-class Pawn(Piece):
-	def __init__(self, game, colour, position):
-		super().__init__(game=game, figure=PAWN, colour=colour, position=position)
-
-
-class Board():
-	def __init__(self):
-		self.game = [["-" for _ in range(8)] for _ in range(8)]
-
-	def __str__(self):
-		fmt = " ".join('{{:{}}}'.format(x) for x in [1]*8)
-		table = [fmt.format(*row) for row in self.game]
-
-		return "\n".join(table) + "\n\n"
-
-	def __getitem__(self, i):
-		return self.game[i]
+#######################
+# Standard game setup #
+#######################
 
 game = Board()
 
 # tests
 for colour in [WHITE, BLACK]:
 	king = King(game, colour)
+	#queen = Queen(game, colour)
 	my_pawns = list()
-	for pawn_pos in pawn_starts(colour):
+	for pawn_pos in Pawn.pawn_starts(colour):
 		new_pawn = Pawn(game, colour, Coordinate(pawn_pos))
 
 	print(king)
