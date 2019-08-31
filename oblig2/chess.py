@@ -94,10 +94,11 @@ class Coordinate():
 
 class Piece:
 	def __init__(self, game, figure, colour, position):
+		self.game = game
+
 		self.figure = figure
 		self.colour = colour
 		self.position = position
-		self.game = game
 
 	def __str__(self):
 		return f"{self.colour} {self.figure} @ {self.position}"
@@ -111,15 +112,22 @@ class Piece:
 
 class King(Piece):
 	def __init__(self, game, colour):
-		self.game = game
-		self.colour = colour
-
 		if colour == WHITE:
 			position = Coordinate("e1")  # 4, 7
 		elif colour == BLACK:
 			position = Coordinate.fromTuple(4, 0)  # e8
 
 		super().__init__(game=game, figure=KING, colour=colour, position=position)
+
+def pawn_starts(colour):
+	if colour == WHITE:
+		return [y+"2" for y in list("abcdefgh")]
+	elif colour == BLACK:
+		return [y+"7" for y in list("abcdefgh")]
+
+class Pawn(Piece):
+	def __init__(self, game, colour, position):
+		super().__init__(game=game, figure=PAWN, colour=colour, position=position)
 
 
 class Board():
@@ -135,15 +143,16 @@ class Board():
 	def __getitem__(self, i):
 		return self.game[i]
 
-
 game = Board()
 
 # tests
-my_king = King(game, WHITE)
-their_king = King(game, BLACK)
-print(my_king)
-print(repr(my_king.position))
-print(their_king)
-print(repr(their_king.position))
+for colour in [WHITE, BLACK]:
+	king = King(game, colour)
+	my_pawns = list()
+	for pawn_pos in pawn_starts(colour):
+		new_pawn = Pawn(game, colour, Coordinate(pawn_pos))
+
+	print(king)
+	print(repr(king.position))
 
 print(game)
