@@ -191,6 +191,12 @@ class Coordinate:
 	def fromAlgebraic(cls, algebraic):
 		return cls(algebraic)
 
+	@classmethod
+	def fromRelative(cls, relation):
+		rel_x = relation.count(W)*LEFT + relation.count(E)*RIGHT
+		rel_y = relation.count(N)*UP + relation.count(S)*DOWN
+		return (rel_x, rel_y)
+
 	def filter(self, moves, game=None):
 		actual_moves = list()  # doesn't consider other pieces blocking way
 
@@ -229,7 +235,7 @@ class Coordinate:
 					if 0 <= self.y + rel_y < SIZE_Y:
 						actual_moves.append(direction)
 
-		print(f"{self} moves: {actual_moves}")
+		return actual_moves
 
 	@staticmethod
 	def get_tuple(alg_x_, alg_y_):
@@ -250,6 +256,13 @@ class Coordinate:
 
 	def __repr__(self):
 		return str(self.get_tuple(self.alg_x, self.alg_y))
+
+	def __add__(self, other):
+		other = other if isinstance(other, Coordinate) else Coordinate.fromRelative(other)
+
+		new_x = self.x + other[0]
+		new_y = self.y + other[1]
+		return Coordinate.fromTuple(new_x, new_y)
 
 
 #######################
@@ -286,8 +299,8 @@ for colour in [WHITE, BLACK]:
 	figurines[colour] = {KING:king, QUEEN:queen, PAWN:my_pawns, ROOK:my_rooks, BISHOP:my_bishops, KNIGHT:my_knights}
 
 
-
-figurines[WHITE][KNIGHT][0].get_moves()
+#print("pony")
+print(figurines[WHITE][KNIGHT][0], [str(figurines[WHITE][KNIGHT][0].position + possible) for possible in figurines[WHITE][KNIGHT][0].get_moves()])
 
 print(game)
 
