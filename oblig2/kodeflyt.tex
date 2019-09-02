@@ -1,4 +1,4 @@
-\documentclass{assignment}
+\documentclass{myassignment}
 \usepackage[margin=1in]{geometry}
 
 \usepackage{lmodern}
@@ -12,6 +12,7 @@
 \definecolor{MyLightGray}{RGB}{200,200,200}
 \definecolor{verydark}{RGB}{50,50,50}
 \usepackage{listings}
+\usepackage{mylistings}
 \lstdefinestyle{custompython}{
 language=Python,
 %backgroundcolor=\color{lightgray},
@@ -35,6 +36,22 @@ backgroundcolor=\color{verydark},
 basicstyle=\color{white}\large
 }
 
+
+\renewenvironment{answer}%
+{%
+\vspace{0.1 in}
+\begin{boldmath}
+\begin{emph}
+{%
+}
+}%
+{%
+\end{emph}
+\end{boldmath}
+\qed
+}
+
+
 \newcommand*\DNumber[1]{\setcounter{lstnumber}{#1}}
 
 \newcommand\Vtextvisiblespace[1][.3em]{%
@@ -46,7 +63,7 @@ basicstyle=\color{white}\large
 \coursetitle{Introduksjon i objektorientert programmering}
 \exercisesheet{Obliger 2}{}
 \student{Rolf Vidar Hoksaas}
-\semester{Autumn 2019}
+%\semester{Autumn 2019}
 \date{1. September 2019}
 \university{Universitetet i Oslo}
 \school{Institutt for informatikk}
@@ -54,6 +71,7 @@ basicstyle=\color{white}\large
 \begin{document}
 	\problem{Activity 3 --- Kodeflyt}
 
+	\begin{answer}
 	\begin{lstlisting}[style=custompython]
 &{\color{blue}\hspace*{2em}1}&	def print_prosa():
 &{\color{blue}4}&, &{\color{blue}10&		  print("Melding til alle gaardeiere:")
@@ -114,7 +132,8 @@ Thanks to lazy evaluation, the last else statement is ignored.
   Det er ett dusin dyr paa gaarden!
   &&
 \end{lstlisting}
-\qed
+
+\end{answer}
 
 \paragraph{Suggestions} I have some comments regarding this piece of code, and I would like to direct them by providing a much better solution for the task at hand.
 
