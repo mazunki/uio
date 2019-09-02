@@ -1,6 +1,15 @@
-"""
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""Konvertering
+
+This module serves as the answer for the second part of the second delivery of
+IN1000 at UiO (Fall, 2019). Overly engineered, for a simple exercise.
 
 """
+__author__ = "Rolf Vidar Hoksaas"
+__email__ = "rolferen@gmail.com"
+__date__ = "2nd September 2019"
 
 
 def fahr_to_cels(fahr):

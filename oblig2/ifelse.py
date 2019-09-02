@@ -5,6 +5,9 @@
 	The idea is to input a number, and output a list of types of numbers that this number is True for.
 	This list includes prime/composite numbers, Fibonacci numbers, Odd/Even, and Happy/Sad numbers.
 """
+__author__ = "Rolf Vidar Hoksaas"
+__email__ = "rolferen@gmail.com"
+__date__ = "2nd September 2019"
 
 def is_prime(x:int):
 	if x == 0:  # trivial cases

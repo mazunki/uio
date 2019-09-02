@@ -10,6 +10,10 @@
   checking, capturing and illegal moves.
   
 """
+__author__ = "Rolf Vidar Hoksaas"
+__email__ = "rolferen@gmail.com"
+__date__ = "2nd September 2019"
+
 
 # Language holders
 KING = "King"
