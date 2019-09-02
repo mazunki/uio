@@ -8,6 +8,7 @@
 
   The output will be a list of movements possible for any piece. Takes into account
   checking, capturing and illegal moves.
+  
 """
 
 # Language holders
@@ -21,8 +22,8 @@ LAND = " "
 COLOURS = WHITE, BLACK = "White", "Black"
 # Board values
 SIZE = SIZE_X, SIZE_Y = 8, 8
-translate_symbol = {KING: "K", QUEEN: "Q", ROOK: "R", BISHOP: "B", KNIGHT: "N", PAWN: "P", LAND: "-"}
-translate_algebra = {KING: "K", QUEEN: "Q", ROOK: "R", BISHOP: "B", KNIGHT: "N", PAWN: ""}
+translate_symbol = {KING: "K", QUEEN: "Q", ROOK: "R", BISHOP: "B", KNIGHT: "N", PAWN: "P", LAND: "-"}  # for map
+translate_algebra = {KING: "K", QUEEN: "Q", ROOK: "R", BISHOP: "B", KNIGHT: "N", PAWN: ""}  # per FIDE/mov notation
 # Relative coordinates
 UP, DOWN = -1, 1
 LEFT, RIGHT = 1, -1
