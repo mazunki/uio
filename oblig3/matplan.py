@@ -33,10 +33,11 @@ food_patient_dict = {
 if __name__ == '__main__':
 	get_a_food_schedule()  # sample
 
+
 ###
 # Activity 4.3
 # First off, I would like to say that this whole exercise is utterly confusing. It makes no sense to store data
-# this way, considering we have classes which literally have the role of creating objects with a blueprint
+# this way, considering we have classes which literally have the role of creating objects with a blueprint.
 # Storing values based on a position in a list, when we could just have instances of a Patient class with variables
 # assigned to them instead... just makes no sense, and is confusing both for a programmer and a reader.
 # The same goes for functions. These should be part of this Patient class, callable on a per-patient instance.
