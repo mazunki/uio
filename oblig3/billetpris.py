@@ -11,7 +11,9 @@ __date__ = "4th September 2019"
 
 def get_price(user="Passenger"):
 
-	alder = int(input("What is your age? "))
+	alder = int(input("What is your age? "))  # Activity 3.1
+	# Activity 3.6
+	#
 	# Since is where the user can entry data, this is where the program can fail (mostly, anyway.)
 	# If the user inputs any kind of letter, a ValueError Exception will cause the program to
 	# close. We could catch this with a try-except block, and loop through the input() until a valid
@@ -26,15 +28,18 @@ def get_price(user="Passenger"):
 	# what we intend. For ticket prices I assume this truncation is actually desired. 
 
 
-	billetpris = 0  # this is rather pointless and more confusing than rewarding.
+	billetpris = 0  # this is rather pointless and more confusing than rewarding. Activity 3.2
 
-	# billetpris = 35 if alder > 63 else 50 if alder > 17 else 30
-	if alder <= 17:
+	# Activity 3.3
+	if alder <= 17:  #  3.3.a) 
 		billetpris = 30
-	elif alder < 63:
+	elif alder < 63:  # 3.3.b)  Maths implies this to be valid
 		billetpris = 50
-	else:
+	else:  # 3.3.c)
 		billetpris = 35
+
+
+	# Activity 3.4
 	print()
 	print(u"""Hello, Mx. {}.
 Since you are of age {}, the price of your ticket is of {},\u2014 NOK.
@@ -44,4 +49,4 @@ Have a nice trip!""".format(user, alder,billetpris))  # Mx. being the neutral fo
 
 if __name__ == '__main__':
 	for _ in range(4):
-		get_price()
+		get_price()  # Activity 3.5
