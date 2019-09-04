@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 """
 	This program is made as a solution to activity 5 of the 2nd assignment of
 	IN1000 at UiO, fall 2019.
