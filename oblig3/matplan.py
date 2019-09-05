@@ -56,11 +56,11 @@ if __name__ == '__main__':
 # considering the security matters involving storing them (users can access this and alter it, leaks can happen...),
 # we should create a dictionary where each test defines a username-score pair. 
 
-# c) These would be stored in a list.
+# c) These would be stored in a list, as names could be duplicate. In a set, a repetition of names wouldn't be supported.
 
-# d) If we want to make the same dish for everyone, we only need one list. If we want to make a special dish for everyone, or just
-# remove the allergenes from the required plates... use a dictionary for all members. Members that don't have allergies
-# could be excluded.
+# d) If we want to make the same dish for everyone, we only need one set with all allergies.
+# If we want to make a special dish for everyone, or just remove the allergenes from the required plates...\
+# use a dictionary for all members. Members that don't have allergies could be excluded.
 
 # Sorry about the ranting. 
 ###
