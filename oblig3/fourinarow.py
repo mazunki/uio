@@ -23,9 +23,9 @@ game = [[E for x in range(GAME_X)] for y in range(GAME_Y)]
 import os, sys
 CMD_CLEAR_SCREEN = lambda: print("\033[2J") if os.name == "linux" else print("\n"*64)
 
-	return key
 
 def print_game(g=game):
+	""" Prettyprinting the board """
 	for row in game:
 		print("| "+" | ".join(row)+" |")
 
@@ -77,6 +77,11 @@ def get_winner(g=game, x=0, y=0):
 	return None  # fallback if no winner
 
 def new_turn(g=game):
+	"""	
+		Prints the current game layout,
+		waits for a valid user input,
+		and places piece where it fits. 
+	"""
 	global turn
 	print_game(g)
 
@@ -85,7 +90,7 @@ def new_turn(g=game):
 		pos = int(input(turn + f"'s turn. Column [0-{GAME_X-1}]: "))
 
 	y = GAME_Y  # assume piece falls to the bottom
-	
+
 	for row in reversed(game):  # checking bottom first, and going up
 		y -= 1
 		if row[pos] == E:
