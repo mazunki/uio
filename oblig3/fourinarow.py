@@ -21,36 +21,29 @@ GAME_X, GAME_Y = 7, 6
 game = [[E for x in range(GAME_X)] for y in range(GAME_Y)]
 
 import os
-CMD_CLEAR_SCREEN = lambda: print("\033[2J") if os.name == "linux" else print("\n"*64)
+CMD_CLEAR_SCREEN = lambda: print("\033[2J") if os.name == "linua" else print("\n"*4)
 
 def print_game(g=game):
 	for row in game:
 		print("| "+" | ".join(row)+" |")
 
-def get_winner(g=game):
-	# horizontal wins
-	for row in g:
-		last_find, c = E, 0
+def get_winner(g=game, x=0, y=0):
+	x_lbound = max(0, x-3)
+	x_rbound = min(GAME_X-1, x+3)
+	y_tbound = max(0, y-3)
+	y_bbound = min(GAME_Y-1, y+3)
+	print("xl:",x_lbound, "xr:", x_rbound, "yt:", y_tbound, "yb", y_bbound)
 
-		for col in row:
-			if col == last_find and col is not E:
-				c += 1
-				if c >= 3:  # last_find + 3 new ones
-					return last_find
+	horizontal = game[y][x_lbound:x_rbound+1]
+	vertical = [row[x] for row in game[y_tbound:y_bbound+1]]
 
-			last_find = col
+	# /
+	dx = max(x-3, 0)
+	dy = min(GAME_Y-y+3, GAME_Y-1)
+	print(f"down: {dx}x,{dy}y")
+#	diagonal_nw = [ game[y][x] ]
 
-	# vertical wins
-	for col in list(zip(*g)):  # zip(*[ [a,b,c], [d,e,f] ]) returns [[a,d],[b,e],[c,f]], effectively turning list sideways
-		c = 0
-		for row in col:
-			if row == last_find and row is not E:
-				c += 1
-				if c >= 3:
-					return last_find
-			last_find = row
-
-
+#	print(diagonal_nw)
 
 	return None  # fallback if no winner
 
@@ -61,22 +54,26 @@ def new_turn(g=game):
 	while pos not in range(GAME_X):
 		pos = int(input(turn + "'s turn. Column [0-6]: "))
 	
-
+	y = GAME_Y
 	for row in reversed(game):  # checking bottom first, and going up
+		y -= 1
 		if row[pos] == E:
 			row[pos] = turn  # although this is a local scope, nested lists are actually referencial!
 			break  # as soon as we place a piece, we don't need to check upwards, so we just break out of the for-loop
 
 	turn = X if turn == O else O
 
+	return pos, y
 
+winner = None
 
-while get_winner() == None:
+while winner == None:
 	CMD_CLEAR_SCREEN()
-	new_turn()
+	last_index = new_turn()
+	winner = get_winner(game, *last_index)
 else:
 	print_game()
-	print("Winner {}!".format(get_winner()))
+	print("Winner {}!".format(winner))
 
 #a = [[1,2,3], [4,5,6], [7,8,9]]
 
