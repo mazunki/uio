@@ -25,15 +25,63 @@
 \usepackage{lmodern}
 \usepackage{todonotes}
 \usepackage[bottom]{footmisc}
+\usepackage[colorlinks]{hyperref}
 % citing stuff
 \usepackage[
     style=apa
 ]{biblatex}
+\hypersetup{
+    allcolors=[RGB]{150,80,130}
+}
 \addbibresource{mybib.bib}
 \setlength\bibitemsep{1.75\itemsep}
 \setlength\bibinitsep{1.75\itemsep}
 % custom paragraph sizes
 \setlength\parskip{1.75ex}
+
+
+
+
+%
+\DeclareFieldFormat{citehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{#1}}
+
+\DeclareFieldFormat{textcitehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{%
+    #1%
+    \ifbool{cbx:parens}
+      {\bibcloseparen\global\boolfalse{cbx:parens}}
+      {}}}
+
+\savebibmacro{cite}
+\savebibmacro{textcite}
+
+\renewbibmacro*{cite}{%
+  \printtext[citehyperref]{%
+    \restorebibmacro{cite}%
+    \usebibmacro{cite}}}
+
+\renewbibmacro*{textcite}{%
+  \ifboolexpr{
+    ( not test {\iffieldundef{prenote}} and
+      test {\ifnumequal{\value{citecount}}{1}} )
+    or
+    ( not test {\iffieldundef{postnote}} and
+      test {\ifnumequal{\value{citecount}}{\value{citetotal}}} )
+  }
+    {\DeclareFieldAlias{textcitehyperref}{noformat}}
+    {}%
+  \printtext[textcitehyperref]{%
+    \restorebibmacro{textcite}%
+    \usebibmacro{textcite}}}
+%
+
+
+
+
+
 
 
 \newcommand\Season{%
