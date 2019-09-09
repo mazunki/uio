@@ -1,0 +1,11 @@
+Spørsmålene ​skalbesvares.
+a.Hvordan synes du innleveringen var? Hva var enkelt og hva var vanskelig?
+b.Hvor lang tid (ca) brukte du på innleveringen?
+Var det noen oppgaver du ikke fikk til? Hvis ja:
+	i.Hvilke(n) oppave er det som ikke fungerer i innleveringen?
+	ii.Hvorfor tror du at oppgaven ikke fungerer?
+	iii.Hva ville du gjort for å få oppgaven til å fungere hvis du hadde mertid?
+	iv.Hva vil du ha tilbakemelding på
+
+a) Som i tidligere oppgaver har det gått ganske greit. Hvis det var noe som var litt vanskelig var det å tenke på sets/mengder, siden jeg aldri bruker dem i praksis. 
+b) Jeg brukte en lang kveld på å løse Connect-4-oppgaven, da jeg prøvde meg på litt diskré matte samtidig. Ellers ville jeg blitt ferdig på et par timer.
