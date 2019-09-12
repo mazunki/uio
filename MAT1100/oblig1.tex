@@ -2,6 +2,7 @@
 \usepackage{multicol}
 
 \courselabel{MAT1100}
+\coursetitle{Kalkulus}
 \exercisesheet{Oblig 1}{Obligatorisk oppgave 1 av 2}
 
 \begin{document}
@@ -24,11 +25,13 @@
 			\end{answer}
 
 				\vspace*{2em}
+				\begin{center}
 				Using $z = \frac{\sqrt{3}}{2} - \frac{3}{2}i$:
 
 				%\raisebox{-.5\height}{
 				\includegraphics[scale=1]{graphact1.pdf}
 				%}
+				\end{center}
 			\columnbreak
 
 			\begin{answer}
@@ -41,18 +44,19 @@
 				\blackqed
 				\vspace*{-1em}
 
+				\textit{\hspace*{2em}\small By the laws of trigonometry}
 				\begin{align*}
 					\theta' &:= 2\pi - \theta\\[1em]
 					\sin(\theta') &= \frac{-1.5}{\sqrt{3}} \\
-					\theta' &= \arcsin(\frac{-1.5\sqrt{3}}{3}) \\
-					\theta' &= \arcsin(\frac{\sqrt{3}}{2}) \\
-					\theta' &= \frac{\pi}{3} \\
-					\therefore \theta  &= \frac{5\pi}{3} \\
+					\theta' &= \arcsin(\frac{-1.5\sqrt{3}}{3}) \\[0.5em]
+					\theta' &= \arcsin(\frac{-\sqrt{3}}{2}) \\[0.5em]
+					\theta' &= -\frac{\pi}{3} \equiv \frac{5\pi}{3} \\[0.5em]
+					\therefore \theta  &= \frac{\pi}{3} \\
 				\end{align*}
 				\blackqed
-
+				\textit{\small \hspace*{3em}And since $z$ is in the fourth quadrant, as $Re(z)>0 \land Im(z)<0$ we know to use $\theta'$:}
 				\begin{align*}
-					r: \sqrt{3} \land \theta: \frac{5\pi}{3} \therefore z = \sqrt{3}e^{i\frac{5\pi}{3}}
+					r: \sqrt{3} \land \theta: \frac{5\pi}{3} \therefore z = \sqrt{3}e^{\frac{-i\pi}{3}} \equiv \sqrt{3}e^{\frac{5i\pi}{3}}
 				\end{align*}
 			\end{answer}
 		\end{multicols}
