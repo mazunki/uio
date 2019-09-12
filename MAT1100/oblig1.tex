@@ -64,14 +64,39 @@
 
 
 	\begin{problem}
-		Finn de to løsningene til likningen $w^2 - w + 1 = \theta$, og bruk disse til å finne alle komplekse løsninger til likningen $z^4 - z^2 + 1 = \theta$.Gi en faktorisering av $z^4 - z^2 + 1$, først i komplekse førstegradspolynomer og så i reelle andregradspolynomer.
+		Finn de to løsningene til likningen $w^2 - w + 1 = 0$, og bruk disse til å finne alle komplekse løsninger til likningen $z^4 - z^2 + 1 = 0$. Gi en faktorisering av $z^4 - z^2 + 1$, først i komplekse førstegradspolynomer og så i reelle andregradspolynomer.
 	\end{problem}
 
+	Assuming $cis(x) \equiv cos(x) + i\cdot sin(x)$, and $i^2=-1$.
 	\begin{answer}
-
+		\begin{eqnarray}
+			&a = 1, b = -1, c = 1 \\
+			&w = \frac{1\pm\sqrt{1-4}}{2} = \frac{1}{2}\pm\frac{\sqrt{3}}{2}i\\
+		\end{eqnarray}
+		\text{With $t = z^2$}:\\
+		\begin{eqnarray}
+			&z^4 - z^2 + 1 = t^2-t^2+1 = 0\\
+			&t = {\frac{1}{2}\pm\frac{\sqrt{3}}{2}i}\\
+		\end{eqnarray}
+		\text{With $t_0 = \frac{1}{2}+\frac{\sqrt{3}}{2}i = cis(\frac{\pi}{3})$:}\\
+		\begin{eqnarray}
+			&\sqrt{cis(\frac{\pi}{3})}^4 - \sqrt{cis(\frac{\pi}{3})}^2 + 1 = 0\\
+			&cis^2(\frac{\pi}{3}) - cis(\frac{\pi}{3}) + 1 = 0\\
+		\end{eqnarray}
+		With De Moivres formula:
+		\begin{eqnarray}
+			&cis(\frac{2\pi}{3}) - cis(\frac{\pi}{3}) + 1 = 0\\
+			&cos(\frac{2\pi}{3}) + i\cdot sin(\frac{2\pi}{3}) - cos(\frac{\pi}{3}) - i\cdot sin(\frac{\pi}{3}) + 1 = 0\\
+			&-\frac{1}{2} + \frac{\sqrt{3}}{2}i - \frac{1}{2} - \frac{\sqrt{3}}{2} i + 1 = 0\\
+			&-\frac{1}{2} - \frac{1}{2} + 1 = 0\\
+			&-1 + 1 = 0\\
+		\end{eqnarray}
+		Therefore, $z = t_0^{\frac{1}{2}} = cis^{\frac{1}{2}}(\frac{\pi}{3}) = cis(\frac{\pi}{6})$ is a root $z_0$.\\
+		By the complex conjugate root theorem, $z=t_1^{\frac{1}{2}}=cis^{\frac{1}{2}}(-\frac{\pi}{3})=cis(-\frac{\pi}{6})$ is a root $z_0'$.\\
 	\end{answer}
 
 
+	\pagebreak
 	\begin{problem}
 		Finn grensene $\lim_{n \rightarrow \infty}\frac{3n + 2}{\sqrt{4n^2 - 1}}$ og $\lim_{n\rightarrow\infty}(\sqrt{n^2 - 5n} - n)$.
 	\end{problem}
