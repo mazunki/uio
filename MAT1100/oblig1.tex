@@ -5,6 +5,8 @@
 \coursetitle{Kalkulus}
 \exercisesheet{Oblig 1}{Obligatorisk oppgave 1 av 2}
 
+
+
 \begin{document}
 	\begin{problem}
 		Skriv det komplekse tallet $z=\frac{6}{\sqrt{3}+3i}$ først på formen $a+ib$ også på polarformen $re^{i\theta}$.
@@ -101,17 +103,57 @@
 		Finn grensene $\lim_{n \rightarrow \infty}\frac{3n + 2}{\sqrt{4n^2 - 1}}$ og $\lim_{n\rightarrow\infty}(\sqrt{n^2 - 5n} - n)$.
 	\end{problem}
 
-	\begin{answer}
+	\begin{multicols}{2}
+		\begin{answer}
+			\begin{align*}
+				\lim_{n \rightarrow \infty} &\frac{3n + 2}{\sqrt{4n^2 - 1}} = \\[1em]
+				\lim_{n \rightarrow \infty} &\frac{(3n + 2)\frac{1}{n}}{\sqrt{4n^2 -1}\frac{1}{n}} = \\[1em]
+				\lim_{n \rightarrow \infty} &\frac{3 + \frac{2}{n}}{\sqrt{\frac{4n^2 -1}{n^2}}} = \\[1em]
+				\lim_{n \rightarrow \infty} &\frac{3 + \frac{2}{n}}{\sqrt{4 - \frac{1}{n^2}}} = \\[1em]
+				&\frac{3 + \not{0}}{\sqrt{4 -\not{0}}} = \\[1em]
+				&\frac{3}{2}
+			\end{align*}
+		\end{answer}
 
-	\end{answer}
+		\columnbreak
+		\begin{answer}
+			\begin{align*}
+				\lim_{n\rightarrow\infty}&(\sqrt{n^2 - 5n} - n)\\[1em]
+				\lim_{n\rightarrow\infty}&\frac{(\sqrt{n^2 - 5n} - n)(\sqrt{n^2 - 5n} + n)}{\sqrt{n^2 - 5n}+n }\\[1em]
+				\lim_{n\rightarrow\infty}&\frac{n^2 - 5n - n^2}{\sqrt{n^2 - 5n}+n }\\[1em]
+				\lim_{n\rightarrow\infty}&\frac{-5n}{\sqrt{n^2 - 5n}+n }\\[1em]
+				\lim_{n\rightarrow\infty}&\frac{-5}{\sqrt{1 - \frac{5}{n}}+1 }\\[1em]
+				&\frac{-5}{\sqrt{1 - \not{0}}+1 }\\[1em]
+				&\frac{-5}{2}
+			\end{align*}
+		\end{answer}
 
+	\end{multicols}
 
+	\newpage
 	\begin{problem}
-		Finn de komplekse tallenezsom oppfyller likningen $2|z - 1|=|z - 4|$ og skisser løsningsmengden i det komplekse planet.(Hint: Sett inn $z=x+iy$ og finn en polynomlikning ixogyforløsningsmengden.)
+		Finn de komplekse tallene $z$ som oppfyller likningen $2|z - 1|=|z - 4|$ og skisser løsningsmengden i det komplekse planet.(Hint: Sett inn $z = x + iy$ og finn en polynomlikning $ix$ og $y$ forløsningsmengden.)
 	\end{problem}
 
 	\begin{answer}
+		\begin{multicols}{2}
+			\begin{align*}
+				% since |a|=sqrt(a^2+b^2)
+				2|z-1| &= |z-4| \equiv \\[2em]
+				4|x+iy-1| &= |x+iy-4|\\[1em]
+				4((x-1)^2+(y)^2) &= (x-4)^2+(y)^2 \\[1em]
+				4(x-1)^2+4y^2 &= x^2-8x+16+y^2 \\[1em]
+				4(x^2-2x+1)+4y^2 &= x^2-8x+16+y^2 \\[1em]
+				4x^2-8x+4 + 4y^2 &= x^2-8x+16+y^2 \\[1em]
+				3x^2 + 3y^2 &= 12 \\[1em]
+				y^2 &= 4 - x^2 \\[1em]
+				y &= \sqrt{4 - x^2}\\[1em]
+				\therefore Im(z) &= \pm\sqrt{4 - Re(z)^2}, \exists z \forall \{x \in Re(z) | -2 < x <2 \} \\[1em]
+			\end{align*}
+		\columnbreak
+		\includegraphics{graphact4}
 
+		\end{multicols}
 	\end{answer}
 
 
