@@ -21,6 +21,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath}
 \usepackage{amsthm}
+\usepackage{amssymb}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{todonotes}
@@ -40,6 +41,7 @@
 \setlength\parskip{1.75ex}
 
 
+\newcommand{\blackqed}{\begin{flushright}$\quad\blacksquare$\end{flushright}}
 
 
 %
