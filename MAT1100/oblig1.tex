@@ -6,7 +6,6 @@
 \exercisesheet{Oblig 1}{Obligatorisk oppgave 1 av 2}
 
 
-
 \begin{document}
 	\begin{problem}
 		Skriv det komplekse tallet $z=\frac{6}{\sqrt{3}+3i}$ først på formen $a+ib$ også på polarformen $re^{i\theta}$.
@@ -95,6 +94,30 @@
 		\end{eqnarray}
 		Therefore, $z = t_0^{\frac{1}{2}} = cis^{\frac{1}{2}}(\frac{\pi}{3}) = cis(\frac{\pi}{6})$ is a root $z_0$.\\
 		By the complex conjugate root theorem, $z=t_1^{\frac{1}{2}}=cis^{\frac{1}{2}}(-\frac{\pi}{3})=cis(-\frac{\pi}{6})$ is a root $z_0'$.\\
+
+		\begin{eqnarray}
+			(z^4 - z^2 + 1) &=&0 \\[2em]
+			\frac{z^4 - z^2 + 1}{(z - \frac{\sqrt{3}}{2} - \frac {1}{2}i)\cdot(z - \frac{\sqrt{3}}{2} + \frac {1}{2}i)} &=& 0 \\[2em]
+			\frac{z^4 - z^2 + 1}{(z - \frac{\sqrt{3}}{2})^2 - (\frac {1}{2}i)^2} &=& 0 \\[2em]
+			\frac{z^4 - z^2 + 1}{z^2 - \sqrt{3}z + \frac{3}{4} + \frac {1}{4}} &=& 0 \\[2em]
+			\frac{z^4 - z^2 + 1}{z^2 - \sqrt{3}z + 1} &=& 0 \\[2em]
+			z^2+\sqrt{3}z+1 &=& 0 \\[2em]
+			\therefore (z^4 - z^2 + 1)&=&0 \equiv \\
+			(z^2+\sqrt{3}z+1)\cdot(z-cis(\frac{\pi}{6}))\cdot(z-cis(\frac{-\pi}{6})) &=&0
+		\end{eqnarray}
+		\begin{eqnarray}
+			a &=& 1, b = \sqrt{3}, c = 1 \\[2em]
+			z &=& \frac{-\sqrt{3}\pm\sqrt{3-4}}{2} \\[2em]
+			z &=& \frac{-\sqrt{3}}{2}\pm\frac{i}{2} = cis(\pi\pm \frac{\pi}{6}) \\[2em]
+			z_1 &=& cis(\frac{5\pi}{6}),\\
+			z_1' &=& cis(-\frac{5\pi}{6})
+		\end{eqnarray}
+		By having $z_0, z_0', z_1,$ and $z_1'$, we can factorize as $(z-z_0)\cdot(z-z_0')\cdot(z-z_1)\cdot(z-z_1')=0$, \\[1em]
+		so $z^4 - z^2 + 1=0$ is equivalent to $(z-cis(\frac{\pi}{6}))\cdot(z-cis(-\frac{\pi}{6}))\cdot(z-cis(\frac{5\pi}{6}))\cdot(z-cis(-\frac{5\pi}{6}))=0$. \\[1em]
+		By 2-20, we know $(z-z_1)(z-z_1') = z^2 - \sqrt{3}z + 1$, \\[1em]
+		and by 2-21 we know $(z-z_0)(z-z_0')=z^2+\sqrt{3}z+1$ \\[1em]
+		so we could express $z^4 - z^2 + 1=0$ the by second degree polynoms as $(z^2 - \sqrt{3}z + 1)(z^2+\sqrt{3}z+1).$
+
 	\end{answer}
 
 
@@ -147,7 +170,7 @@
 				4x^2-8x+4 + 4y^2 &= x^2-8x+16+y^2 \\[1em]
 				3x^2 + 3y^2 &= 12 \\[1em]
 				y^2 &= 4 - x^2 \\[1em]
-				y &= \sqrt{4 - x^2}\\[1em]
+				y &= \pm \sqrt{4 - x^2}\\[1em]
 				\therefore Im(z) &= \pm\sqrt{4 - Re(z)^2}, \exists z \forall \{x \in Re(z) | -2 < x <2 \} \\[1em]
 			\end{align*}
 		\columnbreak
