@@ -93,30 +93,34 @@
 			&-1 + 1 = 0\\
 		\end{eqnarray}
 		Therefore, $z = t_0^{\frac{1}{2}} = cis^{\frac{1}{2}}(\frac{\pi}{3}) = cis(\frac{\pi}{6})$ is a root $z_0$.\\
-		By the complex conjugate root theorem, $z=t_1^{\frac{1}{2}}=cis^{\frac{1}{2}}(-\frac{\pi}{3})=cis(-\frac{\pi}{6})$ is a root $z_0'$.\\
-
+		By the complex conjugate root theorem, $z=t_1^{\frac{1}{2}}=cis^{\frac{1}{2}}(-\frac{\pi}{3})=cis(-\frac{\pi}{6})$ is a root $z_0'$.\blackqed
+		
+		\text{By dividing by the original polynom by $(z-z_0)(z-z_0')$}:
 		\begin{eqnarray}
-			(z^4 - z^2 + 1) &=&0 \\[2em]
 			\frac{z^4 - z^2 + 1}{(z - \frac{\sqrt{3}}{2} - \frac {1}{2}i)\cdot(z - \frac{\sqrt{3}}{2} + \frac {1}{2}i)} &=& 0 \\[2em]
 			\frac{z^4 - z^2 + 1}{(z - \frac{\sqrt{3}}{2})^2 - (\frac {1}{2}i)^2} &=& 0 \\[2em]
 			\frac{z^4 - z^2 + 1}{z^2 - \sqrt{3}z + \frac{3}{4} + \frac {1}{4}} &=& 0 \\[2em]
-			\frac{z^4 - z^2 + 1}{z^2 - \sqrt{3}z + 1} &=& 0 \\[2em]
-			z^2+\sqrt{3}z+1 &=& 0 \\[2em]
-			\therefore (z^4 - z^2 + 1)&=&0 \equiv \\
+			\frac{z^4 - z^2 + 1}{z^2 - \sqrt{3}z + 1} &=& 0\\[2em]
+		\text{By polynomial division:}\hspace*{5em} 
+		z^2+\sqrt{3}z+1 &=& 0
+		\end{eqnarray}
+		Thus the original equation is equivalent to the following:
+		\begin{eqnarray}
 			(z^2+\sqrt{3}z+1)\cdot(z-cis(\frac{\pi}{6}))\cdot(z-cis(\frac{-\pi}{6})) &=&0
 		\end{eqnarray}
+		Solving for $(z^2+\sqrt{3}z+1)=0$, viz. $(z-z_1)(z-z_1')$:
 		\begin{eqnarray}
 			a &=& 1, b = \sqrt{3}, c = 1 \\[2em]
 			z &=& \frac{-\sqrt{3}\pm\sqrt{3-4}}{2} \\[2em]
 			z &=& \frac{-\sqrt{3}}{2}\pm\frac{i}{2} = cis(\pi\pm \frac{\pi}{6}) \\[2em]
-			z_1 &=& cis(\frac{5\pi}{6}),\\
-			z_1' &=& cis(-\frac{5\pi}{6})
+			z_1 &=& cis(\frac{5\pi}{6}), \hspace*{3em} z_1' = cis(-\frac{5\pi}{6})
 		\end{eqnarray}
+		\blackqed
 		By having $z_0, z_0', z_1,$ and $z_1'$, we can factorize as $(z-z_0)\cdot(z-z_0')\cdot(z-z_1)\cdot(z-z_1')=0$, \\[1em]
-		so $z^4 - z^2 + 1=0$ is equivalent to $(z-cis(\frac{\pi}{6}))\cdot(z-cis(-\frac{\pi}{6}))\cdot(z-cis(\frac{5\pi}{6}))\cdot(z-cis(-\frac{5\pi}{6}))=0$. \\[1em]
-		By 2-20, we know $(z-z_1)(z-z_1') = z^2 - \sqrt{3}z + 1$, \\[1em]
-		and by 2-21 we know $(z-z_0)(z-z_0')=z^2+\sqrt{3}z+1$ \\[1em]
-		so we could express $z^4 - z^2 + 1=0$ the by second degree polynoms as $(z^2 - \sqrt{3}z + 1)(z^2+\sqrt{3}z+1).$
+		so $z^4 - z^2 + 1=0$ is equivalent in complex roots to\\[1em]
+		$(z-cis(\frac{\pi}{6}))\cdot(z-cis(-\frac{\pi}{6}))\cdot(z-cis(\frac{5\pi}{6}))\cdot(z-cis(-\frac{5\pi}{6}))=0$.\qed \\[1em]
+		By the denominator of 2-19 we know $(z-z_0)(z-z_0')=z^2+\sqrt{3}z+1$, \\[1em]
+		so $z^4 - z^2 + 1=0$ expressed with second degree polynoms is $(z^2 - \sqrt{3}z + 1)(z^2+\sqrt{3}z+1).$
 
 	\end{answer}
 
