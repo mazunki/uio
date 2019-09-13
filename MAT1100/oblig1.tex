@@ -156,12 +156,68 @@
 		\end{multicols}
 	\end{answer}
 
-
+	\pagebreak
 	\begin{problem}
-		En følge $\{ a_n \}$ er definert ved $a_1 = 3, a_n + 1 = 3\sqrt{a_n}$ for $n \geq 1$.Vis at $a_n < 9$ og at $a_n+1 > a_n$ for alle $n$. Forklar hvorfor følgen konvergerer og finn $\lim_{n \rightarrow \infty}{a_n}$
+		En følge $\{ a_n \}$ er definert ved $a_1 = 3, a_{n+1} = 3\sqrt{a_n}$ for $n \geq 1$.Vis at $a_n < 9$ og at $a_{n+1} > a_n$ for alle $n$. Forklar hvorfor følgen konvergerer og finn $\lim_{n \rightarrow \infty}{a_n}$
 	\end{problem}
-
 	\begin{answer}
+		\begin{eqnarray}
+		a_1 &:=& 3,\\
+		a_{n+1} &:=& 3\sqrt{a_n}
+		\end{eqnarray}
 
+		To be proven by induction:
+		\begin{eqnarray}
+		P_n &:=& a_n < 9\\
+		Q_n &:=& a_{n+1} > a_n
+		\end{eqnarray}
+
+		Prove for n=1:
+		\begin{eqnarray}
+			a_1 &=& 3 \therefore a_2 = 3\sqrt{3}\\
+			P_1 &:=& a_1  < 9 \equiv 3 < 9 \therefore P_1\\
+			Q_1 &:=& a_2 > a_1 \equiv 3\sqrt{3} > 3 \therefore Q_1
+		\end{eqnarray}
+		
+		Assume $Q_{k}$, and prove $(Q_{k} \implies Q_{k+1})$:
+		\begin{eqnarray}
+			Q_{k} &:=& a_{k+1} > a_k \\
+			Q_{k+1} &:=& a_{k+2} > 3\sqrt{a_k}\\
+			Q_{k+1} &:=& 3\sqrt{a_{k+1}} > 3\sqrt{a_k}\\
+			Q_{k+1} &:=& \sqrt{a_{k+1}} > \sqrt{a_k}\\
+			Q_{k+1} &:=& a_{k+1} > a_k
+		\end{eqnarray}
+		\qed
+
+		Assume $P_{k+1}$, and prove $(P_{k} \implies P_{k+1})$
+		\begin{eqnarray}
+			P_{k} &:=& a_{k} < 9\\
+			P_{k+1} &:=& 3\sqrt{a_k} < 9\\
+			P_{k+1} &:=& \sqrt{a_k} < 3\\
+			P_{k+1} &:=& a_k < 9
+		\end{eqnarray}
+		\qed
+
+		\pagebreak
+		The sequence converges since all values increment as $n$ increments, but is bounded by $9$. We also know by this that the sequence's infinum is 3, as $a_1=3$\qed
+
+		Since the sequence is convergent, we know its limit exsits:
+		\begin{eqnarray}
+			L &=& \lim_{n\rightarrow\infty} a_n\\[1em]
+			L &=& \lim_{n\rightarrow\infty} 3\sqrt{a_{n-1}}
+		\end{eqnarray}
+
+		Since all $a_n > 1$:\\
+		\begin{eqnarray}
+			L &=& 3\sqrt{ \lim_{n\rightarrow\infty} a_{n-1} }
+		\end{eqnarray}
+		By the monotone convergence theorem:
+		\begin{eqnarray}
+			L &=& 3\sqrt{ \lim_{n\rightarrow\infty} a_{n} }\\[1em]
+			L &=& 3\sqrt{L}\\[1em]
+			L^2 &=& 9L\\[1em]
+			L &=& 9
+		\end{eqnarray}
+		Thus we know the supremum of the sequence is $9$.
 	\end{answer}.
 \end{document}
