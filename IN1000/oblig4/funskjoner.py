@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-	This program is made as a solution to activity 1 of the 1st assignment of
+	This program is made as a solution to activity 1 of the 4th assignment of
 	IN1000 at UiO, fall 2019.
 """
 __author__ = "Rolf Vidar Hoksaas"
