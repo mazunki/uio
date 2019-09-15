@@ -18,10 +18,10 @@ def adder(tall1: int, tall2: int) -> int:
 	return tall1 + tall2
 
 
-def letter_in_string(my_iter: str, my_char: str) -> int:
+def tellForekomst(minTekst: str, minBokstav: str) -> int:
 	""" Returns the number of times a character (or entity) appears in a string (or
 	any kind of iterable) """
-	return my_iter.count(my_char)
+	return minTekst.count(minBokstav)
 
 
 
@@ -33,7 +33,7 @@ if __name__ == '__main__':
 	# Acticity 1.2
 	user_str = input("Give me the string you want to check for: ")
 	user_char = input("What letter do you want to check for? ")[0]  # only the first letter
-	print("Found the letter `" + user_char + "` in the provided string", letter_in_string(user_str, user_char), "times.")
+	print("Found the letter `" + user_char + "` in the provided string", tellForekomst(user_str, user_char), "times.")
 
 	# Activity 1.3
 	# Already did this for 1.2 before even reading it.
