@@ -56,3 +56,4 @@ def analyse_text(my_str: str) -> None:
 # print("\n")
 
 analyse_text(input("Give me a sentence!\n"))
+
