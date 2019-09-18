@@ -41,13 +41,18 @@ def analyse_text(my_str: str) -> None:
 		w_letters = count_letters(word)
 		word_dict[word] = [word_dict[word], w_letters]
 
+	print(f"I found {len(word_dict)} words in your sentence.")
+
 	print(f"{'Words':<10}{'Times':>10}{'Letters':>10}\n")
 	for word, values in word_dict.items():
 		print(f"{word:<10}{values[0]:>10}{values[1]:>10}")
 
 
 # sample data
-print(count_letters("hellow or!!!!d", only_words=False))
-print(count_letters("hellowor!!!!d", only_words=True))  # disallows newlines and spaces
-print(count_words("hello world I love you world"))
-analyse_text("I love you very, very much!!")
+# print(count_letters("hellow or!!!!d", only_words=False))
+# print(count_letters("hellowor!!!!d", only_words=True))  # disallows newlines and spaces
+# print(count_words("hello world I love you world"))
+# analyse_text("I love you very, very much!!")
+# print("\n")
+
+analyse_text(input("Give me a sentence!\n"))
