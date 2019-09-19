@@ -5,7 +5,41 @@
 \begin{document}
 
 	\begin{problem}
-		Identify a couple of values in this scenario. Can you imagine values that are more important to a student than a teacher, and vice versa? Explain briefly, with examples. Also, name a couple of likely threat actors.
+		A high school are going to start using a new digital platform for learning (LMS, Learning managementsystem). The learning platform will run on servers stored in aserverroom in the school, where all the datain the system also are being stored. The computer system will be available through the internet as both a web application (web page) and a mobile application. Data (information) which are being stored and processed in the system includes:%%wcignore
+		\begin{itemize}%%wcignore
+			\item Information about the pupils: Full name, class, name of parents, adress, cell phone numer, date ofbirth.%%wcignore
+			\item Information about the teachers: Full name, classes, address, cell phone number.%%wcignore
+			\item Digital assignments from the pupils: The pupils submit digital school work (e.g. documents, recordings of audio or video) in this system.%%wcignore
+			\item Teacher feedback on the submissions, including grades.%%wcignore
+			\item Interim evaluation and overall achievement grades.%%wcignore
+		\end{itemize}
+		Your task is to make an overall evaluation of various information security issues, which the schoolmanagement must then consider and possibly deal with before the computer system can be used. All tasksshould be solved based on the scenario given above.
+	\end{problem}
+
+	\begin{problem}
+		Identify a couple of values in this scenario. Can you imagine values that are more important to a student than a teacher, and vice versa? Explain briefly, with examples. Also, name a couple of likely threat actors.%%wcignore
+	\end{problem}
+
+	\begin{answer}
+		Values in this scenario are mostly the privacy of the teachers and pupils: their personal information must remain confidential unless required. For a student it is also important that grades are kept confidential, while a teacher cares about solutions not being leaked. Furthermore, threat actors regarding all these are potential leaks from external actors or students wishing to change their grades. % TODO: Explain that solutions are in the system
+	\end{answer}
+
+	\begin{problem}
+		CIT-services (confidentiality, integrity and accessibility) are essential features of information security. For each of them, consider the importance as well as things that may go wrong. That is, what may represent a threat or danger to each security objective.%%wcignore
+	\end{problem}
+
+	\begin{answer}
+		As mentioned above, confidentiality is an important aspect of a LMS. I consider this to be the most important both for students and for teachers in comparison two the other elements of the triangle of security. Having said that, integrity and accesibility are also important.
+
+		Integrity of submissions is relevant, as quality of grading depends on this (while authenticity is vital in order to give the correct score to the correct person).
+		
+		Accessibility is, from my point of view, the least important aspect of security, although not irrelevant. Not having access to your grades or your students' submissions your account can lead to issues, but these are more easily fixed in hindsight. 
+	\end{answer}
+
+	\begin{problem}
+		Give two general security controls that in this case can help to achieve%%wcignore
+			a) Confidentiality%%wcignore
+			b) Integrity%%wcignore
 	\end{problem}
 
 	\begin{answer}
@@ -13,17 +47,7 @@
 	\end{answer}
 
 	\begin{problem}
-		CIT-services (confidentiality, integrity and accessibility) are essential features of information security. For each of them, consider the importance as well asthings that may go wrong. That is, what may represent a threat or danger to each security objective.
-	\end{problem}
-
-	\begin{answer}
-		
-	\end{answer}
-
-	\begin{problem}
-		Give two general security controls that in this case can help to achieve
-			a) Confidentiality
-			b) Integrity
+		Explain the role of accountability and authentication. Would you recommend prioritizing these security goals (security services/properties) in our case? Justify your answer.%%wcignore
 	\end{problem}
 
 	\begin{answer}
@@ -31,7 +55,11 @@
 	\end{answer}
 
 	\begin{problem}
-		Explain the role of accountability and authentication. Would you recommend prioritizing these security goals (security services/properties) in our case? Justify your answer.
+		The school Skolen has an overall authorization policy which includes the following:%%wcignore
+			Pupils shall have access to view/read personal information about themselves, and only themselves.%%wcignore
+			Teachers shall have access to read/view personal informationabout all pupils they teach in atleast one subject.%%wcignore
+			Employees in the school administration shall have access toboth view/read and change allpersonal information about both teachers and pupils.%%wcignore
+		This policy applies regardless of how the information is requested, e.g. orally to the administration atthe school, or directly in one of the computer systems the school uses to store and process this type ofpersonal information. This means that the new digital learning environment must also enforce these policies. Briefly explain the overall mechanisms/functions that must be in place in the computer system for this to be implemented.%%wcignore
 	\end{problem}
 
 	\begin{answer}
@@ -39,11 +67,7 @@
 	\end{answer}
 
 	\begin{problem}
-		The school Skolen has an overall authorization policy which includes the following:
-			Pupils shall have access to view/read personal information about themselves, and only themselves.
-			Teachers shall have access to read/view personal informationabout all pupils they teach in atleast one subject.
-			Employees in the school administration shall have access toboth view/read and change allpersonal information about both teachers and pupils.
-		This policy applies regardless of how the information is requested, e.g. orally to the administration atthe school, or directly in one of the computer systems the school uses to store and process this type ofpersonal information. This means that the new digital learning environment must also enforce these policies. Briefly explain the overall mechanisms/functions that must be in place in the computer system for this to be implemented.
+		The school management also consider using a module in the system where pupils or their parentscan report absence and the reason for absence, and where teachers can register a pupil’s absence. Does the school have to pay special attention before they can use this modul? Justify your answer.%%wcignore
 	\end{problem}
 
 	\begin{answer}
@@ -51,7 +75,7 @@
 	\end{answer}
 
 	\begin{problem}
-		The school management also consider using a module in the system where pupils or their parentscan report absence and the reason for absence, and where teachers can register a pupil’s absence. Does the school have to pay special attention before they can use this modul? Justify your answer.
+		Student Network: The school’s wireless network (WiFi) har been set up without a "password" for encryption. Why is this a bad idea? Does turning on "encryption" in the wireless network affectwhether it is safe to allow students and teachers to share a wireless network? Explain briefly.%%wcignore
 	\end{problem}
 
 	\begin{answer}
@@ -59,15 +83,7 @@
 	\end{answer}
 
 	\begin{problem}
-		Student Network: The school’s wireless network (WiFi) har been set up without a "password" for encryption. Why is this a bad idea? Does turning on "encryption" in the wireless network affectwhether it is safe to allow students and teachers to share a wireless network? Explain briefly.
-	\end{problem}
-
-	\begin{answer}
-
-	\end{answer}
-
-	\begin{problem}
-		Think like a ``hacker'': As a student, you will try to change a grade in the system. Give an example ofhow you would do this! (PS. No exact answer :-))
+		Think like a ``hacker'': As a student, you will try to change a grade in the system. Give an example ofhow you would do this! (PS. No exact answer :-))%%wcignore
 	\end{problem}
 
 	\begin{answer}
