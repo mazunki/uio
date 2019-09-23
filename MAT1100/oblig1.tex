@@ -76,7 +76,7 @@
 		\end{eqnarray}
 		\text{With $t = z^2$}:\\
 		\begin{eqnarray}
-			&z^4 - z^2 + 1 = t^2-t^2+1 = 0\\
+			&z^4 - z^2 + 1 = t^2-t+1 = 0\\
 			&t = {\frac{1}{2}\pm\frac{\sqrt{3}}{2}i}\\
 		\end{eqnarray}
 		\text{With $t_0 = \frac{1}{2}+\frac{\sqrt{3}}{2}i = cis(\frac{\pi}{3})$:}\\
@@ -210,12 +210,14 @@
 		Assume $Q_{k}$, and prove $(Q_{k} \implies Q_{k+1})$:
 		\begin{eqnarray}
 			Q_{k} &:=& a_{k+1} > a_k \\
+			Q_{k+1} &:=& a_{k+2} > a_{k+1}\\
 			Q_{k+1} &:=& a_{k+2} > 3\sqrt{a_k}\\
 			Q_{k+1} &:=& 3\sqrt{a_{k+1}} > 3\sqrt{a_k}\\
 			Q_{k+1} &:=& \sqrt{a_{k+1}} > \sqrt{a_k}\\
 			Q_{k+1} &:=& a_{k+1} > a_k
 		\end{eqnarray}
-		\qed
+
+		\blackqed
 
 		Assume $P_{k+1}$, and prove $(P_{k} \implies P_{k+1})$
 		\begin{eqnarray}
@@ -224,10 +226,13 @@
 			P_{k+1} &:=& \sqrt{a_k} < 3\\
 			P_{k+1} &:=& a_k < 9
 		\end{eqnarray}
+		\blackqed
+
+		Thus, $P_{n}, Q_{n}$ are both true.
 		\qed
 
 		\pagebreak
-		The sequence converges since all values increment as $n$ increments, but is bounded by $9$. We also know by this that the sequence's infinum is 3, as $a_1=3$\qed
+		The sequence converges since all values increment as $n$ increments, but is bounded by $9$. We also know by this that the sequence's infimum is 3, as $a_1=3$ and the sequence is monotone.\qed
 
 		Since the sequence is convergent, we know its limit exsits:
 		\begin{eqnarray}
@@ -239,13 +244,19 @@
 		\begin{eqnarray}
 			L &=& 3\cdot\sqrt{ \lim_{n\rightarrow\infty} a_{n-1} }
 		\end{eqnarray}
+
 		By the monotone convergence theorem:
 		\begin{eqnarray}
 			L &=& 3\cdot\sqrt{ \lim_{n\rightarrow\infty} a_{n} }\\[1em]
 			L &=& 3\cdot\sqrt{L}\\[1em]
-			L^2 &=& 9L\\[1em]
-			L &=& 9
+			L^2 &=& 9L
 		\end{eqnarray}
+
+		Since limit of $a_{n}$ must be in the sequence, and $L=0$ is outside the boundaries of the sequence, we can simply ignore it.
+		\begin{eqnarray}
+			L = 9
+		\end{eqnarray}
+
 		Thus we know the supremum of the sequence is $9$.
 	\end{answer}.
 \end{document}
