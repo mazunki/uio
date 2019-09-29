@@ -9,35 +9,54 @@ __author__ = "Rolf Vidar Hoksaas"
 __email__ = "rolferen@gmail.com"
 __date__ = "19th September 2019"
 
+import time
+STACK = 1e4+2
 FIB_FILE = "fibonacci.txt"
 fib_list = list()
 
-def update_fiblist(in_:str=FIB_FILE, out_:list=fib_list) -> None:
+def update_fiblist(in_:str=FIB_FILE) -> None:
 	"""
 		Reads values from a file and stores it in the list.
 	"""
+	global fib_list
 
 	try:
 		with open(in_, "r") as f:
-			fib_list = [int(f) for f in f.read().split()]
-	except FileNotFoundError:
-		return False	
+			fib_list = [int(f) for f in f.read().strip().split()]
+		
+		print("Current number of Fibonacci numbers:", len(fib_list))
+		if len(fib_list) < 3:
+			fib_list = [0, 0, 0, 1]
+		else:
+			fib_list = fib_list[-2:]
 
-def save_fiblist(in_:list=fib_list, out_:str=FIB_FILE) -> None:
+	except FileNotFoundError:
+		fib_list = [0, 0, 0, 1]
+
+	# print("Current state of F:", fib_list)
+
+def save_fiblist(in_:list, out_:str=FIB_FILE, end=False) -> None:
 	"""
 		Reads values from list, and stores them in file.
 	"""
-	with open(out_, "w+") as f:
-		f.write("\n".join([str(f) for f in fib_list]))
+	global fib_list
 
-def get_fib(F:list=fib_list) -> int:
+	with open(out_, "a") as f:
+		f.write("\n".join([str(f) for f in in_[2:]]))
+		if not end:
+			f.write("\n")
+
+	
+	#print(in_)
+	print(f"Added {len(in_[2:])} Fibonacci numbers.")
+	
+	fib_list = in_[-2:]
+
+def get_fib(F:list) -> int:
 	"""
 		Returns the next Fibonacci sequence for the given sequence.
 	"""
-	if len(F) >= 2:
-		return F[-1]+F[-2]
-	else:
-		return 1
+	return F[-1]+F[-2]
 
 if __name__ == '__main__':
 	print("Reading...")
@@ -45,9 +64,17 @@ if __name__ == '__main__':
 	print("Calculating!")
 	try:
 		while True:
-			fib_list.append(get_fib())
-			#print(fib_list[-1])
+			if len(fib_list) >= STACK:
+				save_fiblist(fib_list)
+				#print("Saved!")
+				# time.sleep(0.3)  # let's not break anyone's computer... for now
+			else:
+				fib_list.append(get_fib(fib_list))
 
 	except KeyboardInterrupt:
-		save_fiblist()
+		save_fiblist(fib_list, end=True)
 		print("Saved!")
+		print("Currently got", sum(1 for _ in open(FIB_FILE)), "numbers.")
+		f = open(FIB_FILE)
+		print(f.size())
+		f.close()
