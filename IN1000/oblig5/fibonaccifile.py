@@ -48,7 +48,7 @@ def save_fiblist(in_:list, out_:str=FIB_FILE, end=False) -> None:
 
 	
 	#print(in_)
-	print(f"Added {len(in_[2:])} Fibonacci numbers.")
+	print(f"Saved {len(in_[2:])} Fibonacci numbers.")
 	
 	fib_list = in_[-2:]
 
@@ -73,5 +73,5 @@ if __name__ == '__main__':
 
 	except KeyboardInterrupt:
 		save_fiblist(fib_list, end=True)
-		print("Saved!")
+		print("Done!")
 		print("Currently got", sum(1 for _ in open(FIB_FILE)), "numbers.")
