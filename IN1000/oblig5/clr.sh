@@ -1,0 +1,1 @@
+rm fibonacci.txt
