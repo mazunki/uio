@@ -75,7 +75,7 @@ if __name__ == '__main__':
 			if len(fib_list) >= STACK:
 				save_fiblist(fib_list)
 				#print("Saved!")
-				# time.sleep(0.3)  # let's not break anyone's computer... for now
+				time.sleep(0.3)  # let's not break anyone's computer... for now
 			else:
 				fib_list.append(get_fib(fib_list))
 
