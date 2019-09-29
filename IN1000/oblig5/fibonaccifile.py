@@ -10,7 +10,7 @@ __email__ = "rolferen@gmail.com"
 __date__ = "19th September 2019"
 
 import time
-STACK = 1e4+2
+STACK = 1e3+2
 FIB_FILE = "fibonacci.txt"
 fib_list = list()
 
