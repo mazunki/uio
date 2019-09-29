@@ -1,0 +1,16 @@
+Kommenter på følgende spørsmål i kommentarfeltet i Devilry. 
+Spørsmålene skal besvares.
+a.Hvordan synes du innleveringen var? Hva var enkelt og hva var vanskelig?
+b.Hvor lang tid (ca) brukte du på innleveringen?
+
+Var det noen oppgaver du ikke fikk til? Hvis ja:
+	i.Hvilke(n) oppgave er det som ikke fungerer i innleveringen?
+	ii.Hvorfor tror du at oppgaven ikke fungerer?
+	iii.Hva ville du gjort for å få oppgaven til å fungere hvis du hadde mertid?
+	iv.Hva vil du ha tilbakemelding på
+
+
+a) Brukte litt tid på å lage Fibonacci-programmet. Har satt opp en egen PS1 på terminalen min, som da inkluderer `git status`. Tok meg litt tid til å oppdage at drøye 200MiB ble overført hver gang jegklikket <Enter>. :))))
+`git rm` fikset det problemet. Litt overasket over hvor mye plass Fibonacci-tall egentlig tar. Burde kanskje valgt å bruke C for slike oppgaver neste gang... men litt optimisering hjelper jo. Å starte programmet med å lese hele filen til minne, og dermed lagre tallene i ei liste... vel. Tok det tok sin tid. Jeg ville helst brukt `wc -l` i Bash for å telle linjene, men det er vel ikke veldig "Pythonic", er det vel? Da kunne jeg spart meg for å laste hele filen... 
+
+b) Brukte vel rundt en time på de første oppgavene, og en time til på den egen-lagde.
