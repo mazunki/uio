@@ -75,6 +75,3 @@ if __name__ == '__main__':
 		save_fiblist(fib_list, end=True)
 		print("Saved!")
 		print("Currently got", sum(1 for _ in open(FIB_FILE)), "numbers.")
-		f = open(FIB_FILE)
-		print(f.size())
-		f.close()
