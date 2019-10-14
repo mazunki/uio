@@ -1,0 +1,34 @@
+"""
+	This file is the solution to activity 3 of the
+	6th assignment of IN1000 at UiO, fall 2019.
+"""
+
+Gi korte svar på spørsmålene under:
+
+	1.Hva er innkapsling? Hvorfor er det nyttig?
+		Innkapsling er et konsept innenfor objekt-programering som lar brukere (ikke bare menneskelige) manipulere data
+		paa en sikker maate. Det vil si at det som er inne i boksen vil bare la seg endre om det er riktig at det skal
+		bli endret, og vi har bare tilgang til aa se det som vi skal kunne se. Det legger paa et ekstra lag med abstraksjon,
+		noe som forenkler en del av programmeringen. I tillegg har vi objekter vi kan forholde oss paa uten aa tenkte paa
+		hvordan de er satt sammen i klasse-definisjonen.
+
+	2.Hva er grensesnittet til en klasse? Hvordan skiller det seg fra implementasjonen av en klasse?
+		Grensesnitten(e) til en klasse er alt brukeren har tilgang til av et objekt. Det vil si funskjonene de kan kjoere,
+		og variablene de kan lese/endre. 
+		Implementasjonen av en klasse er selve definisjonen, og er ofte den vanskeligste delen av programmeringen. Det
+		er dette som setter sammen og holder orden paa relasjonen mellom variabler, holder servere i live, og kalkulerer
+		diverse faktorer.
+
+		Grensesnittene er stort sett bruker-vennlige. Det trenger ikke implementasjonen noedvendigvis aa vaere.
+
+
+	3.Hva er en instansmetode, og hvordan skiller dette seg fra prosedyrene/funksjonene vi har møtt hittil?
+		De fleste funskjoner som er definert under klasser er instansmetoder, og naar de blir kalt leggest instansen de
+		hoerer til som et ekstra argument i funskjonen. 
+
+		Dvs. at hvis du kjoerer `bike.skrivUt()` kjoerer du egentlig `MC.skrivUt(bike)`*. Detter er nyttig siden vi ofte
+		er interessert i variablene til kun ett objekt, og ikke til andre. Aa separere dette lettvintgjoer en del av 
+		programmeringen. 
+
+		*: Nesten. Om man kjoerer en classfunskjon, som `MC.skrivUt(*args)` blir, kjoerer vi egentlig `skrivUt(MC)` som blir
+		definert i headeren av programmet; som ikke er helt det samme.

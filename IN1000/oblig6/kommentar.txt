@@ -1,0 +1,13 @@
+a) Hvordan synes du innleveringen var? Hva var enkelt og hva var vanskelig?
+b) Hvor lang tid (ca) brukte du på innleveringen?
+
+Var det noen oppgaver du ikke fikk til? Hvis ja:
+	i.		Hvilke(n) oppgave er det som ikke fungerer i innleveringen?
+	ii.		Hvorfor tror du at oppgaven ikke fungerer?
+	iii.	Hva ville du gjort for å få oppgaven til å fungere hvis du hadde mer tid?
+	iv.		Hva vil du ha tilbakemelding på?
+
+a) Jeg synes oppgavene var enkle. Rekursjon er alltid "vanskelig".
+b) Jeg brukte et par timer.
+
+iv) Hvorfor bruker vi camelCase, getters, og norske variabler? camelCase og getters er ikke en del av Python-standarene. PEP-8 sier eksplisitt at engelske variabler og kommentarer boer brukes. Lowercase snake_case er anbefalt (bortifra programmer som trenger bakoverkompatibiliet), og capital Snake_Case for klasser. Foeler selv at det er feil at vi skal bli vant til at det er ok aa programmere paa norsk, siden resten av verden krever aa forstaa det man skriver. Aa folge standarer som er vel-brukte og vel-definerte er jo viktig ogsaa.
