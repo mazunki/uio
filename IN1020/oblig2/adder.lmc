@@ -1,0 +1,60 @@
+		INP // ask user how many numbers
+		STA n // store it in slot n, defined below
+
+loopsum INP  // new number to add
+		ADD m  // add old number to current
+		STA m  // store new number
+
+		LDA n  // get number of sums left
+		SUB one  // minus one
+		STA n  // and save
+
+		BRZ endsum  // if done, skip
+		BRA loopsum  // else, repeat
+
+endsum 	LDA m  // get total sum
+		OUT  // print it 
+
+pairchk	SUB two  // remove two from number
+		BRZ even  // if zero, it is pair
+		BRP pairchk  // if still positive, repeat
+		BRA odd // if -1, it must be odd
+
+even 	LDA nl // get value of newline
+		OTC  // print it as character
+		LDA p  // get value of p
+		OTC  // print a p
+		LDA a  // get value of a
+		OTC // print an a
+		LDA r  // get value of r
+		OTC  // print an r
+		BRA end  // done
+
+odd		LDA nl // get value of newline
+		OTC  // print it
+		LDA o  // get value of o
+		OTC  // print it
+		LDA d  // get value of d
+		OTC  // print it
+		OTC  // print it again
+		LDA e // get value of d
+		OTC  // print it
+		BRA end  // done
+
+
+end 	HLT  // quit program
+
+one		DAT 1  // define one as 1
+two 	DAT 2  // define two as 2
+
+m		DAT 0 // set start sum to zero
+n 		DAT  // allocate a slot for the iteration number
+
+
+nl 		DAT 10 // ascii values
+o 		DAT 111  
+d 		DAT 100
+e 		DAT 101
+p		DAT 112
+a 		DAT 97
+r 		DAT 114
