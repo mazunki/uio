@@ -28,14 +28,16 @@
 \usepackage[colorlinks]{hyperref}
 % citing stuff
 \usepackage[
-    style=apa
+    style=authoryear-icomp,
+    natbib
 ]{biblatex}
 \hypersetup{
     allcolors=[RGB]{150,80,130}
 }
-\addbibresource{mybib.bib}
+\addbibresource{argumentative_singer.bib}
 \setlength\bibitemsep{1.75\itemsep}
 \setlength\bibinitsep{1.75\itemsep}
+
 % custom paragraph sizes
 \setlength\parskip{1.75ex}
 
@@ -176,7 +178,7 @@
 {%
 \color{gray!90}\hfill\begin{Huge}\\
 \hspace*{\fill}”\end{Huge}
-\vspace*{2\baselineskip}
+\vspace*{0.25\baselineskip}
 }
 
 \newenvironment{answer}%
