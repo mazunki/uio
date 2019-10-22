@@ -25,7 +25,7 @@ class Spilleliste:
 			song = Sang(title, artist)
 			self._sanger.append(song)
 
-	def leggTilSang(self, nySang):
+	def leggTilSang(self, nySang: Sang):
 		self._sanger.append(nySang)
 
 	def fjernSang(self, sang):
@@ -41,7 +41,7 @@ class Spilleliste:
 
 	def finnSang(self, tittel):
 		for song in self._sanger:
-			if song._tittel == tittel:
+			if song.sjekkTittel(tittel):
 				return song
 		else:
 			return None
@@ -49,7 +49,7 @@ class Spilleliste:
 	def hentArtistUtvalg(self, artistnavn):
 		s = []
 		for song in self._sanger:
-			if artistnavn in song._artist:
+			if song.sjekkArtist(artistnavn):
 				s.append(song)
 		return s
 

@@ -19,7 +19,7 @@ class Sang:
 		print(self)
 
 	def sjekkArtist(self, navn: str):
-		return navn.lower() == self._artist.lower()
+		return ([1 for subname in navn.lower().split() if subname in self._artist.lower().split()] or [0])!=[0]
 
 	def sjekkTittel(self, tittel: str):
 		return tittel.lower() == self._tittel.lower()
@@ -29,3 +29,8 @@ class Sang:
 
 	def __str__(self):
 		return f"Spiller {self._tittel} fra {self._artist}"
+
+if __name__ == "__main__":
+    armenmin = Sang(tittel="ponies are fun", artist="armin kamangari")
+    a = armenmin.sjekkArtist("armain er armin arminkul")
+    print(a)

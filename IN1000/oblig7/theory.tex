@@ -1,0 +1,31 @@
+\documentclass{myassignment} 
+\usepackage[top=1cm]{geometry}
+\courselabel{IN1000}
+\exercisesheet{Assignment 7}{Spillelister og sanger}
+
+\usepackage{graphicx}
+
+\begin{document}
+	\begin{problem}
+		Lag en tegning, gjerne på papir, av datastrukturen i slik den ser ut etter at en spilleliste er lest inn fra filen musikk.txt. Du trenger ikke tegne mer enn to Sang-objekter. Bruk notasjonen fra forelesningene, med variabler som bokser, objekter som sirkler eller bokser med runde hjørner,og referanser som pilerfra en variabel til et objekt. Du kan tegne strenger som innhold i enkle variabler (selv om de egentlig er objekter), mens en liste tegnes som et objekt som refereres tilfra en listevariabel.
+	\end{problem}\\
+	\begin{answer}
+		\includegraphics[width=\textwidth]{classstructure.pdf}
+	\end{answer}
+
+	\begin{problem}
+		I klassen Spilleliste er det en instansvariabel som lagrer alle sangene i en liste. Nevn minst en, helst to årsaker til at en ordbok ikke egner seg like godt i dette tilfellet.
+	\end{problem}\\
+	\begin{answer}
+		Alle objekter har sine egne implementasjoner, og inneholder informasjon som kan endres over tid. Hvis vi lagrer en kopi av denne informasjonen i en ordbok vil vi miste muligheten til å oppdage disse endringene etterhvert, og vi vil heller ikke kunne endre på den originale informasjonen om vi måtte gjøre det. 
+
+		To forskjellige sanger kan ha samme artist eller samme tittel, så det finnes ingen logisk måte å generere denne ordboken uten å måtte generere unike IDer i tillegg. Hvis vi først gjør det, blir det mer komplisert å søke etter informasjon i ordboken. I værste fall kunne vi ha definert objektene som subclasses av en ordbok, hvis vi ønsket å bruke unike IDer som keys... men det er ikke nødvendig for denne oppgaven.
+	\end{answer}
+
+	\begin{problem}
+		Klassen Spilleliste kunne hatt filnavn som parameter til konstruktøren, og lest inn spillelisten fra fil ved opprettelsen av et nytt Spilleliste-objekt. Ser du nøn fordel ved ikke å gjøre dette i konstruktøren?
+	\end{problem}\\
+	\begin{answer}
+		Å ha en påtvunget parameter som filnavn ville skape problemer om vi ønsket å skape en tom Spilleliste for å så fylle den senere. Jeg ser ingen grunn til at vi ikke skulle ha mulighet til å gjøre dette, med å sette en default verdi som \texttt{None}, og sjekke om \texttt{\_\_init\_\_} faktisk er blitt kjørt med en ekte value. Om tilfelle, kan vi kjøre \texttt{self.lesFraFil} med samme verdi som konstruktøren.
+	\end{answer}
+\end{document}
