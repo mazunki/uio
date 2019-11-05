@@ -3,16 +3,17 @@ import random
 
 
 class Board(list):
-	def __init__(self, x_size, y_size, generator="random"):
-		
+	def __init__(self, x_size, y_size, generator="random", fg=None):
 
 		self.rows = list()
-		for i in range(x_size):
+		for i in range(y_size):
 			cells = Row()
-			for j in range(y_size):
-				new_cell = Cell(x=i, y=j, parent=self, alive=self.cell_generator(generator,i,j))
+			for j in range(x_size):
+				new_cell = Cell(x=i, y=j, parent=self, alive=self.cell_generator(generator,i,j,fg))  # appending coordinates to calculate with generator
 				cells.append(new_cell)
 			self.rows.append(cells)
+		
+		# we want to be able to access the rows of the board as if it were the main target of the object
 		super().__init__(self.rows)
 		
 		self.all_cells = [cell for row in self.rows for cell in row]
@@ -45,19 +46,31 @@ class Board(list):
 				cell.prolong_life()
 
 	@staticmethod
-	def cell_generator(method,x=0,y=0):
+	def cell_generator(method,x=0,y=0,fg=None):
 		if method=="random":
 			return random.choice([True, False, False])
-		elif method==True:
+		elif method=="fill":
 			return True
-		elif method == "manual":
-			return 0
 		elif method == "custom":
-			return True
+			try:
+				if fg[x][y].lower()=="o":
+					return True
+				elif fg[x][y].lower()=="x":
+					return False
+				else:
+					return False   # empty commas
+			except IndexError:
+				return False  # False for lines that are out of defined range
 		elif method == "chess":
 			return bool((x+y)%2)
 		else:
 			return False
+
+	def still_running(self):
+		for cell in self.all_cells:
+			if cell.old_state != cell.alive:
+				return True
+		#return False
 
 	def __str__(self):
 		return "\n".join([str(row) for row in self]) + "\n"

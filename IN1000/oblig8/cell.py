@@ -28,18 +28,22 @@ class Row(list):
 class Cell:
 	def __init__(self, x, y, parent, alive=True):
 		self.alive = alive
+		self.old_state = None
 		self.x, self.y = x, y
 		self.parent = parent
 		self.age = 0
 
 	def kill(self):
+		self.old_state = self.alive
 		self.alive = False
 		self.age = 0
 
 	def revive(self):
+		self.old_state = self.alive
 		self.alive = True
 
 	def prolong_life(self):
+		self.old_state = self.alive
 		self.age += 1
 
 	def find_life(self):

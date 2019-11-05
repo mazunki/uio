@@ -1,0 +1,3 @@
+o,o,o,x
+x,o,x,o
+o,o,o
