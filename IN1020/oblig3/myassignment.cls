@@ -1,0 +1,1 @@
+../oblig1/myassignment.cls

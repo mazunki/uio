@@ -18,7 +18,7 @@
 
 \LoadClass[10pt,a4paper]{article}
 % haha im lazy
-\usepackage[margin=1in]{geometry}
+\usepackage[top=1.2cm]{geometry}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage[utf8]{inputenc}
