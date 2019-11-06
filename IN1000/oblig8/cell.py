@@ -78,7 +78,7 @@ class Cell:
 		return sum(1 for n_cell in self.neighbours if n_cell.alive)  # creates a list with alive number of 1 elements, and return the sum of these
 
 	def __str__(self):
-		return Color.str_d(self.age, u"\u2a00") if self.alive else Color.str("white", u"\u00b7")  # Circled Dot Operator or \cdot
+		return Color.str_d(self.age+1, u"\u2a00") if self.alive else Color.str("white", u"\u00b7")  # Circled Dot Operator or \cdot
 
 	def __repr__(self):
 		vitality = "T" if self.alive==True else "F" if self.alive==False else self.alive
