@@ -1,3 +1,25 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+	This program is made as part of the solution to activity 1 of the 8th assignment of
+	IN1000 at UiO, fall 2019.
+
+	Defines a board to be used as a Game of Life.
+
+	Includes two printing functions of the board, one which is beauitful, and one that gives
+	useful data about each cell.\
+
+	Also includes a cell_generator function, which is used to initialise different setups. 
+
+	Can detect whether the board has changed or not with still_running(), useful for stopping
+	the program when dead.
+"""
+__author__ = "Rolf Vidar Hoksaas"
+__email__ = "rolferen@gmail.com"
+__date__ = "6th November 2019"
+
+
 from cell import * 
 import random
 
@@ -27,6 +49,7 @@ class Board(list):
 		to_revive = list()
 		to_kill = list()
 
+		# game of life rules
 		for cell in self.all_cells:
 			if cell.alive:
 				if cell.find_life() < 2:
@@ -37,6 +60,7 @@ class Board(list):
 				if cell.find_life() == 3:
 					to_revive.append(cell)
 
+		# running patterns at once to avoid repercusion of previous cells to affect other cells
 		for cell in to_revive:
 			cell.revive()
 		for cell in to_kill:
@@ -58,9 +82,10 @@ class Board(list):
 				elif fg[x][y].lower()=="x":
 					return False
 				else:
-					return False   # empty commas
+					return False   # empty/wrong commas
 			except IndexError:
 				return False  # False for lines that are out of defined range
+			
 		elif method == "chess":
 			return bool((x+y)%2)
 		else:
@@ -70,7 +95,6 @@ class Board(list):
 		for cell in self.all_cells:
 			if cell.old_state != cell.alive:
 				return True
-		#return False
 
 	def __str__(self):
 		return "\n".join([str(row) for row in self]) + "\n"

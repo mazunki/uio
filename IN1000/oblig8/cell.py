@@ -1,3 +1,31 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+	This program is made as part of the solution to activity 1 of the 8th assignment of
+	IN1000 at UiO, fall 2019.
+
+	Defines a Cell, a Row of cells, and a prettyprinter for cells, depending on their age.
+
+	A cell is not a living organism, but rather a tile on the board.
+	
+	This tile is either alive or dead, depending on the given moment. Once revived, age is zero,
+	while each generation will prolong its life (useful for keeping track of stubborn tiles).
+
+	Running a `for item in Cell` loop on an item will go through all of this cell's neighbours. This
+	might seem like unpredicted behaviour, but as a cell is an atomic unit in this game, this should
+	probably not be an issue anyway.
+
+	The colour function works using ANSI-colours in Bash. The order of colours in ANSI is not intuitive, 
+	so colours will appear to change randomly, but converting RGB into ANSI doesn't seem straightforward,
+	without hardcoding all colours. I've used the core idea of this function in another program earlier, although
+	it's expanded for this program's needs.
+
+	Defining Row as its own class facilitates printing the board.
+"""
+__author__ = "Rolf Vidar Hoksaas"
+__email__ = "rolferen@gmail.com"
+__date__ = "6th November 2019"
 
 class Color:
 	colours = {
@@ -47,10 +75,10 @@ class Cell:
 		self.age += 1
 
 	def find_life(self):
-		return sum(1 for n_cell in self.neighbours if n_cell.alive)
+		return sum(1 for n_cell in self.neighbours if n_cell.alive)  # creates a list with alive number of 1 elements, and return the sum of these
 
 	def __str__(self):
-		return Color.str("white", u"\u2a00") if self.alive else Color.str("white", u"\u00b7")  # Circled Dot Operator or \cdot
+		return Color.str_d(self.age, u"\u2a00") if self.alive else Color.str("white", u"\u00b7")  # Circled Dot Operator or \cdot
 
 	def __repr__(self):
 		vitality = "T" if self.alive==True else "F" if self.alive==False else self.alive
@@ -72,3 +100,4 @@ class Cell:
 		self.neighbours = list()
 		for n_cell in self:
 			self.neighbours.append(n_cell)
+		return self.neighbours
