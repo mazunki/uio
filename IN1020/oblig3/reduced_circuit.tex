@@ -21,9 +21,9 @@
 		\node[nor gate US, draw] at ($(f1)!0.5!(f2) + (2,0)$) (f3) {F3};
 
 		\draw (f2.output) -- ([xshift=5]f2.output) |- (f3.input 2);
-		\draw (f2.output) -- ([xshift=1cm]f2.output) node[below]{$\bar{A}\land{B}$};
+		\draw (f2.output) -- ([xshift=2cm]f2.output) node[below, midway]{$\bar{A}\land{B}$};
 		\draw (f1.output) -- ([xshift=5]f1.output) |- (f3.input 1);
-		\draw (f1.output) -- ([xshift=1cm]f1.output) node[above]{${A}\land\bar{B}$};
+		\draw (f1.output) -- ([xshift=2cm]f1.output) node[above, midway]{${A}\land\bar{B}$};
 		\draw (f3.output) -- ([xshift=2cm]f3.output) node[above=3mm, right=-2cm] {$\bar{(A\land\bar{B})\lor(\bar{A}\land{B})}$};
 	\end{tikzpicture}
 \end{document}
