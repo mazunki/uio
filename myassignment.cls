@@ -21,6 +21,8 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath}
 \usepackage{amsthm}
+
+\usepackage[T1]{fontenc} % unicode symbols
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{todonotes}
