@@ -1,12 +1,13 @@
 public class Node {
 	private int memorySize; // in GiB
 	private int numCPU;
-	private int positionInRack; // index
+	private int positionInRack = -1; // index
 
-	boolean verbose = true;
+	static boolean verbose = false;
 
 	public static void main(String[] args) {
 		// Testing bench for Node class
+		verbose = true;
 
 		// Sample 1, works
 		try {
@@ -48,6 +49,9 @@ public class Node {
 	public int getMemorySize(){
 		return this.memorySize;
 	}
+	public boolean hasAtLeastMemory(int minGB){
+		return (this.memorySize >= minGB);
+	}
 
 	public void setMemorySize(int newSize){
 		this.memorySize = newSize;
@@ -64,7 +68,7 @@ public class Node {
 	}
 
 	public void logger() {
-		String log = String.format("<New Node created, with %d CPU units, and %d of memory size.>", this.numCPU, this.memorySize);
+		String log = String.format("<Node, with %d CPU units, and %d of memory size.>", this.numCPU, this.memorySize);
 		System.out.println(log);
 	}
 
