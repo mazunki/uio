@@ -2,6 +2,7 @@ public class Node {
 	private int memorySize; // in GiB
 	private int numCPU;
 	private int positionInRack; // index
+	private int maxNodes = 2;
 
 	boolean verbose = true;
 
@@ -24,7 +25,7 @@ public class Node {
 
 		// Sample 3, logs an Exception
 		try {
-			Node sampleNode = new Node(64, 3);
+			Node sampleNode3 = new Node(64, 3);
 		} catch (ExceptionInInitializerError err) {
 			System.out.println("Exceptions were found but ignored: " + err);
 		}
@@ -33,7 +34,7 @@ public class Node {
 		if (memorySize <= 0){
 			throw new ExceptionInInitializerError("Memory size must be positive. Got " + Integer.toString(memorySize) + ".");
 		}
-		if (numCPU != 1 && numCPU != 2){
+		if (numCPU <= 0 || numCPU > maxNodes){
 			throw new ExceptionInInitializerError("Node only supports one or two CPUs. Got " + Integer.toString(numCPU) + ".");
 		}
 
@@ -54,6 +55,7 @@ public class Node {
 	}
 
 	public void addCPU() {
+
 		this.numCPU++;
 	}
 	public void remCPU() {
