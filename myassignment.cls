@@ -110,7 +110,7 @@
 \newcommand{\@exercisesheet}{{\em No exercise sheet title specified}}
 \newcommand{\@ExerciseSheet}{{\em NO EXERCISE SHEET TITLE SPECIFIED}}
 \newcommand{\@semester}{{\em \Season }}
-\newcommand{\@student}{{\em Rolf Vidar Hoksaas}}
+\newcommand{\@student}{{\em Rolf Vidar Mazunki Hoksaas}}
 \newcommand{\@subject}{}
 \newcommand{\@university}{Universitetet i Oslo}
 \newcommand{\@school}{Institutt for Informatikk}
