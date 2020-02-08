@@ -5,6 +5,22 @@
 \courselabel{IN1030}
 \exercisesheet{Oblig 2}{Bruk og brukerundersøkelser}
 
+\usepackage{xcolor}
+\definecolor{block-gray}{gray}{0.85}
+
+\usepackage{environ}
+
+\NewEnviron{myblock}
+{\colorbox{block-gray}{%
+\parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+\small\addtolength{\leftskip}{5mm}
+\addtolength{\rightskip}{5mm}
+\BODY}}
+}
+
+\renewcommand{\quote}{\myblock}
+\renewcommand{\endquote}{\endmyblock}
+
 \begin{document}
 	\subsection*{Oppgave 1 --- Observasjon av bruk}
 	\paragraph*{a)}
@@ -46,16 +62,29 @@
 	Det er i tillegg p{\aa}krevd av alle land innenfor EU {\aa} f{\o}lge GDPR (General Data Protection Regulation), p{\aa}krevd siden 2018 med bakgrunn p{\aa} etiske prinsipper som tidligere ble brutt. {\AA} ikke f{\o}lge denne loven kan risikere selskapet store p{\aa}legg, og eventuelt bli lagt ned om ledelsen ikke tilrettelegger l{\o}sninger, og f{\o}lger disse.
 
 	\paragraph*{c)}
-	\begin{quote}
-		Sammtykelse for student-observasjon
 
-		Jeg, \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, godtar, forst{\aa}r, og samtykker med at mitt navn blir registrert i en del av unders{\o}kelsen som ble gjort den \_\_ februar i 2020. Denne informasjonen vil bli brukt til akademiske form{\aa}l som en del av en student-unders{\o}kelse, og vil ikke bli behandlet i en komersiell sammenheng.
+	\begin{quote}
+		Sammtykelse for student-observasjon\\
+
+		Jeg, \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, godtar, forst{\aa}r, og samtykker med at mitt navn blir registrert i en del av unders{\o}kelsen som ble gjort den \_\_ februar i 2020. Denne informasjonen vil bli brukt til akademiske form{\aa}l som en del av en student-unders{\o}kelse, og vil ikke bli behandlet i en komersiell sammenheng.\\
 
 		Ved {\aa} signerere dette dokumentet lar jeg Rolf Vidar Mazunki Hoksaas observere og ta opp det jeg gj{\o}r, for {\aa} videre analysere situasjonen, valgene, og omheng. Resultatene av observasjonen vil kunne bli publisert, enten med, eller uten mitt navn. Dette gj{\o}r jeg av min egen fri vilje, uten noen personlig gevinst, eller noen form for press. 
 
 		\vspace{1cm}
 
-		\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, Barcelona. \_\_ februar, 2020.
+		\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, Barcelona. \_\_. februar, 2020.
+
+		\vspace{5mm}\hrule\vspace{5mm}
+	
+		Consentimiento para observaci\'on acad\'emica.\\
+
+		Yo, \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, acepto, entiendo, y consiento que mi nombre sea registrado como parte de una observaci\'on realizada el \_\_ de febrero en 2020. Esta informaci\'on ser\'a utilizada como parte de un estudio sin fines econ\'omicos, y no ser\'a comercializado.\\
+
+		Al firmar este documento, permito que Rolf Vidar Mazunki Hoksaas observe y capture mis acciones, para luego analizar la situaci\'on, las elecciones, y el entorno. Los resultados de la observaci\'on podr\'an ser pubkicados, con o sin mi nombre. Esto lo hago desde mi propia voluntad y elecci\'on, sin ning\'un beneficio propio, y sin ning\'un tipo de insistencia o fuerza. 
+
+		\vspace{1cm}
+
+		\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, Barcelona. \_\_ de febrero, 2020.
 	\end{quote}
 
 
@@ -108,6 +137,6 @@
 
 	\subsection*{Oppgave 5 --- Refleksjon}
 
-	% Skriv noen setninger om hva du har lært gjennom å jobbe med denne obligen. Hva likte du?Var det noe som var tankevekkende, engasjerende? Skriv minimum 3 setninger.
+	% Skriv noen setninger om hva du har lært gjennom å jobbe med denne obligen. Hva likte du? Var det noe som var tankevekkende, engasjerende? Skriv minimum 3 setninger.
 
 \end{document}
