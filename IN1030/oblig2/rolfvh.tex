@@ -78,21 +78,35 @@
 	
 		Consentimiento para observaci\'on acad\'emica.\\
 
-		Yo, \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, acepto, entiendo, y consiento que mi nombre sea registrado como parte de una observaci\'on realizada el \_\_ de febrero en 2020. Esta informaci\'on ser\'a utilizada como parte de un estudio sin fines econ\'omicos, y no ser\'a comercializado.\\
+		Yo, Gissela Celi Castillo, acepto, entiendo, y consiento que mi nombre sea registrado como parte de una observaci\'on realizada el 9 de febrero en 2020. Esta informaci\'on ser\'a utilizada como parte de un estudio sin fines econ\'omicos, y no ser\'a comercializado.\\
 
 		Al firmar este documento, permito que Rolf Vidar Mazunki Hoksaas observe y capture mis acciones, para luego analizar la situaci\'on, las elecciones, y el entorno. Los resultados de la observaci\'on podr\'an ser pubkicados, con o sin mi nombre. Esto lo hago desde mi propia voluntad y elecci\'on, sin ning\'un beneficio propio, y sin ning\'un tipo de insistencia o fuerza. 
 
 		\vspace{1cm}
 
-		\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, Barcelona. \_\_ de febrero, 2020.
+		Gissela Celi Castillo, Barcelona. 9 de febrero, 2020.
 	\end{quote}
 
 
 	\paragraph*{d)}
-	% Gjennomfør en pilotundersøkelse av den planlagte datainnsamlingen. Rapporter kort hva du erfarte. Hvilke lærdommer tar du med deg til hovedundersøkelsen? Gjør eventuelle modifikasjoner på planen og beskriv disse.
+	Jeg gjorde pilotunders{\o}kelsen selv p{\aa} vei ned til Spania, der jeg ble kjent med systemet ved {\aa} aktivt bruke det. Jeg opplevde en del vanskeligheter n{\aa}r det gjalt {\aa} finnne frem. Portene for {\aa} g{\aa} ut og inn av tog-banen er ikke intuitivt lagt opp, s{\aa} det er lett og g{\aa} p{\aa} side av billett-leserene. Dette kan skape kaos om det er mange folk som skal gjennom portene samtidig. {\AA} kj{\o}pe billett er ganske enkelt {\aa} gj{\o}re p{\aa} nettet, men man m{\aa} plukke billetten fysisk opp p{\aa} en av billet-automatene. Det er ingen form for digital l{\o}sning for {\aa} beholde billetten. I tillegg m{\aa} man fysisk registrere billetten hver gang man g{\aa}r ombord et tog, ellers blir ikke billetten gyldig.
+
+	Ut i fra disse problemene som jeg ikke har opplevd i Oslo, tenker jeg {\aa} se hvordan deltageren forholder seg til disse ``problemene''. Jeg antar at hen ikke kommer til {\aa} tenke like mye over det jeg har lagt merke til som jeg selv gj{\o}r. 
 
 	\paragraph*{e)}
-	% Gjennomfør hovedundersøkelsen (observasjonen). Husk å ta et bilde for å dokumenteregjennomførelsen.
+	Brukeren av systemet anvender systemet ganske naturlig, og ut i fra vane. {\AA} vite hvilken retning hen m{\aa} g{\aa} gjennom portene er noe som "hen bare vet", uten {\aa} {\aa} m{\aa}tte dobbelsjekke. Typen billett som ble kj{\o}pt g{\aa}r ogs{\aa} p{\aa} vane. Overraskende nok har brukeren stort sett en 10-billets-kupong med seg til enhver tid i tilfelle maanedskortet ikke fungerer. Det viser til at m{\aa}nedskortet ikke alltid fungerer som forventet. 
+
+	Det er noks{\aa} enkelt {\aa} ringe etter n{\o}dhjelp, eller infohjelp, da det er telefonilinjer over hele systemet, med direkte linje til en som jobber i n{\ae}rheten. Svar av vedkommende er noks{\aa} ummidelbart, men det er ikke {\aa}penbart {\aa} vite om linjen fortsatt ``lever'', siden det ikke er noen form for visuell feedback. Mer om dette i tabellen. 
+
+	Brukeren pleier ikke {\aa} kj{\o}pe billetter online, siden hen m{\aa} uansett via en maskin for {\aa} plukke disse opp. Et alternativ ville v{\ae}rt {\aa} kunne registrere en konto som f{\o}lger brukeren over tid, som man fyller billetter eller ``m{\aa}neder'' p{\aa}. Disse enkeltbilettene burde v{\ae}rt overf{\o}rbare, siden det er en av grunnnene til at brukeren/folk kj{\o}per enkeltbilletter. Med dette ville brukeren ikke trenge {\aa} lese av kortet hver gang hen skal ombord toget. Det er mulig at folk ville snike seg gratis ombord en del oftere om man ikke trengte {\aa} lese kortet for {\aa} komme inn. Noen hopper over portene, men vakter ser etter slike folk. Jeg antar det ville v{\ae}rt like billig {\aa} ha stikkpr{\o}vekontroller istedenfor. 
+
+	Et lite problem som oppsto av en vant bruker var at ikke alle maskinene godtar kontanter. I f{\o}rste omgang gikk brukeren til feil maskin, og la ikke merke til dette f{\o}r siste steg i prosessen, der hen m{\aa}tte betale. Det er ikke et problem jeg tenker p{\aa}, siden jeg bare bruker kort eller NFC uansett. Forskjellige folk har gjerne forskjellige vaner. Det er viktig {\aa} gi muligheten til alle {\aa} kunne bruke det de er komfortable med, selv om man m{\aa} tenke p{\aa} fremtidsorienterte l{\o}sninger. 
+
+	\includegraphics[scale=0.2]{pictures/tickettype.jpg}
+	\includegraphics[scale=0.2]{pictures/payment.jpg}
+	\includegraphics[scale=0.2]{pictures/onlinepurchase.jpg}\\
+	\includegraphics[scale=0.2]{pictures/entrances.jpg}
+	\includegraphics[scale=0.2]{pictures/exits.jpg}
 
 	\subsection*{Oppgave 2 --- Analyse: Sekvens av handlinger}
 	\paragraph*{a)}
@@ -112,14 +126,32 @@
 	\hline
 	\multicolumn{2}{|c|}{Human} & \multicolumn{2}{c|}{Machine} \\\hline
 	Environment & {To Machine} & To Human & System design\\\hline\hline
-	a & b & c & d
-	\end{tabular}
+	Approaches machine & & & \\\hline
+	 & Presses screen looking for map & & \\\hline
+	Looks around &  & & \\\hline
+	 & Presses SOS/info button &  & \\\hline
+	Silence, waiting &  &  & Calls operator \\\hline
+	 &  & Operator voice & \\\hline
+	 & Asks for help &  & \\\hline
+	 &  & Op: ``Hold on, I will check.'' & \\\hline
+	Waits for answer & Acknowledges &  & \\\hline
+	 &  & Beeping sounds & Line is on hold. \\\hline
+	Confused user &  & Faster beeping sounds & Line is hung up. \\\hline
+	Confused user &  &  & Checking \\\hline
+	Waiting & Tries to talk to telephone &  & Operator walks towards user \\\hline
+	Surprised &  &  & \\\hline
+	Talks with operator &  &  & \\\hline
+	 &  &  & Operator explains user could press the button to call operator through mobile walkie-talkie again \\\hline
+	User understands situation now &  &  &  \\\hline
 
-	% more tablesssss
+	\end{tabular}
 
 	\paragraph*{c)}  % analyse av tabell
 
-	% Analyser tabellen du fylte ut i oppgave 2b. Hvordan oppfatter du interaksjonen mellombruker og system? På hvilke måter kan interaksjonen forbedres eller bli gjort annerledes?
+	Interaksjonen med maskinen er lett s{\aa} lenge man vet hva en gj{\o}r, hva en {\o}nsker, og hvordan systemet fungerer. Hvis ikke man vet hvilken billett man {\o}nsker, og ``bare gj{\o}r det'', oppst{\aa}r det forvirrelser. Det er d{\aa}rlig med informasjon om billetter p{\aa} maskinen, og for {\aa} f{\aa} hjelp vet man ikke helt om det er ``ok'' {\aa} trykke p{\aa} SOS-knappen. N{\aa}r man f{\o}rst velger {\aa} klikke p{\aa} denne vet man ikke hvem man prater med, og man forventer ikke at operat{\o}ren bare legger p{\aa} uten {\aa} si at han kommer til {\aa} fysisk komme for {\aa} hjelpe oss.
+
+	Hadde operat{\o}ren sagt ifra at han legger p{\aa} hadde dette v{\ae}rt mer intuitivt. {\AA} ha to knapper, selv om de i praksis  kunne gjort det samme, for {\aa} separere SOS- og info-hjelpen ville gjort det mer inveterende {\aa} sp{\o}rre etter hjelp. 
+
 
 	\subsection*{Oppgave 3 --- Øvelse: Oppmerksomhet og distraksjon}
 
@@ -137,6 +169,8 @@
 
 	\subsection*{Oppgave 5 --- Refleksjon}
 
-	% Skriv noen setninger om hva du har lært gjennom å jobbe med denne obligen. Hva likte du? Var det noe som var tankevekkende, engasjerende? Skriv minimum 3 setninger.
+	Den mest informative delen ved denne obligen var delen om m{\aa}linger. Jeg tenker ofte p{\aa} forskjellige m{\aa}ter {\aa} ``lese og skrive'' informasjon, s{\aa} jeg synes det er spennende {\aa} l{\ae}re om forskjellige m{\aa}ter man kan presentere eller samle samme informasjonen/virkeligheten. Likevel synes jeg det var spennende {\aa} gj{\o}re observasjonsdelen, selv om jeg ikke f{\o}lte jeg observerte nok deltagere for {\aa} f{\aa} noe generell informasjon om hvordan brukere generelt anvender systemet. Jeg tror det ville v{\ae}rt mer effektiv {\aa} gj{\o}re en eller flere sp{\o}rreunders{\o}kelser.
+
+	{\AA} kunne sammenligne systemet her i Barcelona versus systemet i Norge tror jeg har v{\ae}rt den  mest nyttige delen ang{\aa}ende forskjellige systemet, siden jeg merker forskjellen p{\aa} hvordan folk bruker systemene her med tanke p{\aa} hvordan disse er lagt opp. Jeg tror ogs{\aa} at {\o}konomien og kulturen definerer hvordan systemene m{\aa} v{\ae}re for {\aa} v{\ae}re effektive. Det finnes intet perfekt system som fungerer overalt. Systemene m{\aa} tilpasses folket der det blir brukt.
 
 \end{document}
