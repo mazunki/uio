@@ -1,0 +1,75 @@
+\documentclass{../../myassignment}
+\exercisesheet{Oblig 1}{}
+\courselabel{MAT1110}
+
+\usepackage{amssymb}
+
+\begin{document}
+
+	\subsection*{Oppgave 1}
+		\begin{problem}
+			Vi skal se på den affine avbildningen $T: R^2 \to R^2$ som speiler ethvertpunkt i planet om punktet $(-1, 1)$. Finn en $2 \times 2$-matrise $A$ og en vektor $\vec{c}$ som er slik at $T(x,y) = A \begin{pmatrix}x\\y\end{pmatrix} + \vec{c}$ for alle $x,y \in \mathbb{R}$.
+		\end{problem}
+	
+		\begin{answer}
+			Siden s{\o}ylene $e_1$ og $e_2$ er definert ved $e_1 = \begin{pmatrix} -1 \\ 0 \end{pmatrix} \land e_2 = \begin{pmatrix} 0 \\ -1 \end{pmatrix}$, og vi vet at vi reflekterer over et punkt vil $\vec{c}$ v{\ae}re $2\begin{pmatrix} -1 \\ 1 \end{pmatrix}$:
+			\begin{eqnarray*}
+				A &=& \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix},\\
+				\vec{c} &=& \begin{pmatrix} -2 \\ 2 \end{pmatrix}\\
+				\implies
+				T(x,y) &=& A\begin{pmatrix}x\\y\end{pmatrix} + \vec{c} = \begin{pmatrix} -2-x \\ 2-y \end{pmatrix}
+			\end{eqnarray*}
+		\end{answer}
+
+		\begin{problem}
+			Finn lineariseringen $T_a \vec{F}$ til funksjonen definert ved 
+				\begin{eqnarray*}
+					\vec{F}(x,y) = \begin{pmatrix}
+						x^2-2xy \\
+						y^2+2xy
+					\end{pmatrix}
+				\end{eqnarray*}
+			i punktet $a=(-1,1)$.
+		\end{problem}
+
+		\begin{answer}
+			\begin{eqnarray*}
+				\vec{F}(x,y) = \begin{pmatrix} x^2-2xy \\ y^2 + 2xy \end{pmatrix}, a=(-1,1)
+			\end{eqnarray*}
+			\begin{eqnarray*}
+				T_{(-1,1)}(\vec{F}(x,y)) &=& \vec{F}(-1,1) + \vec{F}'(-1,1) \cdot (\begin{pmatrix} x\\y \end{pmatrix} - \begin{pmatrix} -1\\1 \end{pmatrix}) = \\
+										&=& \begin{pmatrix} 1+2\\1-2 \end{pmatrix} + \begin{pmatrix} 2x-2y & -2x \\ 2y & 2y+2x \end{pmatrix}_{(-1,1)} \cdot (\begin{pmatrix} x\\y \end{pmatrix} - \begin{pmatrix} -1\\1 \end{pmatrix})\\
+										&=& \begin{pmatrix} 3 \\ -1 \end{pmatrix} + \begin{pmatrix} -2-2 & 2 \\ 2 & 2-2 \end{pmatrix} \cdot (\begin{pmatrix} x\\y \end{pmatrix} - \begin{pmatrix} -1\\1 \end{pmatrix})\\
+										&=& \begin{pmatrix} 3 \\ -1 \end{pmatrix} + \begin{pmatrix} -4 & 2 \\ 2 & 0 \end{pmatrix} \cdot (\begin{pmatrix} x\\y \end{pmatrix} - \begin{pmatrix} -1\\1 \end{pmatrix})\\
+										&=& \begin{pmatrix} 3 \\ -1 \end{pmatrix} + \begin{pmatrix} -4x+2y \\ 2x \end{pmatrix} - \begin{pmatrix} 4+2 \\ -2+0 \end{pmatrix}\\
+										&=& \begin{pmatrix} 3 \\ -1 \end{pmatrix} + \begin{pmatrix} -4x+2y-6\\ 2x-2 \end{pmatrix}\\
+										&=& \begin{pmatrix} -4x+2y-3\\ 2x-3 \end{pmatrix}\\
+			\end{eqnarray*}
+		\end{answer}
+
+	\subsection*{Oppgave 2}
+
+	\begin{problem}
+		Finn et uttrykk for jordas bane i forhold til sola (kall denne for $r_1(t)$), oget uttrykk for månens bane i forhold til jorda (kall denne for $r_2(t)$). Disse er illustrert i Figur 2. Forklar også at månens bane i forhold til sola kan parametriseres ved 
+			\begin{eqnarray*}
+				\vec{r}(t) = \begin{pmatrix}
+					r_j cos(2\pi \frac{t}{T_j}) + r_m cos(2\pi \frac{t}{T_m}) \\
+					r_j sin(2\pi \frac{t}{T_j}) +r_m sin(2\pi\frac{t}{T_m})
+				\end{pmatrix},
+			\end{eqnarray*}
+				der tiden $t$ måles i dager.
+	\end{problem}
+
+
+	\begin{problem}
+		Plott $\vec{r_1}(t)$ og $\vec{r}(t)$ i samme koordinatsystem, og over en periode på ett år. Klarer du å adskille de to kurvene? Klarer du å gjenkjenne “sykloide-bevegelsene” fra Figur 1 i plottet ditt? Du trenger bare legge ved koden som lager plottet ditt, ikke selve plottet. Du kan selv velge om du bruker Matlab eller Python.
+	\end{problem}
+
+	\begin{problem}
+		Finn et uttrykk for alle tidspunkter for fullmåne (d.v.s. når jorda ligger på en rett linje mellom månen og sola) og nymåne (månen ligger på en rettlinje mellom jorda og sola). Tidsforskjellen mellom to fullmåner kalles også synodisk omløpstid. Hva er størst av siderisk og synodisk omløpstid?	
+	\end{problem}	
+
+	\begin{problem}
+		Finn hastighetsvektoren $\vec{v}(t)$ og et uttrykk for farten $v(t)$ til månen i banen rundt sola. Når har månen størst og minst fart i banen sin?
+	\end{problem}
+\end{document}
