@@ -3,6 +3,7 @@
 \courselabel{MAT1110}
 
 \usepackage{amssymb}
+\usepackage{xfrac}
 
 \begin{document}
 
@@ -21,6 +22,8 @@
 			\end{eqnarray*}
 		\end{answer}
 
+		\newpage
+
 		\begin{problem}
 			Finn lineariseringen $T_a \vec{F}$ til funksjonen definert ved 
 				\begin{eqnarray*}
@@ -34,9 +37,9 @@
 
 		\begin{answer}
 			\begin{eqnarray*}
-				\vec{F}(x,y) = \begin{pmatrix} x^2-2xy \\ y^2 + 2xy \end{pmatrix}, a=(-1,1)
-			\end{eqnarray*}
-			\begin{eqnarray*}
+				\vec{F}(x,y) &=& \begin{pmatrix} x^2-2xy \\ y^2 + 2xy \end{pmatrix}, a=(-1,1).\\
+			%\end{eqnarray*}
+			%\begin{eqnarray*}
 				T_{(-1,1)}(\vec{F}(x,y)) &=& \vec{F}(-1,1) + \vec{F}'(-1,1) \cdot (\begin{pmatrix} x\\y \end{pmatrix} - \begin{pmatrix} -1\\1 \end{pmatrix}) = \\
 										&=& \begin{pmatrix} 1+2\\1-2 \end{pmatrix} + \begin{pmatrix} 2x-2y & -2x \\ 2y & 2y+2x \end{pmatrix}_{(-1,1)} \cdot (\begin{pmatrix} x\\y \end{pmatrix} - \begin{pmatrix} -1\\1 \end{pmatrix})\\
 										&=& \begin{pmatrix} 3 \\ -1 \end{pmatrix} + \begin{pmatrix} -2-2 & 2 \\ 2 & 2-2 \end{pmatrix} \cdot (\begin{pmatrix} x\\y \end{pmatrix} - \begin{pmatrix} -1\\1 \end{pmatrix})\\
@@ -47,20 +50,42 @@
 			\end{eqnarray*}
 		\end{answer}
 
+	\newpage
+
 	\subsection*{Oppgave 2}
 
 	\begin{problem}
-		Finn et uttrykk for jordas bane i forhold til sola (kall denne for $r_1(t)$), oget uttrykk for månens bane i forhold til jorda (kall denne for $r_2(t)$). Disse er illustrert i Figur 2. Forklar også at månens bane i forhold til sola kan parametriseres ved 
+		Finn et uttrykk for jordas bane i forhold til sola (kall denne for $r_1(t)$), og et uttrykk for månens bane i forhold til jorda (kall denne for $r_2(t)$). Disse er illustrert i Figur 2. Forklar også at månens bane i forhold til sola kan parametriseres ved 
 			\begin{eqnarray*}
 				\vec{r}(t) = \begin{pmatrix}
 					r_j cos(2\pi \frac{t}{T_j}) + r_m cos(2\pi \frac{t}{T_m}) \\
-					r_j sin(2\pi \frac{t}{T_j}) +r_m sin(2\pi\frac{t}{T_m})
+					r_j sin(2\pi \frac{t}{T_j}) + r_m sin(2\pi\frac{t}{T_m})
 				\end{pmatrix},
 			\end{eqnarray*}
 				der tiden $t$ måles i dager.
 	\end{problem}
 
+	\begin{answer}
+		\begin{align*}
+			r_m &= 0.384, &r_j &= 150, \\
+			T_m &= 27.3, &T_j &= 365 \\
+			\omega_m &= \frac{2\pi}{T_{m}} = \frac{2\pi}{27.3} & \omega_j &= \frac{2\pi}{T_{j}} = \frac{2\pi}{365}
+		\end{align*}
+		\begin{align*}
+			\vec{r_1}(t) &= \begin{pmatrix} r_j\cdot cos(\omega_j t)\\r_j \cdot sin(\omega_j t) \end{pmatrix} = \begin{pmatrix} r_j\cdot cos(\sfrac{2\pi}{365} \cdot t)\\r_j \cdot sin(\sfrac{2\pi}{365} \cdot t) \end{pmatrix}\\
+			\vec{r_2}(t) &= \begin{pmatrix} r_m\cdot cos(\omega_m t)\\r_m \cdot sin(\omega_m t) \end{pmatrix} = \begin{pmatrix} r_m\cdot cos(\sfrac{2\pi}{27.3} \cdot t)\\r_m \cdot sin(\sfrac{2\pi}{27.3} \cdot t) \end{pmatrix}\\
+		\end{align*}
 
+		Siden funskjonene er uavhengige, og posisjonen til m{\aa}nen er relativ til jorden kan begge funsjonene summeres, da startposisjonen til m{\aa}nen alltid vil f{\o}lge jordens sentrum. Dermed blir $\vec{r}(t) = \vec{r_j}(t) + \vec{r_m}(t)$.
+
+		\begin{align*}
+			\vec{r}(t) &= \vec{r_j}(t) + \vec{r_m}(t) \\
+			 &= \begin{pmatrix} r_j\cdot cos(\sfrac{2\pi}{365} \cdot t)\\r_j \cdot sin(\sfrac{2\pi}{365} \cdot t) \end{pmatrix} + \begin{pmatrix} r_m\cdot cos(\sfrac{2\pi}{27.3} \cdot t)\\r_m \cdot sin(\sfrac{2\pi}{27.3} \cdot t) \end{pmatrix} \\
+			 &= \begin{pmatrix} r_j\cdot cos(\sfrac{\tau}{365} \cdot t) + r_m\cdot cos(\sfrac{\tau}{27.3} \cdot t) \\ r_j \cdot sin(\sfrac{\tau}{365} \cdot t) + r_m \cdot sin(\sfrac{\tau}{27.3} \cdot t) \end{pmatrix} \\
+		\end{align*}
+
+	\end{answer}
+		
 	\begin{problem}
 		Plott $\vec{r_1}(t)$ og $\vec{r}(t)$ i samme koordinatsystem, og over en periode på ett år. Klarer du å adskille de to kurvene? Klarer du å gjenkjenne “sykloide-bevegelsene” fra Figur 1 i plottet ditt? Du trenger bare legge ved koden som lager plottet ditt, ikke selve plottet. Du kan selv velge om du bruker Matlab eller Python.
 	\end{problem}
