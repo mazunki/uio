@@ -4,6 +4,21 @@
 
 \usepackage{amssymb}
 \usepackage{xfrac}
+\usepackage{listings}
+\definecolor{codegray}{rgb}{0.7,0.7,0.7}
+\definecolor{codecomment}{rgb}{0.3,0.3,0.7}
+\definecolor{codekwd}{rgb}{0.7,0.3,0.3}
+\definecolor{purpe}{rgb}{0.5,1.0,0.5}
+\lstset{
+	backgroundcolor=\color{codegray},
+	commentstyle=\color{codecomment},
+	keywordstyle=\color{codekwd},
+	numberstyle=\tiny\color{codekwd},
+	stringstyle=\color{purple},
+	frame=single,
+	numbers=left,
+	basicstyle=\small
+}
 
 \begin{document}
 
@@ -85,14 +100,24 @@
 		\end{align*}
 
 	\end{answer}
-		
+	
+	\newpage
+
 	\begin{problem}
 		Plott $\vec{r_1}(t)$ og $\vec{r}(t)$ i samme koordinatsystem, og over en periode på ett år. Klarer du å adskille de to kurvene? Klarer du å gjenkjenne “sykloide-bevegelsene” fra Figur 1 i plottet ditt? Du trenger bare legge ved koden som lager plottet ditt, ikke selve plottet. Du kan selv velge om du bruker Matlab eller Python.
 	\end{problem}
+	\begin{answer}
+		\lstinputlisting[language=Python]{earthmoon.py}
+	\end{answer}
 
 	\begin{problem}
 		Finn et uttrykk for alle tidspunkter for fullmåne (d.v.s. når jorda ligger på en rett linje mellom månen og sola) og nymåne (månen ligger på en rettlinje mellom jorda og sola). Tidsforskjellen mellom to fullmåner kalles også synodisk omløpstid. Hva er størst av siderisk og synodisk omløpstid?	
 	\end{problem}	
+
+	\begin{answer}
+		Fullm{\aa}ner og nym{\aa}ner vil begge danne en rett linje hvis vi tar solen som utgangspunkt. Det vil si at retningsvektoren fra solen til m{\aa}nen, og retningsvektoren fra solen til jorda vil v{\ae}re like. Det samme gjelder fra jorda til m{\aa}nen. Hvis vi m{\aa}ler arealet mellom to vektorer som danner ei rett linje f{\aa}r vi null. Vi {\o}nsker alts{\aa} {\aa} finne alle punktene ved $t$ der $r_1(t)\times r_2^T(t) = 0$
+
+	\end{answer}
 
 	\begin{problem}
 		Finn hastighetsvektoren $\vec{v}(t)$ og et uttrykk for farten $v(t)$ til månen i banen rundt sola. Når har månen størst og minst fart i banen sin?
