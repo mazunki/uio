@@ -108,14 +108,15 @@
 	\end{problem}
 	\begin{answer}
 		\lstinputlisting[language=Python]{earthmoon.py}
+		Som kommentert har jeg endret radiusen fra jorda til m{\aa}nen for visuelle nytelsen.
 	\end{answer}
-
+	\newpage
 	\begin{problem}
 		Finn et uttrykk for alle tidspunkter for fullmåne (d.v.s. når jorda ligger på en rett linje mellom månen og sola) og nymåne (månen ligger på en rettlinje mellom jorda og sola). Tidsforskjellen mellom to fullmåner kalles også synodisk omløpstid. Hva er størst av siderisk og synodisk omløpstid?	
 	\end{problem}	
 
 	\begin{answer}
-		Fullm{\aa}ner og nym{\aa}ner vil begge danne en rett linje hvis vi tar solen som utgangspunkt. Det vil si at retningsvektoren fra solen til m{\aa}nen, og retningsvektoren fra solen til jorda vil v{\ae}re like. Det samme gjelder fra jorda til m{\aa}nen. Hvis vi m{\aa}ler arealet mellom to vektorer som danner ei rett linje f{\aa}r vi null. Vi {\o}nsker alts{\aa} {\aa} finne alle punktene ved $t$ der ${r_1(t)}^T \times {r_2}(t) = 0$
+		Fullm{\aa}ner og nym{\aa}ner vil begge danne en rett linje hvis vi tar solen som utgangspunkt. Det vil si at retningsvektoren fra solen til m{\aa}nen, og retningsvektoren fra solen til jorda vil v{\ae}re like. Det samme gjelder fra jorda til m{\aa}nen. Hvis vi m{\aa}ler arealet mellom to vektorer som danner ei rett linje f{\aa}r vi null. Vi {\o}nsker alts{\aa} {\aa} finne alle punktene ved $t$ der $det (\begin{bmatrix}{\vec{r_1}(t)} \\ {\vec{r_2}}(t)\end{bmatrix}) = 0$
 
 		\begin{align*}
 			\begin{vmatrix}{\vec{r_2}(t)} \\ \vec{r_1}(t) \end{vmatrix} &= 0\\
@@ -132,11 +133,56 @@
 			t &\approx 29.507 \cdot \dfrac{n \cdot \sfrac{\tau}{2}}{\tau} \\
 			t &\approx 29.507 \cdot \dfrac{n}{2} = 14.753\cdot n \\
 		\end{align*}
-		Ved $t_n = 14.753n$, der $n \in \mathbb{N}$ vil vi observere enten fullm{\aa}ne eller nym{\aa}ne. Siden vi ikke har tatt i betraktning at jorden roterer over sin egen akse, og siden vi vet at m{\aa}nen sin periode over jorden er under en tiendedel (alts{\aa} ganske mye lavere) av jorden sin periode rundt solen er det nok og si at fullm{\aa}ne og nym{\aa}ne kommer annehvert. Ved {\aa} sjekke ved $t_0$ ser vi at $\vec{r_1}(t_0) = 150.384$ som tilsvarer, pga avrunding, $r_j + r_m$. Dette er alts{\aa} en fullm{\aa}ne. Ved $n=2i, i\in\mathbb{N}$ vil vi se fullm{\aa}ner, og ved $n=2i+1$ vil vi se nym{\aa}ner.
+		Ved $t_n = 14.753n$, der $n \in \mathbb{N}$ vil vi observere enten fullm{\aa}ne eller nym{\aa}ne. Siden vi ikke har tatt i betraktning at jorden roterer over sin egen akse, og siden vi vet at m{\aa}nen sin periode over jorden er under en tiendedel (alts{\aa} ganske mye lavere) av jorden sin periode rundt solen er det nok og si at fullm{\aa}ne og nym{\aa}ne kommer annehvert. Ved {\aa} sjekke ved $t_0$ ser vi at $\vec{r_1}(t_0) = 150.384$ som tilsvarer, pga. avrunding, $r_j + r_m$. Dette er alts{\aa} en fullm{\aa}ne. Ved $n=2i, i\in\mathbb{N}$ vil vi se fullm{\aa}ner, og ved $n=2i+1$ vil vi se nym{\aa}ner.
 
 	\end{answer}
+
+	\newpage
 
 	\begin{problem}
 		Finn hastighetsvektoren $\vec{v}(t)$ og et uttrykk for farten $v(t)$ til månen i banen rundt sola. Når har månen størst og minst fart i banen sin?
 	\end{problem}
+	\begin{answer}
+		\begin{align}
+			\vec{r}(t) &= \begin{pmatrix} r_j \cdot cos(\omega_j t) + r_m \cdot cos(\omega_m t) \\ r_j \cdot sin(\omega_j t) + r_m \cdot sin(\omega_m t) \end{pmatrix} \\
+			\vec{v}(t) = \vec{r}\,'(t) &= \begin{pmatrix} - r_j \cdot sin(\omega_j t) \cdot \omega_j - r_m \cdot sin(\omega_m t) \cdot \omega_m \\ r_j \cdot cos(\omega_j t) \cdot \omega_j + r_m \cdot cos(\omega_m t) \cdot \omega_m \end{pmatrix} \\
+			v(t) = |\vec{v}(t)| &= \sqrt{[- r_j \cdot sin(\omega_j t) \cdot \omega_j - r_m \cdot sin(\omega_m t) \cdot \omega_m]^2 + [r_j \cdot cos(\omega_j t) \cdot \omega_j + r_m \cdot cos(\omega_m t) \cdot \omega_m]^2 } \\
+			v(t) &= \sqrt{[- C_j \cdot sin(\omega_j t) - C_m \cdot sin(\omega_m t)]^2 + [C_j \cdot cos(\omega_j t) + C_m \cdot cos(\omega_m t)]^2 }, \text{where } C_i = \omega_i r_i \\
+			v(t) &= \sqrt{
+				\begin{aligned}
+					&[C_j\,^2 \cdot sin^2(\omega_j t) + 2C_jC_m\cdot sin(w_j t)sin(w_m t) + C_m\,^2 \cdot sin^2(\omega_m t)] + \\
+					&[C_j\,^2 \cdot cos^2(\omega_j t) + 2C_jC_m\cdot cos(w_j t)cos(w_m t) + C_m\,^2 \cdot cos^2(\omega_m t)]
+				\end{aligned}
+				}\\
+			v(t) &= \sqrt{
+				\begin{aligned}
+					& C_j\,^2 [sin^2(\omega_j t)+cos^2(\omega_j t)] + \\
+					& 2C_jC_m [sin(w_j t)sin(w_m t) + cos(w_j t)cos(w_m t)] + \\
+					& C_m\,^2 [sin^2(\omega_m t) + cos^2(\omega_m t)]
+				\end{aligned}
+				}\\
+				v(t) &= \sqrt{ C_j\,^2 + 2C_jC_m \cdot cos((\omega_m - \omega_j)t) + C_m\,^2 }\\
+				v(t) &= \sqrt{ (\omega_j\cdot r_j)\,^2 + 2\omega_j\omega_m r_j r_m \cdot cos((\omega_m - \omega	_j)t) + (\omega_m r_m)\,^2 }\\
+				v(t) &= \sqrt{ (150\sfrac{\tau}{365})\,^2 + 2\cdot150\cdot0.384\sfrac{\tau}{365}\sfrac{\tau}{27.3} \cdot cos((\sfrac{\tau}{27.3} - \sfrac{\tau}{365})t) + ( 0.384\sfrac{\tau}{27.3})\,^2 }\\
+				v(t) &= \sqrt{ (30\sfrac{\tau}{73})\,^2 + 115.2\sfrac{\tau^2}{9964.5} \cdot cos(t\cdot \sfrac{337.7\tau}{9964.5}) + ( 0.384\sfrac{\tau}{27.3})\,^2 }
+		\end{align}
+	\end{answer}
+
+	\begin{answer}
+		N{\aa}r $cos(t\cdot \sfrac{337.7\tau}{9964.5})$ er lik $-1$ og $1$ finner vi maksimum- og minimums-verdiene til farten. 
+		Minimumsverdiene finner vi ved:
+			\begin{align}
+			 	cos(t\cdot \sfrac{337.7\tau}{9964.5}) &= -1 \\
+			 	t\cdot \sfrac{337.7\tau}{9964.5} &= arccos(-1) \\
+			 	t_n &= \frac{9964.5}{337.7\tau} (\sfrac{\tau}{2}+n \tau)\\
+			 	t_n &= \frac{9964.5}{337.7} (n + \sfrac{1}{2})
+			 \end{align}
+		Maksimumsverdiene finner vi ved:
+			\begin{align}
+			 	cos(t\cdot \sfrac{337.7\tau}{9964.5}) &= 1 \\
+			 	t\cdot \sfrac{337.7\tau}{9964.5} &= arccos(1) \\
+			 	t_n &= \frac{9964.5}{337.7\tau} (n \tau)\\
+			 	t_n &= \frac{9964.5}{337.7} (n)
+			 \end{align}
+	\end{answer}
 \end{document}

@@ -41,14 +41,11 @@ ax.set_xlabel('Time axis')
 ax.set_ylabel('X axis')
 ax.set_zlabel('Y axis')
 ax.view_init(elev=30, azim=-30)
+plt.get_current_fig_manager().window.showMaximized()  # fullscreen
 
 # adding all three formulas (moon, earth, absolute moon)
 ax.scatter(times, xs_r,  ys_r,  s=1) # absolute moon
 ax.scatter(times, xs_r1, ys_r1, s=1) # earth to sun
 ax.scatter(times, xs_r2, ys_r2, s=1) # moon to earth
-
-# fullscreen
-figManager = plt.get_current_fig_manager()
-figManager.window.showMaximized()
 
 plt.show()
