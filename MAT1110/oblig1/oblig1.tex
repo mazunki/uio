@@ -115,7 +115,27 @@
 	\end{problem}	
 
 	\begin{answer}
-		Fullm{\aa}ner og nym{\aa}ner vil begge danne en rett linje hvis vi tar solen som utgangspunkt. Det vil si at retningsvektoren fra solen til m{\aa}nen, og retningsvektoren fra solen til jorda vil v{\ae}re like. Det samme gjelder fra jorda til m{\aa}nen. Hvis vi m{\aa}ler arealet mellom to vektorer som danner ei rett linje f{\aa}r vi null. Vi {\o}nsker alts{\aa} {\aa} finne alle punktene ved $t$ der $r_1(t)\times r_2^T(t) = 0$
+		Fullm{\aa}ner og nym{\aa}ner vil begge danne en rett linje hvis vi tar solen som utgangspunkt. Det vil si at retningsvektoren fra solen til m{\aa}nen, og retningsvektoren fra solen til jorda vil v{\ae}re like. Det samme gjelder fra jorda til m{\aa}nen. Hvis vi m{\aa}ler arealet mellom to vektorer som danner ei rett linje f{\aa}r vi null. Vi {\o}nsker alts{\aa} {\aa} finne alle punktene ved $t$ der ${r_1(t)}^T \times {r_2}(t) = 0$
+
+		\begin{align*}
+			{r_1(t)}^T \times r_2(t) &= 0\\
+			\begin{pmatrix} r_j\cdot cos(\sfrac{\tau}{365} \cdot t) & r_j \cdot sin(\sfrac{\tau}{365} \cdot t) \end{pmatrix} \times \begin{pmatrix} r_m\cdot cos(\sfrac{\tau}{27.3} \cdot t)\\r_m \cdot sin(\sfrac{\tau}{27.3} \cdot t) \end{pmatrix} &= 0 \\
+			r_j\cdot cos(\sfrac{\tau}{365} \cdot t) \times r_m\cdot cos(\sfrac{\tau}{27.3} \cdot t) + r_j \cdot sin(\sfrac{\tau}{365} \cdot t) \times r_m \cdot sin(\sfrac{\tau}{27.3} \cdot t) &= 0 \\
+			cos(\sfrac{\tau}{365} \cdot t) \times cos(\sfrac{\tau}{27.3} \cdot t) + sin(\sfrac{\tau}{365} \cdot t) \times sin(\sfrac{\tau}{27.3} \cdot t) &= 0\\
+			cos(\sfrac{\tau}{365} \cdot t - \sfrac{\tau}{27.3} \cdot t) &= 0\\
+			cos((\sfrac{\tau}{365} - \sfrac{\tau}{27.3}) \cdot t) &= 0\\
+			&\text{Let } C = \sfrac{-337.7\tau}{9964.5}:\\
+			cos(C \cdot t) &= 0\\
+			t &= \sfrac{arccos(0)}{C}\\
+			t &= \dfrac{\sfrac{\tau}{4} + n\tau}{C} \land \dfrac{\sfrac{3\tau}{4} + n\tau}{C}\\
+			t &= \dfrac{\sfrac{\tau}{4} + \sfrac{n\tau}{2}}{C}\\
+			t &= 9964.5\dfrac{\sfrac{\tau}{4} + \sfrac{n\tau}{2}}{-337.7\tau}\\
+			%t &= 9964.5\dfrac{\sfrac{1}{4} + \sfrac{n}{2}}{-337.7}\\
+			%t &= 9964.5\dfrac{\sfrac{3n}{4}}{-337.7}\\
+			t &= 9964.5\dfrac{3n}{-1350.8}\\
+			t &\approx 22.130n \\
+		\end{align*}
+		Ved t = -7.37674 + 14.7535n
 
 	\end{answer}
 

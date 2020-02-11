@@ -20,7 +20,7 @@ r_x = lambda t: r1_x(t) + r2_x(t)
 r_y = lambda t: r1_y(t) + r2_y(t)
 
 # sample points on time axis
-times = np.arange(0, 365, step=0.1)
+times = np.arange(0, 100, step=0.1)
 # earth values
 xs_r1 = [r1_x(t) for t in times]
 ys_r1 = [r1_y(t) for t in times]
@@ -44,7 +44,7 @@ ax.scatter(times, xs_r2, ys_r2, s=1) # moon to earth
 ax.set_xlabel('Time axis')
 ax.set_ylabel('X axis')
 ax.set_zlabel('Y axis')
-ax.view_init(elev=30, azim=-60)
+ax.view_init(elev=0, azim=-60)
 # fullscreen
 figManager = plt.get_current_fig_manager()
 figManager.window.showMaximized()
