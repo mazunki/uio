@@ -1,10 +1,10 @@
 abstract class Legemiddel {
-	private int quantity;
-	private int id;
+	protected int quantity;
+	protected int id;
 	static private int counter=0;
-	private String navn;
-	private double virkestoff;
-	private double pris;
+	protected String navn;
+	protected double virkestoff;
+	protected double pris;
 
 	protected Legemiddel(String navn, double pris, double virkestoff) {
 		this.navn = navn;
