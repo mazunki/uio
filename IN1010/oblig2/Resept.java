@@ -68,7 +68,7 @@ abstract class Resept {
 	}
 
 	public String toString() {
-		String stringOut = this.farge() + " resept med " + this.reit + " reits av " + this.legemiddel.hentNavn() + " fra " +
+		String stringOut = this.id + this.farge() + " resept med " + this.reit + " reits av " + this.legemiddel.hentNavn() + " fra " +
 							this.utskrivendeLege.toString() + " til pasient id " + this.pasientId + " koster " + this.prisAaBetale();
 		return stringOut;
 	}

@@ -1,6 +1,6 @@
 import java.security.AccessControlException;
 
-public class Main {
+public class IntegrasjonsTest {
 	public static void main(String[] args) {
 		int minPasient = 100;
 		int minAndrePasient = 101;
