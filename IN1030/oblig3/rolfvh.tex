@@ -55,11 +55,14 @@
 			\item [Forståelig] Innholdet i siden må ikke være vanskelig å tolkes. Dette inkluderer hvordan vi setter opp menyer, hvor vi plasserer tekst i forhold til bilder, og alt annet innhold på nettsiden. Poenget er at personer meg kognitive vanskeligheter ikke skal føle seg truet av nettsiden, og lett kan bruke applikasjonen på lik linje med alle andre. 
 			\item [Robust] Det siste prinsippet sier at innholdet på siden må være satt opp på en måte som gjør at enhver teknologi, uavhengig av hvordan de implementerer standarer, har muligheten til å tolke, lese og gjenskape innholdet vi presenterer. Med andre ord betyr dette at text-to-speech services må fungerer på kryss og tvers av platformer, nettlesere, og annet brukerspesifikt utstyr, som et eksempel. 
 		\end{description}
+		Ved å bruke standarerer og velkjente APIer kan de fleste problemerer som eventuelt oppstår i visse situasjoner bli utelukkede, siden et abstraksjonsnivå som er velbrukt av mange protokoller og tjenester vil være ganske polert over tid. I tillegg er slike frameworks ofte sertifiserte, slik at vi kan garantere en viss WCAG-kvalitet. Hvis vi gjør ting manuelt må vi passe på å gå gjennom alle reglene, og teste for alle situasjoner selv. Dette kan fort bli vanskelig om applikasjonen ikke har en standard-form eller er av en ``plain og kjedelig'' faktor.
+		
 	\end{answer}
 
 	\begin{problem}
 		Beskriv en av endringene som er gjort fra WCAG 2.0 til WCAG 2.1
 	\end{problem}
+
 	\begin{answer}
 		Man må nå ha mulighet til å kansellere en handling etter at man har klikket mouse-down, enten ved å dra musa vekk fra knappen, eller på andre måter. I syvende og sist kan ikke mouse-down bli brukt til å utføre endelige funskjoner. 
 		
@@ -131,7 +134,10 @@
 
 	\begin{answer}
 		I forhold til personvernsloven er det ikke lov å filme andres private eiendom, eller offentlige steder uten særtilatelse og godkjennelse av de som blir filmet. Selv ikke til privatbruk. Om man skal filme gruppetimene må alle som er tilstede i klasserommet forstå, og godkjenne, at timene blir filmet. Hvis gruppetimene hadde vært private, altså gjennomførte på et privat sted, ville det vært nok å informere om opptakene. 
+
 	\end{answer}
+
+	%\newpage
 
 	\begin{problem}
 		En IT-bedrift som behandler personopplysninger beslutter å legge lagring og behandling av personopplysninger til en skytjeneste lokalisert i utlandet. Er dette lov ifølge Personopplysningsloven? Husk å henvise til lovverket. Hva må bedriften gjøre for å kunne outsource lagring og behandling av personopplysninger?
@@ -139,6 +145,11 @@
 
 	\begin{answer}
 		Personopplysningsloven eksisterer for å beskytte personene sine dataer. Alle som faller under GDPR / Personopplysningslovens beskyttelse har rett til å være beskyttet mot hvem som helst andre. Det har ikke noe å si hvem som ønsker å bruke personopplysningene dine, siden de må følge GDPR sine krav. Til og med utenomjordiske vesener har ikke noe de skulle sagt. Artikkel 3.1 av GDPR og artikkel 3.2 definerer dette ganske tydelig. For å kunne outsource lagring og behandling av personopplysninger må bedriften få fullstendig samtykelse av alle personene de samler data av, i tillegg til at disse må kjenne til sine rettigheter angående personopplysninger.
+
+		Dersom en IT-bedrift likevel ønsker pga. nødvendighet å lagre og behandle dataer i utlandet, må brukerene bli tydelig bli informert over risikoene som eventuelt kan forekomme av å være utenfor det beskyttede området. I en situasjon hvor en bindende avtale skaper et krav om at personopplysningene må bli behandlet i et internasjonalt sammenheng, må denne avtalen inkludere en del opplysninger som tilsvarer kravene til GDPR. Databehandleren vil ha ansvaret over eventuelle feil som kan skje, om ikke hen klarer å bevise uskyldighet. 
+
+		Et untakk til det siste avsnittet finnes i visse land som er forhåndsgodkjente av GDPR-komisjonen, der disse territoriumene er vedtatte som sikre soner.
+
 	\end{answer}
 
 	\begin{problem}
@@ -170,6 +181,8 @@
 
 	\end{answer}
 
+\newpage
+
 \section*{Oppgave 3 --- Digitalisering, automatisering, og etisk refleksivitet}
 	\begin{problem}
 		Se filmen om etiske dilemma ved programmering av førerløse biler av Patrick Lin (4:15min). Redegjør for dilemmaet som tas opp i denne videoen. Drøft mulige tilnærminger for åjobbe med dette dilemmaet. Skriv minimum ett avsnitt. Filmen finner du her: 
@@ -185,6 +198,19 @@
 		Selv tenker jeg menneske-drevne, ikke-fornybare og private kjøretøy burde ulovlig-gjøres ummidelbart, men det er ikke like lett å få alle på samme side når det gjelder såpass drastiske endringer. La oss innovere både bedre teknologi, og skape en fullstendig transisjonsplan, for å så gjennomføre denne vis a vis staten. 
 	\end{answer}
 
+	\begin{problem}
+		Hva menes med etisk refleksivitet?
+	\end{problem}
+
+	\begin{answer}
+		Etisk refleksivitet er noe man må tenke på når man utvikler. Det handler om å analysere hva som kan gå rett og galt, hvilke risikoer som fremkommer med det vi arbeider med, og eventuelt hvordan resultatene kan forebygge eller foreverre samfunnet generelt. Det er viktig å tenke på dette i nesten alle sektorer, og dermed ha med en spesialist innenfor etikk, eller eventuelt konsultere med et selskap som gjør etiske valg.
+
+		Et godt eksempel på dette er vist i videoen om Mehdi Ettehadulhagh. Det ble gjort en etisk beslutning angående deltakeren med tanke på eventuelle traumaer som kan fremstå i å sette personen i den situasjonen. Dette blir ofte gjort i ``Trolley dilemma''-eksperimenter også, der ``skuespillerene'' kan få panikk og traumaer av å ta ``feil'' valg. Disse er eksemplere på ganske direkte etiske valg, mens ofte kan refleksiviteten komme fra helt andre retninger. 
+
+		Noen godt råd er å spørre seg selv: ``Er det jeg gjør nå noe som er positivt, bra, og riktig for resten av sammfunnet? Ville jeg likt å bli behandlet slik? Kommer det til å komme mer nytte enn skade av de valgene jeg tar?'' Mitt svar til disse spørsmålene er at jeg ikke vet, stort sett. Jeg kan anta hva som er universelt riktig, og så lenge jeg prøver å finne ut av hva som er best så er jeg hvertfall på riktig spor. 
+	\end{answer}
+
+\newpage
 
 \section*{Oppgave 4 --- Spørsmål til pensumartikkelen}
 	\begin{problem}
