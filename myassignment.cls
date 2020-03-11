@@ -177,7 +177,7 @@
 }%
 {%
 \color{gray!90}\hfill\begin{Huge}”\end{Huge}
-\vspace*{2\baselineskip}
+\vspace*{0\baselineskip}
 }
 
 \newenvironment{answer}%
