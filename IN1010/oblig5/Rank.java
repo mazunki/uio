@@ -6,15 +6,18 @@ public class Rank {
 	Map map;
 	ArrayList<Tile> tiles;
 	int length;
+	int indexOnBoard;
 
 	private Rank() {
 
 	}
 
-	public static Rank fromString(String s, Map board) {
+	public static Rank fromString(String s, Map board, int j) {
 		Rank self = new Rank();
 		self.src = s;
 		self.map = board;
+		self.indexOnBoard = j;
+		self.length = self.map.mapWidth;
 
 		try {
 			self.parse();
@@ -29,8 +32,10 @@ public class Rank {
 
 	private ArrayList<Tile> parse() throws Exception {
 		tiles = new ArrayList<Tile>(map.mapWidth);
-		for (char c : this.src.toCharArray()) {
-			tiles.add(Tile.fromChar(c));
+		for (int i=0; i<this.src.length(); i++) {
+
+			char c = this.src.toCharArray()[i];
+			tiles.add(Tile.fromChar(c, i, this));
 		}
 		return tiles;
 	}
@@ -47,5 +52,9 @@ public class Rank {
 		}
 
 		return out;
+	}
+
+	public Tile get(int index) {
+		return tiles.get(index);
 	}
 }

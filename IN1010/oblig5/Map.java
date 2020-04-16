@@ -33,6 +33,15 @@ public class Map implements Cartographer {
 		Map testMap = (args.length == 0) ? new Map() : new Map(args[0]);
 		
 		//System.out.println(testMap.sourceFilename);
+		//System.out.println(testMap.tiledRanks);
+		System.out.println(testMap.get(5,4));
+		System.out.println();
+		testMap.get(7,4).remark();
+		System.out.println(testMap);
+		for (Tile t : testMap.get(7,4).getNeighbours()) {
+			t.scream();
+		}
+		System.out.println(testMap);
 	}
 
 	private boolean readFromFile() throws Error, FileNotFoundException {
@@ -67,12 +76,11 @@ public class Map implements Cartographer {
 		}
 
 		this.tiledRanks = new ArrayList<Rank>(this.mapHeight);
-		for (String s : sourceRanks) {
-			Rank r = Rank.fromString(s, this);
+		for (int j=0; j<sourceRanks.size(); j++) {
+			Rank r = Rank.fromString(sourceRanks.get(j), this, j);
 			// System.out.println(r);
 			tiledRanks.add(r);
 		}
-		System.out.print(this);
 
 		return true;
 	}
@@ -84,5 +92,9 @@ public class Map implements Cartographer {
 			out += r.toString() + "\n";
 		}
 		return out;
+	}
+
+	public Tile get(int j, int i) {
+		return this.tiledRanks.get(j).get(i);
 	}
 }
