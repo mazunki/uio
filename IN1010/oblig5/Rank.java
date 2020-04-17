@@ -41,14 +41,21 @@ public class Rank {
 	}
 
 	public String toString() {
-		//return this.src;
+		String out = "";
+		for (Tile t : this.tiles) {
+			out += t.toString();
+		}
+
+		return out;
+	}
+	public String prettyString() {
 		String leftChar = "|";
 		String rightChar = "|";
 		String betweenChar = "";
 
 		String out = "";
 		for (Tile t : this.tiles) {
-			out += t.toString();
+			out += t.prettyString();
 		}
 
 		return out;

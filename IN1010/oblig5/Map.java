@@ -10,8 +10,9 @@ public class Map implements Cartographer {
 	private ArrayList<Rank> tiledRanks; // sourceMap[j][i];
 
 	int mapWidth, mapHeight;
+	Labyrinth labyrinth;
 
-	public Map() {
+	public Map(Labyrinth labyrinth) {
 		try {
 			this.readFromFile();
 		} catch (FileNotFoundException e) {
@@ -19,8 +20,9 @@ public class Map implements Cartographer {
 		} catch (Error e) {
 			System.out.println(e);
 		}
+		this.labyrinth = labyrinth;
 	}
-	public Map(String filename) {
+	public Map(String filename, Labyrinth labyrinth) {
 		try { 
 			this.readFromFile(filename);
 		} catch (FileNotFoundException e) {
@@ -28,20 +30,7 @@ public class Map implements Cartographer {
 		} catch (Error e) {
 			System.out.println(e);
 		}
-	}
-	public static void main(String[] args) {
-		Map testMap = (args.length == 0) ? new Map() : new Map(args[0]);
-		
-		//System.out.println(testMap.sourceFilename);
-		//System.out.println(testMap.tiledRanks);
-		System.out.println(testMap.get(5,4));
-		System.out.println();
-		testMap.get(7,4).remark();
-		System.out.println(testMap);
-		for (Tile t : testMap.get(7,4).getNeighbours()) {
-			t.scream();
-		}
-		System.out.println(testMap);
+		this.labyrinth = labyrinth;
 	}
 
 	private boolean readFromFile() throws Error, FileNotFoundException {
@@ -59,8 +48,8 @@ public class Map implements Cartographer {
 
 		// getting board size
 		if (in.hasNext()) {
-			this.mapWidth = in.nextInt();
 			this.mapHeight = in.nextInt();
+			this.mapWidth = in.nextInt();
 		} else {
 			throw new Error("Provided file is empty.");
 		}
@@ -94,7 +83,33 @@ public class Map implements Cartographer {
 		return out;
 	}
 
+	public void print() {
+		String out = "";
+		for (Rank r : this.tiledRanks){
+			out += r.prettyString() + "\n";
+		}
+		System.out.println(out);
+	}
+
 	public Tile get(int j, int i) {
 		return this.tiledRanks.get(j).get(i);
+	}
+	public Rank get(int j) {
+		return this.tiledRanks.get(j);
+	}
+
+	public Tile findFirstOpening() {
+		for (Rank r : this.tiledRanks) {
+			for (Tile t : r.tiles) {
+				if (t instanceof Opening) {
+					return t;
+				}
+			}
+		}
+		return null; // no openings?
+	}
+
+	public void log() {
+		System.out.println(String.format("Found a map of size %d wide x %d tall", this.mapWidth, this.mapHeight));
 	}
 }
