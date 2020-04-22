@@ -3,7 +3,7 @@ public class Path extends Tile {
 		this.outputChar = "·";
 	}
 
-	@Override
+/*	@Override
 	public boolean hasPlayer() {
 		Player p = this.parentRank.map.labyrinth.player;
 		if (p.i == this.x && p.j == this.y) {
@@ -11,5 +11,5 @@ public class Path extends Tile {
 		} else {
 			return false;
 		}
-	}
+	}*/
 }

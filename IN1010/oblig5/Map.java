@@ -12,24 +12,13 @@ public class Map implements Cartographer {
 	int mapWidth, mapHeight;
 	Labyrinth labyrinth;
 
-	public Map(Labyrinth labyrinth) {
-		try {
-			this.readFromFile();
-		} catch (FileNotFoundException e) {
-			System.out.println("Couldn't find that file. =(");
-		} catch (Error e) {
-			System.out.println(e);
-		}
+	public Map(Labyrinth labyrinth) throws Error, FileNotFoundException {
+		this.readFromFile();
 		this.labyrinth = labyrinth;
 	}
-	public Map(String filename, Labyrinth labyrinth) {
-		try { 
+	public Map(String filename, Labyrinth labyrinth) throws Error, FileNotFoundException {
 			this.readFromFile(filename);
-		} catch (FileNotFoundException e) {
-			System.out.println("Couldn't find that file. =(");
-		} catch (Error e) {
-			System.out.println(e);
-		}
+
 		this.labyrinth = labyrinth;
 	}
 

@@ -49,10 +49,6 @@ public class Rank {
 		return out;
 	}
 	public String prettyString() {
-		String leftChar = "|";
-		String rightChar = "|";
-		String betweenChar = "";
-
 		String out = "";
 		for (Tile t : this.tiles) {
 			out += t.prettyString();

@@ -81,19 +81,12 @@ public class Tile extends Pixel {
 		}
 		return walks;
 	}
-	public ArrayList<Tile> getForwards(Tile lastTile) {
-		ArrayList<Tile> walks = new ArrayList<Tile>();
-		for (Tile t : this.getWalkable()){
-			if (t != lastTile) walks.add(t);
-		}
-		return walks;
-	}
 
 	public void scream() {
 		this.tempChar = "!";
 	}
 	public void remark() {
-		this.tempChar = "?";
+		this.tempChar = "░";
 	}
 	public void clearTempChar() {
 		this.tempChar = this.outputChar;
