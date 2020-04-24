@@ -38,10 +38,15 @@ abstract class Solver {
 
 	public void solveForAll() {
 		for (Tile tile : this.world.getOpenings()) {
-			tile.setStart();
+			tile.setStart(); // automatically clears map from previous settings
 			this.solve(tile);
-			tile.unsetStart();
 		}
+	}
+	public void solveForFirst() {
+		Tile tile = this.world.findFirstOpening();
+		tile.setStart(); // automatically clears map from previous settings
+		this.solve(tile);
+		
 	}
 
 	abstract void solve(Tile t);

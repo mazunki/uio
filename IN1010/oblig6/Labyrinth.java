@@ -3,16 +3,16 @@ import java.util.Scanner;
 
 public class Labyrinth {
 	Map board;
-	DFSSolver solver; // depth-first solver
+	BFSSolver solver; // depth-first solver
 
 	public Labyrinth() throws FileNotFoundException, Error{
 		this.board = new Map(this);
 		//this.player = new Player(this.board); // useful if we want to create a game or something
-		this.solver = new DFSSolver(this.board);
+		this.solver = new BFSSolver(this.board);
 	}
 	public Labyrinth(String filename) throws FileNotFoundException, Error {
 		this.board = new Map(filename, this);
-		this.solver = new DFSSolver(this.board);
+		this.solver = new BFSSolver(this.board);
 	}
 
 	public static void main(String[] args) {
@@ -31,7 +31,7 @@ public class Labyrinth {
 		this.board.print(); // show clean board
 		
 		//this.solver.solveFromUserInput();  // user interface
-		this.solver.solveForAll(); // for all openings...
-
+		//this.solver.solveForAll(); // for all openings...
+		this.solver.solveForFirst();
 	}
 }

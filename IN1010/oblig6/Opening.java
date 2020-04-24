@@ -1,7 +1,7 @@
 public class Opening extends Path {
 	public Opening() {
-		this.defaultChar = "▓";
-		this.remarkedChar = "░";
+		this.defaultChar = "░";
+		this.remarkedChar = "o";
 	}
 
 	public boolean hasPlayer() {

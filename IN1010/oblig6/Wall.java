@@ -1,7 +1,7 @@
 public class Wall extends Tile {
 	public Wall() {
 		this.defaultChar = "█";
-		this.remarkedChar = "█";
+		this.remarkedChar = "#";
 	}
 
 	public boolean hasPlayer() {

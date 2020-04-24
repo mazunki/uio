@@ -127,7 +127,7 @@ class TripleLinkedListNode {
 			if (checkForTile == weAreHereNow){
 				return true;
 			} else {
-				return this.previousNode.areWeRunningInCircles(weAreHereNow);
+				return this.previousNode.areWeRunningInCircles(weAreHereNow); // this messes with maps/4.in's results for some reason, i don't understand why
 			}
 		}
 		return false;

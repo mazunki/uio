@@ -3,8 +3,10 @@ import java.util.ArrayList;
 abstract class Tile extends Pixel {
 	boolean isStart = false;
 	boolean remarked;
+	boolean wondered;
 	String defaultChar; // subclasses assign these
 	String remarkedChar;
+	String wonderChar;
 
 	int indexOnRank;
 	Rank parentRank;
@@ -86,14 +88,36 @@ abstract class Tile extends Pixel {
 		return walks;
 	}
 
+	public Tile walkFrom(Tile from) {
+		if (from == null) return this.walkFrom();
+		assert this.getWalkable().size() == 2;
+
+		for (Tile t : this.getWalkable()){
+			if (t != from) return t;
+		}
+		return null;
+	}
+	public Tile walkFrom() {
+		assert this.getWalkable().size() == 1;
+		return this.getWalkable().get(0);
+	}
+
 	public void remark() {
 		this.remarked = true;
 	}
 	public void noRemark() {
 		this.remarked = false;
 	}
+	public void wonder() {
+		this.wondered = true;
+	}
+	public void noWonder() {
+		this.wondered = false;
+	}
+	
 
 	public void setStart() {
+		this.parentRank.map.clearCache();
 		this.isStart = true;
 	}
 
@@ -102,7 +126,7 @@ abstract class Tile extends Pixel {
 	}
 
 	public String toString() {
-		return String.format("(%d,%d,%s,%b)", this.parentRank.indexOnBoard, this.indexOnRank, this.defaultChar, this.hasPlayer());
+		return String.format("(%d,%d,%s)", this.parentRank.indexOnBoard, this.indexOnRank, this.prettyString());//, this.hasPlayer());
 	}
 	abstract String prettyString();
 

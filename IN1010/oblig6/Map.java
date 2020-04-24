@@ -83,10 +83,19 @@ public class Map implements Cartographer {
 	}
 
 	public Tile get(int j, int i) {
+		if (j<0 || i<0) return null;
+		if (i>=this.mapWidth || j>=this.mapHeight) return null;
 		return this.tiledRanks.get(j).get(i);
 	}
 	public Rank get(int j) {
 		return this.tiledRanks.get(j);
+	}
+
+	public int getHeight() {
+		return this.mapHeight;
+	}
+	public int getWidth() {
+		return this.mapWidth;
 	}
 
 	public Opening findFirstOpening() {
@@ -104,6 +113,16 @@ public class Map implements Cartographer {
 				if (t instanceof Opening) {
 					this.allOpenings.add((Opening)t);
 				}
+			}
+		}
+	}
+
+	public void clearCache() {
+		for (Rank r : this.tiledRanks) {
+			for (Tile t : r.tiles) {
+				t.unsetStart();
+				t.noRemark();
+				t.noWonder();
 			}
 		}
 	}
