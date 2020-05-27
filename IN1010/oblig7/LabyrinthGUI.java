@@ -39,8 +39,6 @@ import javafx.application.Platform;
 import javafx.concurrent.Task;
 import javafx.concurrent.Service;
 
-
-
 public class LabyrinthGUI extends Application {
     //LabyrinthGUI mygui;
     Map world;
@@ -79,7 +77,8 @@ public class LabyrinthGUI extends Application {
         textHolder.setPadding(new Insets(30.0, 0, 30.0, 0));
         home.add(textHolder, 0, 0);
 
-        Text tutorial = new Text("Once playing, press Q to return, \nS to solve, N to loop throuh solutions\n<TAB> to find openings.\n You can also click tiles with mouse. Press again to solve. Right click to return.");
+        Text tutorial = new Text("Once playing, press Q 123 to return, \nS to solve, N to loop throuh solutions\n<TAB> to find openings.\n You can also click tiles with mouse. Press again to solve. Right click to return.");
+
         tutorial.setFill(Color.YELLOW);
         TextFlow tutorialHolder = new TextFlow(tutorial);
         tutorialHolder.setPrefSize(600.0, 30.0);
@@ -121,7 +120,7 @@ public class LabyrinthGUI extends Application {
 
     public void getWorld() throws FileNotFoundException {
         FileChooser fc = new FileChooser();
-        fc.setInitialDirectory(new File("./maps/"));
+        fc.setInitialDirectory(new File("/"));
         File labyrinthFile = fc.showOpenDialog(this.stage);
         this.world = new Map(labyrinthFile);
 
