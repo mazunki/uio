@@ -4,10 +4,9 @@ import java.util.ArrayList;
 class Task {
 	int id;
 	int time, manpower;
-	int earliestStart, latestStart;
+	int earliestStart, latestStart, allowedSleep;
 	List<Task> edgesOut = new ArrayList<Task>();
 	List<Task> edgesIn = new ArrayList<Task>();
-	int numPredecessors;
 	String name;
 
 	public Task(int id, int time, int manpower, String name) {
@@ -22,6 +21,7 @@ class Task {
 	}
 
 	public boolean isCyclic(List<Task> visited) {
+		// takes at most O(n), bounded by the number of nodes+links, since we will at most check each node once
 		for (Task pre : this.getInwards()) {
 			if (visited.contains(pre)) {
 				return true;
@@ -35,6 +35,38 @@ class Task {
 		}
 		//System.out.println(this.toString() + ": " + this.info() + "\n" + visited);
 		return false;
+	}
+
+	public int getEarliestStart() {
+		if (this.getInwards().size() == 0) {
+			return 0;
+		}
+		
+		int min = 0;
+		for (Task n : this.getInwards()) {
+			int dist = n.getEarliestStart() + n.time;
+			if (dist > min) {
+				min = dist;
+			}
+		}
+		return min;
+	}
+	public int getFastestPossible() {
+		return this.getEarliestStart() + this.time;
+	}
+
+	public int getAllowedProcrastination() {
+		if (this.getOutwards().size() == 0) {
+			return 0;
+		}
+		int max = Integer.MAX_VALUE;
+		for (Task post : this.getOutwards()) {
+			int dist = post.getEarliestStart() - this.getFastestPossible();
+			if (dist < max) {
+				max = dist;
+			}
+		}
+		return max;
 	}
 
 	public List<Task> getInwards() {
@@ -56,6 +88,19 @@ class Task {
 	}
 
 	public String info() {
-		return "in: {" + this.edgesIn.toString() + "}, \nout: {" + this.edgesOut.toString() + "}";
+		return "IN: {" + this.edgesIn.toString() + "}, \tOUT: {" + this.edgesOut.toString() + "}";
+	}
+
+	public void timings() {
+		System.out.println(this);
+		System.out.println(this.info());
+		System.out.println("Can't start before: " + this.getEarliestStart());
+		System.out.println("I can sleep for " + this.getAllowedProcrastination());
+		System.out.println();
+	}
+	public void calculateTimings() {
+		this.earliestStart = this.getEarliestStart();
+		this.allowedSleep = this.getAllowedProcrastination();
+		this.latestStart = this.earliestStart + this.allowedSleep;
 	}
 }
