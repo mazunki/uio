@@ -1,0 +1,13 @@
+	} else {
+		pthread_t threads[2];
+		n_threads += 2;
+		
+		struct fft_args fft_even = {s_in, twiddles, buffer, s_out, half, skip*2};
+		pthread_create(&threads[0], NULL, fft_deref, (void *) &fft_even);
+		
+		struct fft_args fft_odd =  {s_in+skip, twiddles, odd_out, s_out, half, skip*2};
+		pthread_create(&threads[1], NULL, fft_deref, (void *) &fft_odd);
+		
+		pthread_join(threads[0], NULL);
+		pthread_join(threads[1], NULL);
+	}
