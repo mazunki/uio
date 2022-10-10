@@ -1,0 +1,6 @@
+Is pitch the same as frequency in the context of Praat?
+
+211.43401984939587 Hz (maximum pitch in SELECTION)
+143.90439660238553 Hz (mean pitch in SELECTION)
+105.55404246951747 Hz (minimum pitch in SELECTION)
+
