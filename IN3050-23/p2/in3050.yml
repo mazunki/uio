@@ -1,0 +1,16 @@
+name: in3050
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - matplotlib
+  - pandas
+  - scikit-learn
+  - jupyter
+  - pillow
+  - seaborn
+  - pip
+  - pip:
+    - tensorflow
