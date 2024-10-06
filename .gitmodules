@@ -16,3 +16,6 @@
 [submodule "IN4230/plenary-h23.git"]
 	path = IN4230/plenary-h23.git
 	url = https://codeberg.org/kr1stj0n/plenaries-in3230-in4230-h23
+[submodule "IN4120/in3120-2024.git"]
+	path = IN4120/in3120-2024.git
+	url = git@github.com:mazunki/in3120.git
