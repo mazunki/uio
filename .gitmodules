@@ -13,3 +13,6 @@
 [submodule "IN3000/p1"]
 	path = IN3000/p1
 	url = git@github.uio.no:IN3000/IN3000-precode-P1.git
+[submodule "IN4230/plenary-h23.git"]
+	path = IN4230/plenary-h23.git
+	url = https://codeberg.org/kr1stj0n/plenaries-in3230-in4230-h23
