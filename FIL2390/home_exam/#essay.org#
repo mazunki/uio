@@ -1,0 +1,175 @@
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [a4paper,12pt]
+#+LATEX_HEADER: \usepackage{geometry}
+#+LATEX_HEADER: \geometry{margin=2.5cm}
+
+* FIL2390: Exam. Mark Rowland
+* Can animals be moral?
+The question of whether animals can be moral has intrigued philosophers for centuries. Traditional views have often dismissed the idea, confining moral agency strictly to humans. However, in his book /«Can Animals be Moral?»/, Mark Rowlands challenges this idea by arguing that "agency comes in degrees" and that animals should be regarded as moral subjects, though not as moral agents.
+
+Rowlands' argument is significant as it shifts the focus from viewing animals merely as bystanders of our personal moral interests to considering them as active participants with moral capacities. This repositioning has implications for how we understand and interact with animals, potentially altering ethical frameworks and influencing animal rights debates. By examining his position, we gain insight into the complexities of moral agency and the philosophical justifications for extending moral consideration to animals.
+
+In this essay, we will delve into the theoretical and practical dimensions of morality, explore Rowlands' arguments in detail, and critically analyze his contributions to the debate. While doing this, we will also examine some other authors which have contributed to the space. Finally, we will reflect on the broader implications of Rowlands' argument, offer personal insights into the significance of recognizing animals as moral subjects, and potentially look at the gaps in his argument.
+
+* Ethics and Morality
+Before we attempt to answer the specific question regarding animals, it's important to understand what we're actually talking about. Because of this, we will first establish some groundwork before we get into the details.
+
+Ethics and morality are branches of philosophy that have been explored since ancient times (Aristotle, 335 BC). Ethics refers to the study of what is right and wrong, and how people should live their lives. Morality, on the other hand, seeks to distinguish between good and bad actions, the principles involved, and our reasons for acting. In a sense, we could say ethics works at a social/legal level, and morality exists at a social/personal level. That said, it's important to keep in mind these words are often used interchangeably, often because of linguistical error, but often also because they're co-dependent fields (Grannan, 2023).
+
+Philosophers like Aristotle were among the first to systematically study ethics. In his work /«Nicomachean Ethics»/, Aristotle explored the concept of virtue and the path to a good life. He proposed that ethical behavior stems from virtuous character traits developed through practice and habituation.
+
+In more recent times, we have split the field of Ethics into three subareas: meta-ethics, normative ethics and applied ethics. The first one is concerned about questions of the field itself, such as the meaning of "good" itself, and whether the values studied are cultural or universal. Normative ethics seek to provide frameworks and norms by which we can live fairly. Applied ethics, finally, uses both of the aforementioned to examine specific controversial issues, and is what we're doing here.
+
+Ethics and morality are essential for several reasons. They provide frameworks for resolving conflicts, guide behaviour towards a shared goal, and helps build trust within societies. Ethical principles promote social cohesion by establishing expectations for actions, enabling us to coexist peacefully as a society.
+
+** Extensions of ethical/moral entities
+*** Moral person
+In the early days of philosophical theory, the concept of a "moral person" had been tied to the idea of virtuous behaviour and the development of the character. A moral person, in the views of Aristotle, for instance, is someone who consistently acts in accordance with certain virtues (such as courage, temperance, patience, justice, e.g.), leading to a good and flourishing life. This person is seen as "good" because their actions align with societal standards of what is right and beneficial.
+
+Similarly, in religious contexts, moral personhood has often been associated with adherence to assumed, unspoken or divine laws/commandments. The moral quality of a person's actions under this deontological perspective is judged based upon their alignment to the words of "some dude". We can see the parallel between these: their adherence, or ability to adhere to whatever their idea of goodness is.
+
+With this understanding in mind, we will later come back able to tell if animals are moral entities or not under these frameworks, and whether these eurocentric frameworks are sufficient at a larger scale.
+
+*** Ethical person
+The term "ethical person", on the other hand, extends beyond the individual's character to include their capacity for rational thought regarding morality and ethics itself. According to Kant, ethical personhood is rooted in the ability to reason and act according to universal moral laws (1785). Following, an ethical person is one that is capable of formulating and adhering to maxims which can be universally applied, guided by the principle of treating others as ends in themselves, and not means to an end.
+
+From this inclination, we can say that an entity is only capable of being ethical if they have an understanding of the ideas of good, bad, right and wrong, and is able to rationalize around the decisions they make, potentially improving their morals as a consequence.
+
+* Agents, Subjects and Patients
+Mark Rowlands (2012) presents a nuanced framework for understanding moral entities, distinguishing between moral subjects, agents, and patients. This framework is essential for comprehending his argument that animals, while not full moral agents, can still possess moral significance.
+
+*Moral agents* are entities capable of reflective moral reasoning and understanding the implications of their actions. This category traditionally includes humans, who can deliberate on moral principles, make judgments about right and wrong, and adjust their behavior accordingly. Moral agents are expected to have a deep understanding of moral concepts and the capacity to act based on this understanding. This is analogous to ethical personhood.
+
+*Moral subjects* are beings that can exhibit behaviors aligning with moral principles, driven by moral emotions such as empathy, cooperation, and fairness. Unlike moral agents, moral subjects may not have the reflective capacity to fully understand the moral implications of their actions. However, their behaviors indicate a form of moral control, where they act in ways consistent with moral norms.
+
+*Moral patients* are beings towards whom moral agents have responsibilities. These entities deserve moral consideration based on their capacities and experiences, regardless of their ability to engage in moral reasoning. Moral patients include both moral subjects and other beings who can be affected by the actions of moral agents. The concept of moral patients expands the scope of moral consideration to include any entity that can suffer or benefit from the actions of moral agents. This idea is very similar to Martha Nussbaum's capabilities approach (2013), where she argues that animals deserve the right of living well on the premise that they have the potential of doing so.
+Like most frameworks and terms used in philosophy, having clear cut definitions of things is useful, especially during analysis. Different degrees of moral status is a strong point in this favour, although it may risk having an opposite effect. If one only considers moral agents to have moral status, it leaves room for segregation of those which we would otherwise have included as valuable beings.
+
+* The inclusion of animals
+
+Rowlands discusses various authors in his book, looking at the individual claims of various naturalists. In the attempt to answer the question, he explores the premises which previous authors have laid forth. Following, we'll summarize the authors he critiques.
+
+** Charles Darwin
+Darwin argued that social animals with well-marked social instincts or parental/filial affections could develop a moral sense, provided that their mental faculties became more developed (1871). He claims that while animals could posses the building blocks for morality, they might lack the full moral sense found in humans, mainly due to differences in cognitive abilities.
+
+Looking at morality under the scope of evolutionary biology makes sense: protecting people you're related to in some sense, and getting their approval is beneficial to the survival of yourself and thus the reproduction of your species.
+
+That said, as Rowlands says, Darwin doesn't believe that animals are capable of reflecting upon past or future actions, or to approve of disprove of them. With our previous definition of ethics vs morality, this leaves no room for ethics, but could potentially leave room for morality (at least driven by non-rational emotions).
+
+** Frans de Waal
+The primatologist De Waal rejects the idea that morality sits on top of an otherwise selfish, evil and brutish nature, holding it in check (2005). He discussses the idea of morality being an essential part of our evolution. The veneer theory, as explained by Thomas Huxley, claims that our ancestors decided to live together in covenants by their own artifical choice to protect themselves from the otherwise dangerous nature.
+
+De Waal's opinion is that human morality stems directly from the social instincts we have developed while coexisting with other animals. He also rejects the idea that it's unlikely that humans are able to deny their own genes by choosing to change their inner morality. Rowland and De Waal both claim that there is sufficient evidence to support the idea that primates possess the same building blocks required for morality. [our inner ape]
+
+On the flip side, De Waal agrees with Darwin in that there is a key difference between humans and non-humans: namely the idea that humans have explicit teachings about the value of community, and its precedence in terms of invididual interests. [primates and philosophers]
+
+The status of non-human animals in both the arguments of De Waal and Darwin is very much one of moral agents.
+
+** Marc Bekoff, Jessica Pierce
+Pierce and Bekoff, in their book /«Wild Justice»/, provide evidence about the moral behaviour animals, suggesting that animals engage in complex social interactions (2009). Exhibited moral behaviors include traits such as empathy, cooperation, and a sense of fairness, which are essential for the regulation of social interactions within groups. These behaviors indicate that animals possess a form of morality that, while different from human morality, is nevertheless genuine and significant.
+
+Unlike the previous biologists, these authors align more closely to Rowland's perspective of moral subjects. Their perspective considers morality as relative to each species, making it all-encompassing. Rowlands rejects this idea, believing that at least some aspects of morality is shared between humans and non-human animals.
+
+* Control and Understanding
+While this outline of authors is biased to make a point, we can observe that several authors distinguish between animals having the building blocks for morality, and having the capability to make choices about their own morality. This lines up with our distinction between morality and ethics above. Rowland makes a similar distinction between control and understanding.
+
+In his analysis, Rowlands differentiates between the control over one's actions and the understanding of those actions in a moral context. Animals may exhibit behaviors driven by moral emotions such as empathy and fairness, indicating they possess the building blocks for morality. These behaviors suggest a form of moral agency, where animals act in ways that align with moral principles even if they do not possess a reflective understanding of those principles.
+
+*Control* refers to the ability to regulate one's actions according to certain rules or norms, which can be observed in many social animals. For example, animals engaging in cooperative hunting or showing empathy towards others in their group demonstrate a form of control that aligns with moral behavior. They follow social norms and exhibit behaviors that promote group cohesion and well-being, indicating a form of moral regulation. As a remark beside Rowland's point: whether this is driven by a selfish but subconscious long-term interest for the individual, its species, or what it subconsciously cares about does not really matter, for the sake of argument.
+
+*Understanding*, on the other hand, involves a higher level of cognitive ability where an individual reflects on their actions, considers their moral implications, and makes conscious choices based on ethical reasoning. This level of understanding is typically associated with human morality, where individuals can deliberate on moral principles, make judgments about right and wrong, and adjust their behavior accordingly.
+
+Rowlands argues that while animals may not have the full reflective understanding characteristic of human ethical reasoning, they do possess a form of moral control. This control is evident in their ability to act in ways that are consistent with moral principles, even if they do not engage in reflective moral deliberation. This means, at the very least, that animals are moral subjects, and by extension also moral patients.
+
+** Moral Responsibility
+Rowlands also delves into the concept of moral responsibility, which is closely linked to his distinctions between control and understanding. Moral responsibility typically requires that an agent has control over their actions and an understanding of the moral implications of those actions. In traditional human contexts, this means that an individual can be held accountable for their actions because they have both the capacity to control their actions and the cognitive ability to understand the moral significance of them.
+
+For animals, the question of moral responsibility is more complex. Since animals might exhibit moral behaviors without the reflective understanding of their moral implications, their capacity for moral responsibility may differ from that of humans. For the sake of argument, Rowlands looks at the different truth cases of whether animals are able to control andor understand the moral implications of their doings.
+
+*** Lack of control
+Let's assume a creature has no ability to control their actions. By Kantian principles, good motivations  are those which you ought to act on, and vice versa. While there's plenty of philosophical debate on the specific phrasing of Kant by authors such as Frankfurt, Reid, or Blum, the general idea of accountability and responsibility requiring the precedent of having the option to do something is mostly accepted. This is often refered to as the "ought implies can" principle. In other words, it does not make sense to claim that animals are morally responsible if they didn't even have the option or ability to act morally.
+
+While this argument seems solid, Rowland takes inspiration from Thomas Nagel to refute it. He distinguishes between a prudental ought and a moral ought. According to him, there is little reason to believe prudential action requires control, so he questions whether it's obvious that moral ones do. Resourcefully, he explains the motivations people may have for doing evil actions can be explained by a determinist worldview.
+
+His claim that prudence, the rational requirement on desire and action (as Ramon Das puts it, 2003), does not intuitively require control seems unsituated. The very thing which separates an imprudent person from a prudent one is their ability to follow through with what they have rationalized as prudent.
+
+That said, and agreeing with Rowlands, blaming someone for doing the only thing they could do is not fair nor reasonable, whether we believe in determinism or not. Instead, the responsibility of action would fall on society, nature or the ones who put the being in a situation they had no escape from. With this, we're distinguishing the good or evil nature of performing actions from responsibility of said actions.
+
+On the note of social responsibility, Nussbaum makes a clear case for why this is required. It's not only a matter of shifting the blame over to someone else, but instead a demand for social justice, for permitting entities to explore their minimum capabilities.
+
+*** Lack of Understanding
+Next, let's consider a scenario where a creature has control over its actions but lacks understanding of their moral implications. For example, an animal might refrain from harming another because it has learned that such behavior is socially unacceptable within its group. The animal controls its actions according to social norms, but it does not reflect on the moral reasons behind these norms.
+
+Rowlands suggests that in such cases, the animal can still exhibit moral behavior. The lack of reflective understanding does not negate the moral value of the actions. However, this limited understanding means the animal in this example is not morally responsible in the same way a creature with this capability would be. The animal's actions align with moral motivations, but the animal does not engage in moral reasoning to arrive at these actions.
+
+Interestingly, we can make an observation here about the moral development theory of Lawrence Kohlberg (1981). Since the creature is effectively acting with the proper behaviour which yields them social approval, they're effectively at the third stage of his moral development model, putting them at the conventional level. They would not qualify for a higher stage (i.e acting properly for the sake of duty and laws), since they have no notion of what it means to be a proper citizen of their society.
+
+Furthermore, I would question whether the understanding most human animals have over the morality of their actions is any more nuanced than one explained by progressive improvements through trial-and-error and compromises, combined with close-to-unquestioned abiding to whatever the elderly and society tells us is proper. In other words, our understanding of what's morally good and correct is entirely explained by our familiarity with the social contract and its inheritance. If that's the case, would that be a bad thing?
+
+* Implications of subject animals
+
+Rowlands' argument for considering animals as moral subjects rather than mere moral patients could have significant implications for ethical frameworks, animal rights debates, and our overall understanding of moral agency. By shifting the focus from viewing animals as passive recipients of moral consideration to recognizing them as active participants with moral capacities, Rowlands invites a reevaluation of how we interact with and treat animals.
+
+*** Ethical Frameworks
+Traditional ethical theories, particularly those grounded in Kantian and utilitarian principles, often regard animals primarily as moral patients---entities that can be harmed or benefited by the actions of moral agents but lack moral agency themselves---. By acknowledging that animals can be moral subjects, Rowlands challenges these frameworks to incorporate the moral significance of animal behavior.
+
+It's worth nothing that the idea of treating animals as subjects is not an innovative concept. For instance, Peter Singer, a utilitarianist, implicitly already assumes this position in his essay «All Animals are Equal» (1989), even if he had previously considered them as patients, implicitly, in his «Animal Liberation» book (1975) on the premise that they're capable of suffering. More recently, Martha Nussbaum also discussed this idea from the perspective of artistotelic deontology, in her «Justice for Animals» book (2022).
+
+*** Pets, Stock, and Wildlife
+Recognizing animals as moral subjects has direct implications for animal rights debates. If animals are seen as beings with moral capacities, they should be afforded greater moral consideration and protection. This perspective supports stronger animal welfare laws and policies aimed at safeguarding animals' well-being.
+
+Practices that cause significant harm or distress to animals, such as factory farming, animal testing, and certain forms of entertainment, would come under stricter scrutiny. Policies would need to reflect the moral significance of animals' behaviors and capacities, leading to more humane treatment and potentially recognizing certain rights for animals.
+
+This argument extends to everyday interactions with animals. Recognizing animals as moral subjects encourages us to consider their well-being in our daily lives and decision-making processes. This could influence how we care for pets, approach wildlife conservation, and interact with animals in various settings.
+
+For example, pet owners might put more emphasis on providing an enriching environment that allows their pets to express natural behaviors, reflecting their moral capacities. Wildlife conservation efforts might focus more on preserving social structures and natural habitats that enable animals to engage in their "natural" morally relevant behaviors.
+
+The idea of improving the conditions of non-human animals, and making the habitat of pets more akin to those they would explore naturally is not unheard of either. Popular online personas such as Maya Higa (through the Alveus Sanctuary) and Thor Hall (through his ferret sanctuary and streams) often bring up the need for better animal care.
+
+*** Scientific Research and Product Testing
+Rowlands' framework also opens up new avenues for philosophical and scientific inquiry. Philosophers might explore further the implications of degrees of moral agency and how these can be integrated into existing ethical theories. Scientists, particularly those in fields like ethology and cognitive science, might investigate the specific behaviors and capacities that constitute moral subjecthood in various species.
+
+This interdisciplinary approach can deepen our understanding of animal behavior and cognition, providing empirical support for philosophical arguments and potentially leading to new ethical insights.
+
+Other fields of biological science should also revisit their ethical frameworks, especially concerning interference with the lives of creatures who haven't consented to it. For instance, neurobiology and other research fields that use animals as means to an end should reconsider their practices, emphasizing the moral subjecthood of these animals and treating them with the respect and consideration they deserve. Many researchers still believe and defend that animal experimentation is okay, mainly on the premise that the ethical board approves of their actions (Caldwell, 2023).
+
+
+* Capabilties Approach
+As we have hinted to throughout this article, Rowlands is not the first philosopher to stand up against the status quo, and consider the fact that we're not being inclusive enough in our claims.
+
+Nussbaum's capabilities approach offers an alternative, although more compelling argument which invites us to consider the value of animals. Nussbaum argues that every being deserves the right to live well based on its capabilities. This approach is rooted in the idea that the good life involves the ability to perform certain central activities, and each being should have the opportunity to realize its potential.
+
+By using her framework, it is not difficult to infer that animals should be treated well on the very premise that they are able to feel pain and joy. Following from the claim that animals are able to act morally, it follow directly, under Nussbaum's approach, that animals should be able to enact upon their ability to act morally, even if not think ethically.
+
+With this said, Rowlands' book sets out to answer the question of whether animals are moral beings, and not whether moral beings deserve to be treated well, or whether animals do so. While his book does initiate the conversation of the question, and explores various aspect, it does not seem like he fully answered it, and instead takes a more sentimentalist approach of defending their rights. Albeit well-intentioned, these are best explored as different questions entirely.
+
+
+* Conclusion
+Mark Rowlands' argument for recognizing animals as moral subjects rather than mere moral patients manifests a significant shift in our understanding of moral agency. By highlighting the degrees of moral agency, Rowlands challenges traditional ethical frameworks and animal rights debates, calling for a more inclusive and empathetic approach to morality. His framework emphasizes the importance of acknowledging the moral capacities of animals and the ethical responsibilities humans have towards them.
+
+By bringing in Martha Nussbaum's capabilities approach to complement and extend Rowlands' ideas by focusing on the potential for flourishing and the intrinsic value of capabilities, together, these perspectives offer a robust foundation for rethinking our ethical frameworks and interactions with animals.
+
+Recognizing animals as moral subjects can transform our ethical frameworks, strengthen animal rights, and promote more compassionate human-animal interactions. While there may be gaps in Rowlands' argument that warrant a more precise exploration, his perspective, alongside Nussbaum’s capabilities approach, offers a valuable contribution to the ongoing discourse on animal morality and ethics.
+
+Do the right thing (Alphabet, 2015). Don't be evil (Google, 1999).
+
+* Bibliography
+- Aristotle. /«Nicomachean Ethics»/. Translated by W. D. Ross. 335 BC
+- Alphabet. /«Alphabet Code of Conduct»/. 2015. https://www.engadget.com/2015-10-02-alphabet-do-the-right-thing.html
+- Bekoff, M., Pierce J. /«Wild Justice: The Moral Lives of Animals»/. 2009
+- Caldwell, A. /«Animal research is still the best option»/. Youtube. Neuro Transmissions. 2023. https://youtu.be/219sZXIs468
+- Darwin, C. /«The Descent of Man, and Selection in Relation to Sex»/. 1871.
+- Das, R. «Time and Ethics: Essays at the Intersection». Chapter. Prudence, Identity, and Value. 2003. https://link.springer.com/chapter/10.1007/978-94-017-3530-8_3
+- De Waal, F. /«Our Inner Ape: A Leading Primatologist Explains Why We Are Who We Are»/. 2005. ISBN: 1594481962
+- De Waal, F. /«Primates and Philosophers: How Morality Evolved»/. 2006. ISBN: 1594481962
+- Grannan, C. /«What's the difference between morality and ethics?»/. Encyclopeida Britannica. 2023. Accessed May 30, 2024. https://www.britannica.com/story/whats-the-difference-between-morality-and-ethics
+- Google. /«Google Code of Conduct»/. 1999. https://web.archive.org/web/20050204181615/http://investor.google.com/conduct.html
+- Hall, T. /«Gaming, Gamedev and Mental Health»/. Youtube. HealthyGamerGG. https://youtu.be/430UIt6mLW4
+- Higa, M. /«Alveus Sanctuary»/. Accessed May 30, 2024. https://alveussanctuary.org/
+- Kant, I. /«Groundwork of the Metaphyiscs of Morals»/. 1785
+- Kohlberg, L. /«The Philosophy of Moral Development: Moral Stages and the Idea of Justice»/. 1981
+- Nussbaum, M. /«Creating Capabilities. The Human Development Approach»/. 2013
+- Nussbaum, M. /«Justice for Animals: The Moral and Legal Status of Nonhuman Animals»/. 2022
+- Rowlands, M. /«Can Animals Be Moral?»/. 2012
+- Singer, P. /«All Animals are Equal»/. Part of /«Animal rights and human obligations»/. 1989. https://users.manchester.edu/Facstaff/SSNaragon/Online/texts/425/Singer%20(1989),%20All%20Animals%20are%20Equal.pdf
+- Singer, P. /«Animal Liberation»/. New York: HarperCollins, 1975
