@@ -15,6 +15,10 @@ IN1000/oblig5/fibonacci.txt
 *.cb2
 .*.lb
 
+# vhdl big files
+*.wlf
+transcript
+
 ## Intermediate documents:
 *.dvi
 *.xdv
