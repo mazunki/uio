@@ -1,0 +1,47 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.353552",
+   "Default View_TopLeft":"-221,-1459",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 2080 -y -960 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 2080 -y -940 -defaultsOSRD
+preplace port SB_0 -pg 1 -lvl 0 -x -30 -y -700 -defaultsOSRD
+preplace port SA_0 -pg 1 -lvl 0 -x -30 -y -720 -defaultsOSRD
+preplace port c_0 -pg 1 -lvl 5 -x 2080 -y -720 -defaultsOSRD
+preplace port EN_synch_0 -pg 1 -lvl 5 -x 2080 -y -660 -defaultsOSRD
+preplace port DIR_synch_0 -pg 1 -lvl 5 -x 2080 -y -680 -defaultsOSRD
+preplace port mclk_0 -pg 1 -lvl 0 -x -30 -y -680 -defaultsOSRD
+preplace port reset_0 -pg 1 -lvl 0 -x -30 -y -660 -defaultsOSRD
+preplace portBus abcdefg_0 -pg 1 -lvl 5 -x 2080 -y -700 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 440 -y -990 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 1570 -y -580 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 1220 -y -870 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 440 -y -630 -defaultsOSRD
+preplace inst fpga_system_0 -pg 1 -lvl 4 -x 1940 -y -680 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 30 -1130 670 -730 1370
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 20 -1140 660
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 660 -560 N
+preplace netloc axi_gpio_0_gpio_io_o 1 3 1 1720 -640n
+preplace netloc fpga_system_0_gpio2 1 3 2 NJ -550 2060
+preplace netloc SB_0_1 1 0 4 10J -530 650J -700 NJ -700 NJ
+preplace netloc SA_0_1 1 0 4 0J -730 650J -720 NJ -720 NJ
+preplace netloc fpga_system_0_c 1 4 1 NJ -720
+preplace netloc fpga_system_0_EN_synch 1 4 1 NJ -660
+preplace netloc fpga_system_0_abcdefg 1 4 1 NJ -700
+preplace netloc fpga_system_0_DIR_synch 1 4 1 NJ -680
+preplace netloc mclk_0_1 1 0 4 0J -520 670J -680 NJ -680 NJ
+preplace netloc reset_0_1 1 0 4 -10J -510 680J -670 NJ -670 1720J
+preplace netloc processing_system7_0_DDR 1 1 4 NJ -1070 1380 -960 N -960 N
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ -1050 1370 -940 N -940 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 680J -1010n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 1380 -870n
+levelinfo -pg 1 -30 440 1220 1570 1940 2080
+pagesize -pg 1 -db -bbox -sgen -140 -1310 2240 330
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_ps7_cnt":"1"
+}

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 22 19:49:26 2020
+# Process ID: 23357
+# Current directory: /uio/hume/student-u81/rolfvh/IN3160/oblig1/counter/vivado/my_counter_project/my_counter_project.runs/synth_1
+# Command line: vivado -log counter_entity.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source counter_entity.tcl
+# Log file: /uio/hume/student-u81/rolfvh/IN3160/oblig1/counter/vivado/my_counter_project/my_counter_project.runs/synth_1/counter_entity.vds
+# Journal file: /uio/hume/student-u81/rolfvh/IN3160/oblig1/counter/vivado/my_counter_project/my_counter_project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source counter_entity.tcl -notrace

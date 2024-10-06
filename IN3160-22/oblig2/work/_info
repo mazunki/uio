@@ -1,0 +1,130 @@
+m255
+K4
+z2
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/uio/hume/student-u81/rolfvh/IN3160-22/oblig1
+T_opt
+!s110 1644134846
+V=1HP[XGMFAL[<9Go1cFa[1
+Z1 04 8 13 work decoder1 decoder1_arch 1
+=1-0050568068b4-61ff81bc-53e33-f6076
+Z2 o-quiet -auto_acc_if_foreign -work work
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1644135020
+V;KO:^b7:3RN84`[@OfjQX0
+Z5 04 15 13 work decoder2_entity decoder2_arch 1
+=1-0050568068b4-61ff826c-feb7-f60ee
+R2
+R3
+n@_opt1
+R4
+R0
+T_opt2
+!s110 1644135163
+V3>[=`HWHI2<>id8_HLhkG0
+R1
+R5
+=1-0050568068b4-61ff82fa-c4659-f6236
+R2
+R3
+n@_opt2
+R4
+Edecoder1
+Z6 w1644134785
+Z7 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 10
+Z10 d/uio/hume/student-u81/rolfvh/IN3160-22/oblig2
+Z11 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig2/decoder1.vhd
+Z12 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig2/decoder1.vhd
+l0
+L6 1
+VR2mW>hH_N1_`dNYoFNeaL3
+!s100 ^[a]Wn;Ug_@ndan?B9L]60
+Z13 OL;C;2020.4;71
+33
+Z14 !s110 1644135153
+!i10b 1
+Z15 !s108 1644135153.000000
+Z16 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig2/decoder1.vhd|
+Z17 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig2/decoder1.vhd|
+!i113 0
+Z18 o-work work -2008 -explicit
+Z19 tExplicit 1 CvgOpt 0
+Adecoder1_arch
+R7
+R8
+R9
+DEx4 work 8 decoder1 0 22 R2mW>hH_N1_`dNYoFNeaL3
+!i122 10
+l16
+L14 14
+VIORJ]@1IE@o5N42fO@@?K0
+!s100 lGzYe:1bFQ5L4c>hQMH`i2
+R13
+33
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+R19
+Edecoder2_entity
+w1644134994
+R7
+R8
+R9
+!i122 11
+R10
+8/uio/hume/student-u81/rolfvh/IN3160-22/oblig2/decoder2_entity.vhd
+F/uio/hume/student-u81/rolfvh/IN3160-22/oblig2/decoder2_entity.vhd
+l0
+L7 1
+VJFEK3[f4PI3;:GiYm?a6K1
+!s100 YKRaHU;Z4]iNjHHITgQ>E3
+R13
+33
+Z20 !s110 1644135154
+!i10b 1
+!s108 1644135154.000000
+!s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig2/decoder2_entity.vhd|
+!s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig2/decoder2_entity.vhd|
+!i113 0
+R18
+R19
+Adecoder2_arch
+w1644135148
+R7
+R8
+R9
+DEx4 work 15 decoder2_entity 0 22 JFEK3[f4PI3;:GiYm?a6K1
+!i122 11
+8/uio/hume/student-u81/rolfvh/IN3160-22/oblig2/decoder2_arch.vhd
+F/uio/hume/student-u81/rolfvh/IN3160-22/oblig2/decoder2_arch.vhd
+l3
+L1 13
+VkBQ@GORMZc209aD3>jX@E3
+!s100 Sb7RIJ;N[<M@OZnY[d8DK0
+R13
+33
+R20
+!i10b 1
+R15
+!s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig2/decoder2_arch.vhd|
+!s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig2/decoder2_arch.vhd|
+!i113 0
+R18
+R19

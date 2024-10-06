@@ -1,0 +1,1253 @@
+Received: 2 September 2016
+
+| Accepted: 14 March 2017
+
+DOI: 10.1111/desc.12572
+
+SHORT REPORT
+
+Iconicity in the speech of children and adults
+Lynn K. Perry1 | Marcus Perlman2 | Bodo Winter3 | Dominic W. Massaro4 |
+Gary Lupyan5
+1
+Department of Psychology, University of
+Miami, Coral Gables, Florida, USA
+
+Abstract
+
+2
+
+Iconicity – the correspondence between form and meaning – may help young children
+
+Language and Cognition Group, Max Planck
+Institute for Psycholinguistics, Nijmegen, The
+Netherlands
+3
+
+Department of English Language and
+Literature, University of Birmingham, UK
+4
+
+Department of Psychology, University of
+California Santa Cruz, USA
+5
+
+Department of Psychology, University of
+Wisconsin Madison, USA
+Correspondence
+Lynn K. Perry, 5665 Ponce De Leon Blvd.,
+Department of Psychology, University of
+Miami, Coral Gables, FL 33124, USA.
+Email: lkperry@miami.edu
+
+learn to use new words. Early-­learned words are higher in iconicity than later learned
+words. However, it remains unclear what role iconicity may play in actual language
+use. Here, we ask whether iconicity relates not just to the age at which words are acquired, but also to how frequently children and adults use the words in their speech. If
+iconicity serves to bootstrap word learning, then we would expect that children should
+say highly iconic words more frequently than less iconic words, especially early in development. We would also expect adults to use iconic words more often when speaking to children than to other adults. We examined the relationship between frequency
+and iconicity for approximately 2000 English words. Replicating previous findings, we
+found that more iconic words are learned earlier. Moreover, we found that more iconic
+words tend to be used more by younger children, and adults use more iconic words
+when speaking to children than to other adults. Together, our results show that young
+children not only learn words rated high in iconicity earlier than words low in iconicity,
+but they also produce these words more frequently in conversation – a pattern that is
+reciprocated by adults when speaking with children. Thus, the earliest conversations
+of children are relatively higher in iconicity, suggesting that this iconicity scaffolds the
+production and comprehension of spoken language during early development.
+
+RESEARCH HIGHLIGHTS
+
+numerous possibilities, such as being asked to get the ‘cup’ in the con-
+
+• We investigated the frequency and iconicity, or sound–meaning
+
+in some contexts, children must learn to generalize to new contexts
+
+text of a cluttered kitchen. Even after understanding a word’s meaning
+
+correspondence, of ~2000 words in children’s and adults’ speech.
+
+and to produce the word on their own. And yet by the time the aver-
+
+• Early parent–child conversations are characterized by the frequent
+
+age child is 2.5 years old, she produces approximately 700 words and
+many more word combinations (Fenson et al., 1994) – all before she
+
+use of highly iconic words.
+• Adult conversations with other adults are characterized by the fre-
+
+can even tie her own shoes. How do children solve such a difficult
+problem, and not only understand, but also produce, all these hun-
+
+quent use of more arbitrary (less iconic) words.
+• Children’s speech becomes less iconic (and more adult-like) over
+
+dreds of words? One way children might gain an advantage is by making use of the iconicity of certain words, or the resemblance between
+
+development.
+
+the sound of a word and its meaning (e.g., the word ‘slurp’ sounds
+like the sound made when performing that action). In this paper, we
+
+1 | INTRODUCTION
+
+examine the role of iconicity in language use, asking whether iconicity relates to the frequency of words in children’s and adults’ speech.
+
+Word learning should be incredibly difficult. Children must often
+
+A growing number of studies demonstrate that adults and espe-
+
+interpret the meaning of a new word in chaotic environments with
+
+cially children can use iconicity as an aid to learn and generalize the
+
+Developmental Science. 2017;e12572.
+https://doi.org/10.1111/desc.12572
+
+wileyonlinelibrary.com/journal/desc 
+© 2017 John Wiley & Sons Ltd
+
+|
+
+1 of 8
+
+2 of 8
+
+|
+
+PERRY et al.
+
+meanings of new words. For example, Lupyan and Casasanto (2015)
+
+Here, we examine the iconicity and frequency of words in children’s
+
+found that adult participants were better at learning to categorize
+
+and adults’ speech. If, as we propose, iconicity supports word learning
+
+two species of aliens with pointed or rounded heads when they were
+
+and production, then words high in iconicity ought to be more frequent
+
+labeled with iconic names corresponding with their visual feature
+
+in young children’s speech than words low in iconicity. One reason
+
+(‘crelch’ and ‘foove’, respectively). Other studies have shown that chil-
+
+early-­acquired words might be more iconic than later-­acquired words
+
+dren can use iconicity to learn individual word–referent associations
+
+is that caregivers may adjust their language when speaking to children
+
+(Asano et al., 2015; Imai, Kita, Nagumo, & Okada, 2008; Kantartzis,
+
+to facilitate comprehension. When speaking to adults, however, there
+
+Imai, & Kita, 2011; Maurer, Pathman, & Mondloch, 2006). For example,
+
+would not be the same adjustment requirements. We therefore also
+
+when English-­learning preschoolers were taught novel verbs following
+
+expect highly iconic words to be more frequent in adults’ speech to
+
+the iconic structure of Japanese mimetics (a special class of words that
+
+children than in their speech to other adults. Alternatively, it may turn
+
+tend to be high in iconicity, e.g. Imai & Kita, 2014), they were more
+
+out that there is no relationship between iconicity and frequency of
+
+accurate at generalizing the correct action to a novel agent than pre-
+
+words in children’s and adults’ speech. If so, it would suggest that ico-
+
+schoolers taught with non-­iconic verbs (Kantartzis et al., 2011). Even
+
+nicity, while perhaps helpful in initial acquisition, does not continue to
+
+children as young as 14 months of age have shown a learning advan-
+
+play an active role in early communication and language use.
+
+tage for iconic words (Imai et al., 2015).
+
+Here we collected iconicity ratings for approximately 2000 English
+
+One way iconicity can help children learn new words is by con-
+
+words, and then compared these ratings to the frequency of the words
+
+straining potential meanings of a word (Imai & Kita, 2014; Perniss &
+
+in children’s speech, adults’ child-­directed speech, and adults’ adult-­
+
+Vigliocco, 2014). Children’s sensitivity to the relationship between a
+
+directed speech. By examining differences in iconicity in these differ-
+
+word’s form and meaning may help them to interpret the meaning of a
+
+ent registers of speech, we shed light on the role of iconicity in word
+
+new word in ambiguous situations. The better a child is at identifying a
+
+usage, and how it might scaffold the acquisition of spoken language
+
+word’s meaning, the more accurately they will then be able to general-
+
+during development.
+
+ize that word to new instances and contexts, subsequently increasing
+their productions of the word in new contexts.
+If iconicity facilitates early word learning, then the words of a language that are learned earliest by children should be most iconic. In
+addition to the high prevalence of onomatopoeia (e.g., ‘moo’, ‘quack’)
+
+2 | METHODS
+2.1 | Participants
+
+in children’s early vocabulary (e.g., Laing, 2014), recent analyses of
+
+We recruited 1593 native English speakers residing in the United
+
+English and Spanish (Perry, Perlman, & Lupyan, 2015) and British
+
+States via Amazon Mechanical Turk.
+
+Sign Language (Thompson, Vinson, Woll, & Vigliocco, 2012) show
+that the earliest-­learned words tend to be the most iconic. Perry
+and colleagues obtained native-­speaker iconicity ratings for English
+
+2.2 | Stimuli
+
+vocabulary (Fenson et al., 1994) and Spanish vocabulary (Jackson-­
+
+We collected iconicity ratings for 2117 English words, of which 592
+
+Maldonado et al., 2003) from the respective MacArthur-­Bates
+
+were drawn from the MacArthur-­Bates Developmental Inventory of
+
+Communicative Developmental Inventory (MCDI) checklists, and ex-
+
+Words and Sentences (MCDI), a normed list of the early productive
+
+amined whether these ratings predicted the proportion of children
+
+vocabulary of 16–30-­month-­old toddlers learning American English
+
+who produced each word at age 30 months. In both languages, they
+
+(Fenson et al., 1994). For these words, we used ratings previously col-
+
+found that early-­learned words, such as ‘bubbles’ and ‘splash’, tend to
+
+lected by Perry et al. (2015). The 1525 new words were selected to
+
+be rated higher in iconicity than later-­acquired words, such as ‘per-
+
+maximize coverage with relevant psycholinguistic datasets of age of
+
+son’ and ‘bench’. The relationship between iconicity and age of acqui-
+
+acquisition and concreteness norms.1 Compound and homonymous
+
+sition held after accounting for other factors known to relate to age
+
+words (e.g., tear) were excluded. We created four randomized orders
+
+of acquisition, such as word length, word frequency, and concrete-
+
+of the complete list and broke each into sub-­lists of 25–26 randomly
+
+ness. The relationship between iconicity and age of acquisition also
+
+selected words.
+
+remained highly significant after removing all onomatopoetic words
+from the analyses.
+
+Age of acquisition (AoA) was approximated using adult ratings from
+Kuperman, Stadthagen-­Gonzalez and Brysbaert (2012) comprising the
+
+These results show that young children tend to learn words rated
+
+most comprehensive English AoA norms. Adults’ subjective AoA ratings
+
+higher in iconicity earlier than words rated lower in iconicity. However,
+
+have been shown to correlate highly with objective measures of chil-
+
+it remains unclear what role iconicity plays in actual language use.
+
+dren’s vocabulary development (Gilhooly & Gilhooly, 1980; Morrison,
+
+Does iconicity influence how often children or adults say different
+
+Chappell, & Ellis, 1997; Pind, Jónsdóttir, Gissurardóttir, & Jónsson,
+
+words? Theoretically, once a word is learned, it could be used equally
+
+2000). Given that Perry et al. (2015) previously found iconicity-­related
+
+often as other already-­learned words. (Once a child learns their 100th
+
+differences in a more objective measure of AoA data for a smaller num-
+
+word they may use it as readily as their 1st.) However, it is possible
+
+ber of words, our analysis of AoA constitutes an independent replica-
+
+that even after a child has learned to produce a word, its usage contin-
+
+tion with an expanded dataset. As a measure of word concreteness,
+
+ues to be driven by the word’s iconicity.
+
+we used adult ratings from Brysbaert, Warriner, and Kuperman (2014).
+
+| 3 of 8
+
+PERRY et al.
+
+2.3 | Procedure
+
+much smaller vocabulary lists (i.e., Perry et al., 2015). Second, we move
+beyond previous work, examining whether words high in iconicity are
+
+Iconicity was quantified following the procedure of Perry et al. (2015).
+
+more frequent in children’s speech than words low in iconicity and
+
+As in the previous study, the instructions defined iconicity and pro-
+
+whether adults’ speech to children is more iconic than their speech
+
+vided participants with examples of what an iconic, arbitrary, and
+
+to other adults.
+
+‘opposite’ meaning for a word might be (see below). The specific ex-
+
+Because AoA is known to be influenced by a number of factors,
+
+amples for opposite and arbitrary were drawn from Hockett (1960)
+
+we used multiple regression to control for a word’s overall frequency
+
+and Pinker and Bloom’s (1990) respective arguments regarding the
+
+(based on the spoken section of the American Nation Corpus), con-
+
+arbitrariness of language.
+
+creteness, and number of morphemes. We also examined the rela-
+
+Some English words sound like what they mean. For example, SLURP
+
+tionship between iconicity and ‘systematicity’ for these words, based
+
+sounds like the noise made when you perform this kind of drinking ac-
+
+on data from Monaghan, Shillcock, Christiansen, and Kirby (2014).
+
+tion. An example that does not relate to the sound of an action is TEENY,
+
+‘Systematicity’ quantifies the statistical regularity of language-­specific
+
+which sounds like something very small (compared to HUGE which
+
+sound–meaning pairings (e.g., knowing ‘glitter’ and ‘glisten’ could fa-
+
+sounds big). These words are iconic. You might be able to guess these
+
+cilitate learning of ‘glow’). This measure was shown to predict AoA
+
+words’ meanings even if you did not know English. Words can also sound
+
+(Monaghan et al., 2014), but Perry and colleagues (2015) found that
+
+like the opposite of what they mean. For example, MICROORGANISM
+
+iconicity predicts AoA above and beyond systematicity for the first
+
+is a large word that means something very small. And WHALE is a small
+
+words children learn. We therefore sought to replicate this finding for
+
+word that means something very large. And finally, many words are not
+
+our expanded set of words. Because systematicity measures were only
+
+iconic or opposite at all. For example there is nothing canine or feline
+
+available for 965 of our 2117 words (Monaghan et al., 2014), we con-
+
+sounding about the words DOG or CAT. These words are arbitrary. If you
+
+ducted a second analysis of AoA on the subset of words for which this
+
+did not know English, you would not be able to guess the meanings of
+
+measure is available.
+
+these words.
+
+We next examined the relationship between iconicity and word
+
+Participants then rated one word at a time, on a scale ranging from
+
+frequency in children and adults’ speech. For children’s frequency, we
+
+−5 (opposite) to 5 (iconic). The 0 point corresponded to words that
+
+used data from CHILDES, which has complete production frequen-
+
+are arbitrary. See Figure 1. Participants were asked to say each word
+
+cies for each 3-­month period between 12 and 69 months.3 Word-­level
+
+aloud before making their judgment. Each participant was randomly
+
+production frequencies were analyzed. Because this analysis included
+
+assigned to one of the sub-­lists and rated its 25–26 words (limited to
+
+multiple data points per word (i.e., frequency of a given word for
+
+prevent fatigue), resulting in at least 10 ratings per word.
+
+12–14-­month-­olds, for 15–17-­month-­olds, etc.), we used linear mixed
+effects models. Word was fitted as a random intercept with a random
+
+2.4 | Analysis
+
+slope for the effect of age (quantifying by-­word variation in age effects). Models were fitted with maximum likelihood, and p-­values were
+
+We conducted all analyses using R version 3.3.1. (R Core Team, 2014).
+
+estimated using likelihood ratio tests (analysis of deviance). Adults’
+
+The lme4 package version 1.1.12 was used for mixed model analysis
+
+child-­directed production frequency4 (based on CHILDES data col-
+
+(Bates, Maechler, Bolker, & Walker, 2015), and several other packages
+
+lapsed across child age) and adults’ adult-­directed frequency (based
+
+were used for processing the data.2 All data and analyses are publicly
+
+on the American National Corpus) were each analyzed using multi-
+
+accessible via the following link: http://www.github.com/bodowinter/
+
+ple regression (item-­level analysis). In all analyses, we control for AoA,
+
+iconicity_acquisition. Throughout our analyses, we use linear models
+
+concreteness, number of morphemes, and frequency in other speech
+
+or linear mixed effects models. In all cases, visual inspection of plots
+
+types (e.g., analysis of frequency in children’s speech controls for fre-
+
+of residuals against fitted values and Q-­Q plots revealed no obvious
+
+quency in adults’ child-­directed and adult-­directed speech).
+
+deviations from normality and homoscedasticity. Variance inflation
+factors were estimated using the package car version 2.0.26, (Fox &
+Weisberg, 2011), and these revealed no problems with (multi-­)collinearity. When fitting interactions, variables were centered (Schielzeth,
+2010).
+
+3 | RESULTS
+3.1 | Age of acquisition
+
+Our analysis is separated into two parts: First, we examined
+
+The relationship between iconicity and AoA is shown in Figure 2.
+
+whether words high in iconicity are acquired earlier than words low
+
+Words rated higher in iconicity tend to be acquired earlier (see
+
+in iconicity – testing whether we replicate earlier findings that used
+
+Table 1, M1 for regression results). As can be seen in Table 1, M2, the
+
+FIGURE 1
+ratings task
+
+A sample trial of the iconicity
+
+4 of 8
+
+|
+
+PERRY et al.
+
+iconicity such that as children develop, words low in iconicity become
+more frequent than words high in iconicity. As shown in Figure 3a,
+younger children produce more iconic words more frequently than
+less iconic words, while older children produce more iconic words less
+frequently than less iconic words. The interaction between age and
+iconicity held after removing onomatopoetic words from the analyses
+(Table 2, M6). In all these analyses, we controlled for the overall number of words produced for a certain age.5
+The analyses so far have focused on individual words – collapsing across speakers – to examine the relationship between iconicity
+and age in the use of these words. We next examine the relationship
+between iconicity and word usage over development for individual
+children. To allow this longitudinal analysis, we excluded data from sevF I G U R E 2 The effect of iconicity on age of acquisition (AoA)
+after controlling for overall word frequency, concreteness, and
+word length. Each dot corresponds to a word. The shaded region
+represents the 95% confidence region of the mean
+
+eral children of the CHILDES dataset (MacWhinney, 2000). We only
+included children over 12 months of age who produced at least 30
+unique data points for at least five separate time points, resulting in
+150 of the 323 children (see footnote 3). Using the iconicity ratings for
+each word, we calculated an average iconicity score for all words a child
+
+T A B L E 1 Results of each regression model used in analyses of
+AoA. M1–3 show the results of using iconicity to predict AoA. M4
+shows the results of using systematicity to predict AoA. For each
+analysis, we controlled for the following covariates: concreteness,
+number of morphemes, and the frequency of words in adult-­directed
+speech
+
+produced at each time point. These iconicity averages were computed
+in a frequency-­weighted fashion: more frequent words contribute more
+to the estimated degree of iconicity in a child’s vocabulary for a given
+month. For example, the child ‘Betty’ produced 34 different words at
+month 18, with an average iconicity score of 1.07. At month 49, she
+produced 129 different words with an average iconicity score of only
+
+Iconicity
+
+0.64. Because the exact age-­range varied from child to child, we nor-
+
+M1) Including all 2117 words
+
+b=−.35, t=−9.61, p < .0001
+
+malized age to lie in the range between 0 and 1 to facilitate analysis (all
+
+M2) Excluding onomatopoeia and
+interjections; includes 2090 words
+
+b=−.34, t=−9.16, p < .0001
+
+M3) Controlling for systematicity (only
+including subset of 930 words for
+which we have systematicity ratings;
+Monaghan et al., 2014)
+
+b=−.22, t=−4.76, p < .0001
+
+M4) Predicting AoA from systematicity; includes 930 words
+
+b=761.62, t=1.89, p = .059
+
+results hold for non-­normalized time series as well). A linear mixed effects model with time as a fixed effect and subject as random intercept
+(including by-­subject time random slopes) revealed a significant effect
+of time. This relationship held after removing onomatopoeic words from
+the analysis, although only with marginal significance (Table 2, M7). The
+average iconicity fell from 0.64 for the first session with a child to an
+average of 0.56 for the last session of each child. A look at the random
+effects estimates (the best linear unbiased predictors) reveals that only
+10 of 150 children had positive age slopes or increases in iconicity over
+
+relationship between iconicity and AoA was statistically reliable even
+
+time, meaning that 93% of all children in the sample decreased their
+
+after excluding all interjections and onomatopoetic forms (such as
+
+use of words rated high in iconicity over time. Figure 4 shows how the
+
+‘hush’, ‘buzz’). Iconicity was also a reliable predictor of AoA after con-
+
+relationship between frequency and iconicity changes over develop-
+
+trolling for systematicity in the subset of data for which both measures
+
+ment for each child by showing the random effects of the mixed effects
+
+exist (Table 1, M3). The systematicity measure predicted AoA margin-
+
+model, with each line representing an individual child. A generalized
+
+ally (Table 1, M4). Together, these results replicate Perry et al.’s (2015)
+
+additive model (Wood, 2006; for use, see Winter & Wieling, 2016) con-
+
+findings with a larger set of words that are acquired over a longer pe-
+
+firmed that a simple linear trend is appropriate (edf close to 1), with the
+
+riod of development. We next examined the relationship between ico-
+
+average iconicity of words decreasing steadily with age.
+
+nicity ratings and frequency in children’s and adult’s speech.
+
+3.2 | Frequency in speech
+3.2.1 | Children’s speech
+
+3.2.2 | Adults’ speech
+As can be seen in Figure 3b, the relationship between iconicity and
+frequency in adults’ speech depends on whether an adult is speaking
+to another adult or a child. In adult-­directed speech, they tend to pro-
+
+As shown in Figure 3a, there was a positive relationship between a
+
+duce words rated lower in iconicity more frequently than words rated
+
+word’s iconicity and its frequency in children’s speech such that words
+
+higher in iconicity. This result holds after removing onomatopoeic
+
+high in iconicity tended to be more frequent than words low in ico-
+
+words from the analyses (Table 2, M8). Thus, conversations between
+
+nicity (Table 2, M5). There was also an interaction between age and
+
+adults tend to be characterized by the use of words lower in iconicity.
+
+| 5 of 8
+
+PERRY et al.
+
+CHILDES Child Frequency
+
+Log Frequency
+
+1.25
+
+(a)
+
+Adult Frequency
+2.5
+
+(b)
+
+1.00
+
+th
+
+n
+Mo
+
+0.75
+
+Month
+
+0.50
+
+2
+
+=1
+
+Ch
+
+= 69
+
+Ad
+
+1.5
+
+ul
+
+0.25
+
+2.0
+
+ted
+
+rec
+
+di
+ild-
+
+t-d
+
+ire
+
+1.0
+
+ct
+
+ed
+
+0.00
+
+0.5
+-2.5
+
+0.0
+
+2.5
+
+5.0
+
+-2.5
+
+0.0
+
+2.5
+
+5.0
+
+Average Iconicity Rating
+(z scores)
+F I G U R E 3 (a) Predicted production frequency for children, showing a reversal of the relationship from month 12 to month 69. The middle
+line shows the relationship between iconicity and frequency for the median age (39 months), based on a linear mixed effects model. The
+analyses reported in the text model age as a continuous variable. (b) Predicted production frequency for adults in adult-­directed and child-­
+directed speech. Shaded regions represent the 95% confidence of the mean based on the corresponding statistical model. All visualizations
+incorporate controls for concreteness and word length. The child frequencies also incorporate controls for adult-­directed and child-­directed
+frequencies. The child-­directed frequency also controls for adult-­directed frequency
+
+T A B L E 2 Results of each regression model used in analyses of the relationship between iconicity and frequency. For each analysis, we
+controlled for the following covariates: concreteness, number of morphemes, AoA, and the frequency of words in the other two speech types
+from frequency of the speech type of interest
+M5) Frequency in
+children’s speech
+(main effect of
+iconicity)
+
+M6) Frequency in
+children’s speech
+(interaction between
+iconicity and age)
+
+M7) Frequency-­weighted
+iconicity in individual
+children’s speech
+(main effect of age)
+
+M8) Frequency in
+adults’ adult-­
+directed speech
+
+M9) Frequency
+in adults’
+child-­directed
+speech
+
+Including all words
+(N=2117)
+
+b=.03, t=4.55,
+p < .0001
+
+b=−.25, t=6.58,
+p < .0001
+
+b=−.1, t=4.72,
+p < .0001
+
+b=−.21, t=10.85,
+p < .0001
+
+b=.1, t=6.79,
+p < .0001
+
+Excluding
+onomatopoeia
+(N=2090)
+
+b=.03, t=3.92,
+p < .0001
+
+b=−.02, t=5.57,
+p < .0001
+
+b=−.03, t=1.86,
+p = .066
+
+b=−.21, t=0.46,
+p < .0001
+
+b=.1, t=5.9,
+p < .0001
+
+As can be seen in Figure 3b, however, adults’ child-­directed speech
+
+more iconic: the higher a word is rated in iconicity, the more frequently
+
+tends to be higher in iconicity. We found a positive association be-
+
+it tends to be spoken. We found the same pattern in the child-­directed
+
+tween iconicity and frequency in child-­
+directed speech, such that
+
+speech of adults. In contrast, in adults’ adult-­directed speech, words
+
+words rated higher in iconicity appear more frequently than words
+
+lower in iconicity tended to be produced most frequently. Moreover,
+
+rated lower in iconicity. This result held after removing onomatopoeic
+
+we found evidence that children’s speech tends to change into this
+
+words from the analysis (Table 2, M9). Thus, as we had initially pre-
+
+adult pattern of speech. Over development, children are increasingly
+
+dicted, while overall adults tend to use words low in iconicity more
+
+likely to use less iconic (i.e., more arbitrary and opposite sounding)
+
+frequently than those high in iconicity, when speaking to children they
+
+words. Together with our AoA results, these findings suggest that ico-
+
+tend to use words of higher iconicity. Together with the results from
+
+nicity plays an important role in early language acquisition and use.
+
+children’s own speech, this result suggests that early parent-­child con-
+
+However, over developmental time, iconicity becomes less important
+
+versations tend to contain many high iconicity words.
+
+to children’s ability to comprehend and produce words.
+Perry and colleagues (2015) previously found that English and
+
+4 | DISCUSSION
+
+Spanish vocabularies were structured such that the earliest-­learned
+words were higher in iconicity than later-­learned words. These findings
+mirrored a pattern that has been independently observed for British
+
+Our primary goal was to examine how the frequency of words in the
+
+Sign Language (Thompson et al., 2012; Vinson, Cormier, Denmark,
+
+speech of adults and children varies depending on iconicity. We found
+
+Schembri, & Vigliocco, 2008). Here we show that the effects of ico-
+
+that the words used most frequently by young children tend to be
+
+nicity can be seen not only in word learning, but also in production.
+
+6 of 8
+
+|
+
+PERRY et al.
+
+Another possibility is that over the course of learning and use,
+
+(Frequency-weighted)
+
+Average Iconicity
+
+1.50
+
+words become more iconic. Perhaps adults modulate their pronun-
+
+1.25
+
+ciation of words to have slightly more iconic forms, which are then
+
+1.00
+
+learned by children. In support of this idea, adults have been found
+
+0.75
+
+speech (Nygaard, Herold, & Namy, 2009). For example, when pro-
+
+to exaggerate iconic properties of novel words in their child-­directed
+ducing the novel word ‘seebow’ to mean ‘big’, adults increased the
+
+0.50
+
+duration and amplitude and decreased the fundamental frequency
+relative to when it meant ‘small’. Adults have also been found to
+
+0.25
+
+modify their prosody in iconic ways outside of child-­directed com-
+
+0.00
+0.00
+
+0.25
+
+0.50
+
+0.75
+
+1.00
+
+Normalized Time
+
+munication, such as when reading short stories out loud (Perlman,
+Clark, & Johansson Falck, 2015; also see Shintel, Nusbaum, &
+Okrent, 2006). These studies focused on prosodic properties, but
+phonetic features like vocal quality and voicing may be altered as
+
+F I G U R E 4 The best linear unbiased predictors (random effects
+estimates) for the longitudinal change of averaged iconicity over
+developmental time; each line corresponds to a single child;
+predictions come from a linear mixed effects regression; only
+predictions for the 66 children are displayed for which there were at
+least 10 different time points (for visualization purposes only, all 150
+children were included in the actual analyses)
+
+ing ‘small’ to contain the high front vowel /i/ (Blasi, Wichmann,
+
+Children and their parents tend to use words rated higher in iconicity
+
+ers – and perhaps especially adults speaking with children – accentu-
+
+well.
+As a speculative example of how this process might operate to
+change words, consider the case of words with meanings related to
+‘small’. Across the world’s languages, there is a bias for words meanHammarström, Stadler, & Christiansen, 2016). We know that speak-
+
+more frequently than words rated lower in iconicity, particularly in the
+
+ate words for ‘small’ by raising their fundamental frequency (Nygaard
+
+language of the youngest children. Our results suggest the interesting
+
+et al., 2009; Perlman et al., 2015). It is also known that high vowels
+
+possibility that iconicity might not only serve to facilitate word learning,
+
+like /i/ tend to be articulated with a higher fundamental frequency
+
+but may also facilitate early communication by increasing understand-
+
+than lower vowels (Whalen & Levitt, 1995), and high front vowels,
+
+ing of language in context. This idea fits with previous work comparing
+
+in particular, are characterized by a maximum difference between
+
+the use of onomatopoeic words and non-­linguistic sound effects by
+
+the frequencies of the second and first formants (Ohala, 1994). Thus,
+
+Japanese and English-­speaking parents when speaking with children.
+
+conceivably, when speakers produce an iconic rise in pitch for ‘small’
+
+Although Japanese speakers used more onomatopoeia overall, English
+
+this could push their articulation of the word’s vowel to be higher and
+
+speakers nevertheless used a small but noteworthy amount of iconic
+
+more fronted. The raised pitch might also bias the perception of the
+
+vocalizations – especially in the form of non-­linguistic sound effects
+
+vowel as higher and more fronted than it really is. Over generations,
+
+(Yoshida, 2012; and see Laing, Vihman, & Keren-­Portnoy, 2016). Our
+
+this iconic accentuation could drive changes in the phonology of the
+
+findings extend these results by demonstrating that the child-­directed
+
+word – a push towards /i/ – as more iconic forms are picked up by
+
+speech of English-­speaking parents is enhanced by iconicity even out-
+
+children, and become fossilized in the lexicon. Interestingly, there is
+
+side of the special cases of onomatopoeic words and sound effects.
+
+evidence that highly iconic words resist the sound changes that other
+words undergo, suggesting that once a form becomes iconic, it tends
+
+4.1 | How do some words become more iconic?
+
+to stay that way across long historical periods of a language (Joseph,
+1987; and see Perniss, Thompson, & Vigliocco, 2010). Examining the
+
+Our results raise an interesting question for understanding the fac-
+
+extent to which iconic communication between parents and children
+
+tors that shape the historical development of languages and their
+
+might change the lexicon will be an important direction for future
+
+lexicons. We found that the English lexicon is structured such that
+
+research.
+
+early-­learned and early high-­frequency words are more iconic, and we
+have previously found that Spanish exhibits a similar pattern in the
+order of word acquisition (Perry et al., 2015). However, word forms
+
+4.2 | Questions of directionality
+
+are known to change considerably over the histories of languages: So
+
+Another important, but still unanswered question is whether iconicity
+
+how did these patterns come to exist in the current lexicons of English
+
+in parents’ speech has a causal role in children’s learning, or whether
+
+and Spanish?
+
+children’s increased use of iconicity leads parents to increase their
+
+One possibility is that children learn iconic words earlier because
+
+own use of iconicity. The current data support the proposal that
+
+they are easier to learn, but the relationship between iconicity and
+
+iconicity actively facilitates language acquisition (Imai & Kita, 2014;
+
+AoA occurs independently of diachronic changes in the forms of
+
+Perniss & Vigliocco, 2014). Parents might be implicitly (or explicitly)
+
+words. That is, over historic time, words change to be more or less
+
+aware of this learning advantage and hence use iconic words more
+
+iconic for incidental reasons, and children are more inclined to learn
+
+often, helping their children to more easily comprehend and produce
+
+and use those that happen to be more iconic.
+
+language.
+
+| 7 of 8
+
+PERRY et al.
+
+However, the corpus data we analyzed contained conversational
+
+Bates, Belfast, Bernstei, Bliss, Bloom, Brown, Clark, Cornell, Demetras,
+Fletcher, Gathercole, Hall, Higginso, Howe, Kuczaj, Macboys, Macros,
+Peters, Post, Sachs, Snow, Suppes, Valian, Vanhout, Vankleec, Warren, Wells.
+
+transcriptions, but no measures of word learning and recognition.
+Thus, we are not yet able to assess the consequences that individual
+parents’ and children’s use of iconicity has on children’s previous or
+subsequent language development. To answer such questions about
+the consequences of iconicity in speech, we would need to assess
+
+5
+
+Iconicity was also reliably associated with word frequency when a relative
+measure (frequency of word X divided by the total word count at age Y) was
+used as a dependent measure rather than raw word counts.
+
+whether parents whose child-­directed speech contains more iconicity
+have children who are better at word learning. For example, they may
+have faster rates of word recognition, or they may be able to learn a
+new word after fewer exposures. Examining the consequences of iconicity on learning would be an important step in finding a causal link
+between iconicity and acquisition.
+
+4.3 | Conclusions
+Our results show that young children learn iconic words earlier,
+and they also use iconic words more frequently – a pattern that
+is reciprocated by adults when speaking with children. As children
+develop, they increasingly learn words with more arbitrary forms
+and begin to use them increasingly often in conversation. That the
+earliest conversations of children are distinctly iconic suggests that
+iconicity scaffolds the production and comprehension of spoken
+language during early development. More generally, these findings
+support the emerging theory that many of the words of spoken
+languages are iconic in functionally significant ways, spanning language development, evolution, and online processing (Clark, 2016;
+Dingemanse, Blasi, Lupyan, Christiansen, & Monaghan, 2015;
+Imai & Kita, 2014; Lockwood & Dingemanse, 2015; Lockwood,
+Hagoort, & Dingemanse, 2016; Perlman & Cain, 2014; Perniss &
+Vigliocco, 2014). Far from being a fluke of isolated segments of
+the English lexicon, iconicity is systematically distributed across
+the early lexicon, and it appears to play an important role in early
+communication.
+
+END NOTE S
+1
+
+Of our total list of 2117 English words normed for iconicity, 1980 words are
+also normed for AoA in Kuperman et al. (2012) (~96%) and 2126 words are
+also normed for concreteness in Brysbaert et al. (2014) (~98%). We selected
+words from these two lists pseudo-­randomly, with the aim of having words
+represented on both lists and appearing in the CHILDES corpora.
+
+2
+
+We used dplyr version 0.5 (Wickham & Francois, 2015)., car 2.0.26 (Fox
+& Weisberg, 2011), stringr verson 1.0.0 (Wickham, 2015), reshape 1.4.1
+(Wickham, 2007), readr 1.0.0 (Wickham, Hester, & Francois, 2016), mgcv
+1.8.7 (Wood, 2006) and itsadug 2.2 (Van Rij, Wieling, Baayen, & Van Rijn,
+2016).
+
+3
+
+Child frequencies were obtained from http://childfreq.sumsar.net/ (Baath,
+2010). Our analysis of individual child frequencies includes data also
+taken from ChildFreq from the following 26 CHILDES corpora: Bates,
+Belfast, Bernstein, Bliss, Bloom70, Bloom73, Brown, Cornell, Cruttenden,
+Demetras1, Evans, Fletcher, Gleason, Howe, HSLLD, Kuczaj, Manchester,
+McCune, Post, Providence, Snow, Soderstrom, Suppes, Weist, Wells.
+This compiled data file is publically available at http://www.github.com/
+bodowinter/iconicity_acquisition.
+
+4
+
+Parental input frequencies are taken from http://childes.psy.cmu.edu/derived/, based on Ping Li’s processing of the following CHILDES corpora:
+
+REFERENCES
+Asano, M., Imai, M., Kita, S., Kitajo, K., Okada, H., & Thierry, G. (2015).
+Sound symbolism scaffolds language development in preverbal infants.
+Cortex, 63, 196–205.
+Baath, R. (2010). ChildFreq: An online tool to explore the word frequencies in
+child language.
+Bates, D., Maechler, M., Bolker, B., & Walker, S. (2015). Fitting linear mixed-­
+effects models using lme4. Journal of Statistical Software, 67, 1–48.
+Blasi, D.E., Wichmann, S., Hammarström, H., Stadler, P.F., & Christiansen,
+M.H. (2016). Sound–meaning association biases evidenced across
+thousands of languages. Proceedings of the National Academy of Sciences,
+USA, 113, 10818–10823.
+Brysbaert, M., Warriner, A.B., & Kuperman, V. (2014). Concreteness ratings for 40 thousand generally known English word lemmas. Behavior
+Research Methods, 46, 904–911.
+Clark, H.H. (2016). Depicting as a method of communication. Psychological
+Review, 123, 324–347.
+Dingemanse, M., Blasi, D.E., Lupyan, G., Christiansen, M.H., & Monaghan,
+P. (2015). Arbitrariness, iconicity, and systematicity in language. Trends
+in Cognitive Sciences, 19, 603–615.
+Fenson, L., Dale, P.S., Reznick, J.S., Bates, E., Thal, D.J., & Pethick, S.J., …
+& Stiles, J. (1994). Variability in early communicative development.
+Monographs of the Society for Research in Child Development, 59, i–185.
+https://doi.org/10.2307/1166093
+Fox, J., & Weisberg, S. (2011). An R companion to applied regression (2nd
+edn.). Thousand Oaks, CA: Sage.
+Gilhooly, K.J., & Gilhooly, M.L.M. (1980). The validity of age-­of-­acquisition
+ratings. British Journal of Psychology, 71, 105–110.
+Hockett, C.F. (1960). The origin of speech. Scientific American, 203, 88–96.
+Imai, M., & Kita, S. (2014). The sound symbolism bootstrapping hypothesis for language acquisition and language evolution. Philosophical
+Transactions of the Royal Society of London. Series B, Biological Sciences,
+369, 20130298.
+Imai, M., Kita, S., Nagumo, M., & Okada, H. (2008). Sound symbolism facilitates early verb learning. Cognition, 109, 54–65.
+Imai, M., Miyazaki, M., Yeung, H.H., Hidaka, S., Kantartzis, K., Okada,
+H., & Kita, S. (2015). Sound symbolism facilitates word learning in
+14-­month-­olds. PLoS ONE, 10, e0116494.
+Jackson-Maldonado, D., Thal, D.J., Marchman, V.A., Newton, T., Fenson, L.,
+& Conboy, B. (2003). MacArthur Inventarios del Desarrollo de Habilidades
+Comunicativas: User’s guide and technical manual. Baltimore, MD:
+Brookes.
+Joseph, B.D. (1987). On the use of iconic elements in etymological investigation: Some case studies from Greek. Diachronica, 4, 1–26.
+Kantartzis, K., Imai, M., & Kita, S. (2011). Japanese sound-­symbolism facilitates word learning in English-­speaking children. Cognitive Science,
+35, 575–586.
+Kuperman, V., Stadthagen-Gonzalez, H., & Brysbaert, M. (2012). Age-­
+of-­
+acquisition ratings for 30,000 English words. Behavior Research
+Methods, 44, 978–990.
+Laing, C.E. (2014). A phonological analysis of onomatopoeia in early word
+production. First Language, 34, 387–405.
+Laing, C.E., Vihman, M., & Keren-Portnoy, T. (2016). How salient are
+onomatopoeia in the early input? A prosodic analysis of infant-­
+directed speech. Journal of Child Language. https://doi.org/10.1017/
+S0305000916000428
+
+8 of 8
+
+|
+
+Lockwood, G., & Dingemanse, M. (2015). Iconicity in the lab: A review of
+behavioral, developmental, and neuroimaging research into sound-­
+symbolism. Frontiers in Psychology, 6, 1246.
+Lockwood, G., Hagoort, P., & Dingemanse, M. (2016). How iconicity helps
+people learn new words: Neural correlates and individual differences in
+sound-­symbolic bootstrapping. Collabra, 2, 7.
+Lupyan, G., & Casasanto, D. (2015). Meaningless words promote meaningful categorization. Language and Cognition, 7, 167–193.
+MacWhinney, B. (2000). The CHILDES Project: Tools for analyzing talk (3rd
+edn.). Mahwah, NJ: Lawrence Erlbaum Associates.
+Maurer, D., Pathman, T., & Mondloch, C.J. (2006). The shape of boubas:
+Sound–shape correspondences in toddlers and adults. Developmental
+Science, 9, 316–322.
+Monaghan, P., Shillcock, R.C., Christiansen, M.H., & Kirby, S. (2014). How
+arbitrary is English?. Philosophical Transactions of the Royal Society of
+London Series B, Biological Sciences, 369, 20130299.
+Morrison, C.M., Chappell, T.D., & Ellis, A.W. (1997). Age of acquisition
+norms for a large set of object names and their relation to adult estimates and other variables. Quarterly Journal of Experimental Psychology
+Section A, 50, 528–559.
+Nygaard, L.C., Herold, D.S., & Namy, L.L. (2009). The semantics of prosody:
+Acoustic and perceptual evidence of prosodic correlates to word meaning. Cognitive Science, 33, 127–146.
+Ohala, J.J. (1994). The frequency code underlies the sound-symbolic use of
+voice pitch. In J. Hinton, J. Nichols, & J.J. Ohala (Eds.), Sound symbolism
+(pp. 325–347). Cambridge: Cambridge University Press.
+Perlman, M., & Cain, A.A. (2014). Iconicity in vocalization, comparisons with
+gesture, and implications for theories on the evolution of language.
+Gesture, 14, 320–350.
+Perlman, M., Clark, N., & Johansson Falck, M. (2015). Iconic prosody in
+story reading. Cognitive Science, 39, 1348–1368.
+Perniss, P., Thompson, R., & Vigliocco, G. (2010). Iconicity as a general property of language: Evidence from spoken and signed languages. Frontiers
+in Psychology, 1, 227.
+Perniss, P., & Vigliocco, G. (2014). The bridge of iconicity: From a world of
+experience to the experience of language. Philosophical Transactions of
+the Royal Society B: Biological Sciences, 369, 20130300.
+Perry, L.K., Perlman, M., & Lupyan, G. (2015). Iconicity in English and
+Spanish and its relation to lexical category and age of acquisition. PLoS
+ONE, 10, e0137147.
+Pind, J., Jónsdóttir, H., Gissurardóttir, H., & Jónsson, F. (2000). Icelandic
+norms for the Snodgrass and Vanderwart (1980) pictures: Name and
+image agreement, familiarity, and age of acquisition. Scandinavian
+Journal of Psychology, 41, 41–48.
+
+PERRY et al.
+
+Pinker, S., & Bloom, P. (1990). Natural language and natural selection.
+Behavioral and Brain Sciences, 13, 707–727.
+R Core Team (2014). R: A language and environment for statistical computing.
+Vienna: R Foundation for Statistical Computing. Retrieved from http://
+www.R-project.org/
+Schielzeth, H. (2010). Simple means to improve the interpretability of regression coefficients. Methods in Ecology and Evolution, 1, 103–113.
+Shintel, H., Nusbaum, H.C., & Okrent, A. (2006). Analog acoustic expression in speech communication. Journal of Memory and Language, 55,
+167–177.
+Thompson, R.L., Vinson, D.P., Woll, B., & Vigliocco, G. (2012). The road
+to language learning is iconic: Evidence from British Sign Language.
+Psychological Science, 23, 1443–1448.
+Van Rij, J., Wieling, M., Baayen, R.H., & Van Rijn, H. (2016). itsadug:
+Interpreting time series and autocorrelated data using GAMMs
+(Version 2.2).
+Vinson, D.P., Cormier, K., Denmark, T., Schembri, A., & Vigliocco, G. (2008).
+The British Sign Language (BSL) norms for age of acquisition, familiarity, and iconicity. Behavior Research Methods, 40, 1079–1087.
+Whalen, D.H., & Levitt, A.G. (1995). The universality of intrinsic F0 of vowels. Journal of Phonetics, 23, 349–366.
+Wickham, H. (2007). Reshaping data with the reshape package. Journal of
+Statistical Software, 21, 1–20.
+Wickham, H. (2015). stringr: Simple, consistent wrappers for common
+string operations (Version 1.0.0).
+Wickham, H., & Francois, R. (2015). dplyr: A grammar of data manipulation
+(Version 0.5).
+Wickham, H., Hester, J., & Francois, R. (2016). readr: Read tabular data
+(Version 1.0.0).
+Winter, B., & Wieling, M. (2016). How to analyze linguistic change using
+mixed models, Growth Curve Analysis and Generalized Additive
+Modeling. Journal of Language Evolution, 1, 7–18.
+Wood, S.N. (2006). Generalized Additive Models: An introduction with R. Boca
+Raton, FL: Chapman and Hall/CRC.
+Yoshida, H. (2012). A cross-­linguistic study of sound symbolism in children’s
+verb learning. Journal of Cognition and Development, 13, 232–265.
+
+How to cite this article:  Perry LK, Perlman M, Winter B,
+Massaro DW, Lupyan G. Iconicity in the speech of children and
+adults. Dev Sci. 2017;00:e12572. https://doi.org/10.1111/
+desc.12572
+
+

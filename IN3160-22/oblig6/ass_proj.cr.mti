@@ -1,0 +1,37 @@
+/uio/hume/student-u81/rolfvh/IN3160-22/oblig6/seg7model_beh.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/IN3160-22/oblig6/seg7model_beh.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling architecture beh of seg7model
+-- Loading entity seg7model
+
+} {} {}} /uio/hume/student-u81/rolfvh/IN3160-22/oblig6/seg7model_ent.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/IN3160-22/oblig6/seg7model_ent.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity seg7model
+
+} {} {}} /uio/hume/student-u81/rolfvh/IN3160-22/oblig6/self_test_system.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/IN3160-22/oblig6/self_test_system.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity self_test_system
+-- Compiling architecture test_system of self_test_system
+-- Loading entity seg7ctrl
+-- Loading entity self_test_unit
+
+} {} {}} /uio/hume/student-u81/rolfvh/IN3160-22/oblig6/bin2ssd_pck.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/IN3160-22/oblig6/bin2ssd_pck.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package bin2ssd_pck
+-- Compiling package body bin2ssd_pck
+-- Loading package bin2ssd_pck
+
+} {} {}}

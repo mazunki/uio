@@ -1,0 +1,519 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/uio/hume/student-u81/rolfvh/IN3160-22/oblig6
+T_opt
+!s110 1651194176
+Vh8g`6P9kX5azA3W^Jh1KQ3
+04 16 11 work self_test_system test_system 1
+=1-005056807522-626b393f-bcf2e-1df32f
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2020.4;71
+T_opt1
+!s110 1650565856
+VKJULbnBEKAo^H`[MNXd6d1
+Z4 04 24 10 work tb_pulse_width_modulator behavioral 1
+=1-00505680f2fe-6261a2dc-7587f-3207ad
+o-quiet -auto_acc_if_foreign -work work
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1651191703
+V;QUJ<Qb063Nl0XTz6hnBo3
+R4
+=1-005056807522-626b2f97-436c6-1ddcee
+R1
+R2
+n@_opt2
+R3
+R0
+Pbin2ssd_pck
+Z5 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 906
+Z8 w1651192091
+Z9 d/uio/hume/student-u81/rolfvh/IN3160-22/oblig8
+Z10 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/bin2ssd_pck.vhd
+Z11 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/bin2ssd_pck.vhd
+l0
+L5 1
+Vgd:j@fY9g^?jCmW`ZRNgW1
+!s100 Q=hT7hB@MH1OZQ@nk:MSh3
+Z12 OL;C;2020.4;71
+33
+b1
+Z13 !s110 1651194114
+!i10b 1
+Z14 !s108 1651194114.000000
+Z15 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/bin2ssd_pck.vhd|
+Z16 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/bin2ssd_pck.vhd|
+!i113 0
+Z17 o-work work -2008 -explicit
+Z18 tExplicit 1 CvgOpt 0
+Bbody
+Z19 DPx4 work 11 bin2ssd_pck 0 22 gd:j@fY9g^?jCmW`ZRNgW1
+R5
+R6
+R7
+!i122 906
+l0
+L11 1
+VnYJcEceh4?2GFeDm@fa7R1
+!s100 W@bMH^dS`0PJZ6Q6kaQIF2
+R12
+33
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18
+Einput_sync
+Z20 w1650567416
+R5
+R6
+R7
+!i122 902
+R9
+Z21 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/input_sync.vhd
+Z22 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/input_sync.vhd
+l0
+L5 1
+V_VlN3Qc]gUaK;cz=gY5`S1
+!s100 TY93FOD^7O2HbkKef>P`12
+R12
+33
+Z23 !s110 1651194113
+!i10b 1
+Z24 !s108 1651194113.000000
+Z25 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/input_sync.vhd|
+Z26 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/input_sync.vhd|
+!i113 0
+R17
+R18
+Artl
+R5
+R6
+R7
+DEx4 work 10 input_sync 0 22 _VlN3Qc]gUaK;cz=gY5`S1
+!i122 902
+l18
+Z27 L15 16
+VO]1TGIcl0BZ<:aCz8hWXP0
+!s100 2>AbnhH=nX9jzNna;LK2B1
+R12
+33
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 0
+R17
+R18
+Eoutput_sync
+Z28 w1650567434
+R5
+R6
+R7
+!i122 903
+R9
+Z29 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/output_sync.vhd
+Z30 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/output_sync.vhd
+l0
+L5 1
+VUY]J07mKzQ>bOHA`=kcKo0
+!s100 :zDEem9;VK]3gc`RWL:N:3
+R12
+33
+R23
+!i10b 1
+R24
+Z31 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/output_sync.vhd|
+Z32 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/output_sync.vhd|
+!i113 0
+R17
+R18
+Artl
+R5
+R6
+R7
+DEx4 work 11 output_sync 0 22 UY]J07mKzQ>bOHA`=kcKo0
+!i122 903
+l18
+R27
+VG`TMLTlN:I`>JML9goRTm1
+!s100 ?RPj;O^:A?UbSF4OIOP3h2
+R12
+33
+R23
+!i10b 1
+R24
+R31
+R32
+!i113 0
+R17
+R18
+Epulse_width_modulator
+Z33 w1651191550
+R5
+R6
+R7
+!i122 899
+R9
+Z34 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/pulse_width_modulator.vhd
+Z35 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/pulse_width_modulator.vhd
+l0
+L5 1
+VSi77doJm6JPL[cAkNdQ3a0
+!s100 =`o_6WNBbT@a^ZP6B:BU:0
+R12
+33
+Z36 !s110 1651194112
+!i10b 1
+Z37 !s108 1651194112.000000
+Z38 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/pulse_width_modulator.vhd|
+Z39 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/pulse_width_modulator.vhd|
+!i113 0
+R17
+R18
+Artl
+R5
+R6
+R7
+Z40 DEx4 work 21 pulse_width_modulator 0 22 Si77doJm6JPL[cAkNdQ3a0
+!i122 899
+l24
+L15 90
+VFzN^l8GBM0GZh=ZLQg74X0
+!s100 TNzWX3S6g`S@EnC^Sc@_b1
+R12
+33
+R36
+!i10b 1
+R37
+R38
+R39
+!i113 0
+R17
+R18
+Equadrature_decoder
+Z41 w1651188808
+R5
+R6
+R7
+!i122 905
+R9
+Z42 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/quadrature_decoder.vhd
+Z43 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/quadrature_decoder.vhd
+l0
+L6 1
+V=naa;J8TD5NHElnPn=MPM2
+!s100 ZM[mVZCbJJJdNRS3AL00a3
+R12
+33
+R13
+!i10b 1
+R14
+Z44 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/quadrature_decoder.vhd|
+Z45 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/quadrature_decoder.vhd|
+!i113 0
+R17
+R18
+Artl
+R5
+R6
+R7
+DEx4 work 18 quadrature_decoder 0 22 =naa;J8TD5NHElnPn=MPM2
+!i122 905
+l21
+L17 79
+VOi]a2i1UV6Dm>o<1?C9f@3
+!s100 MMh5Y4gA[WlD7Hf8N]BEj0
+R12
+33
+R13
+!i10b 1
+R14
+R44
+R45
+!i113 0
+R17
+R18
+Erom
+Z46 w1650570672
+R5
+R6
+R7
+!i122 904
+R9
+Z47 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/ROM.vhd
+Z48 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/ROM.vhd
+l0
+L7 1
+VPibPzFdj0Zd8oTA>7jP141
+!s100 ^RIL3eRf9YO]W5fB0Z6Ad3
+R12
+33
+R23
+!i10b 1
+R24
+Z49 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/ROM.vhd|
+Z50 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/ROM.vhd|
+!i113 0
+R17
+R18
+Arom
+R5
+R6
+R7
+DEx4 work 3 rom 0 22 PibPzFdj0Zd8oTA>7jP141
+!i122 904
+l43
+L16 35
+VOZgT=k@f5XgYeIZ>IcE0>3
+!s100 @edW=TGRKFY<lV1<>;?<M3
+R12
+33
+R23
+!i10b 1
+R24
+R49
+R50
+!i113 0
+R17
+R18
+Eseg7ctrl
+R8
+R19
+R5
+R6
+R7
+!i122 907
+R9
+Z51 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/seg7ctrl.vhd
+Z52 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/seg7ctrl.vhd
+l0
+L6 1
+VShP7g8bXR[c^=IM78AWAW1
+!s100 Om50BCE_X>T5I@^Y?>1mR2
+R12
+33
+R13
+!i10b 1
+R14
+Z53 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/seg7ctrl.vhd|
+Z54 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/seg7ctrl.vhd|
+!i113 0
+R17
+R18
+Abeh
+R19
+R5
+R6
+R7
+DEx4 work 8 seg7ctrl 0 22 ShP7g8bXR[c^=IM78AWAW1
+!i122 907
+l20
+L18 21
+VYD8GC`z]e16^QI2>2WKTh3
+!s100 ^6D]]b0c6TV;BTE[>3XNk1
+R12
+33
+R13
+!i10b 1
+R14
+R53
+R54
+!i113 0
+R17
+R18
+Eself_test_system
+Z55 w1651194106
+R5
+R6
+R7
+!i122 900
+R9
+Z56 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd
+Z57 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd
+l0
+L6 1
+VfWDR0d8K83FAVY015j^?=0
+!s100 V8>ATbhc4cWed=`GY@GNC2
+R12
+33
+R23
+!i10b 1
+R37
+Z58 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd|
+Z59 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd|
+!i113 0
+R17
+R18
+Atest_system
+R40
+Z60 DEx4 work 14 self_test_unit 0 22 IOW`cR>AFoGVFE89LmdCo2
+R5
+R6
+R7
+DEx4 work 16 self_test_system 0 22 fWDR0d8K83FAVY015j^?=0
+!i122 900
+l119
+L19 165
+Vnmk=X:C]Wah_FDDJ:Q]Yk1
+!s100 ;Lg9gE84`F`=j[R548SlG3
+R12
+33
+R23
+!i10b 1
+R37
+R58
+R59
+!i113 0
+R17
+R18
+Eself_test_unit
+Z61 w1650572158
+R5
+R6
+R7
+!i122 901
+R9
+Z62 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_unit.vhd
+Z63 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_unit.vhd
+l0
+L6 1
+VIOW`cR>AFoGVFE89LmdCo2
+!s100 ;eNi5NjF3<`9:m3LTM5<R1
+R12
+33
+R23
+!i10b 1
+R24
+Z64 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_unit.vhd|
+Z65 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_unit.vhd|
+!i113 0
+R17
+R18
+Atest_unit
+R5
+R6
+R7
+R60
+!i122 901
+l30
+L14 44
+VY0WV>TZ;5JcZ=SDbI?BZ83
+!s100 W5ae4clj35B8;1J_K4FQW0
+R12
+33
+R23
+!i10b 1
+R24
+R64
+R65
+!i113 0
+R17
+R18
+Etb_pulse_width_modulator
+Z66 w1650551453
+R5
+R6
+R7
+!i122 897
+R9
+Z67 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/tb_pwm_module.vhd
+Z68 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/tb_pwm_module.vhd
+l0
+L5 1
+V`j<@SQZJ5h@:V07BXGND60
+!s100 `]Q[LzZBz?VNC=FdXSKKh2
+R12
+33
+R36
+!i10b 1
+Z69 !s108 1651194110.000000
+Z70 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/tb_pwm_module.vhd|
+Z71 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/tb_pwm_module.vhd|
+!i113 0
+R17
+R18
+Abehavioral
+DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+R5
+R6
+R7
+DEx4 work 24 tb_pulse_width_modulator 0 22 `j<@SQZJ5h@:V07BXGND60
+!i122 897
+l52
+L9 129
+V`KCOTjPEkgC6^ZGGjUQef2
+!s100 ?OPZNZO0@^:ZWd[oo5U><3
+R12
+33
+R36
+!i10b 1
+R69
+R70
+R71
+!i113 0
+R17
+R18
+Evelocity_reader
+Z72 w1649076849
+R5
+R6
+R7
+!i122 898
+R9
+Z73 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/velocity_reader.vhd
+Z74 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/velocity_reader.vhd
+l0
+L6 1
+V6?NIol`A830[0Mlfe>K_92
+!s100 =h:[U`ZmED6Xo1fCAm?AT3
+R12
+33
+R36
+!i10b 1
+R37
+Z75 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/velocity_reader.vhd|
+Z76 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/velocity_reader.vhd|
+!i113 0
+R17
+R18
+Artl
+R5
+R6
+R7
+DEx4 work 15 velocity_reader 0 22 6?NIol`A830[0Mlfe>K_92
+!i122 898
+l68
+L21 104
+VUTk6na_7bUY?STM1We^b>1
+!s100 0feP55PGo]h?3_9WAf=PL3
+R12
+33
+R36
+!i10b 1
+R37
+R75
+R76
+!i113 0
+R17
+R18

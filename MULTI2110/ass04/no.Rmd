@@ -1,0 +1,49 @@
+---
+title: "POS and Frequency Relationship"
+author: "Your Name"
+date: "2023-09-30"
+output: html_document
+---
+
+## Introduction
+
+The communicative intention of this visualization is to show: "Nouns are generally more frequent than verbs".
+
+## Load Libraries and Data
+
+```{r setup}
+# Load necessary libraries
+library(tidyverse)
+
+# Load the dataset
+data <- read.csv("perry_winter_2017_iconicity.csv")
+ggplot(data, aes(x=Iconicity, y=Freq)) +
+  geom_point()
+```
+
+## Data Wrangling
+
+```{r data_wrangling}
+# Group the data by Part of Speech (POS) and calculate the mean frequency
+grouped_data <- data %>% 
+  group_by(POS) %>%
+  summarise(mean_freq = mean(Freq, na.rm = TRUE))
+```
+
+## Data Visualization
+
+```{r plot}
+# Create the plot using ggplot2
+ggplot(data=grouped_data, aes(x = POS, y = mean_freq)) +
+  geom_bar(stat = "identity") +
+  ggtitle("Nouns are generally more frequent than verbs") +
+  xlab("Part of Speech") +
+  ylab("Mean Frequency") +
+  theme_minimal()
+```
+
+## Save Plot
+```{r save_plot}
+# Save the plot as a PNG file
+ggsave("POS_vs_Frequency.png")
+```

@@ -1,0 +1,247 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xCC6CFA53C0928857",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../oblig10_IP.gen/sources_1/bd/tutorial_bd",
+      "name": "tutorial_bd",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "processing_system7_0": ""
+    },
+    "interface_ports": {
+      "DDR": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0",
+        "parameters": {
+          "AXI_ARBITRATION_SCHEME": {
+            "value": "TDM",
+            "value_src": "default"
+          },
+          "BURST_LENGTH": {
+            "value": "8",
+            "value_src": "default"
+          },
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "CAS_LATENCY": {
+            "value": "11",
+            "value_src": "default"
+          },
+          "CAS_WRITE_LATENCY": {
+            "value": "11",
+            "value_src": "default"
+          },
+          "CS_ENABLED": {
+            "value": "true",
+            "value_src": "default"
+          },
+          "DATA_MASK_ENABLED": {
+            "value": "true",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "8",
+            "value_src": "default"
+          },
+          "MEMORY_TYPE": {
+            "value": "COMPONENTS",
+            "value_src": "default"
+          },
+          "MEM_ADDR_MAP": {
+            "value": "ROW_COLUMN_BANK",
+            "value_src": "default"
+          },
+          "SLOT": {
+            "value": "Single",
+            "value_src": "default"
+          },
+          "TIMEPERIOD_PS": {
+            "value": "1250",
+            "value_src": "default"
+          }
+        }
+      },
+      "FIXED_IO": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "processing_system7_0": {
+        "vlnv": "xilinx.com:ip:processing_system7:5.5",
+        "xci_name": "tutorial_bd_processing_system7_0_0",
+        "xci_path": "ip/tutorial_bd_processing_system7_0_0/tutorial_bd_processing_system7_0_0.xci",
+        "inst_hier_path": "processing_system7_0",
+        "parameters": {
+          "PCW_FPGA_FCLK0_ENABLE": {
+            "value": "1"
+          }
+        },
+        "addressing": {
+          "address_spaces": {
+            "Data": {
+              "range": "4G",
+              "width": "32",
+              "local_memory_map": {
+                "name": "Data",
+                "description": "Address Space Segments",
+                "address_blocks": {
+                  "address_block": {
+                    "name": "segment1",
+                    "display_name": "segment1",
+                    "base_address": "0x00000000",
+                    "range": "256K",
+                    "width": "18",
+                    "usage": "register"
+                  },
+                  "address_block": {
+                    "name": "segment2",
+                    "display_name": "segment2",
+                    "base_address": "0x00040000",
+                    "range": "256K",
+                    "width": "19",
+                    "usage": "register"
+                  },
+                  "address_block": {
+                    "name": "segment3",
+                    "display_name": "segment3",
+                    "base_address": "0x00080000",
+                    "range": "512K",
+                    "width": "20",
+                    "usage": "register"
+                  },
+                  "address_block": {
+                    "name": "segment4",
+                    "display_name": "segment4",
+                    "base_address": "0x00100000",
+                    "range": "1023M",
+                    "width": "30",
+                    "usage": "register"
+                  },
+                  "address_block": {
+                    "name": "M_AXI_GP0",
+                    "display_name": "M_AXI_GP0",
+                    "base_address": "0x40000000",
+                    "range": "1G",
+                    "width": "31",
+                    "usage": "register"
+                  },
+                  "address_block": {
+                    "name": "M_AXI_GP1",
+                    "display_name": "M_AXI_GP1",
+                    "base_address": "0x80000000",
+                    "range": "1G",
+                    "width": "32",
+                    "usage": "register"
+                  },
+                  "address_block": {
+                    "name": "IO_Peripheral_Registers",
+                    "display_name": "IO Peripheral Registers",
+                    "base_address": "0xE0000000",
+                    "range": "3M",
+                    "width": "32",
+                    "usage": "register"
+                  },
+                  "address_block": {
+                    "name": "SMC_Memories",
+                    "display_name": "SMC Memories",
+                    "base_address": "0xE1000000",
+                    "range": "80M",
+                    "width": "32",
+                    "usage": "register"
+                  },
+                  "address_block": {
+                    "name": "SLCR_Registers",
+                    "display_name": "SLCR Registers",
+                    "base_address": "0xF8000000",
+                    "range": "3K",
+                    "width": "32",
+                    "usage": "register"
+                  },
+                  "address_block": {
+                    "name": "PS_System_Registers",
+                    "display_name": "PS System Registers",
+                    "base_address": "0xF8001000",
+                    "range": "8252K",
+                    "width": "32",
+                    "usage": "register"
+                  },
+                  "address_block": {
+                    "name": "CPU_Private_Registers",
+                    "display_name": "CPU Private Registers",
+                    "base_address": "0xF8900000",
+                    "range": "6156K",
+                    "width": "32",
+                    "usage": "register"
+                  },
+                  "address_block": {
+                    "name": "segment5",
+                    "display_name": "segment5",
+                    "base_address": "0xFC000000",
+                    "range": "32M",
+                    "width": "32",
+                    "usage": "register"
+                  },
+                  "address_block": {
+                    "name": "segment6",
+                    "display_name": "segment6",
+                    "base_address": "0xFFFC0000",
+                    "range": "256K",
+                    "width": "32",
+                    "usage": "register"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "interface_ports": {
+          "M_AXI_GP0": {
+            "mode": "Master",
+            "address_space_ref": "Data",
+            "base_address": {
+              "minimum": "0x40000000",
+              "maximum": "0x7FFFFFFF",
+              "width": "32"
+            }
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "processing_system7_0_DDR": {
+        "interface_ports": [
+          "DDR",
+          "processing_system7_0/DDR"
+        ]
+      },
+      "processing_system7_0_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
+        ]
+      }
+    },
+    "nets": {
+      "processing_system7_0_FCLK_CLK0": {
+        "ports": [
+          "processing_system7_0/FCLK_CLK0",
+          "processing_system7_0/M_AXI_GP0_ACLK"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,334 @@
+m255
+K4
+z2
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/uio/hume/student-u81/rolfvh/IN3160-22/oblig3
+T_opt
+!s110 1644783865
+V:H7`OzAEdYb?XI^8H`R_23
+04 9 14 work tb_shiftn tb_shiftn_arch 1
+=1-5065f33fb041-620968f9-617a1-48091
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+Edff
+Z0 w1644773106
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 145
+Z3 d/uio/hume/student-u81/rolfvh/IN3160-22/oblig4
+Z4 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/dff.vhd
+Z5 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/dff.vhd
+l0
+L3 1
+V=4nTf0Uz<kZT3VL_m@[L=0
+!s100 5=A6HPV>W2Y6b98[RGCca0
+Z6 OL;C;2020.4;71
+33
+Z7 !s110 1644783845
+!i10b 1
+Z8 !s108 1644783844.000000
+Z9 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/dff.vhd|
+Z10 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/dff.vhd|
+!i113 0
+Z11 o-work work -2008 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Artl
+R1
+R2
+Z13 DEx4 work 3 dff 0 22 =4nTf0Uz<kZT3VL_m@[L=0
+!i122 145
+l14
+L13 11
+VRMPmQ7ho0^W8?kdUe<JN:3
+!s100 _6Lj1f6CIT3Ua0E;H?gbY3
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Eshift32
+Z14 w1644779876
+R1
+R2
+!i122 147
+R3
+Z15 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/shift32.vhd
+Z16 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/shift32.vhd
+l0
+L4 1
+V`LEM`k4V74dkQQ4GP@H_E3
+!s100 cJ5?hG[abSi?CHQdo@OzN1
+R6
+33
+R7
+!i10b 1
+Z17 !s108 1644783845.000000
+Z18 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/shift32.vhd|
+Z19 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/shift32.vhd|
+!i113 0
+R11
+R12
+Ashift32_arch
+R13
+R1
+R2
+Z20 DEx4 work 7 shift32 0 22 `LEM`k4V74dkQQ4GP@H_E3
+!i122 147
+l23
+L15 26
+VjlYI:k[>Vn4fRL4hS^2e91
+!s100 DnL;RG0>mdB:Pi?@^@V>=0
+R6
+33
+R7
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R11
+R12
+Eshift8
+Z21 w1644780415
+R1
+R2
+!i122 146
+R3
+Z22 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/shift8.vhd
+Z23 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/shift8.vhd
+l0
+L4 1
+V@LkGM^T_W2I31VK^IYN4j1
+!s100 <>8J666h;dP[Aceod[Q9B3
+R6
+33
+R7
+!i10b 1
+R17
+Z24 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/shift8.vhd|
+Z25 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/shift8.vhd|
+!i113 0
+R11
+R12
+Ashift8_arch
+R1
+R2
+Z26 DEx4 work 6 shift8 0 22 @LkGM^T_W2I31VK^IYN4j1
+!i122 146
+l23
+L15 18
+VWkY<I1dDn;jkGdj`B5T7_1
+!s100 52G84Tma0SU>U40_n=BgS3
+R6
+33
+R7
+!i10b 1
+R17
+R24
+R25
+!i113 0
+R11
+R12
+Artl
+R13
+R1
+R2
+DEx4 work 6 shift8 0 22 d00zTNi;2RcZNjRAJCIMi2
+!i122 6
+l15
+L14 12
+VZSCRXl761@RRK3Bz<7DPk2
+!s100 `5ziSU7GINJTYT5iYcPZ?0
+R6
+33
+!s110 1644776362
+!i10b 1
+!s108 1644776362.000000
+R24
+R25
+!i113 0
+R11
+R12
+w1644776354
+Eshiftn
+Z27 w1644783028
+R1
+R2
+!i122 148
+R3
+Z28 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/shiftn.vhd
+Z29 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/shiftn.vhd
+l0
+L4 1
+V5P>gH4B52CmEgNL<fhk9L1
+!s100 A3k87G=jond;dn09=<S0P1
+R6
+33
+R7
+!i10b 1
+R17
+Z30 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/shiftn.vhd|
+Z31 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/shiftn.vhd|
+!i113 0
+R11
+R12
+Ashiftn_arch
+R13
+R1
+R2
+Z32 DEx4 work 6 shiftn 0 22 5P>gH4B52CmEgNL<fhk9L1
+!i122 148
+l24
+L16 26
+VR5lVWIZC<PLVff@X4o^432
+!s100 lUY?APFSXVMMLOkAb0?FY0
+R6
+33
+R7
+!i10b 1
+R17
+R30
+R31
+!i113 0
+R11
+R12
+Etb_shift32
+Z33 w1644782177
+R1
+R2
+!i122 150
+R3
+Z34 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/tb_shift32.vhd
+Z35 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/tb_shift32.vhd
+l0
+L4 1
+VG_W`oZ[0jkZZlL;@04JK<1
+!s100 a_>M[<8?PDC]@Q<GTe2UC3
+R6
+33
+R7
+!i10b 1
+R17
+Z36 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/tb_shift32.vhd|
+Z37 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/tb_shift32.vhd|
+!i113 0
+R11
+R12
+Atb_shift32_arch
+R20
+R1
+R2
+DEx4 work 10 tb_shift32 0 22 G_W`oZ[0jkZZlL;@04JK<1
+!i122 150
+l23
+Z38 L8 43
+VCgTm]1:RK>PG^I5jJY5kH1
+!s100 F548nh0SMEFT7dl5VSg<A3
+R6
+33
+R7
+!i10b 1
+R17
+R36
+R37
+!i113 0
+R11
+R12
+Etb_shift8
+Z39 w1644782180
+R1
+R2
+!i122 149
+R3
+Z40 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/tb_shift8.vhd
+Z41 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/tb_shift8.vhd
+l0
+L4 1
+V[JoQQm64U=bEm=@?z58lD2
+!s100 jh8ckeBG5?La^JIgWRcC63
+R6
+33
+R7
+!i10b 1
+R17
+Z42 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/tb_shift8.vhd|
+Z43 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/tb_shift8.vhd|
+!i113 0
+R11
+R12
+Atb_shift8_arch
+R26
+R1
+R2
+DEx4 work 9 tb_shift8 0 22 [JoQQm64U=bEm=@?z58lD2
+!i122 149
+l23
+R38
+V3ekaUW9_1O`1D_A`V?<593
+!s100 JUkN?T:7nBQM10C2LGn5V1
+R6
+33
+R7
+!i10b 1
+R17
+R42
+R43
+!i113 0
+R11
+R12
+Etb_shiftn
+Z44 w1644783841
+R1
+R2
+!i122 151
+R3
+Z45 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/tb_shiftn.vhd
+Z46 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/tb_shiftn.vhd
+l0
+L4 1
+V7hQ;`:KT`hDLWPe:;1Lla2
+!s100 jW?KzT?6;_KzdOnk;Ji_42
+R6
+33
+R7
+!i10b 1
+R17
+Z47 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/tb_shiftn.vhd|
+Z48 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/tb_shiftn.vhd|
+!i113 0
+R11
+R12
+Atb_shiftn_arch
+DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+R32
+R1
+R2
+DEx4 work 9 tb_shiftn 0 22 7hQ;`:KT`hDLWPe:;1Lla2
+!i122 151
+l26
+L8 55
+V>_aHAohne:RLY`P^MlUH83
+!s100 K38YAK4Z[AMn;LfcP57AH2
+R6
+33
+R7
+!i10b 1
+R17
+R47
+R48
+!i113 0
+R11
+R12

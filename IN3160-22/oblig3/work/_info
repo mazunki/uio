@@ -1,0 +1,196 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/uio/hume/student-u81/rolfvh/IN3160-22/oblig3
+T_opt
+!s110 1644546856
+V1Yac:`ik?XIDVYn<kD2X73
+04 8 4 work tb_delay beh1 1
+=7-5065f33fb041-6205cb27-e9465-1dac1
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1644547731
+VE9KKMTZmg;dMXOK>GQ=JZ3
+04 23 4 work tb_variables_vs_signals beh1 1
+=2-5065f33fb041-6205ce93-aaed0-2080c
+R1
+R2
+n@_opt1
+R3
+Edelay
+Z4 w1644546184
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 13
+R0
+Z7 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig3/delay.vhd
+Z8 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig3/delay.vhd
+l0
+L3 1
+V?DoD0zbDI2SB=XKcaSF8>1
+!s100 A2_H?A8bIC9=SG_ORGaZP1
+Z9 OL;C;2020.4;71
+33
+Z10 !s110 1644546197
+!i10b 1
+Z11 !s108 1644546197.000000
+Z12 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig3/delay.vhd|
+Z13 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig3/delay.vhd|
+!i113 0
+Z14 o-work work -2008 -explicit
+Z15 tExplicit 1 CvgOpt 0
+Artl1
+R5
+R6
+Z16 DEx4 work 5 delay 0 22 ?DoD0zbDI2SB=XKcaSF8>1
+!i122 13
+l14
+L12 22
+Vf9LfCE189BI0AK=?[5D^72
+!s100 7fM@c?TS^FiW8:Hk6PbXW1
+R9
+33
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Etb_delay
+Z17 w1644546843
+R5
+R6
+!i122 18
+R0
+Z18 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig3/tb_delay.vhd
+Z19 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig3/tb_delay.vhd
+l0
+L3 1
+V7305c2Waa@ZH>o=gh9BTB2
+!s100 AG]i7Z59Ml5CAieBEPSSB1
+R9
+33
+Z20 !s110 1644546846
+!i10b 1
+Z21 !s108 1644546846.000000
+Z22 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig3/tb_delay.vhd|
+Z23 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig3/tb_delay.vhd|
+!i113 0
+R14
+R15
+Abeh1
+R16
+R5
+R6
+DEx4 work 8 tb_delay 0 22 7305c2Waa@ZH>o=gh9BTB2
+!i122 18
+l20
+L6 32
+V^]M_FOjmCQhol9eN_MRYG0
+!s100 aLSXKcZgF;;HmNKc5gPfQ0
+R9
+33
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 0
+R14
+R15
+Etb_variables_vs_signals
+Z24 w1644533078
+R5
+R6
+!i122 14
+R0
+Z25 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig3/tb_variables_vs_signals.vhd
+Z26 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig3/tb_variables_vs_signals.vhd
+l0
+L3 1
+V5UJaNg^>d9BKMOj48i3o52
+!s100 M39?SIRmf]?d:KQM=JMRm3
+R9
+33
+R10
+!i10b 1
+R11
+Z27 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig3/tb_variables_vs_signals.vhd|
+Z28 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig3/tb_variables_vs_signals.vhd|
+!i113 0
+R14
+R15
+Abeh1
+Z29 DEx4 work 20 variables_vs_signals 0 22 TBc40iYC4_=ggbhXBoJ;l1
+R5
+R6
+DEx4 work 23 tb_variables_vs_signals 0 22 5UJaNg^>d9BKMOj48i3o52
+!i122 14
+l16
+L6 19
+Vc9^ekGl]OcPTMB]8=kn=60
+!s100 H1cX69CYaGS>UBagFm`Gd0
+R9
+33
+R10
+!i10b 1
+R11
+R27
+R28
+!i113 0
+R14
+R15
+Evariables_vs_signals
+Z30 w1644547714
+R5
+R6
+!i122 19
+R0
+Z31 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig3/variables_vs_signals.vhd
+Z32 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig3/variables_vs_signals.vhd
+l0
+L3 1
+VTBc40iYC4_=ggbhXBoJ;l1
+!s100 TI8`gjE^Q=ICGdBoJZOG_3
+R9
+33
+Z33 !s110 1644547725
+!i10b 1
+Z34 !s108 1644547725.000000
+Z35 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig3/variables_vs_signals.vhd|
+Z36 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig3/variables_vs_signals.vhd|
+!i113 0
+R14
+R15
+Artl1
+R5
+R6
+R29
+!i122 19
+l11
+L9 22
+V>az?gPccHo4G_[`N[zN7L1
+!s100 OzVk@l_zJmObK=DT_S8gm2
+R9
+33
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 0
+R14
+R15

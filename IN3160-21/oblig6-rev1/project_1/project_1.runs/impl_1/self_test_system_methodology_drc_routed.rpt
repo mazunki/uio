@@ -1,0 +1,256 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Mon Mar 22 21:02:00 2021
+| Host         : nottingham.ifi.uio.no running 64-bit Red Hat Enterprise Linux Workstation release 7.9 (Maipo)
+| Command      : report_methodology -file self_test_system_methodology_drc_routed.rpt -pb self_test_system_methodology_drc_routed.pb -rpx self_test_system_methodology_drc_routed.rpx
+| Design       : self_test_system
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 44
++-----------+------------------+-----------------------------+------------+
+| Rule      | Severity         | Description                 | Violations |
++-----------+------------------+-----------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell | 36         |
+| TIMING-20 | Warning          | Non-clocked latch           | 8          |
++-----------+------------------+-----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin IO/abcdefg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin IO/abcdefg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin IO/abcdefg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin IO/abcdefg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin IO/abcdefg_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin IO/abcdefg_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin IO/abcdefg_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin IO/c_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/second_tick_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#33 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/tb_int_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#34 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/tb_int_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#35 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/tb_int_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#36 Critical Warning
+Non-clocked sequential cell  
+The clock pin STU/tb_int_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch STU/d0_reg[0] cannot be properly analyzed as its control pin STU/d0_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch STU/d0_reg[1] cannot be properly analyzed as its control pin STU/d0_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch STU/d0_reg[2] cannot be properly analyzed as its control pin STU/d0_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch STU/d0_reg[3] cannot be properly analyzed as its control pin STU/d0_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch STU/d1_reg[0] cannot be properly analyzed as its control pin STU/d1_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch STU/d1_reg[1] cannot be properly analyzed as its control pin STU/d1_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch STU/d1_reg[2] cannot be properly analyzed as its control pin STU/d1_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch STU/d1_reg[3] cannot be properly analyzed as its control pin STU/d1_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+

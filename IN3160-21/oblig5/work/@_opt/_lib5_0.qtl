@@ -1,0 +1,344 @@
+m255
+K4
+z2
+!s11e vcom 2019.4 2019.10, Oct 15 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/uio/hume/student-u81/rolfvh/in3160-new/oblig4
+T_opt
+!s110 1613669281
+VgMi8Q=DF;8LKjMn8fC]PI1
+Z1 04 9 4 work tb_pargen beh1 1
+=1-5065f33fb028-602ea3a1-2fc5e-2384
+Z2 o-quiet -auto_acc_if_foreign -work work
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;2019.4;69
+T_opt1
+!s110 1613668586
+V4J>SmTe]FV?GU@CQ;fb@^2
+Z5 04 6 4 work pargen rtl1 1
+R1
+=3-5065f33fb028-602ea0ea-9bde1-18b0
+R2
+R3
+n@_opt1
+R4
+R0
+T_opt2
+!s110 1613668673
+Vz_:1SZ8f:0cKkS7Y?a0683
+R5
+=1-5065f33fb028-602ea141-e4ee-210e
+R2
+R3
+n@_opt2
+R4
+R0
+Epargen
+Z6 w1613668859
+Z7 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 -1
+Z10 d/uio/hume/student-u81/rolfvh/in3160-new/oblig5
+Z11 8/uio/hume/student-u81/rolfvh/in3160-new/oblig5/pargen.vhd
+Z12 F/uio/hume/student-u81/rolfvh/in3160-new/oblig5/pargen.vhd
+l0
+L10
+V_KLV1XLC:@3ZdJoO<ePd>3
+!s100 d0DT8FUEI2aN0?5NQZYH31
+Z13 OL;C;2019.4;69
+33
+Z14 !s110 1613668951
+!i10b 1
+Z15 !s108 1613668951.000000
+Z16 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/in3160-new/oblig5/pargen.vhd|
+Z17 !s107 /uio/hume/student-u81/rolfvh/in3160-new/oblig5/pargen.vhd|
+!i113 0
+Z18 o-work work -2008 -explicit
+Z19 tExplicit 1 CvgOpt 0
+Artl1
+R7
+R8
+R9
+Z20 DEx4 work 6 pargen 0 22 _KLV1XLC:@3ZdJoO<ePd>3
+!i122 -1
+l46
+L44
+VB=A9HBQ3CbXfd=AgoiB`K1
+!s100 OA3027JjZ_NJLC`]RGRGU3
+R13
+33
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+R19
+Etb_pargen
+Z21 w1613668511
+R7
+R8
+R9
+!i122 -1
+R10
+Z22 8/uio/hume/student-u81/rolfvh/in3160-new/oblig5/tb_pargen.vhd
+Z23 F/uio/hume/student-u81/rolfvh/in3160-new/oblig5/tb_pargen.vhd
+l0
+L6
+Vn30NZic0@9F>Y^EO=k:Da0
+!s100 L]g]494ko2C6?fi3A6n8E2
+R13
+33
+Z24 !s110 1613668836
+!i10b 1
+Z25 !s108 1613668836.000000
+Z26 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/in3160-new/oblig5/tb_pargen.vhd|
+Z27 !s107 /uio/hume/student-u81/rolfvh/in3160-new/oblig5/tb_pargen.vhd|
+!i113 0
+R18
+R19
+Abeh1
+R20
+R7
+R8
+R9
+DEx4 work 9 tb_pargen 0 22 n30NZic0@9F>Y^EO=k:Da0
+!i122 -1
+l34
+L13
+VYlV9OX4ST>31Z8<0XXdck3
+!s100 [ek`Sa4?M@AjB2Y^>A5b30
+R13
+33
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 0
+R18
+R19
+al_primitives
+R98
+R20
+R19
+31
+b1
+R26
+!i10b 1
+R3
+b1
+!i122 -1
+R4
+R5
+8vhdl_src/vital2000/prmtvs_p_2000.vhd
+Fvhdl_src/vital2000/prmtvs_p_2000.vhd
+l0
+L50
+VG>kiXP8Q9dRClKfK1Zn7j1
+!s100 G>kiXP8Q9dRClKfK1Zn7j1
+R8
+b1
+R27
+!s90 -debug|-suppress|12110|-93|-work|ieee|-novital|-dirpath|$MODEL_TECH/..|vhdl_src/vital2000/prmtvs_p_2000.vhd|
+!s107 vhdl_src/vital2000/prmtvs_p_2000.vhd|
+!i113 1
+R99
+R13
+Bbody
+DPx4 work 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+R98
+R20
+R19
+31
+R26
+!i10b 1
+R3
+!i122 -1
+8vhdl_src/vital2000/prmtvs_b_2000.vhd
+Fvhdl_src/vital2000/prmtvs_b_2000.vhd
+l0
+L33
+VL8@OL8nfVkLF;7TL8_DPa1
+!s100 L8@OL8nfVkLF;7TL8_DPa1
+R8
+R27
+!s90 -debug|-suppress|12110|-93|-work|ieee|-novital|-dirpath|$MODEL_TECH/..|vhdl_src/vital2000/prmtvs_b_2000.vhd|
+!s107 vhdl_src/vital2000/prmtvs_b_2000.vhd|
+!i113 1
+R99
+R13
+Pvital_timing
+R20
+R19
+31
+b1
+R74
+!i10b 1
+R3
+b1
+!i122 -1
+R4
+R5
+8vhdl_src/vital2000/timing_p_2000.vhd
+Fvhdl_src/vital2000/timing_p_2000.vhd
+l0
+L70
+VJ>EBealN09f8GzldA[z2>3
+!s100 J>EBealN09f8GzldA[z2>3
+R8
+b1
+R82
+!s90 -debug|-suppress|12110|-93|-work|ieee|-novital|-dirpath|$MODEL_TECH/..|vhdl_src/vital2000/timing_p_2000.vhd|
+!s107 vhdl_src/vital2000/timing_p_2000.vhd|
+!i113 1
+R99
+R13
+Bbody
+DPx4 work 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+R20
+R19
+31
+R74
+!i10b 1
+R3
+!i122 -1
+8vhdl_src/vital2000/timing_b_2000.vhd
+Fvhdl_src/vital2000/timing_b_2000.vhd
+l0
+L49
+VKEim8d[eJ5dE^:mEG0P3S0
+!s100 KEim8d[eJ5dE^:mEG0P3S0
+R8
+R82
+!s90 -debug|-suppress|12110|-93|-work|ieee|-novital|-dirpath|$MODEL_TECH/..|vhdl_src/vital2000/timing_b_2000.vhd|
+!s107 vhdl_src/vital2000/timing_b_2000.vhd|
+!i113 1
+R99
+R13
+m255
+K4
+z2
+!s8c locked
+!s11e vcom 2019.4 2019.10, Oct 15 2019
+!s95 MTI
+cModel Technology Builtin Library
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+d/bata/rhino/buildsites/2019.p/builds/linux/modeltech
+Penv
+32
+b1
+Z0 !s110 1571163883
+!i10b 1
+Z1 OL;C;2019.4;69
+b1
+!i122 -1
+Z2 w1571163812
+Z3 d$MODEL_TECH/..
+Z4 8vhdl_src/std/env.vhd
+Z5 Fvhdl_src/std/env.vhd
+l0
+L1
+Vd?`1ck@NdeD@H3RZG7FgZ2
+!s100 d?`1ck@NdeD@H3RZG7FgZ2
+Z6 OE;C;2019.4;69
+b1
+Z7 !s108 1571163882.000000
+Z8 !s90 -debug|-suppress|12110|-work|std|-dirpath|$MODEL_TECH/..|vhdl_src/std/env.vhd|
+Z9 !s107 vhdl_src/std/env.vhd|
+!i113 1
+Z10 o-suppress 12110 -debug -work std -dirpath {$MODEL_TECH/..}
+Z11 tExplicit 1 CvgOpt 0
+Bbody
+DPx4 work 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+32
+R0
+!i10b 1
+R1
+!i122 -1
+l0
+L15
+VGO=IeNa]6JLe2BRN4G<kA2
+!s100 GO=IeNa]6JLe2BRN4G<kA2
+R6
+R7
+R8
+R9
+!i113 1
+R10
+R11
+Pstandard
+33
+!s110 1571163882
+!i10b 1
+R1
+!i122 -1
+R2
+R3
+8vhdl_src/std/standard.vhd
+Fvhdl_src/std/standard.vhd
+l0
+L8
+VofRa6alAEoSE^5WcJ^O]C2
+!s100 ofRa6alAEoSE^5WcJ^O]C2
+R6
+R7
+!s90 -debug|-suppress|12110|-s|-2008|-work|std|-dirpath|$MODEL_TECH/..|vhdl_src/std/standard.vhd|
+!s107 vhdl_src/std/standard.vhd|
+!i113 1
+o-suppress 12110 -debug -s -2008 -work std -dirpath {$MODEL_TECH/..}
+R11
+Ptextio
+33
+b1
+R0
+!i10b 1
+R1
+b1
+!i122 -1
+Z12 w1546310146
+R3
+Z13 8vhdl_src/std/textio.vhd
+Z14 Fvhdl_src/std/textio.vhd
+l0
+L1
+VzE1`LPoLg^DX3Oz^4Fj1K3
+!s100 zE1`LPoLg^DX3Oz^4Fj1K3
+R6
+b1
+Z15 !s108 1571163883.000000
+Z16 !s90 -debug|-suppress|12110|-2008|-work|std|-dirpath|$MODEL_TECH/..|vhdl_src/std/textio.vhd|
+Z17 !s107 vhdl_src/std/textio.vhd|
+!i113 1
+Z18 o-suppress 12110 -debug -2008 -work std -dirpath {$MODEL_TECH/..}
+R11
+Bbody
+DPx4 work 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+33
+R0
+!i10b 1
+R1
+!i122 -1
+l0
+L186
+VOBFf4Pj<FG4ZXfzD:k]VN1
+!s100 OBFf4Pj<FG4ZXfzD:k]VN1
+R6
+R15
+R16
+R17
+!i113 1
+R18
+R11

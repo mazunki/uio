@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar 22 20:22:58 2021
+# Process ID: 1043
+# Current directory: /uio/hume/student-u81/rolfvh/in3160-new/oblig6-rev1/project_1/project_1.runs/impl_1
+# Command line: vivado -log self_test_system.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source self_test_system.tcl -notrace
+# Log file: /uio/hume/student-u81/rolfvh/in3160-new/oblig6-rev1/project_1/project_1.runs/impl_1/self_test_system.vdi
+# Journal file: /uio/hume/student-u81/rolfvh/in3160-new/oblig6-rev1/project_1/project_1.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source self_test_system.tcl -notrace

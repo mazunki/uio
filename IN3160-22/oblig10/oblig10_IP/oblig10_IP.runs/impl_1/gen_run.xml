@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1651857370">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BITSTR-SYSDEF" Name="fpga_system.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="fpga_system.ltx"/>
+  <File Type="BG-BGN" Name="fpga_system.bgn"/>
+  <File Type="NPI_FILE" Name="fpga_system.npi"/>
+  <File Type="BG-DRC" Name="fpga_system.drc"/>
+  <File Type="RNPI_FILE" Name="fpga_system.rnpi"/>
+  <File Type="CFI_FILE" Name="fpga_system.cfi"/>
+  <File Type="RCFI_FILE" Name="fpga_system.rcfi"/>
+  <File Type="PDI-FILE" Name="fpga_system.pdi"/>
+  <File Type="BITSTR-MMI" Name="fpga_system.mmi"/>
+  <File Type="BITSTR-BMM" Name="fpga_system_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="fpga_system.nky"/>
+  <File Type="BITSTR-RBT" Name="fpga_system.rbt"/>
+  <File Type="BITSTR-MSK" Name="fpga_system.msk"/>
+  <File Type="RBD_FILE" Name="fpga_system.rbd"/>
+  <File Type="BG-BIN" Name="fpga_system.bin"/>
+  <File Type="BG-BIT" Name="fpga_system.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="fpga_system_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="fpga_system_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="fpga_system_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="fpga_system.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="fpga_system_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="fpga_system_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="fpga_system_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="fpga_system_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="fpga_system_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="fpga_system_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="fpga_system_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="fpga_system_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="fpga_system_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="fpga_system_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="fpga_system_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="fpga_system_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="fpga_system_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="fpga_system_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="fpga_system_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="fpga_system_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="fpga_system_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="fpga_system_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="fpga_system_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="fpga_system_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="fpga_system_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="fpga_system_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="fpga_system_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="fpga_system_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="fpga_system_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="fpga_system_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="fpga_system_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="fpga_system_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="fpga_system_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="fpga_system_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="fpga_system_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="fpga_system_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="fpga_system_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="fpga_system_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="fpga_system_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="fpga_system_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="fpga_system_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="fpga_system_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="fpga_system_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="fpga_system_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="fpga_system_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="fpga_system_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="fpga_system_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="fpga_system.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="fpga_system_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="fpga_system_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="fpga_system_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="fpga_system_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="fpga_system_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="fpga_system_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="fpga_system_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="fpga_system.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../bin2ssd_pck.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../pulse_width_modulator.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../input_sync.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../output_sync.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../quadrature_decoder.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../seg7ctrl.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../velocity_reader.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpga_system.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../ROM.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/tutorial_bd/tutorial_bd.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/tutorial_bd/hdl/tutorial_bd_wrapper.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="fpga_system"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="tutorial_bd_processing_system7_0_0"/>
+</GenRun>

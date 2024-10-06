@@ -1,0 +1,302 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May  6 19:41:35 2022
+# Process ID: 3165489
+# Current directory: /uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.runs/tutorial_bd_fpga_system_0_0_synth_1
+# Command line: vivado -log tutorial_bd_fpga_system_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tutorial_bd_fpga_system_0_0.tcl
+# Log file: /uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.runs/tutorial_bd_fpga_system_0_0_synth_1/tutorial_bd_fpga_system_0_0.vds
+# Journal file: /uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.runs/tutorial_bd_fpga_system_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source tutorial_bd_fpga_system_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/uio/hume/student-u81/rolfvh/IN3160-22/oblig10'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/uio/hume/student-u81/rolfvh/IN3160-22/oblig10' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.runs/tutorial_bd_fpga_system_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/ifi/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top tutorial_bd_fpga_system_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3165523
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2527.375 ; gain = 0.000 ; free physical = 3022 ; free virtual = 31782
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tutorial_bd_fpga_system_0_0' [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ip/tutorial_bd_fpga_system_0_0/synth/tutorial_bd_fpga_system_0_0.vhd:71]
+INFO: [Synth 8-3491] module 'fpga_system' declared at '/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/fpga_system.vhd:6' bound to instance 'U0' of component 'fpga_system' [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ip/tutorial_bd_fpga_system_0_0/synth/tutorial_bd_fpga_system_0_0.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'fpga_system' [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/fpga_system.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'pulse_width_modulator' [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/pulse_width_modulator.vhd:15]
+INFO: [Synth 8-226] default block is never used [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/pulse_width_modulator.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'pulse_width_modulator' (1#1) [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/pulse_width_modulator.vhd:15]
+INFO: [Synth 8-3491] module 'output_sync' declared at '/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/output_sync.vhd:5' bound to instance 'UUT_OUT_SYNC' of component 'output_sync' [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/fpga_system.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'output_sync' [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/output_sync.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'output_sync' (2#1) [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/output_sync.vhd:15]
+INFO: [Synth 8-3491] module 'input_sync' declared at '/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/input_sync.vhd:5' bound to instance 'UUT_IN_SYNC' of component 'input_sync' [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/fpga_system.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'input_sync' [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/input_sync.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'input_sync' (3#1) [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/input_sync.vhd:15]
+INFO: [Synth 8-3491] module 'quadrature_decoder' declared at '/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/quadrature_decoder.vhd:6' bound to instance 'UUT_QUAD_DEC' of component 'quadrature_decoder' [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/fpga_system.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'quadrature_decoder' [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/quadrature_decoder.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'quadrature_decoder' (4#1) [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/quadrature_decoder.vhd:17]
+	Parameter RCOUNT_WIDTH bound to: 20 - type: integer 
+	Parameter TEN_MS_COUNT bound to: 1000000 - type: integer 
+INFO: [Synth 8-3491] module 'velocity_reader' declared at '/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/velocity_reader.vhd:6' bound to instance 'UUT_VEL_READ' of component 'velocity_reader' [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/fpga_system.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'velocity_reader' [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/velocity_reader.vhd:21]
+	Parameter RCOUNT_WIDTH bound to: 20 - type: integer 
+	Parameter TEN_MS_COUNT bound to: 1000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'velocity_reader' (5#1) [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/velocity_reader.vhd:21]
+INFO: [Synth 8-3491] module 'seg7ctrl' declared at '/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/seg7ctrl.vhd:6' bound to instance 'UUT_S7C' of component 'seg7ctrl' [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/fpga_system.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'seg7ctrl' [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/seg7ctrl.vhd:18]
+INFO: [Synth 8-226] default block is never used [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/bin2ssd_pck.vhd:16]
+INFO: [Synth 8-226] default block is never used [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/bin2ssd_pck.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'seg7ctrl' (6#1) [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/seg7ctrl.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'fpga_system' (7#1) [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ipshared/5b26/fpga_system.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'tutorial_bd_fpga_system_0_0' (8#1) [/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.gen/sources_1/bd/tutorial_bd/ip/tutorial_bd_fpga_system_0_0/synth/tutorial_bd_fpga_system_0_0.vhd:71]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2527.375 ; gain = 0.000 ; free physical = 3727 ; free virtual = 32476
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2527.375 ; gain = 0.000 ; free physical = 3763 ; free virtual = 32512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2527.375 ; gain = 0.000 ; free physical = 3763 ; free virtual = 32512
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2527.375 ; gain = 0.000 ; free physical = 3755 ; free virtual = 32504
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2591.320 ; gain = 0.000 ; free physical = 3597 ; free virtual = 32345
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2591.320 ; gain = 0.000 ; free physical = 3596 ; free virtual = 32345
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2591.320 ; gain = 63.945 ; free physical = 3737 ; free virtual = 32486
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2591.320 ; gain = 63.945 ; free physical = 3737 ; free virtual = 32486
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2591.320 ; gain = 63.945 ; free physical = 3737 ; free virtual = 32486
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'moore_state_curr_reg' in module 'pulse_width_modulator'
+INFO: [Synth 8-802] inferred FSM for state register 'mealy_state_curr_reg' in module 'quadrature_decoder'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            forward_idle |                               00 |                               00
+                 forward |                               01 |                               01
+            reverse_idle |                               10 |                               10
+                 reverse |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'moore_state_curr_reg' using encoding 'sequential' in module 'pulse_width_modulator'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 s_reset |                              000 |                              000
+                  s_init |                              001 |                              001
+                     s_3 |                              010 |                              101
+                     s_2 |                              011 |                              100
+                     s_1 |                              100 |                              011
+                     s_0 |                              101 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mealy_state_curr_reg' using encoding 'sequential' in module 'quadrature_decoder'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2591.320 ; gain = 63.945 ; free physical = 3728 ; free virtual = 32477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   31 Bit       Adders := 1     
+	   4 Input   12 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 2     
+	   4 Input    8 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 11    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 2     
+	  33 Input    7 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 36    
+	   4 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 4     
+	  27 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 7     
+	   6 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2591.320 ; gain = 63.945 ; free physical = 3706 ; free virtual = 32459
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2591.320 ; gain = 63.945 ; free physical = 3572 ; free virtual = 32337
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2591.320 ; gain = 63.945 ; free physical = 3572 ; free virtual = 32337
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2591.320 ; gain = 63.945 ; free physical = 3568 ; free virtual = 32333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2591.320 ; gain = 63.945 ; free physical = 3568 ; free virtual = 32333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2591.320 ; gain = 63.945 ; free physical = 3568 ; free virtual = 32333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2591.320 ; gain = 63.945 ; free physical = 3568 ; free virtual = 32333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2591.320 ; gain = 63.945 ; free physical = 3580 ; free virtual = 32333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2591.320 ; gain = 63.945 ; free physical = 3580 ; free virtual = 32333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2591.320 ; gain = 63.945 ; free physical = 3580 ; free virtual = 32333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                 | RTL Name                            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|tutorial_bd_fpga_system_0_0 | U0/UUT_VEL_READ/pos_shift_reg[9][7] | 10     | 8     | YES          | NO                 | YES               | 8      | 0       | 
++----------------------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    23|
+|2     |LUT1   |    26|
+|3     |LUT2   |    25|
+|4     |LUT3   |    25|
+|5     |LUT4   |    32|
+|6     |LUT5   |    28|
+|7     |LUT6   |    38|
+|8     |SRL16E |     8|
+|9     |FDCE   |    86|
+|10    |FDRE   |    15|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2591.320 ; gain = 63.945 ; free physical = 3580 ; free virtual = 32333
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2591.320 ; gain = 0.000 ; free physical = 3636 ; free virtual = 32389
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2591.320 ; gain = 63.945 ; free physical = 3636 ; free virtual = 32389
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2591.320 ; gain = 0.000 ; free physical = 3727 ; free virtual = 32480
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2591.320 ; gain = 0.000 ; free physical = 3673 ; free virtual = 32426
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 2591.320 ; gain = 68.148 ; free physical = 3733 ; free virtual = 32486
+INFO: [Common 17-1381] The checkpoint '/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.runs/tutorial_bd_fpga_system_0_0_synth_1/tutorial_bd_fpga_system_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP tutorial_bd_fpga_system_0_0, cache-ID = 210b3512f77f8bd3
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+INFO: [Common 17-1381] The checkpoint '/uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig_10_system/oblig_10_system.runs/tutorial_bd_fpga_system_0_0_synth_1/tutorial_bd_fpga_system_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tutorial_bd_fpga_system_0_0_utilization_synth.rpt -pb tutorial_bd_fpga_system_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May  6 19:42:10 2022...

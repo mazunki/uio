@@ -1,0 +1,27 @@
+/uio/hume/student-u81/rolfvh/IN3160-22/oblig2/decoder1.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/IN3160-22/oblig2/decoder1.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity decoder1
+-- Compiling architecture decoder1_arch of decoder1
+
+} {} {}} /uio/hume/student-u81/rolfvh/IN3160-22/oblig2/decoder2_entity.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/IN3160-22/oblig2/decoder2_entity.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity decoder2_entity
+
+} {} {}} /uio/hume/student-u81/rolfvh/IN3160-22/oblig2/decoder2_arch.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/IN3160-22/oblig2/decoder2_arch.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Compiling architecture decoder2_arch of decoder2_entity
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading entity decoder2_entity
+
+} {} {}}

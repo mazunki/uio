@@ -1,0 +1,60 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/uio/hume/student-u81/rolfvh/IN3160/oblig1
+T_opt
+!s110 1579718549
+VPZdRECAoYXlGloWB8_6@S3
+04 14 7 work counter_entity counter 1
+=16-5065f34cd003-5e289795-254cb-379e
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;10.6c_1;65
+Ecounter_entity
+Z0 w1579718538
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 d/uio/hume/student-u81/rolfvh/IN3160/oblig1/counter
+Z5 8/uio/hume/student-u81/rolfvh/IN3160/oblig1/counter/counter_entity.vhd
+Z6 F/uio/hume/student-u81/rolfvh/IN3160/oblig1/counter/counter_entity.vhd
+l0
+L5
+V[BNS;>iBTeG?W5b[V]6IF2
+!s100 Z2D5J3^H1511l=[CE:jC73
+Z7 OL;C;10.6c_1;65
+33
+Z8 !s110 1579718546
+!i10b 1
+Z9 !s108 1579718546.000000
+Z10 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160/oblig1/counter/counter_entity.vhd|
+Z11 !s107 /uio/hume/student-u81/rolfvh/IN3160/oblig1/counter/counter_entity.vhd|
+!i113 0
+Z12 o-work work -2008 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Acounter
+R1
+R2
+R3
+DEx4 work 14 counter_entity 0 22 [BNS;>iBTeG?W5b[V]6IF2
+l22
+L18
+V^Lbf7lY]TUhmfa20V4Zlc1
+!s100 Fzm2VO<Y43CmH:bb6nXfg0
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13

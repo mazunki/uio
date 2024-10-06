@@ -1,0 +1,14 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/ROM.vhd,1650570672,vhdl2008,,,,rom,,,,,,,,
+/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/bin2ssd_pck.vhd,1651192091,vhdl2008,/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/seg7ctrl.vhd,,,bin2ssd_pck,,,,,,,,
+/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/input_sync.vhd,1650567416,vhdl2008,,,,input_sync,,,,,,,,
+/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/output_sync.vhd,1650567434,vhdl2008,,,,output_sync,,,,,,,,
+/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/pulse_width_modulator.vhd,1651191550,vhdl2008,/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd,,,pulse_width_modulator,,,,,,,,
+/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/quadrature_decoder.vhd,1651233136,vhdl2008,,,,quadrature_decoder,,,,,,,,
+/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/seg7ctrl.vhd,1651192091,vhdl2008,,,,seg7ctrl,,,,,,,,
+/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd,1651194486,vhdl,,,,self_test_system,,,,,,,,
+/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_unit.vhd,1650572158,vhdl,/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd,,,self_test_unit,,,,,,,,
+/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/velocity_reader.vhd,1651229468,vhdl2008,,,,velocity_reader,,,,,,,,

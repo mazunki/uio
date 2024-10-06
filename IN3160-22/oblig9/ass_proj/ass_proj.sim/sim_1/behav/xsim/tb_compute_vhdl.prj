@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ass_proj.srcs/sources_1/imports/oblig9/compute_ent.vhd" \
+"../../../../ass_proj.srcs/sources_1/imports/oblig9/compute_rtl.vhd" \
+"../../../../ass_proj.srcs/sources_1/imports/oblig9/tb_compute.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;hello_PID/src/GPIO_PID_control.c&apos; to &apos;helloworld.c&apos;" description="Rename resource &apos;GPIO_PID_control.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/GPIO_PID_control.c" name="helloworld.c" stamp="1651865320234" updateReferences="true"/>
+</session>

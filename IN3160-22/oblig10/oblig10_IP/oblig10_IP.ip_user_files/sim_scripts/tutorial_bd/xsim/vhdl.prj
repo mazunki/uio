@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/tutorial_bd/ip/tutorial_bd_processing_system7_0_0/tutorial_bd_processing_system7_0_0_sim_netlist.vhdl" \
+"../../../bd/tutorial_bd/sim/tutorial_bd.vhd" \
+
+nosort

@@ -1,0 +1,27 @@
+/uio/hume/student-u81/rolfvh/in3160-new/oblig3/tb_delay.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/in3160-new/oblig3/tb_delay.vhd
+QuestaSim-64 vcom 2019.4 Compiler 2019.10 Oct 15 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_delay
+-- Compiling architecture beh1 of tb_delay
+-- Loading entity delay
+
+} {} {}} /uio/hume/student-u81/rolfvh/in3160-new/oblig3/tb_variables_vs_signals.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/in3160-new/oblig3/tb_variables_vs_signals.vhd
+QuestaSim-64 vcom 2019.4 Compiler 2019.10 Oct 15 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_variables_vs_signals
+-- Compiling architecture beh1 of tb_variables_vs_signals
+-- Loading entity variables_vs_signals
+
+} {} {}} /uio/hume/student-u81/rolfvh/in3160-new/oblig3/delay.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/in3160-new/oblig3/delay.vhd
+QuestaSim-64 vcom 2019.4 Compiler 2019.10 Oct 15 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity delay
+-- Compiling architecture rtl1 of delay
+
+} {} {}}

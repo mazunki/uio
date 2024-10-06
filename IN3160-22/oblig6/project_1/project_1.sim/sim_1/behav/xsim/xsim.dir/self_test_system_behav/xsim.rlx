@@ -1,0 +1,12 @@
+
+{ 
+    crc :  9107064741827037850  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto ec67b883a27e4d71a1ee579c317843fb --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot self_test_system_behav xil_defaultlib.self_test_system" , 
+    buildDate : "Nov 18 2020" , 
+    buildTime : "09:20:35" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/self_test_system_behav/xsimk\"   \"xsim.dir/self_test_system_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/self_test_system_behav/obj/xsim_1.lnx64.o\" -L\"/uio/kant/ifi-project06/robin/programs/Vivado/2020.2/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

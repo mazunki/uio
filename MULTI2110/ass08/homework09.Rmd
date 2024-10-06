@@ -1,0 +1,67 @@
+---
+title: "Homework09: Categorical predictors — MULTI2110"
+author: "Mazunki Hoksaas"
+date: "2023-10-29"
+output: html_document
+---
+
+## HOMEWORK (Winter 7.12.2)
+Let’s assess the degree to which perceptual words differ in terms of iconicity as a function of sensory modality, as explored in Winter et al. (2017) (see Chapter 2). 
+The following code loads in the Lynott and Connell (2009) modality ratings for adjectives and our iconicity ratings. 
+The two tibbles are then merged, and a subset of the columns is extracted using `select()`.
+
+```{r, setup, include=FALSE}
+
+# nifty code using the pacman package
+# it checks if the packages specified below are installed, if not, they will be installed, if yes, they will be loaded
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(rstudioapi, tidyverse, broom)
+
+# set the current working directory to the one where this file is
+current_working_dir <- dirname(rstudioapi::getActiveDocumentContext()$path)
+setwd(current_working_dir)
+
+```
+
+```{r exercise_4_prep, warning = F, message = F}
+
+# load in data
+lyn <- read_csv("lynott_connell_2009_modality.csv")
+icon <- read_csv('perry_winter_2017_iconicity.csv')
+
+# Merge data
+both <- 
+  left_join(lyn, icon) %>% 
+  select(Word, DominantModality, Iconicity)
+
+head(both)
+
+```
+
+(a) Fit a linear model where `Iconicity` is modeled as a function of the categorical predictor `DominantModality`. 
+(b) Write a little summary of what the output of the model means.
+(c) Can you use the coefficients to derive predictions for all five categories?
+(d) Compare your results against the descriptive means, for which you can use `group_by()` and `summarize()`.
+
+```{r exercise_4, warning=F, message=F}
+model <- lm(Iconicity ~ DominantModality, data = both)
+summary(both)
+both %>% group_by(DominantModality) %>% count()
+summary(model)
+```
+
+there are 5 different categories for the dominant modality for our words, and we can see the auditory (displaye as the intercept coefficient in the summary) having the highest average for their iconicity. the least iconic group is the gustatory category.
+
+given the very low values for the p-values we can assert the iconocity for each group is not a random effect of our pool. that said, the haptic modality has a p-value of 1.18%, which, while unlikely, could be explained by our pool.
+
+that said, all the groups have a decent sample size. the variance in the original iconocity dataset can be explained to some degree by our categorical separation: 17% of the variance is given by it (as shown by the R-squared value).
+
+we could use the coefficients given by our model to predict the iconicity for each model (in our case, that'll be the mean of the iconocity of each group) by simply calculating the offset from the intercept shown in the summary: for instance, the gustatory group is expected to fall around 2.25-1.45 = 0.80. the reason this works is because we're using a linear model comparing different groups of the same-scale variable.
+
+```{r exercise_4d, warning=F, message=F}
+both %>% 
+  group_by(DominantModality) %>% 
+  summarize(mean_iconicity = mean(Iconicity, na.rm = TRUE))
+```
+
+similar to how we counted the sample sizes before, we can see the auditory group is the most iconic, while the gustatory group is the least iconic.

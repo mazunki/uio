@@ -1,0 +1,18 @@
+/uio/hume/student-u81/rolfvh/in2060-oblig2/tb_fulladder.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/in2060-oblig2/tb_fulladder.vhd
+QuestaSim-64 vcom 2019.4 Compiler 2019.10 Oct 15 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_fulladder
+-- Compiling architecture behavioral of tb_fulladder
+-- Loading package ENV
+
+} {} {}} /uio/hume/student-u81/rolfvh/in2060-oblig2/fulladder.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/in2060-oblig2/fulladder.vhd
+QuestaSim-64 vcom 2019.4 Compiler 2019.10 Oct 15 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fulladder
+-- Compiling architecture dataflow of fulladder
+
+} {} {}}

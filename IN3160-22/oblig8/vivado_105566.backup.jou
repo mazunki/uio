@@ -1,0 +1,373 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 29 11:58:46 2022
+# Process ID: 105566
+# Current directory: /uio/hume/student-u81/rolfvh/IN3160-22/oblig8
+# Command line: vivado
+# Log file: /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/vivado.log
+# Journal file: /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_2 /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/project_2 -part xc7z020clg484-1
+set_property target_language VHDL [current_project]
+set_property simulator_language VHDL [current_project]
+add_files -norecurse {/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/quadrature_decoder.vhd /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/pulse_width_modulator.vhd /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/bin2ssd_pck.vhd /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/ROM.vhd /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/seg7ctrl.vhd /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/velocity_reader.vhd /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/output_sync.vhd /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/input_sync.vhd}
+add_files -fileset sim_1 -norecurse {/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/tb_pwm_module.vhd /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_unit.vhd /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system_ent.vhd /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/tb_quadrature_decoder.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property file_type {VHDL 2008} [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/ROM.vhd]
+set_property file_type {VHDL 2008} [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/input_sync.vhd]
+set_property file_type {VHDL 2008} [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/output_sync.vhd]
+set_property file_type {VHDL 2008} [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/pulse_width_modulator.vhd]
+set_property file_type {VHDL 2008} [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/quadrature_decoder.vhd]
+set_property file_type {VHDL 2008} [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/seg7ctrl.vhd]
+set_property file_type {VHDL 2008} [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/velocity_reader.vhd]
+set_property file_type {VHDL 2008} [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd]
+set_property file_type {VHDL 2008} [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/tb_quadrature_decoder.vhd]
+set_property file_type {VHDL 2008} [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/tb_pwm_module.vhd]
+set_property used_in_synthesis false [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/tb_quadrature_decoder.vhd]
+set_property used_in_synthesis false [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd]
+set_property used_in_synthesis false [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/tb_pwm_module.vhd]
+set_property used_in_synthesis true [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd]
+set_property used_in_synthesis false [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd]
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property used_in_synthesis true [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd]
+launch_simulation
+set_property used_in_synthesis false [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd]
+set_property used_in_synthesis false [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system_ent.vhd]
+set_property file_type {VHDL 2008} [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system_ent.vhd]
+set_property used_in_synthesis false [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system_ent.vhd]
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top seg7ctrl [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+set_property file_type {VHDL 2008} [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/bin2ssd_pck.vhd]
+launch_simulation
+set_property file_type VHDL [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/velocity_reader.vhd]
+launch_simulation
+set_property file_type {VHDL 2008} [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/velocity_reader.vhd]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+add_files -fileset constrs_1 -norecurse /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/constaints.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top pulse_width_modulator [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+set_property used_in_synthesis true [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top seg7ctrl [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+set_property used_in_synthesis false [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd]
+set_property used_in_synthesis true [get_files  /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd]
+set_property IS_GLOBAL_INCLUDE 1 [get_files /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd]
+set_property IS_GLOBAL_INCLUDE 0 [get_files /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd]
+add_files -norecurse /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top self_test_system [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+export_ip_user_files -of_objects  [get_files /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system.vhd
+export_ip_user_files -of_objects  [get_files /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system_ent.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_system_ent.vhd
+update_compile_order -fileset sources_1
+add_files -norecurse /uio/hume/student-u81/rolfvh/IN3160-22/oblig8/self_test_unit.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+launch_simulation -mode post-synthesis -type timing
+source self_test_system.tcl
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+current_design synth_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_design impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+open_run synth_1 -name synth_1
+current_design impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+close_design
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+refresh_design
+close_design
+open_run impl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+current_design impl_1
+current_design rtl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+current_design rtl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/project_2/project_2.runs/impl_1/self_test_system.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+open_hw_manager
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/uio/hume/student-u81/rolfvh/IN3160-22/oblig8/project_2/project_2.runs/impl_1/self_test_system.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_target [lindex [get_hw_targets] 0]
+open_hw_target
+current_hw_device [lindex [get_hw_targets] 1]
+set_property PROGRAM.FILE {./project_2/project_2.runs/impl_1/self_test_system.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_sim

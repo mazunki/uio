@@ -1,0 +1,175 @@
+m255
+K4
+z2
+!s11e vcom 2019.4 2019.10, Oct 15 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/uio/hume/student-u81/rolfvh/in3160-new/oblig4
+T_opt
+!s110 1613669281
+VgMi8Q=DF;8LKjMn8fC]PI1
+Z1 04 9 4 work tb_pargen beh1 1
+=1-5065f33fb028-602ea3a1-2fc5e-2384
+Z2 o-quiet -auto_acc_if_foreign -work work
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;2019.4;69
+R0
+T_opt1
+!s110 1613676786
+VX6MlGmd2;oQQ0@gFkZ[3o0
+R1
+=9-5065f33fb028-602ec0f1-d62c8-4230
+o-quiet -auto_acc_if_foreign -work work +acc
+R3
+n@_opt1
+R4
+T_opt2
+!s110 1613668673
+Vz_:1SZ8f:0cKkS7Y?a0683
+04 6 4 work pargen rtl1 1
+=1-5065f33fb028-602ea141-e4ee-210e
+R2
+R3
+n@_opt2
+R4
+R0
+Epargen
+Z5 w1613671796
+Z6 DPx4 work 11 subprog_pck 0 22 ^o_o2I1HKT0o:[c@CFhJ]0
+Z7 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 -1
+Z10 d/uio/hume/student-u81/rolfvh/in3160-new/oblig5
+Z11 8/uio/hume/student-u81/rolfvh/in3160-new/oblig5/pargen.vhd
+Z12 F/uio/hume/student-u81/rolfvh/in3160-new/oblig5/pargen.vhd
+l0
+L11
+VkAT]Do@J`25_J`FL@@b=13
+!s100 ]aQ9CV@MnnN9@>Z]Ndl>P3
+Z13 OL;C;2019.4;69
+33
+Z14 !s110 1613676781
+!i10b 1
+Z15 !s108 1613676781.000000
+Z16 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/in3160-new/oblig5/pargen.vhd|
+Z17 !s107 /uio/hume/student-u81/rolfvh/in3160-new/oblig5/pargen.vhd|
+!i113 0
+Z18 o-work work -2008 -explicit
+Z19 tExplicit 1 CvgOpt 0
+Artl1
+R6
+R7
+R8
+R9
+Z20 DEx4 work 6 pargen 0 22 kAT]Do@J`25_J`FL@@b=13
+!i122 -1
+l28
+L26
+VzMNnB`ZQ`KN=GAjKJoJcf2
+!s100 VS=V^IR8i;D:KJ?Zbjd6C3
+R13
+33
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+R19
+Psubprog_pck
+R7
+R8
+R9
+!i122 -1
+Z21 w1613676779
+R10
+Z22 8/uio/hume/student-u81/rolfvh/in3160-new/oblig5/subprog_pck.vhd
+Z23 F/uio/hume/student-u81/rolfvh/in3160-new/oblig5/subprog_pck.vhd
+l0
+L6
+V^o_o2I1HKT0o:[c@CFhJ]0
+!s100 aG[oD^P:GbE<2ckMc?QWL1
+R13
+33
+b1
+R14
+!i10b 1
+R15
+Z24 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/in3160-new/oblig5/subprog_pck.vhd|
+Z25 !s107 /uio/hume/student-u81/rolfvh/in3160-new/oblig5/subprog_pck.vhd|
+!i113 0
+R18
+R19
+Bbody
+R6
+R7
+R8
+R9
+!i122 -1
+l0
+L23
+ViTM2X77jPV^EDliSHUh0z2
+!s100 ZS=e[CEe[LjlT^TA<N:`I2
+R13
+33
+R14
+!i10b 1
+R15
+R24
+R25
+!i113 0
+R18
+R19
+Etb_pargen
+Z26 w1613676303
+R6
+R7
+R8
+R9
+!i122 -1
+R10
+Z27 8/uio/hume/student-u81/rolfvh/in3160-new/oblig5/tb_pargen.vhd
+Z28 F/uio/hume/student-u81/rolfvh/in3160-new/oblig5/tb_pargen.vhd
+l0
+L7
+VZ`3<NMOHhONEkM=I>Ez]a0
+!s100 io=Q@GLM25bE671cdbN8U1
+R13
+33
+R14
+!i10b 1
+R15
+Z29 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/in3160-new/oblig5/tb_pargen.vhd|
+Z30 !s107 /uio/hume/student-u81/rolfvh/in3160-new/oblig5/tb_pargen.vhd|
+!i113 0
+R18
+R19
+Abeh1
+R20
+R6
+R7
+R8
+R9
+DEx4 work 9 tb_pargen 0 22 Z`3<NMOHhONEkM=I>Ez]a0
+!i122 -1
+l35
+L14
+VPzXZMfi=aHnDYC_4UIlmC1
+!s100 iacXD5gNJfY5iUD`MVKXD2
+R13
+33
+R14
+!i10b 1
+R15
+R29
+R30
+!i113 0
+R18
+R19

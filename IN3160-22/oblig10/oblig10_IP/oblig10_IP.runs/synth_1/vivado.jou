@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May  6 19:15:30 2022
+# Process ID: 3154886
+# Current directory: /uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig10_IP/oblig10_IP.runs/synth_1
+# Command line: vivado -log fpga_system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_system.tcl
+# Log file: /uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig10_IP/oblig10_IP.runs/synth_1/fpga_system.vds
+# Journal file: /uio/hume/student-u81/rolfvh/IN3160-22/oblig10/oblig10_IP/oblig10_IP.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source fpga_system.tcl -notrace

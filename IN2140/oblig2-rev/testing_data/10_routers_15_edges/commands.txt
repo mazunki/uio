@@ -1,0 +1,15 @@
+print 579
+sett_modell 579 Cisco v10
+print 579
+sett_flagg 579 0 0
+sett_flagg 579 1 0
+sett_flagg 579 2 1
+print 579
+finnes_rute 133 437
+finnes_rute 133 705
+finnes_rute 983 579
+finnes_rute 705 766
+legg_til_kobling 705 133
+finnes_rute 705 766
+slett_ruter 133
+finnes_rute 705 766

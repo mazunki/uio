@@ -1,0 +1,15 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Sun Jan 31 12:02:15 2021
+| Host         : nottingham.ifi.uio.no running 64-bit Red Hat Enterprise Linux Workstation release 7.9 (Maipo)
+| Command      : report_bus_skew -warn_on_violation -file FIRST_bus_skew_routed.rpt -pb FIRST_bus_skew_routed.pb -rpx FIRST_bus_skew_routed.rpx
+| Design       : FIRST
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

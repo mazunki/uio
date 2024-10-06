@@ -1,0 +1,1 @@
+int getstrlen(char* s);

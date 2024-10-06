@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Feb  4 23:55:10 2022
+# Process ID: 755190
+# Current directory: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.runs/impl_1
+# Command line: vivado -log FIRST.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source FIRST.tcl -notrace
+# Log file: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.runs/impl_1/FIRST.vdi
+# Journal file: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source FIRST.tcl -notrace

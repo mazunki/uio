@@ -1,0 +1,182 @@
+---
+title: "Exam MULTI2110/4110"
+date: "2023-12-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message = FALSE,
+                      warning = FALSE)
+```
+
+# Introduction
+The following exam has five different tasks. 
+Please offer a solution for each task, save the `.Rmd` file and upload it to Inspera.
+
+Today, we are working with a data set on pitch values. Pitch is the auditory equivalent of fundamental frequency. So if someone speaks in a "high" voice, they have high pitch, and if someone speaks in a "low" voice, they have low pitch. For example, men usually have higher pitch than women. 
+
+The critical outcome variable is participants' pitch (`pitch`).
+Execute the chunk below to load relevant packages and the data (make sure the data set is in the same folder as this `.Rmd` file).
+
+!!! ATTENTION: When downloading the data, they might be stored in a weird name with a bunch of numbers. Either rename the file to `pitch_exam.csv` and run the code-chunk below OR change the code-chunk below (`read.csv("pitch_exam.csv")`) to the respective file name !!!
+
+```{r loadData}
+
+# nifty code using the pacman package
+# it checks if the packages specified below are installed, if not, they will be installed, if yes, they will be loaded
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(rstudioapi, tidyverse)
+
+# set the current working directory to the one where this file is
+current_working_dir <- dirname(rstudioapi::getActiveDocumentContext()$path)
+setwd(current_working_dir)
+
+# let's load our dataset
+data <- read.csv("pitch_exam.csv")
+head(data)
+
+```
+
+Here are the relevant columns of this data set:
+
+- `sex` = self-identified biological sex (`male` vs. `female`)
+- `speaks_to` = whom the speaker spoke to (`adult` vs. `child`)
+- `soar_throat` = whether the speaker self-identified as having a soar throat or not (`soar` vs. `healthy`)
+- `age` = speaker's age in years
+- `pitch` = fundamental frequency in Hz.
+
+Imagine, researchers are interested in finding out whether people change their pitch when talking to children or adults and whether pitch is affected by having a soar throat or not. 
+Researchers would like to test the following null hypotheses using the null hypothesis significance testing framework:
+Speakers' pitch is not predicted by whether their throat is soar or not (`soar_throat`), not predicted by whether they speak to a child or adult (`speaks_to`), nor is it predicted by the interaction between these two predictors.
+
+# TASKS 
+### Task 0 
+_Insert a 8-digit number into the `set.seed()` function below, for example `set.seed(1111111)` (but a different number). _
+_Run the code chunk below with your own unique seed._
+
+_!!! This is mandatory to prevent cheating, if you miss this step, your exam will be an automatic fail!!!_
+
+```{r seed}
+
+# insert your own unique 8-digit number into the set.seed function
+set.seed(24681234)
+
+# run this code to subset the data
+xdata <- data %>% 
+  slice_sample(n = 100)
+
+```
+
+### Task 1 (4pts)
+(a) _Take the data frame `xdata` and subset the data, such that_
+  (a1) _only those data points remain that have valid pitch values (remove NAs);_ 
+  (a2) _only speakers who are younger than 50 years; and _
+(b) _Remove the `age` column. _
+(c) _Create a new variable that calculates the natural logarithm of the `pitch` measure (use the function `log()`)_.
+(d) _Store the new data set as `xdata2`_.
+
+(You earn extra points for executing this in one uninterrupted pipeline `%>%`) 
+
+```{r wrangle}
+xdata2 <- xdata %>%
+  filter(!is.na(pitch), age < 50) %>%
+  select(-age) %>%
+  mutate(log_pitch = log(pitch))
+```
+
+### Task 2 (4 pts)
+__Plot the relationship between pitch and the two predictors.__
+_Plot the data in an informative way, i.e. a way that clearly reveals the data distributions and allows the viewer to compare them across conditions and at the same time show central tendencies. The plot type is up to you, but specify your own individual choice of colors._
+
+```{r plot}
+ggplot(xdata2, aes(x = speaks_to, y = pitch, fill = soar_throat, color=sex)) +
+  geom_boxplot() +
+  facet_wrap(~ soar_throat) +
+  labs(title = "Pitch Distribution by Speaker Condition and Throat Health",
+       x = "Speaking to",
+       y = "Pitch") +
+  scale_fill_manual(values = c("lightblue", "pink"))
+```
+
+We can see the range of speakers with a sore throat (i fully imagine soar* is a typo in the original data) is greatly limited, and that generally people will speak with a lower pitch when sick.
+
+We don't see a massive difference between speakers talking towards children than towards adults, although men will tend to speak with a slightly higher range when speaking to children when healthy, as opposed to a narrower range when sick and talking to children. For women, this variation isn't super noticeable.
+
+### Task 3 (2 pts)
+_Choose an appropriate (generalized) linear model that allows you to predict pitch by whether the speaker's throat is soar or not (`soar_throat`), by whether the speaker talks to a child or adult (`speaks_to`), and the interaction between these two predictors._
+
+```{r model}
+model <- lm(log_pitch ~ speaks_to * soar_throat, data = xdata2)
+```
+
+### Task 4 (7 pts) 
+_Interpret the output of the model. (If you round numbers, make sure you round correctly)_
+(a) _explain what the different coefficients mean,_
+(b) _how much variance the model explains,_
+(c) _and what we can say about the null hypotheses._
+
+```{r interpret}
+summary(model)
+```
+
+(a) We see four different coefficients:
+ - the `intercept` (est. 5.162) is the estimated pitch for the reference group (healthy people speaking to adults);
+ - the `speaks_tochild` (est. -0.038) coefficient represents the difference in pitch when talking to a child instead;
+ - the `soar_throatsoar` (est. -0.313) is, similarly, the difference in pitch when a sick person talks to another adult.
+ - Finally, `speaks_tochild:soar_throatsoar` (est. 0.044) represents the additional pitch change which occurs on top of the combined result of the two prior. 
+ 
+ Additionally, we must note the statistical importance of the baseline intercept, and the effects of having a sore throat. A p-value of 2e-16 in the intercept essentially guarantees the value is not random, and while a p-value of 1.6e-05 for sore throat coefficient is several orders of magnitude lower, we still consider this to be significant. The p-values of 0.585 and 0.651 seen in the remaining coefficients tell us these factors are quite likely to be random.
+
+(b)  By looking at the notes on the bottom, we see the multiple r-squared value of 27.33%, or 25.06% after adjusting for the number of predictors. This doesn't mean that only 25% of the data fits the model, but rather that only 25% of the variance in the baseline pitch can be explained by our independent variables.
+
+(c) The null hypothesis states that a predictor has no effect on the dependent variable. In other words, for the null hypothesis to be true, its coefficient has to be equal to zero. The coefficient is essentially the estimate after accounting for the random variability.
+
+To read the null hypothesis, we must also understand the t-value: how many standard deviations the estimated coefficient strays from zero. A high absolute t-value suggests a potential effect on the predictor, while a low value would suggest it's not very significant. That said, a high potential effect means nothing if the p-value tells us it's probably only a random effect.
+
+As already mentioned, having a sore throat has a very low p-value, so we can immediately reject its null hypothesis. The high t-value (in absolute measurement) only reinforces this idea.
+
+The `speaks_tochild` and `speaks_tochild:soar_throatsoar` have similar properties: t-values of -0.549 and 0.454 (half a standard deviation), and p-values of 0.585 and 0.651. In other words, 58.5% and 65.1% chance to get the same results happening entirely due to random variation, respectively. That's good enough for me to consider their null hypotheses valid. In other words, we can disregard these variables, as they don't give us any useful information.
+
+### Task 5 (6+1 pts) 
+Plot the residuals of the model. 
+Are the assumptions of normality and homoskedasticity met?
+Would you do anything differently? Did you overlook something when modelling the data?
+
+```{r assumptions}
+model_data <- data.frame(
+  Residuals = residuals(model),
+  Fitted = fitted(model)
+)
+
+# Residuals vs Fitted plot
+ggplot(model_data, aes(x = Fitted, y = Residuals)) +
+  geom_point() +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+  theme_minimal() +
+  ggtitle("Residuals vs Fitted")
+
+# Normal Q-Q plot
+ggplot(model_data, aes(sample = Residuals)) +
+  stat_qq() +
+  stat_qq_line() +
+  theme_minimal() +
+  ggtitle("Normal Q-Q")
+```
+
+In the first plot we can see four different columns, explained by the categorical predictors of our data. It seems our residuals are evenly distributed over each of these columns, suggesting our data is homoscedastic. 
+
+In the q-q plot we see most of the data falling on the prediction line, especially nearby the center. As we reach the outer ends, our data does fall off a bit, which is to be expected given they're probably outliers, and outliers don't always follow the general trend. The datapoints aren't clustered together at any given point either, although it seems we have some preference towards falling nearby the middle, which is entirely normal. 
+
+Given this analysis, it seems our data is homoscedastic.
+
+In regards to what I'd do differently: I would have group my data in regards to the two fitted groups and analysed them separately. I imagine the left side and the right side are explained mostly by the person's sex, so I would be interested to see if the same coeficients are similar in both groups.
+
+Additionally, I don't see any good reason to remove the age from our dataset, as I can imagine the age does play a role, especially in pubescent years and older age (even if we did clip it to a subrange: why?).
+
+### Conclusion
+People's speech pattern variance being affected by external factors is interesting. I can think of many more variables to include, such as time of day, social setting, time of year, profession... it'd be interesting to see which ones are meaningful factors.
+
+Have a good winter :)
+
+

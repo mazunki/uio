@@ -1,0 +1,21 @@
+# Compile of CLA_block.vhd was successful.
+# Compile of tb_CLA_block.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_cla_block
+# vsim -voptargs="+acc" work.tb_cla_block 
+# Start time: 18:52:35 on Sep 28,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading std.env(body)
+# Loading work.tb_cla_block(mixed)#1
+# Loading work.cla_block(mixed)#1
+# Loading work.fulladder(dataflow)#1
+add wave -position insertpoint sim:/tb_cla_block/DUT/*
+run 1000 ns
+# ** Note: Ferdig!
+#    Time: 170 ns  Iteration: 0  Instance: /tb_cla_block
+# Break in Process line__35 at /uio/hume/student-u81/rolfvh/in2060-oblig2/tb_CLA_block.vhd line 72
+
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Zed 210248779875&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Zed-210248779875-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-Zed-210248779875-23727093-0&quot;}}]}"/>
+	<item key="oblig10_PID_system-bitFile" value="${project_loc:oblig10_PID}/_ide/bitstream/tutorial_bd_wrapper.bit"/>
+	<item key="oblig10_PID_system-bmmFile" value=""/>
+	<item key="oblig10_PID_system-target" value="Local"/>
+	<item key="oblig10_PID_system-device" value="Auto Detect"/>
+	<item key="oblig10_PID_system-partial_bit" value="false"/>
+	<item key="oblig10_PID_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="oblig10_PID_system"/>
+</section>

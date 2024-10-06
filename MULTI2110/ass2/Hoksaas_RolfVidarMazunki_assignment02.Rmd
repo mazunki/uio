@@ -1,0 +1,32 @@
+---
+title: "assignment 2 - mazunki hoksaas"
+mainfont: LiberationSerif
+date: "2023-09-15"
+monofont: LiberationMono
+sansfont: LiberationSans
+---
+
+## we do a little trolling, tee-hee
+
+first we load the font libraries, since adobe helvetica doesn't seem to be loaded otherwise? kinda weird if you ask me.
+```{r include=FALSE}
+library(showtext)
+showtext_auto()
+```
+
+then we load in the csv from a csv file (for some reason loading it as a string as we did last time doesn't work in the notebook?)
+```{r}
+WIDTH <- 100
+HEIGHT <- 100
+coords <- read.table("magic.csv", sep = ",", col.names = c("x", "y"));
+img <- matrix(255, nrow = HEIGHT, ncol = WIDTH)
+for (i in 1:nrow(coords)) {
+  img[coords$y[i], coords$x[i]] <- 0
+}
+```
+
+and we finally plot it, this time with `asp=1` to keep the aspect ratio as the original. when we plotted the image from the interpreter, unlike through Rmarkdown, this wasn't necessary; but is probably good practice to specify anyway
+```{r, echo=FALSE}
+p <- plot(1, 1, xlim=c(0, WIDTH), ylim=c(0, HEIGHT), type="n", xlab="goof around", ylab="find out", asp=1)
+points(coords$x, HEIGHT-coords$y, pch=19, col="black")
+```

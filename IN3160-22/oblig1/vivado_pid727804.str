@@ -1,0 +1,1324 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:47 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 727804
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Feb 04 22:07:44 CET 2022
+Time zone: 	Central European Standard Time (Europe/Oslo)
+
+OS: Red Hat Enterprise Linux release 8.5 (Ootpa)
+OS Version: 4.18.0-305.7.1.el8_4.x86_64
+OS Architecture: amd64
+Available processors (cores): 24
+
+Display: localhost:12.0
+Screen size: 2560x1440
+Screen resolution (DPI): 100
+Available screens: 4
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	/uio/kant/ifi-project06/robin/programs/Vivado/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/uio/kant/ifi-project06/robin/programs/Vivado/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	rolfvh
+User home directory: /uio/hume/student-u81/rolfvh
+User working directory: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /uio/kant/ifi-project06/robin/programs/Vivado
+HDI_APPROOT: /uio/kant/ifi-project06/robin/programs/Vivado/2020.2
+RDI_DATADIR: /uio/kant/ifi-project06/robin/programs/Vivado/2020.2/data
+RDI_BINDIR: /uio/kant/ifi-project06/robin/programs/Vivado/2020.2/bin
+
+Vivado preferences file location: /uio/hume/student-u81/rolfvh/.Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: /uio/hume/student-u81/rolfvh/.Xilinx/Vivado/2020.2/
+Vivado layouts directory: /uio/hume/student-u81/rolfvh/.Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	/uio/kant/ifi-project06/robin/programs/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado.log
+Vivado journal file location: 	/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-727804-aftur.ifi.uio.no
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /uio/kant/ifi-project06/robin/programs/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: /uio/kant/ifi-project06/robin/programs/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: /uio/kant/ifi-project06/robin/programs/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /uio/kant/ifi-project06/robin/programs/Vivado/2020.2
+XILINX_SDK: /uio/kant/ifi-project06/robin/programs/Vitis/2020.2
+XILINX_VITIS: /uio/kant/ifi-project06/robin/programs/Vitis/2020.2
+XILINX_VIVADO: /uio/kant/ifi-project06/robin/programs/Vivado/2020.2
+XILINX_VIVADO_HLS: /uio/kant/ifi-project06/robin/programs/Vivado/2020.2
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,520 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,520 MB. GUI used memory: 75 MB. Current time: 2/4/22, 10:07:45 PM CET
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.xpr", 0); // r
+// [GUI Memory]: 92 MB (+93679kb) [00:00:51]
+// [Engine Memory]: 1,521 MB (+1443375kb) [00:00:51]
+// Opening Vivado Project: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.xpr. Version: Vivado v2020.2 
+// bz (cr):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 128 MB (+33518kb) [00:00:56]
+// [Engine Memory]: 1,613 MB (+16393kb) [00:00:56]
+// WARNING: HEventQueue.dispatchEvent() is taking  3123 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/uio/kant/ifi-project06/robin/programs/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,633 MB. GUI used memory: 85 MB. Current time: 2/4/22, 10:08:32 PM CET
+// Tcl Message: INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 7560.977 ; gain = 51.074 ; free physical = 5102 ; free virtual = 64908 
+// Project name: ass_proj; location: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj; part: xc7z020clg484-1
+// [GUI Memory]: 135 MB (+640kb) [00:00:59]
+dismissDialog("Open Project"); // bz
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectCheckBox(PAResourceItoN.LaunchPanel_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Fri Feb  4 22:09:05 2022] Launched synth_1... Run output will be captured here: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 13 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 65 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bz (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Fri Feb  4 22:10:12 2022] Launched impl_1... Run output will be captured here: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Completed: addNotify
+// Elapsed time: 73 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bz (cr):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,959 MB. GUI used memory: 92 MB. Current time: 2/4/22, 10:11:41 PM CET
+// [Engine Memory]: 1,985 MB (+305583kb) [00:04:08]
+// [Engine Memory]: 2,093 MB (+9853kb) [00:04:08]
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.6s
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [GUI Memory]: 148 MB (+5794kb) [00:04:09]
+// [GUI Memory]: 159 MB (+4213kb) [00:04:10]
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2459 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg484-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7602.188 ; gain = 0.000 ; free physical = 4868 ; free virtual = 64675 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7886.242 ; gain = 0.000 ; free physical = 4399 ; free virtual = 64206 
+// Tcl Message: Restored from archive | CPU: 0.020000 secs | Memory: 0.056778 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7886.242 ; gain = 0.000 ; free physical = 4399 ; free virtual = 64206 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7886.242 ; gain = 0.000 ; free physical = 4399 ; free virtual = 64206 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Elapsed time: 19 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_run: Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 8127.262 ; gain = 525.074 ; free physical = 4255 ; free virtual = 64061 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// [GUI Memory]: 177 MB (+10334kb) [00:04:12]
+// [GUI Memory]: 186 MB (+135kb) [00:04:13]
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1064 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dV' command handler elapsed time: 26 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1459 ms.
+dismissDialog("Open Implemented Design"); // bz
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (4) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 3); // A
+// PAPropertyPanels.initPanels (clk) elapsed time: 0.2s
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "clk ; IN ;  ; T18 ; true ; 34 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 4, "NONE", 12, false); // A
+// [GUI Memory]: 198 MB (+3114kb) [00:06:09]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1083 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1257 ms. Increasing delay to 3771 ms.
+// Elapsed time: 158 seconds
+selectTab((HResource) null, (String) null, (HResource) null, "I/O Port Properties", 0, true, false); // aK - Popup Trigger
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property OFFCHIP_TERM NONE [get_ports [list clk]] 
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property OFFCHIP_TERM NONE [get_ports [list clk]] 
+// Elapsed time: 150 seconds
+setText(PAResourceQtoS.SignalPropPanels_PACKAGE_PIN, "T18"); // aa
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// Elapsed time: 109 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 11, true); // u - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 11, true); // u - Node
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DESIGN_SAVE
+dismissDialog("Save Project"); // am
+// Tcl Message: save_constraints 
+// bz (cr):  Open Elaborated Design : addNotify
+dismissDialog("Save Constraints"); // bz
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7z020clg484-1 Top: FIRST 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,269 MB. GUI used memory: 136 MB. Current time: 2/4/22, 10:19:20 PM CET
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,468 MB. GUI used memory: 136 MB. Current time: 2/4/22, 10:19:26 PM CET
+// [Engine Memory]: 2,468 MB (+283356kb) [00:11:52]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// TclEventType: DESIGN_NEW
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1957 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 8211.203 ; gain = 83.941 ; free physical = 4078 ; free virtual = 63886 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'FIRST' [/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/first.vhd:20] INFO: [Synth 8-256] done synthesizing module 'FIRST' (1#1) [/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/first.vhd:20] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8245.141 ; gain = 117.879 ; free physical = 4125 ; free virtual = 63933 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 8259.984 ; gain = 132.723 ; free physical = 4116 ; free virtual = 63924 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 8259.984 ; gain = 132.723 ; free physical = 4116 ; free virtual = 63924 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8259.984 ; gain = 0.000 ; free physical = 4108 ; free virtual = 63916 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.srcs/constrs_1/new/constraints.xdc] Finished Parsing XDC File [/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.srcs/constrs_1/new/constraints.xdc] Completed Processing XDC Constraints  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8368.793 ; gain = 0.000 ; free physical = 4010 ; free virtual = 63818 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 8430.984 ; gain = 303.723 ; free physical = 3927 ; free virtual = 63735 
+// Tcl Message: 4 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 8430.984 ; gain = 303.723 ; free physical = 3927 ; free virtual = 63735 
+// 'dV' command handler elapsed time: 14 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1208 ms.
+dismissDialog("Open Elaborated Design"); // bz
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 211 MB (+2846kb) [00:12:28]
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 140 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 17, true); // u - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 17, true); // u - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bz (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Fri Feb  4 22:22:06 2022] Launched synth_1... Run output will be captured here: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bz
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// [Engine Memory]: 2,600 MB (+8793kb) [00:14:34]
+// TclEventType: RUN_STATUS_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIRST(MY_FIRST_ARCH) (first.vhd)]", 1, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL 2008]", 2, true); // D - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 2,600 MB. GUI used memory: 153 MB. Current time: 2/4/22, 10:22:11 PM CET
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL 2008]", 2); // D
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Report DRC]", 14, false); // u
+// Run Command: PAResourceCommand.PACommandNames_REPORT_DRC
+// WARNING: HEventQueue.dispatchEvent() is taking  1292 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Report Noise]", 15, false); // u
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// bz (cr):  Get rule deck name : addNotify
+// i (cr): Report DRC: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1125 ms.
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Report DRC"); // i
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // m
+// Device view-level: 0.0
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package", 0); // m
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 38 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bz (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri Feb  4 22:23:13 2022] Launched impl_1... Run output will be captured here: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 49 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_WARNING_AND_ERROR_MESSAGES_IN_MESSAGES, "1 warning"); // h
+// ag (cr): Implementation Completed: addNotify
+// Elapsed time: 12 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// [GUI Memory]: 224 MB (+2913kb) [00:17:01]
+// bz (cr):  Reloading : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1062 ms.
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: current_design impl_1 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,614 MB. GUI used memory: 151 MB. Current time: 2/4/22, 10:24:39 PM CET
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,614 MB. GUI used memory: 152 MB. Current time: 2/4/22, 10:24:39 PM CET
+// WARNING: HEventQueue.dispatchEvent() is taking  1266 ms.
+// Tcl Message: refresh_design 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,592 MB. GUI used memory: 146 MB. Current time: 2/4/22, 10:24:40 PM CET
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2964 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8447.250 ; gain = 0.000 ; free physical = 4156 ; free virtual = 63965 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 8447.250 ; gain = 0.000 ; free physical = 4042 ; free virtual = 63850 
+// Tcl Message: Restored from archive | CPU: 0.030000 secs | Memory: 0.037613 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 8447.250 ; gain = 0.000 ; free physical = 4042 ; free virtual = 63850 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 8485.121 ; gain = 37.871 ; free physical = 4013 ; free virtual = 63822 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Elapsed time: 11 seconds
+dismissDialog("Reloading"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// Elapsed time: 10 seconds
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g: FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [filemgmt 56-3] Default IP Output Path : Could not find the directory '/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.gen/sources_1'.. ]", 2, false); // ah
+// Elapsed time: 39 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 18); // u
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 18); // u
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 232 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIRST(MY_FIRST_ARCH) (first.vhd)]", 1, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL 2008, tb_first.vhd]", 3, false); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 7); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, TEST_FIRST(TESTBENCH) (tb_first.vhd), UUT : FIRST(MY_FIRST_ARCH) (first.vhd)]", 10, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, TEST_FIRST(TESTBENCH) (tb_first.vhd)]", 9, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, TEST_FIRST(TESTBENCH) (tb_first.vhd), UUT : FIRST(MY_FIRST_ARCH) (first.vhd)]", 10, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL 2008, tb_first.vhd]", 3, false); // D
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i
+// Elapsed time: 80 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Run Synthesis"); // A
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Edit Timing Constraints]", 20, false); // u
+// ce (cr): Synthesis is Out-of-date: addNotify
+// Elapsed time: 15 seconds
+selectButton(PAResourceQtoS.StaleRunDialog_OPEN_DESIGN, "Open Design"); // a
+// bz (cr):  Open Synthesized Design : addNotify
+dismissDialog("Synthesis is Out-of-date"); // ce
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg484-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,778 MB. GUI used memory: 167 MB. Current time: 2/4/22, 10:32:02 PM CET
+// [Engine Memory]: 2,857 MB (+132568kb) [00:24:29]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1766 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8485.121 ; gain = 0.000 ; free physical = 4024 ; free virtual = 63833 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.srcs/constrs_1/new/constraints.xdc] Finished Parsing XDC File [/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8495.656 ; gain = 0.000 ; free physical = 3953 ; free virtual = 63762 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+// WARNING: HEventQueue.dispatchEvent() is taking  1062 ms.
+dismissDialog("Open Synthesized Design"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Run Synthesis"); // A
+// [GUI Memory]: 246 MB (+10955kb) [00:24:54]
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Edit Timing Constraints]", 21, false); // u
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Edit Timing Constraints]", 21, false); // u
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Run Synthesis"); // A
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// Elapsed time: 10 seconds
+selectButton(PAResourceQtoS.StaleMoreAction_OUT_OF_DATE_DETAILS, "details"); // h
+selectButton(PAResourceQtoS.StaleMoreAction_FORCE_UP_TO_DATE, "Force up-to-date"); // h
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: set_property needs_refresh false [get_runs synth_1] 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: set_property needs_refresh false [get_runs impl_1] 
+selectButton(PAResourceQtoS.StaleMoreAction_FORCE_UP_TO_DATE, "Force up-to-date"); // h
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: set_property needs_refresh false [get_runs synth_1] 
+// bz (cr):  Force Current Runs Up-to-date : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: set_property needs_refresh false [get_runs impl_1] 
+dismissDialog("Force Current Runs Up-to-date"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bz (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Fri Feb  4 22:33:47 2022] Launched synth_1... Run output will be captured here: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 7 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 80 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bz (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri Feb  4 22:35:10 2022] Launched impl_1... Run output will be captured here: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 57 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL 2008, tb_first.vhd]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, TEST_FIRST(TESTBENCH) (tb_first.vhd), UUT : FIRST(MY_FIRST_ARCH) (first.vhd)]", 10, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, TEST_FIRST(TESTBENCH) (tb_first.vhd)]", 9, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIRST(MY_FIRST_ARCH) (first.vhd)]", 1, false); // D
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Completed: addNotify
+// Elapsed time: 15 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// TclEventType: CURR_DESIGN_SET
+// bz (cr):  Reloading : addNotify
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: current_design impl_1 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,882 MB. GUI used memory: 178 MB. Current time: 2/4/22, 10:36:36 PM CET
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,882 MB. GUI used memory: 179 MB. Current time: 2/4/22, 10:36:36 PM CET
+// WARNING: HEventQueue.dispatchEvent() is taking  1116 ms.
+// Tcl Message: refresh_design 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,871 MB. GUI used memory: 173 MB. Current time: 2/4/22, 10:36:37 PM CET
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2369 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8653.562 ; gain = 0.000 ; free physical = 4067 ; free virtual = 63819 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 8653.562 ; gain = 0.000 ; free physical = 3974 ; free virtual = 63725 
+// Tcl Message: Restored from archive | CPU: 0.040000 secs | Memory: 0.037224 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 8653.562 ; gain = 0.000 ; free physical = 3974 ; free virtual = 63725 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 8694.562 ; gain = 41.000 ; free physical = 3857 ; free virtual = 63608 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Elapsed time: 10 seconds
+dismissDialog("Reloading"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 2,965 MB. GUI used memory: 191 MB. Current time: 2/4/22, 10:36:55 PM CET
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Edit Timing Constraints]", 36, false); // u
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, " ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0, (String) null, 0); // f
+// Elapsed time: 33 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectButton(PAResourceQtoS.RunGadget_SHOW_WARNING_AND_ERROR_MESSAGES_IN_MESSAGES, "6 warnings"); // h
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Edit Timing Constraints]", 20, false); // u
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+// WARNING: HEventQueue.dispatchEvent() is taking  1168 ms.
+// Elapsed time: 10 seconds
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, null, -1, null, -1, false, false, false, true, false); // f - Popup Trigger
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, " ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0, (String) null, 0); // f
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, " ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0, (String) null, 0, false, false, false, false, true); // f - Double Click
+// Run Command: PAResourceCommand.PACommandNames_XDC_CREATE_CLOCK
+// cX (cr): Design Modified on Disk: addNotify
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // a
+// 'e' command handler elapsed time: 4 seconds
+// bz (cr):  Reloading : addNotify
+dismissDialog("Design Modified on Disk"); // cX
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: current_design synth_1 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,966 MB. GUI used memory: 188 MB. Current time: 2/4/22, 10:38:23 PM CET
+// Engine heap size: 2,966 MB. GUI used memory: 188 MB. Current time: 2/4/22, 10:38:23 PM CET
+// Tcl Message: refresh_design 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,967 MB. GUI used memory: 187 MB. Current time: 2/4/22, 10:38:24 PM CET
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2454 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8694.562 ; gain = 0.000 ; free physical = 3953 ; free virtual = 63704 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.srcs/constrs_1/new/constraints.xdc] Finished Parsing XDC File [/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+dismissDialog("Reloading"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Edit Timing Constraints]", 21, false); // u
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Edit Timing Constraints]", 21, false); // u
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Edit Timing Constraints]", 21, false); // u
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Edit Timing Constraints]", 21, false, false, false, false, false, true); // u - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Edit Timing Constraints]", 21, false); // u
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, " ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0, (String) null, 0); // f
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, " ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0, (String) null, 0, false, false, false, false, true); // f - Double Click
+// Run Command: PAResourceCommand.PACommandNames_XDC_CREATE_CLOCK
+// aR (cr): Create Clock: addNotify
+// Elapsed time: 19 seconds
+setText(PAResourceAtoD.ClockCreationPanel_CLOCK_NAME, "theBigBen"); // aa
+setText(PAResourceQtoS.SdcGetObjectsPanel_SPECIFY_CLOCK_SOURCE_OBJECTS, (String) null); // aa
+// Elapsed time: 10 seconds
+setText(PAResourceAtoD.ClockCreationPanel_CLOCK_NAME, (String) null); // aa
+selectButton(PAResourceQtoS.SdcGetObjectsPanel_SPECIFY_CLOCK_SOURCE_OBJECTS, (String) null); // t
+// r (cr): Specify Clock Source Objects: addNotify
+setText("pa.Finder.I/O Ports_filter_1", "*"); // C
+// Elapsed time: 14 seconds
+selectComboBox(PAResourceEtoH.GetObjectsDialog_FIND, "Nets", 2); // e
+selectComboBox(PAResourceEtoH.GetObjectsDialog_FIND, "I/O Port", 0); // e
+selectButton(PAResourceEtoH.GetObjectsDialog_FIND, "Find"); // a
+// bz (r):  Find Names : addNotify
+dismissDialog("Find Names"); // bz
+selectList(RDIResource.HDualList_FIND_RESULTS, "clk", 0); // f
+selectButton(RDIResource.HDualList_MOVE_SELECTED_ITEMS_TO_RIGHT, "moveRight"); // k
+// Elapsed time: 18 seconds
+selectButton(PAResourceEtoH.GetObjectsPanel_SET, "Set"); // a
+dismissDialog("Specify Clock Source Objects"); // r
+// Elapsed time: 48 seconds
+setSpinner(PAResourceAtoD.ClockCreationPanel_ENTER_POSITIVE_NUMBER, "20.0"); // b
+// Elapsed time: 12 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (aR):  Validate XDC Command : addNotify
+// TclEventType: POWER_CNS_STALE
+// bz (cr):  Apply XDC Constraints : addNotify
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// Tcl Message: create_clock -period 20.000 -waveform {0.000 10.000} [get_ports clk] 
+// 'e' command handler elapsed time: 150 seconds
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+dismissDialog("Apply XDC Constraints"); // bz
+// Elapsed time: 15 seconds
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "1 ;  ; 20.0 ; 0.0 ; 10.0 ; false ; [get_ports clk] ;  ;  ; ", 0, "false", 5); // f
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "1 ;  ; 20.0 ; 0.0 ; 10.0 ; true ; [get_ports clk] ;  ;  ; ", 0, "true", 5); // f
+// Elapsed time: 15 seconds
+selectButton(PAResourceTtoZ.XdcEditorView_APPLY_ALL_CHANGES_TO_XDC_CONSTRAINTS, "Apply"); // a
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+// bz (cr):  Apply All XDC Constraints : addNotify
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+dismissDialog("Apply All XDC Constraints"); // bz
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "1 ;  ; 20.0 ; 0.0 ; 10.0 ; false ; [get_ports clk] ;  ;  ; ", 0, "false", 5); // f
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "1 ;  ; 20.0 ; 0.0 ; 10.0 ; true ; [get_ports clk] ;  ;  ; ", 0, "true", 5); // f
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "1 ;  ; 20.0 ; 0.0 ; 10.0 ; false ; [get_ports clk] ;  ;  ; ", 0, "false", 5); // f
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "1 ;  ; 20.0 ; 0.0 ; 10.0 ; true ; [get_ports clk] ;  ;  ; ", 0, "true", 5); // f
+// Elapsed time: 38 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Run Synthesis"); // A
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+// bz (cr):  Apply All XDC Constraints : addNotify
+selectButton("OptionPane.button", "Yes"); // JButton
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// am (cr): Save Project: addNotify
+dismissDialog("Apply All XDC Constraints"); // bz
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// A (cr): Out of Date Design: addNotify
+dismissDialog("Save Project"); // am
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Save Constraints : addNotify
+dismissDialog("Out of Date Design"); // A
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// [GUI Memory]: 260 MB (+2292kb) [00:35:19]
+// Tcl Message: save_constraints 
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Save Constraints"); // bz
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bz (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Fri Feb  4 22:42:54 2022] Launched synth_1... Run output will be captured here: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 15 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 55 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bz (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri Feb  4 22:43:59 2022] Launched impl_1... Run output will be captured here: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 10 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_WARNING_AND_ERROR_MESSAGES_IN_MESSAGES, "1 warning"); // h
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Completed: addNotify
+// Elapsed time: 62 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bz (cr):  Reloading : addNotify
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: current_design impl_1 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,975 MB. GUI used memory: 191 MB. Current time: 2/4/22, 10:45:16 PM CET
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,975 MB. GUI used memory: 191 MB. Current time: 2/4/22, 10:45:16 PM CET
+// WARNING: HEventQueue.dispatchEvent() is taking  1104 ms.
+// Tcl Message: refresh_design 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,955 MB. GUI used memory: 187 MB. Current time: 2/4/22, 10:45:17 PM CET
+// [Engine Memory]: 3,019 MB (+20548kb) [00:37:44]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  3018 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8694.562 ; gain = 0.000 ; free physical = 2651 ; free virtual = 62390 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 8694.562 ; gain = 0.000 ; free physical = 2644 ; free virtual = 62382 
+// Tcl Message: Restored from archive | CPU: 0.020000 secs | Memory: 0.036613 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 8694.562 ; gain = 0.000 ; free physical = 2644 ; free virtual = 62382 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 8699.566 ; gain = 5.004 ; free physical = 3906 ; free virtual = 63645 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+dismissDialog("Reloading"); // bz
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectButton(PAResourceQtoS.RunGadget_SHOW_WARNING_AND_ERROR_MESSAGES_IN_MESSAGES, "2 warnings"); // h
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// Elapsed time: 136 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 29, false); // u
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1315 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,003 MB. GUI used memory: 220 MB. Current time: 2/4/22, 10:48:01 PM CET
+// [GUI Memory]: 276 MB (+3084kb) [00:41:31]
+// Elapsed time: 93 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 19, true); // u - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 19, true); // u - Node
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "IO - Place Design ; report_io ;  ; Fri Feb 04 22:44:42 CET 2022 ; 144247", 14, "IO - Place Design", 0, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "IO - Place Design ; report_io ;  ; Fri Feb 04 22:44:42 CET 2022 ; 144247", 14, "report_io", 1, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Place Design (place_design) ;  ;  ;  ; ", 13, "Place Design (place_design)", 0, true); // O - Node
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "IO - Place Design ; report_io ;  ; Fri Feb 04 22:44:42 CET 2022 ; 144247", 14, "report_io", 1, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "IO - Place Design ; report_io ;  ; Fri Feb 04 22:44:42 CET 2022 ; 144247", 14, "report_io", 1, false); // O
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "IO - Place Design ; report_io ;  ; Fri Feb 04 22:44:42 CET 2022 ; 144247", 14); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "IO - Place Design ; report_io ;  ; Fri Feb 04 22:44:42 CET 2022 ; 144247", 14, "report_io", 1, false, false, false, false, false, true); // O - Double Click
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "IO - Place Design ; report_io ;  ; Fri Feb 04 22:44:42 CET 2022 ; 144247", 14, "report_io", 1, false, false, false, false, true, false); // O - Popup Trigger
+selectCodeEditor("IO - Place Design - impl_1", 580, 433); // G
+// Elapsed time: 11 seconds
+selectCodeEditor("IO - Place Design - impl_1", 1003, 626); // G
+// Elapsed time: 78 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 33, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton("OptionPane.button", "Cancel"); // JButton
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 47, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bz (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri Feb  4 22:51:38 2022] Launched impl_1... Run output will be captured here: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h
+// bz (cr):  Reloading : addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: current_design synth_1 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 3,010 MB. GUI used memory: 218 MB. Current time: 2/4/22, 10:51:48 PM CET
+// Engine heap size: 3,010 MB. GUI used memory: 219 MB. Current time: 2/4/22, 10:51:48 PM CET
+// WARNING: HEventQueue.dispatchEvent() is taking  1470 ms.
+// Tcl Message: refresh_design 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 3,010 MB. GUI used memory: 217 MB. Current time: 2/4/22, 10:51:50 PM CET
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3017 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8699.566 ; gain = 0.000 ; free physical = 3872 ; free virtual = 63595 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.srcs/constrs_1/new/constraints.xdc] Finished Parsing XDC File [/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 8742.441 ; gain = 42.875 ; free physical = 3691 ; free virtual = 63413 
+dismissDialog("Reloading"); // bz
+// Elapsed time: 41 seconds
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "IO - Place Design ; report_io ;  ; Fri Feb 04 22:44:42 CET 2022 ; 144247", 14, "report_io", 1, false); // O
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "IO - Place Design ; report_io ;  ; Fri Feb 04 22:44:42 CET 2022 ; 144247", 14, "report_io", 1, false); // O
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "IO - Place Design ; report_io ;  ; Fri Feb 04 22:44:42 CET 2022 ; 144247", 14); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "IO - Place Design ; report_io ;  ; Fri Feb 04 22:44:42 CET 2022 ; 144247", 14, "report_io", 1, false, false, false, false, false, true); // O - Double Click
+// ag (cr): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "IO - Place Design ; report_io ;  ; Fri Feb 04 22:44:42 CET 2022 ; 144247", 14, "report_io", 1, false); // O
+selectCodeEditor("IO - Place Design - impl_1", 889, 431); // G
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,068 MB. GUI used memory: 220 MB. Current time: 2/4/22, 10:59:11 PM CET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,125 MB. GUI used memory: 220 MB. Current time: 2/4/22, 10:59:31 PM CET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 3,173 MB (+3249kb) [00:52:27]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,189 MB. GUI used memory: 220 MB. Current time: 2/4/22, 11:00:06 PM CET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 476ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1146 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,213 MB. GUI used memory: 220 MB. Current time: 2/4/22, 11:00:26 PM CET
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 3906ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3906 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2063 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 2448ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2448 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3016 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,238 MB. GUI used memory: 220 MB. Current time: 2/4/22, 11:00:43 PM CET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 7633ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7634 ms.
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  14059 ms.
+// Thread: Monitor HEventQueue Thread
+// 	at java.base@11.0.2/java.lang.Thread.dumpThreads(Native Method)
+// 	at java.base@11.0.2/java.lang.Thread.getAllStackTraces(Thread.java:1657)
+// 	at ui.utils.d.c.hXX(SourceFile:557)
+// 	at ui.frmwork.a.e.aOt(SourceFile:144)
+// 	at ui.frmwork.y.run(SourceFile:203)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Batik CleanerThread
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at org.apache.batik.util.CleanerThread.run(CleanerThread.java:106)
+// Thread: Thread-3482
+// Thread: pool-3-thread-1
+// 	at java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Update Runs Swing Worker Thread
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.experiment.F.aOt(SourceFile:368)
+// 	at ui.frmwork.y.run(SourceFile:203)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Thread-1
+// Thread: pool-2-thread-1
+// 	at java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: AWT-Shutdown
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.Object.wait(Object.java:328)
+// 	at java.desktop@11.0.2/sun.awt.AWTAutoShutdown.run(AWTAutoShutdown.java:291)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Common-Cleaner
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.2/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// 	at java.base@11.0.2/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+// Thread: AWT-EventQueue-0
+// 	at java.base@11.0.2/java.io.FileDescriptor.close0(Native Method)
+// 	at java.base@11.0.2/java.io.FileDescriptor.close(FileDescriptor.java:297)
+// 	at java.base@11.0.2/java.io.FileOutputStream$1.close(FileOutputStream.java:398)
+// 	at java.base@11.0.2/java.io.FileDescriptor.closeAll(FileDescriptor.java:355)
+// 	at java.base@11.0.2/java.io.FileOutputStream.close(FileOutputStream.java:396)
+// 	at java.base@11.0.2/sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:341)
+// 	at java.base@11.0.2/sun.nio.cs.StreamEncoder.close(StreamEncoder.java:161)
+// 	at java.base@11.0.2/java.io.OutputStreamWriter.close(OutputStreamWriter.java:258)
+// 	at com.jidesoft.swing.XMLSerializer15.save(Unknown Source)
+// 	at com.jidesoft.swing.PersistenceUtils.saveXMLDocumentToFile(Unknown Source)
+// 	at ui.frmwork.aC.aM(SourceFile:3780)
+// 	at ui.frmwork.aC.aK(SourceFile:3481)
+// 	at ui.frmwork.aC.aII(SourceFile:4181)
+// 	at ui.views.o.Z.hw(SourceFile:646)
+// 	at ui.dlg.c.bz.aIe(SourceFile:248)
+// 	at ui.dlg.c.bG.aOu(SourceFile:1230)
+// 	at ui.frmwork.x.run(SourceFile:194)
+// 	at java.desktop@11.0.2/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+// 	at java.desktop@11.0.2/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+// 	at java.desktop@11.0.2/java.awt.EventQueue$4.run(EventQueue.java:721)
+// 	at java.desktop@11.0.2/java.awt.EventQueue$4.run(EventQueue.java:715)
+// 	at java.base@11.0.2/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@11.0.2/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+// 	at java.desktop@11.0.2/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+// 	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+// 	at java.desktop@11.0.2/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+// 	at java.desktop@11.0.2/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+// 	at java.desktop@11.0.2/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+// 	at java.desktop@11.0.2/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+// 	at java.desktop@11.0.2/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+// 	at java.desktop@11.0.2/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+// Thread: main
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at ui.PlanAhead.c(SourceFile:1129)
+// 	at ui.PlanAhead.jswMain(SourceFile:1176)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at ui.utils.lnf.b.run(SourceFile:100)
+// Thread: Timer-0
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.util.TimerThread.mainLoop(Timer.java:553)
+// 	at java.base@11.0.2/java.util.TimerThread.run(Timer.java:506)
+// Thread: Java2D Disposer
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at java.desktop@11.0.2/sun.java2d.Disposer.run(Disposer.java:144)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Finalizer
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at java.base@11.0.2/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+// Thread: TimerQueue
+// 	at java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+// 	at java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+// 	at java.base@11.0.2/java.util.concurrent.DelayQueue.take(DelayQueue.java:229)
+// 	at java.desktop@11.0.2/javax.swing.TimerQueue.run(TimerQueue.java:171)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Monitor File Timestamp Swing Worker Thread
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at ui.views.f.aOt(SourceFile:242)
+// 	at ui.frmwork.y.run(SourceFile:203)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Process Messages Thread
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at ui.frmwork.c.h.aOt(SourceFile:133)
+// 	at ui.frmwork.y.run(SourceFile:203)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at com.jidesoft.plaf.synthetica.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:99)
+// Thread: Thread-3460
+// Thread: Thread-3439
+// Thread: hw_ila_monitor
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.Object.wait(Object.java:328)
+// 	at java.base@11.0.2/java.util.TimerThread.mainLoop(Timer.java:527)
+// 	at java.base@11.0.2/java.util.TimerThread.run(Timer.java:506)
+// Thread: AWT-XAWT
+// 	at java.desktop@11.0.2/sun.awt.X11.XToolkit.waitForEvents(Native Method)
+// 	at java.desktop@11.0.2/sun.awt.X11.XToolkit.run(XToolkit.java:688)
+// 	at java.desktop@11.0.2/sun.awt.X11.XToolkit.run(XToolkit.java:652)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: SyntheticaCleanerThread
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.StyleFactory$ComponentPropertyStore$1.run(StyleFactory.java:1885)
+// Thread: Thread-3438
+// Thread: SyntheticaAnimation 70
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Thread-3558
+// Thread: SyntheticaAnimation 50
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: SyntheticaAnimation 25
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Reference Handler
+// 	at java.base@11.0.2/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+// 	at java.base@11.0.2/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+// 	at java.base@11.0.2/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+// Thread: Attach Listener
+// Thread: pool-4-thread-1
+// 	at java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Refresh Filesets Swing Worker Thread
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.design.z.aOt(SourceFile:2503)
+// 	at ui.frmwork.y.run(SourceFile:203)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 2196ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2197 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5986 ms. Increasing delay to 17958 ms.
+// PAPropertyPanels.initPanels (first.vhd) elapsed time: 6.8s
+// WARNING: HEventQueue.dispatchEvent() is taking  9229 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,262 MB. GUI used memory: 219 MB. Current time: 2/4/22, 11:01:37 PM CET
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 3210ms to process. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3211 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1969 ms. Decreasing delay to 3969 ms.
+// CommandFailedException: Resource temporarily unavailable
+// PAPropertyPanels.initPanels (first.vhd) elapsed time: 1s
+// WARNING: HEventQueue.dispatchEvent() is taking  9085 ms.
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  4146 ms.
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4940 ms. Increasing delay to 14820 ms.
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 36 ms. Decreasing delay to 2036 ms.
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1337 ms. Increasing delay to 4011 ms.
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 9953 ms. Increasing delay to 29859 ms.
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// PAPropertyPanels.initPanels (first.vhd) elapsed time: 0.2s
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2 ms. Decreasing delay to 2002 ms.
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1184 ms. Increasing delay to 3552 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2060 ms.
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2190 ms.
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6387 ms. Increasing delay to 19161 ms.
+// Elapsed time: 1552 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIRST(MY_FIRST_ARCH) (first.vhd)]", 1, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIRST(MY_FIRST_ARCH) (first.vhd)]", 1, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIRST(MY_FIRST_ARCH) (first.vhd)]", 1, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  3060 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 8 ms. Decreasing delay to 2008 ms.
+// Elapsed time: 243 seconds
+selectButton(PAResourceQtoS.StaleMoreAction_OUT_OF_DATE_DETAILS, "details"); // h
+selectButton(PAResourceQtoS.StaleMoreAction_FORCE_UP_TO_DATE, "Force up-to-date"); // h
+// bz (cr):  Force Current Runs Up-to-date : addNotify
+// Elapsed time: 151 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// WARNING: HEventQueue.dispatchEvent() is taking  2194 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1770 ms.
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6444 ms. Increasing delay to 19332 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3 ms. Decreasing delay to 2003 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3656 ms.
+// Elapsed time: 563 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+selectButton(PAResourceQtoS.StaleMoreAction_OUT_OF_DATE_DETAILS, "details"); // h
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 1221ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1221 ms.
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectLabel(PAResourceOtoP.ProjectDashboardView_DASHBOARD, "Dashboard"); // b
+selectTab(PAResourceOtoP.ProjectDashboardView_TABBED_PANE, PAResourceOtoP.ProjectDashboardView_OVERVIEW, "Overview", 0); // w
+// WARNING: HEventQueue.dispatchEvent() is taking  10115 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5648 ms.
+// Elapsed time: 50 seconds
+selectButton(PAResourceQtoS.StaleMoreAction_OUT_OF_DATE_DETAILS, "details"); // h
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton
+closeMainWindow("ass_proj - [/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.xpr] - Vivado 2020.2"); // cr
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit Vivado. If you choose to abort background task and exit immediately, you will lose all unsaved changes to project. (Background Task)'

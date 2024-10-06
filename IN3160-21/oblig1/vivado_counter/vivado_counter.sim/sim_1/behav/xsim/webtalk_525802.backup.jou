@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan 21 21:52:02 2021
+# Process ID: 525802
+# Current directory: /uio/hume/student-u81/rolfvh/in3160-new/oblig1/vivado_counter/vivado_counter.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /uio/hume/student-u81/rolfvh/in3160-new/oblig1/vivado_counter/vivado_counter.sim/sim_1/behav/xsim/xsim.dir/TEST_FIRST_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /uio/hume/student-u81/rolfvh/in3160-new/oblig1/vivado_counter/vivado_counter.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /uio/hume/student-u81/rolfvh/in3160-new/oblig1/vivado_counter/vivado_counter.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /uio/hume/student-u81/rolfvh/in3160-new/oblig1/vivado_counter/vivado_counter.sim/sim_1/behav/xsim/xsim.dir/TEST_FIRST_behav/webtalk/xsim_webtalk.tcl -notrace

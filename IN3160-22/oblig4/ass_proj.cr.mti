@@ -1,0 +1,63 @@
+/uio/hume/student-u81/rolfvh/IN3160-22/oblig4/tb_shiftn.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/tb_shiftn.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_shiftn
+-- Compiling architecture tb_shiftn_arch of tb_shiftn
+-- Loading entity shiftn
+-- Loading package ENV
+
+} {} {}} /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/shift8.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/shift8.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity shift8
+-- Compiling architecture shift8_arch of shift8
+
+} {} {}} /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/shift32.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/shift32.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity shift32
+-- Compiling architecture shift32_arch of shift32
+-- Loading entity dff
+
+} {} {}} /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/tb_shift8.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/tb_shift8.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_shift8
+-- Compiling architecture tb_shift8_arch of tb_shift8
+-- Loading entity shift8
+
+} {} {}} /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/dff.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/dff.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dff
+-- Compiling architecture rtl of dff
+
+} {} {}} /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/tb_shift32.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/tb_shift32.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_shift32
+-- Compiling architecture tb_shift32_arch of tb_shift32
+-- Loading entity shift32
+
+} {} {}} /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/shiftn.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/shiftn.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity shiftn
+-- Compiling architecture shiftn_arch of shiftn
+-- Loading entity dff
+
+} {} {}}

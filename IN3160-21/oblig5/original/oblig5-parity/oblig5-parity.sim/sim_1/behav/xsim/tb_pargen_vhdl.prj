@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl2008 xil_defaultlib  \
+"../../../../../pargen.vhd" \
+"../../../../../tb_pargen.vhd" \
+
+# Do not sort compile order
+nosort

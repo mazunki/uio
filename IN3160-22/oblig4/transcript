@@ -1,0 +1,345 @@
+# //  Questa Sim-64
+# //  Version 2020.4 linux_x86_64 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project ass_proj
+# reading /projects/robin/CADlib/modelsimCADLIB.ini
+# Loading project ass_proj
+# Compile of dff.vhd was successful.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd failed with 8 errors.
+# 2 compiles, 1 failed with 8 errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd failed with 8 errors.
+# 2 compiles, 1 failed with 8 errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd failed with 2 errors.
+# 3 compiles, 1 failed with 2 errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd failed with 2 errors.
+# 3 compiles, 1 failed with 2 errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd failed with 1 errors.
+# 3 compiles, 1 failed with 1 error.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd was successful.
+# Compile of shiftn.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd was successful.
+# Compile of shiftn.vhd was successful.
+# Compile of tb_shift8.vhd failed with 13 errors.
+# Compile of tb_shift32.vhd failed with 13 errors.
+# 6 compiles, 2 failed with 26 errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd was successful.
+# Compile of shiftn.vhd was successful.
+# Compile of tb_shift8.vhd failed with 12 errors.
+# Compile of tb_shift32.vhd failed with 12 errors.
+# 6 compiles, 2 failed with 24 errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd was successful.
+# Compile of shiftn.vhd was successful.
+# Compile of tb_shift8.vhd failed with 7 errors.
+# Compile of tb_shift32.vhd failed with 7 errors.
+# 6 compiles, 2 failed with 14 errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd was successful.
+# Compile of shiftn.vhd was successful.
+# Compile of tb_shift8.vhd failed with 5 errors.
+# Compile of tb_shift32.vhd failed with 7 errors.
+# 6 compiles, 2 failed with 12 errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd was successful.
+# Compile of shiftn.vhd was successful.
+# Compile of tb_shift8.vhd failed with 5 errors.
+# Compile of tb_shift32.vhd failed with 5 errors.
+# 6 compiles, 2 failed with 10 errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd was successful.
+# Compile of shiftn.vhd was successful.
+# Compile of tb_shift8.vhd was successful.
+# Compile of tb_shift32.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd was successful.
+# Compile of shiftn.vhd was successful.
+# Compile of tb_shift8.vhd was successful.
+# Compile of tb_shift32.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd was successful.
+# Compile of shiftn.vhd was successful.
+# Compile of tb_shift8.vhd was successful.
+# Compile of tb_shift32.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd was successful.
+# Compile of shiftn.vhd was successful.
+# Compile of tb_shift8.vhd was successful.
+# Compile of tb_shift32.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd was successful.
+# Compile of shiftn.vhd was successful.
+# Compile of tb_shift8.vhd was successful.
+# Compile of tb_shift32.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of tb_shiftn.vhd failed with 2 errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd was successful.
+# Compile of shiftn.vhd was successful.
+# Compile of tb_shift8.vhd was successful.
+# Compile of tb_shift32.vhd was successful.
+# Compile of tb_shiftn.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd was successful.
+# Compile of shiftn.vhd was successful.
+# Compile of tb_shift8.vhd was successful.
+# Compile of tb_shift32.vhd was successful.
+# Compile of tb_shiftn.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.tb_shiftn(tb_shiftn_arch) -voptargs=+acc
+# vsim work.tb_shiftn(tb_shiftn_arch) -voptargs="+acc" 
+# Start time: 21:12:56 on Feb 13,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_shiftn(tb_shiftn_arch)#1
+# Loading work.shiftn(shiftn_arch)#1
+# Loading work.dff(rtl)#1
+add wave -r /*
+# Compile of tb_shiftn.vhd failed with 2 errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+run -continue
+run -continue
+run -all
+# Break key hit
+quit -sim
+# End time: 21:17:47 on Feb 13,2022, Elapsed time: 0:04:51
+# Errors: 0, Warnings: 1
+vsim -voptargs=+acc work.tb_shiftn(tb_shiftn_arch)
+# vsim -voptargs="+acc" work.tb_shiftn(tb_shiftn_arch) 
+# Start time: 21:19:22 on Feb 13,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_shiftn(tb_shiftn_arch)#1
+# Loading work.shiftn(shiftn_arch)#1
+# Loading work.dff(rtl)#1
+add wave sim:/tb_shiftn/*
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd was successful.
+# Compile of shiftn.vhd was successful.
+# Compile of tb_shift8.vhd was successful.
+# Compile of tb_shift32.vhd was successful.
+# Compile of tb_shiftn.vhd failed with 2 errors.
+# 7 compiles, 1 failed with 2 errors.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd was successful.
+# Compile of shiftn.vhd was successful.
+# Compile of tb_shift8.vhd was successful.
+# Compile of tb_shift32.vhd was successful.
+# Compile of tb_shiftn.vhd failed with 1 errors.
+# 7 compiles, 1 failed with 1 error.
+quit -sim
+# End time: 21:22:57 on Feb 13,2022, Elapsed time: 0:03:35
+# Errors: 0, Warnings: 3
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd was successful.
+# Compile of shiftn.vhd was successful.
+# Compile of tb_shift8.vhd was successful.
+# Compile of tb_shift32.vhd was successful.
+# Compile of tb_shiftn.vhd failed with 1 errors.
+# 7 compiles, 1 failed with 1 error.
+# Compile of dff.vhd was successful.
+# Compile of shift8.vhd was successful.
+# Compile of shift32.vhd was successful.
+# Compile of shiftn.vhd was successful.
+# Compile of tb_shift8.vhd was successful.
+# Compile of tb_shift32.vhd was successful.
+# Compile of tb_shiftn.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_shiftn(tb_shiftn_arch)
+# vsim -voptargs="+acc" work.tb_shiftn(tb_shiftn_arch) 
+# Start time: 21:24:25 on Feb 13,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading std.env(body)
+# Loading work.tb_shiftn(tb_shiftn_arch)#1
+# Loading work.shiftn(shiftn_arch)#1
+# Loading work.dff(rtl)#1
+wave 0 sim:/tb_shiftn/*
+# unknown or ambiguous subcommand "0": must be activecursor, addcursor, clipboard, collapse, configcursor, create, cursor, cursorconfig, cursortime, deletecursor, edit, editwrite, expand, export, exportvcd, group, guiObjGetUPFInfo, guiObjHasUPFInfo, import, interrupt, map, modify, overlay, pah, positioncursor, refresh, seecursor, seetime, sort, ungroup, write, zoom, zoomcursor, zoomfull, zoomin, zoomlast, zoomout, or zoomrange
+add wave sim:/tb_shiftn/*
+run -all
+# Break in Process p1 at /uio/hume/student-u81/rolfvh/IN3160-22/oblig4/tb_shiftn.vhd line 51
+# End time: 21:26:47 on Feb 13,2022, Elapsed time: 0:02:22
+# Errors: 0, Warnings: 3

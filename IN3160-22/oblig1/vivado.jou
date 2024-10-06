@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Feb  4 23:37:39 2022
+# Process ID: 750808
+# Current directory: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1
+# Command line: vivado
+# Log file: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado.log
+# Journal file: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1

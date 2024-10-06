@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1652289853">
+  <File Type="VDS-TIMING-PB" Name="compute_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="compute_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="compute.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="compute_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="compute_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="compute_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="compute.vds"/>
+  <File Type="REPORTS-TCL" Name="compute_reports.tcl"/>
+  <File Type="PA-TCL" Name="compute.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../compute_ent.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../compute_rtl.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../tb_compute_pipelined.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../compute_pipelined.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../tb_compute.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="compute"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

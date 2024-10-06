@@ -1,0 +1,8 @@
+print 99
+sett_modell 99 Zyxel b2 POWER
+print 99
+sett_flagg 99 0 1
+print 99
+finnes_rute 916 517
+legg_til_kobling 916 183
+finnes_rute 916 517

@@ -1,0 +1,157 @@
+---
+author: Mazunki Hoksaas (cand. nr. 4007)
+# geometry: "left=1.0in,right=0.8in,top=1.0in,bottom=0.8in"
+geometry: margin=1.25in
+title: "The effects of sound symbolism on attention span in texts"
+subtitle: "LING2121 --- Phonetics and Phonology 2"
+date: "2023-06-01"
+---
+
+# Abstract
+This study aims to investigate the potential effects of sound symbolism on readers' attention span. Sound symbolism, the idea that sounds may carry semantic meaning, is a relatively unexplored area in the context of its impact on attention span. This paper presents the findings of a relatively small study where participants were exposed to different pairs of texts with and without sound symbolism. Although limited by the scope of the experiment and the characteristics of the texts used, the study provides an initial analysis of the relationship between sound symbolism and attention span. The insights gained contribute to the initial understanding of this aspect of sound symbolism and offer suggestions for future research.
+
+# Motive and hypothesis
+Motivated by personal experiences with ADD, a disorder characterized by constant inatentiveness, among other things, this study was initially going to focus on the struggle to maintain focus and attention in tasks that require prolonged mental effort, and how we can mediate it through sound symbolism. Individuals with ADD/ADHD often find it challenging to sustain attention (Diamond, 2005), particularly in tasks that are not inherently interesting or rewarding, such as reading or studying. 
+
+Given the existing literature on sound symbolism and its potential to create a more engaging and intuitive reading experience, my hypothesis is that the presence of sound symbolism in a text could potentially enhance the attention span of readers, including those with attention deficit. The intrinsic semantic meaning carried by phonetic sounds in sound symbolism might increase focus and attention, thereby making the reading experience more engaging.
+
+# Intro
+The connection between sound and meaning, which we refer to as sound symbolism, has captured the interest of linguists and cognitive scientists. Sound symbolism, the idea that the phonemes of a word may carry meaning by themselves, has been explored across thousands of languages, revealing biases in sound-meaning associations (Lockwood & Dingemanse, 2015). However, its influence on attention span, a key determinant of cognitive performance, seems to be an ignored topic in this particular field.
+
+This study represents an initial exploration into the effects of sound symbolism on readers' attention span. We compare the attention spans of participants during the reading of texts loaded with sound symbolism against those without it. The ability to detect sound symbolic correspondences has been observed in humans but not in great apes, suggesting that this ability is the outcome of a phylogenetic (i.e., evolutionary) process (Margiotoudi et al., 2019).
+
+While our study aspired to provide conclusive insights, the results must be approached with careful consideration due to the complexity of the task, the limited scope, and the imperfect nature of the texts used. These findings act as an exploratory step in this unique interaction, shedding light on potential areas for more extensive research in the future.
+
+Understanding the role of sound symbolism in attention span could offer valuable insights for a range of stakeholders, including educators, psychologists, and communication strategists. In the subsequent sections of this paper, a review of the literature on sound symbolism and attention span is presented, followed by a detailed account of the experimental methodology, a discussion of the findings, and proposed directions for future research. The complete dataset, study materials, and related scripts are accessible via a provided link to an Open Science Framework (OSF) repository.
+
+# Literary review
+As mentioned in the introduction, sound symbolism is the non-arbitrary relationship between the form of a word and its meaning. However, the influence of sound symbolism on attention span, a key determinant of cognitive performance, remains largely unexplored.
+
+Dingemanse et al. (2015) discuss how arbitrariness, iconicity, and systematicity complement each other in language structure. They suggest that systematicity facilitates category learning through phonological cues, iconicity aids word learning and communication through perceptuomotor analogies, and arbitrariness promotes meaning individuation through distinctive forms. This comprehensive overview of the different functions served by these form-to-meaning correspondences in language processing, development, and communication suggests a potential influence on attention span, as these processes may enhance cognitive engagement and focus.
+
+In a statistical examination of words from nearly two-thirds of the world’s languages, Blasi et al. (2016) reveal that unrelated languages very often use (or avoid) the same sounds for specific referents. The presence of these sound-meaning associations across languages could potentially influence attention span by creating a more engaging and intuitive language learning and processing experience.
+
+Lockwood and Dingemanse (2015) provide a systematic overview of the cross-modal correspondences that underpin iconic links between form and meaning. They suggest that combining insights from psychology and neuroscience with evidence from natural languages provides opportunities for the experimental investigation of the role of sound-symbolism in language learning, language processing, and communication. The potential influence of sound-symbolism on attention span could be explored through such experimental investigations, particularly in the context of neuroimaging research.
+
+Imai et al. (2015) explore whether sound symbolism may facilitate synchronic language learning in human infants. They demonstrate that 14-month-old infants could detect Köhler-type shape-sound symbolism and could use this sensitivity in their effort to establish a word-referent association. This early sensitivity to sound symbolism could potentially influence attention span by enhancing the infants' engagement and focus during language learning.
+
+Finally, Monaghan (2014) proposes that the processes taking place during language acquisition influence language evolution. He shows that for two hundred fundamental vocabulary items, the age at which words are acquired is a predictor of the rate at which they have changed in studies of language evolution. Early-acquired words are more salient and easier to process than late-acquired words, and these early-acquired words are also more stably represented within the community's language. The ease of processing of these early-acquired words could potentially have effects on the attention span of individuals beyond infancy.
+
+# Methodology
+This study was designed to investigate the potential effects of sound symbolism on readers' attention span. The experiment involved the use of five different pairs of texts, each pair consisting of two versions: a Standard Text (Text A), which was devoid of sound symbolism, and a Symbolic Text (Text B), which incorporated elements of sound symbolism.
+
+Participants were randomly assigned to read either the non-symbolic text or the symbolic text from each pair, resulting in each participant reading a mixture of both types of texts. This approach should ensure a balanced exposure to both types of texts and will in theory allow for a more robust comparison of the effects on attention span.
+
+The phonosemantic texts were derived from the standard texts, changed to incorporate sound symbolism, but they turned out to be more lyrical in nature than initially intended. Due to the nature of sound symbolism, it seems to be an inevitable side effect of incorporating sound elements into text, as the phonetic elements that carry intrinsic semantic value often lend themselves to a more lyrical structure. This is supported by research indicating that phonological iconicity, a concept closely related to sound symbolism, can be extracted from written texts, suggesting a cognitive impact of such elements (Aryani, Jacobs, & Conrad, 2013).
+
+It's important to note that the texts were not perfect representations of the absence or presence of sound symbolism. The complexity of language and the subtleties of sound symbolism made it challenging to create texts that were completely devoid of or saturated with sound symbolism. However, the texts were crafted in an attempt to minimize these limitations and provide as clear a contrast as possible.
+
+The participants were asked to read the texts and their attention spans were measured through a set of questions about the different texts. The data collected from these readings formed the basis for the analysis presented in this paper.
+
+In order to draw meaningful conclusions from the data, a baseline was established using the attention spans measured during the reading of the non-symbolic texts. This baseline served as a reference point against which the attention spans during the reading of the symbolic texts were compared.
+
+The data was analyzed statistically to identify any significant differences in attention span between the original and symbolic texts. 
+
+The complete dataset, study materials, and related scripts are accessible via a provided link to an Open Science Framework (OSF) repository. This transparency allows for the replication and further exploration of this study by other researchers, contributing to the collective understanding of sound symbolism and its potential effects on cognitive processes.
+
+\pagebreak
+## Creation of texts
+The creation of the texts used in this study was a critical part of the methodology. The aim was to craft pairs of texts where one text did not include sound symbolism (i.e., the standard text), and the other text incorporated elements of sound symbolism (i.e., the symbolic text). To achieve this, we experimented with OpenAI's language model, ChatGPT, in a collaborative manner.
+
+ChatGPT is a powerful tool capable of generating human-like text based on the input it receives. It has been trained on a diverse range of internet text, which allows it to generate creative and coherent outputs. However, while ChatGPT was instrumental in the text creation process, it was not a standalone solution. The crafting of the texts was not without effort, requiring significant manual input and adjustment to ensure the texts met the requirements of the study.
+
+The process began by asking the bot to generate a set of questions, and then to generate a text which aims to answer those same questions, in a neutral fashion. Initially, the prompts did not contain any elements of sound symbolism. For instance, a prompt might be "Write a short story about a puppy named Max for children." ChatGPT would then suggest a text based on this prompt, which served as the standard text. Often, these texts would not be suitable for proper questioning, or needed fixing because they accidentally included lyrical elements.
+
+To create the corresponding symbolic text, we created a query with the previous text, and asked it to rewrite the same story, but instructed it to incorporate elements of sound symbolism. It would then generate a text that not only followed the storyline of the prompt but also included words and phrases that exhibited sound symbolism. This more often than not turned the texts into lyrical, poetic and metaphorical texts, which were not really useful for our study. After carefully asking the tool to rewrite the texts, it did provide some meaningful output.
+
+While ChatGPT was fairly good at suggesting sound symbolic words, it was not great at generating sound-symbolic texts. It was mostly the manual touch that ensured these words were used appropriately and effectively. By using a collaborative approach, we can exploit the capabilities of artificial intelligence to create a boilerplate baseline, which we can then fix ourselves to achieve our goals.
+
+That said, as we will see later, the texts we created were not nearly complex or lengthy enough to draw any meaningful conclusions.
+
+The usage of ChatGPT in this study demonstrates the potential of AI tools in linguistic research. However, it also highlights the importance of human involvement in the process, particularly when dealing with complex linguistic concepts such as sound symbolism.
+
+# Analysis
+The data analysis for this study was designed to provide robust and reliable findings. It involved several steps, from preparing the data for analysis to applying appropriate statistical methods.
+
+## Data Preparation
+The dataset includes fields indicating which version of each text the participant read, and responses to four questions for each of the five texts. Each response is marked as either correct or incorrect. This binary nature of the data lends itself to analysis using methods suitable for categorical data.
+
+The first step in the analysis was to establish a baseline using the attention spans measured during the reading of the Non-Symbolic Texts. This baseline served as a reference point against which the attention spans during the reading of the Symbolic Texts were compared.
+
+## Statistical Analysis
+Next, the responses to the questions were analyzed. Given the binary nature of the data (correct or incorrect), we used descriptive statistics to summarize the main features of the data. This involved calculating the mean, median, and standard deviation of the scores for each text. These measures provided an overview of the central tendency and variability of the scores, helping us understand the general performance of the participants on the questions for each text.
+
+In addition, we calculated the proportion of correct responses for each text. This allowed us to compare the performance on the Non-Symbolic Texts and the Symbolic Texts. We were particularly interested in whether the proportion of correct responses was higher for one type of text than the other, as this could suggest an effect of sound symbolism on comprehension.
+
+Finally, we visually represented the data using bar charts, which displayed the average scores and the count of scores for each text. This graphical representation of the data made it easier to compare the performance on the non-symbolic and symbolic texts and to identify any noticeable patterns or trends.
+
+It's important to note that while these methods provided useful insights into the data, they did not allow us to make definitive conclusions about the effects of sound symbolism on attention span. More sophisticated statistical methods, such as logistic regression, would be needed to model the relationship between the type of text (non-symbolic vs symbolic) and the probability of a correct response. However, such methods were beyond the scope of this study.
+
+## Sample Size and Statistical Significance
+The sample size refers to the number of participants in the study. It's a critical factor because it can influence the reliability of our results. The more participants we have, the more confident we can be that our findings are not just a coincidence.
+
+When we talk about a result being statistically significant, we mean that it's unlikely to have occurred by chance. In other words, if we find that participants who read the symbolic texts have a longer attention span than those who read the non-symbolic Texts, we want to be sure that this difference is not just a random occurrence. The larger our sample size, the more confident we can be in our results.
+
+## Standard Deviations
+Standard deviation is a measure of the amount of variation or dispersion in a set of values. In the context of this study, standard deviation can provide insights into the variability in attention spans among the participants. A low standard deviation would indicate that the attention spans are closely clustered around the mean, while a high standard deviation would indicate a wide range of attention spans.
+
+# Survey results
+The results of this study should be interpreted with the understanding that the sample size was limited. A larger number of participants would have provided more robust data and allowed for more confident conclusions. However, the data collected does offer some interesting insights into the potential effects of sound symbolism on attention span and comprehension.
+
+In general, we observe that most participants were able to answer the majority of the questions correctly for both the Standard and Symbolic Texts. This suggests that the texts and questions may not have been sufficiently challenging to fully test the participants' attention span and comprehension. Future studies may benefit from using longer and more complex texts and questions to better differentiate between participants' performance.
+
+The average scores for the standard texts were 3.0833, 2.0833, 2.9285, 3.6, and 3, while the average scores for the symbolic texts were 2.692, 1.846, 3.455, 3.900, and 2.308. The standard deviations were correspondingly 0.996, 0.793, 0.997, 0.632, 0.739 for the standard texts, and 0.947, 1.214, 0.688, 0.316, 1.032 for the symbolic texts. These values indicate the variability in the scores and suggest that there was a wide range of performance among the participants.
+
+![Average score per text](figure_1.pdf)
+
+Looking at Figure 1, which presents the average scores per text, we see fairly similar averages between each pair of texts. This suggests that the presence of sound symbolism in the texts did not significantly impact the overall comprehension of the texts. However, Text 2, aimed at adolescents and about a teenager named Jake, had the lowest average score, indicating that it was the most challenging text for the participants.
+
+![Count of scores](figure_2.pdf)
+
+Figure 2, which presents the count of scores per text, reveals a significant spike at score 4 for Text 4, a text about cryptography aimed at adults. This spike could be due to the participants' background in the topic of the text, which may have influenced their performance. It suggests that familiarity with the topic may override the potential impact of sound symbolism on attention span.
+
+The data also reveals that the scores were generally high, with most participants scoring 3 or 4 out of 4. This could be due to the nature of the texts and questions, which may not have been sufficiently challenging to fully test the participants' attention span and comprehension. It could also suggest that the participants were highly engaged with the texts, possibly due to the presence of sound symbolism in the Symbolic Texts.
+
+In summary, while the results of this study provide some interesting insights, they do not provide conclusive evidence of the impact of sound symbolism on attention span. The patterns observed suggest that sound symbolism may influence attention span and comprehension in complex ways, potentially interacting with factors such as topic familiarity and text difficulty. Further research with larger sample sizes and more controlled conditions would be needed to explore these effects more definitively.
+
+# Implications
+Expanding on the implications of these results, it's worth noting that the presence of sound symbolism in the Symbolic Texts may have contributed to the high engagement and comprehension scores. Sound symbolism, as a linguistic phenomenon that links phonetic features with semantic meaning, could potentially enhance the readability and engagement of a text. This is in line with previous research that has suggested that sound symbolism can enhance the memorability and comprehension of words and phrases (Lockwood & Dingemanse, 2015).
+
+However, the similar average scores between the Standard and Symbolic Texts suggest that the impact of sound symbolism on comprehension and attention span may not be as significant as hypothesized. This could be due to the complexity of the interaction between sound symbolism and comprehension, which may be influenced by a variety of factors such as the reader's familiarity with the topic, the difficulty of the text, and the reader's individual cognitive abilities.
+
+The high scores observed in Text 4, which was about cryptography and aimed at adults, suggest that topic familiarity may play a significant role in comprehension and attention span. Participants with a background in the topic of the text may have found it easier to comprehend and engage with the text, regardless of the presence or absence of sound symbolism. 
+
+The lower average scores observed in Text 2, which was about a teenager named Jake and aimed at adolescents, suggest that text difficulty may also be a significant factor. If the text or questions are too challenging, it may negatively impact comprehension and attention span, regardless of the presence or absence of sound symbolism.
+
+In conclusion, while the results of this study provide some interesting insights, they do not provide conclusive evidence of the impact of sound symbolism on attention span. The patterns observed suggest that sound symbolism may influence attention span and comprehension in complex ways, potentially interacting with factors such as topic familiarity and text difficulty. Further research with larger sample sizes and more controlled conditions would be needed to explore these effects more definitively.
+
+The results of this study contribute to the growing body of research on sound symbolism and its potential effects on cognitive processes such as attention span and comprehension. They highlight the complexity of these processes and the multitude of factors that can influence them. As our understanding of these interactions continues to grow, it will open up new avenues for research and potential applications in fields such as education, psychology, and communication.
+
+
+# Conclusion and future research
+This study represents an initial exploration into the potential effects of sound symbolism on readers' attention span. The results, however, do not provide strong evidence of a relationship between sound symbolism and attention span. The data suggests that while sound symbolism might have some influence on attention span, the effects are not clear-cut and require further investigation.
+
+The study was limited in several ways. The sample size was quite limited, and the texts used in the study were not perfect representations of the absence or presence of sound symbolism. The complexity of language and the subtleties of sound symbolism made it challenging to create texts that were completely devoid of or saturated with sound symbolism. Furthermore, the study did not control for factors such as the participants' familiarity with the topic of the texts, which may have influenced their performance, causing a bias towards topic-specific texts.
+
+Despite these limitations, the study contributes to the initial understanding of the potential effects of sound symbolism on attention span. It also highlights the need for further research in this area. Future studies could benefit from larger sample sizes, more controlled conditions, and the use of texts that more accurately represent the absence or presence of sound symbolism.
+
+In addition, future research could explore the potential benefits of sound symbolism for individuals with attention deficit disorders. Given the challenges that individuals with ADD/ADHD face in maintaining attention, particularly in tasks that require prolonged mental effort, sound symbolism could potentially offer a way to make the reading experience more engaging and intuitive.
+
+In conclusion, while this study provides only preliminary insights into the potential effects of sound symbolism on attention span, it offers a starting point for future research, highlighting pitfalls which should be avoided when doing similar research.
+
+\pagebreak
+# Bibliography
+- Aryani, A., Jacobs, A. M., & Conrad, M. (2013). *Extracting salient sublexical units from written texts: “Emophon,” a corpus-based approach to phonological iconicity*. Frontiers in Psychology, 4, 654. Url: \url{https://pubmed.ncbi.nlm.nih.gov/24101907}
+
+- Blasi, D. E., Wichmann, S., Hammarström, H., Stadler, P. F., & Christiansen, M. H. (2016). Sound–meaning association biases evidenced across thousands of languages. Proceedings of the National Academy of Sciences, 113(39), 10818-10823. Url: \url{https://www.pnas.org/content/113/39/10818}
+
+- Diamond A. (2005). Attention-deficit disorder (attention-deficit/ hyperactivity disorder without hyperactivity): a neurobiologically and behaviorally distinct disorder from attention-deficit/hyperactivity disorder (with hyperactivity). Development and psychopathology, 17(3), 807–825. \url{https://doi.org/10.1017/S0954579405050388}
+
+- Dingemanse, M., Blasi, D. E., Lupyan, G., Christiansen, M. H., & Monaghan, P. (2015). *Arbitrariness, iconicity, and systematicity in language*. Trends in Cognitive Sciences, 19(10), 603-615. Url: \url{https://doi.org/10.1016/j.tics.2015.07.013}
+
+- Imai, M., Kita, S., Nagumo, M., & Okada, H. (2008). *Sound symbolism facilitates early verb learning*. Cognition, 109(1), 54-65. Url: \url{https://web.sfc.keio.ac.jp/~imai/pdf/soundsymbolism_Cognition.pdf}
+
+- Lockwood, G., & Dingemanse, M. (2015). *Iconicity in the lab: a review of behavioral, developmental, and neuroimaging research into sound-symbolism*. Frontiers in Psychology, 6, 1246. Url: \url{https://doi.org/10.3389/fpsyg.2015.01246}
+
+- Monaghan, P., Shillcock, R. C., Christiansen, M. H., & Kirby, S. (2014). *How arbitrary is language?*. Philosophical Transactions of the Royal Society B: Biological Sciences, 369(1651), 20130299. Url: \url{https://pubmed.ncbi.nlm.nih.gov/25092667/}
+

@@ -1,0 +1,90 @@
+---
+title: "Frequency of words given their function in a sentence"
+author: "Mazunki Hoksaas"
+date: "2023-09-30"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+## Introduction
+
+This analysis uses the "perry_winter_2017_iconicity.csv" dataset to explore the relationship between word frequency and part of speech using R and ggplot2.
+
+Our intention here is to prove, given the provided dataset, that verbs in sentences are disproportionally iconic compared to other parts of speech.
+
+## First look
+
+```{r libraries, include=FALSE}
+library(conflicted)
+library(tidyverse)  # let's us use data pipes :)
+conflict_prefer("filter", "dplyr")  # just to silence warning
+```
+
+```{r first_view}
+head(read.csv("perry_winter_2017_iconicity.csv"))
+```
+
+By checking the first rows of the data we can see we have columns for the words, their part of speech, their frequency and their iconicity. This is enough for what we need.
+
+Additionally, we can see some other columns for the sensory experience (SER), their imageability (how easy it is to form an image of the word in our head), their systematicity (how strong their sound-meaning link is). I'm guessing the Conc column stands for Concreteness (as opposed to abstractness).
+
+```{r setup}
+data <- read.csv("perry_winter_2017_iconicity.csv", row.names=1) %>%
+        select(POS, Freq, Iconicity)
+
+verbs <- filter(data, POS == "Verb")
+other <- filter(data, POS != "Verb")
+
+data <- bind_rows(
+    verbs %>% mutate(Group = "Verb"),
+    other %>% mutate(Group = "Non-verb")
+  ) %>% arrange(Group)  # there's not many verbs compared to other POS
+
+```
+
+We start by taking an overview at what the most frequent words are, followed by which words are the most iconic
+
+```{r most_frequent}
+# tbh i feel this code is kind of ugly, maybe there's a cleaner way to order() dataframes...
+
+print(head(verbs[order(-verbs$Freq, -verbs$Iconicity), ], n=10))
+print(head(other[order(-other$Freq, -other$Iconicity), ], n=20))
+
+# and finally we look at the most iconic words
+print(head(data[order(-data$Iconicity, -data$Freq), ], n=20))
+```
+
+An interesting observation is how predominant grammatical words are in the data set, but otherwise we don't see too much interesting stuff in these tables just yet.
+
+## Summary and conclusion
+```{r summary}
+print(summary(verbs))
+print(summary(other))
+```
+
+The summary tells us that the frequency of words is very disparate, where some words are used extremely often, while other words are barely used at all. This is the case for both groups.
+
+To continue, we display the distribution of the iconicity level of words according to their frequency.
+
+```{r histogram}
+ggplot2::ggplot
+ggplot(data=data, aes(
+    y=after_stat(density),  # density to normalize the frequency values
+    x=Iconicity,
+    fill=Group)
+  ) + 
+  geom_histogram(binwidth=0.1, alpha=0.7) +
+  scale_fill_manual(values=c("Verb"="green", "Non-verb"="salmon")) +
+  ggtitle("Iconicity Distribution per Group") +
+  xlab("Iconicity") +
+  ylab("Norm. frequency")
+
+ggsave("iconicity-per-pos.png")
+```
+
+After accounting for the frequency variation across groups by normalizing their values, we see similar graphs for both groups. For both groups we see a normal bell curve, where the most frequent words sit around 0.7 for the non-verbs, but slightly higher for the verbs, at 1.23.
+
+The most iconic words fall well under the 0.25 distribution on their frequency for both groups. While it seems verbs do have a more linear distribution than their contrasted group, I believe this is best explained by the outliers of the grammatical words.
+
+Overall, it seems that verbs are slightly more iconic than other groups, but the variance may be better explained through other factors.

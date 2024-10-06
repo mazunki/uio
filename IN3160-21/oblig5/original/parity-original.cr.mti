@@ -1,0 +1,20 @@
+/uio/hume/student-u81/rolfvh/in3160-new/oblig5/original/tb_pargen.vhd {1 {vcom -work work2 -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/in3160-new/oblig5/original/tb_pargen.vhd
+QuestaSim-64 vcom 2019.4 Compiler 2019.10 Oct 15 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_pargen
+-- Compiling architecture beh1 of tb_pargen
+-- Loading entity pargen
+
+} {} {}} /uio/hume/student-u81/rolfvh/in3160-new/oblig5/original/pargen.vhd {1 {vcom -work work2 -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/in3160-new/oblig5/original/pargen.vhd
+QuestaSim-64 vcom 2019.4 Compiler 2019.10 Oct 15 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity pargen
+-- Compiling architecture rtl1 of pargen
+
+} {} {}}

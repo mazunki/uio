@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Mar  4 20:05:58 2022
+# Process ID: 1748633
+# Current directory: /uio/hume/student-u81/rolfvh/IN3160-22/oblig6
+# Command line: vivado
+# Log file: /uio/hume/student-u81/rolfvh/IN3160-22/oblig6/vivado.log
+# Journal file: /uio/hume/student-u81/rolfvh/IN3160-22/oblig6/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_1 /uio/hume/student-u81/rolfvh/IN3160-22/oblig6/project_1 -part xc7z020clg484-1
+set_property target_language VHDL [current_project]
+set_property simulator_language VHDL [current_project]
+add_files -norecurse {/uio/hume/student-u81/rolfvh/IN3160-22/oblig6/seg7ctrl_arch.vhd /uio/hume/student-u81/rolfvh/IN3160-22/oblig6/self_test_unit.vhd /uio/hume/student-u81/rolfvh/IN3160-22/oblig6/seg7model_beh.vhd /uio/hume/student-u81/rolfvh/IN3160-22/oblig6/self_test_system.vhd /uio/hume/student-u81/rolfvh/IN3160-22/oblig6/seg7ctrl.vhd /uio/hume/student-u81/rolfvh/IN3160-22/oblig6/tb_seg7ctrl.vhd /uio/hume/student-u81/rolfvh/IN3160-22/oblig6/seg7model_ent.vhd}
+import_files -fileset constrs_1 -force -norecurse /uio/hume/student-u81/rolfvh/IN3160-21/oblig6-rev1/project_1/project_1.srcs/constrs_1/new/bin2ssd_test_system.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+set_property FILE_TYPE {VHDL 2008} [get_files /uio/hume/student-u81/rolfvh/IN3160-22/oblig6/self_test_system.vhd]
+set_property FILE_TYPE {VHDL 2008} [get_files /uio/hume/student-u81/rolfvh/IN3160-22/oblig6/seg7model_beh.vhd]
+set_property USED_IN_SYNTHESIS 0 [get_files /uio/hume/student-u81/rolfvh/IN3160-22/oblig6/self_test_system.vhd]
+update_compile_order -fileset sources_1

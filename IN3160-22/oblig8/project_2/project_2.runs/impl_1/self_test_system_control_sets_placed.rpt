@@ -1,0 +1,84 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Apr 29 18:01:07 2022
+| Host         : kemble.ifi.uio.no running 64-bit Red Hat Enterprise Linux release 8.5 (Ootpa)
+| Command      : report_control_sets -verbose -file self_test_system_control_sets_placed.rpt
+| Design       : self_test_system
+| Device       : xc7z020
+-----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     6 |
+|    Minimum number of control sets                        |     6 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    17 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     6 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               7 |            5 |
+| No           | No                    | Yes                    |              57 |           17 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               8 |            3 |
+| Yes          | No                    | Yes                    |              34 |           11 |
+| Yes          | Yes                   | No                     |              29 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------+-----------------------------------+-------------------+------------------+----------------+--------------+
+|   Clock Signal  |           Enable Signal           |  Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------+-----------------------------------+-------------------+------------------+----------------+--------------+
+|  mclk_IBUF_BUFG | STU/rom_index[4]_i_1_n_0          | reset_IBUF        |                3 |              5 |         1.67 |
+|  mclk_IBUF_BUFG |                                   |                   |                5 |              7 |         1.40 |
+|  mclk_IBUF_BUFG | UUT_VEL_READ/ten_ms_pulse         |                   |                3 |             16 |         5.33 |
+|  mclk_IBUF_BUFG | STU/CLK_0.time_counter[0]_i_2_n_0 | STU/time_counter0 |                8 |             29 |         3.62 |
+|  mclk_IBUF_BUFG | UUT_VEL_READ/ten_ms_pulse         | reset_IBUF        |                8 |             29 |         3.62 |
+|  mclk_IBUF_BUFG |                                   | reset_IBUF        |               17 |             57 |         3.35 |
++-----------------+-----------------------------------+-------------------+------------------+----------------+--------------+
+
+

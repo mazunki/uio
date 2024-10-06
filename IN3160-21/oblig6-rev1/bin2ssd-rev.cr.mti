@@ -1,0 +1,62 @@
+/uio/hume/student-u81/rolfvh/in3160-new/oblig6-rev1/seg7ctrl.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/in3160-new/oblig6-rev1/seg7ctrl.vhd
+QuestaSim-64 vcom 2019.4 Compiler 2019.10 Oct 15 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity seg7ctrl
+-- Compiling architecture beh of seg7ctrl
+
+} {} {}} /uio/hume/student-u81/rolfvh/in3160-new/oblig6-rev1/self_test_unit.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/in3160-new/oblig6-rev1/self_test_unit.vhd
+QuestaSim-64 vcom 2019.4 Compiler 2019.10 Oct 15 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity self_test_unit
+-- Compiling architecture test_unit of self_test_unit
+
+} {} {}} /uio/hume/student-u81/rolfvh/in3160-new/oblig6-rev1/tb_seg7ctrl.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/in3160-new/oblig6-rev1/tb_seg7ctrl.vhd
+QuestaSim-64 vcom 2019.4 Compiler 2019.10 Oct 15 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_seg7ctrl
+-- Compiling architecture tb_beh of tb_seg7ctrl
+-- Loading entity seg7ctrl
+
+} {} {}} /uio/hume/student-u81/rolfvh/in3160-new/oblig6-rev1/seg7ctrl_arch.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/in3160-new/oblig6-rev1/seg7ctrl_arch.vhd
+QuestaSim-64 vcom 2019.4 Compiler 2019.10 Oct 15 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity seg7ctrl
+-- Compiling architecture rom of seg7ctrl
+
+} {} {}} /uio/hume/student-u81/rolfvh/in3160-new/oblig6-rev1/self_test_system.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/in3160-new/oblig6-rev1/self_test_system.vhd
+QuestaSim-64 vcom 2019.4 Compiler 2019.10 Oct 15 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity self_test_system
+-- Compiling architecture test_system of self_test_system
+-- Loading entity seg7ctrl
+-- Loading entity self_test_unit
+
+} {} {}} /uio/hume/student-u81/rolfvh/in3160-new/oblig6-rev1/seg7model_beh.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/in3160-new/oblig6-rev1/seg7model_beh.vhd
+QuestaSim-64 vcom 2019.4 Compiler 2019.10 Oct 15 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling architecture beh of seg7model
+-- Loading entity seg7model
+
+} {} {}} /uio/hume/student-u81/rolfvh/in3160-new/oblig6-rev1/seg7model_ent.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/in3160-new/oblig6-rev1/seg7model_ent.vhd
+QuestaSim-64 vcom 2019.4 Compiler 2019.10 Oct 15 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity seg7model
+
+} {} {}}

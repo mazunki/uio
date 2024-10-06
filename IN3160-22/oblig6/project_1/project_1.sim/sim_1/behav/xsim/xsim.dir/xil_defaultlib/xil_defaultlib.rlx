@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/uio/hume/student-u81/rolfvh/IN3160-22/oblig6/project_1/project_1.srcs/sources_1/imports/oblig6/bin2ssd_pck.vhd,1648744022,vhdl2008,/uio/hume/student-u81/rolfvh/IN3160-22/oblig6/seg7ctrl.vhd,,,bin2ssd_pck,,,,,,,,
+/uio/hume/student-u81/rolfvh/IN3160-22/oblig6/seg7ctrl.vhd,1648744062,vhdl2008,/uio/hume/student-u81/rolfvh/IN3160-22/oblig6/seg7ctrl_arch.vhd;/uio/hume/student-u81/rolfvh/IN3160-22/oblig6/self_test_system.vhd,,,seg7ctrl,,,,,,,,
+/uio/hume/student-u81/rolfvh/IN3160-22/oblig6/seg7ctrl_arch.vhd,1648748934,vhdl2008,,,,,,,,,,,,
+/uio/hume/student-u81/rolfvh/IN3160-22/oblig6/self_test_system.vhd,1646418891,vhdl2008,,,,self_test_system,,,,,,,,
+/uio/hume/student-u81/rolfvh/IN3160-22/oblig6/self_test_unit.vhd,1648744908,vhdl2008,/uio/hume/student-u81/rolfvh/IN3160-22/oblig6/self_test_system.vhd,,,self_test_unit,,,,,,,,

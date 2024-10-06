@@ -4,3 +4,6 @@
 [submodule "symlinks/jonatan-hanssen/IN1010/oblig4"]
 	path = symlinks/jonatan-hanssen/IN1010/oblig4
 	url = git@github.com:jonatan-hanssen/oblig4.git
+[submodule "IN2140/oblig2-rev/in2140-v21"]
+	path = IN2140/oblig2-rev/in2140-v21
+	url = git@github.uio.no:IN2140v2/in2140-v21.git

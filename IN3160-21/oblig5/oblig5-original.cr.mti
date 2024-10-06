@@ -1,0 +1,25 @@
+/uio/hume/student-u81/rolfvh/in3160-new/oblig5/tb_pargen_original.vhd {0 {vcom -work work2 -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/in3160-new/oblig5/tb_pargen_original.vhd
+QuestaSim-64 vcom 2019.4 Compiler 2019.10 Oct 15 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_pargen
+-- Compiling architecture beh1 of tb_pargen
+** Error: (vcom-11) Could not find work.pargen.
+** Error (suppressible): /uio/hume/student-u81/rolfvh/in3160-new/oblig5/tb_pargen_original.vhd(36): (vcom-1195) Cannot find expanded name "work.pargen".
+** Error: /uio/hume/student-u81/rolfvh/in3160-new/oblig5/tb_pargen_original.vhd(36): Unknown expanded name.
+** Note: /uio/hume/student-u81/rolfvh/in3160-new/oblig5/tb_pargen_original.vhd(68): VHDL Compiler exiting
+
+} {9.0 10.0 11.0 12.0} {}} /uio/hume/student-u81/rolfvh/in3160-new/oblig5/tb_pargen.vhd {0 {vcom -work work2 -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/in3160-new/oblig5/tb_pargen.vhd
+QuestaSim-64 vcom 2019.4 Compiler 2019.10 Oct 15 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+** Error: (vcom-11) Could not find work.subprog_pck.
+** Error (suppressible): /uio/hume/student-u81/rolfvh/in3160-new/oblig5/tb_pargen.vhd(5): (vcom-1195) Cannot find expanded name "work.subprog_pck".
+** Error: /uio/hume/student-u81/rolfvh/in3160-new/oblig5/tb_pargen.vhd(5): Unknown expanded name.
+** Note: /uio/hume/student-u81/rolfvh/in3160-new/oblig5/tb_pargen.vhd(7): VHDL Compiler exiting
+
+} {7.0 8.0 9.0 10.0} {}}

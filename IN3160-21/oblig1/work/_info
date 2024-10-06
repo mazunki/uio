@@ -1,0 +1,117 @@
+m255
+K4
+z2
+!s11e vcom 2019.4 2019.10, Oct 15 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/uio/hume/student-u81/rolfvh/in2060-oblig2
+Ecounter_entity
+w1611256706
+Z0 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z1 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 -1
+Z2 d/uio/hume/student-u81/rolfvh/in3160-new/oblig1
+Z3 8/uio/hume/student-u81/rolfvh/in3160-new/oblig1/tb_first.vhd
+Z4 F/uio/hume/student-u81/rolfvh/in3160-new/oblig1/tb_first.vhd
+l0
+L4
+Vg=N[YKJT`P8jeUffE:2jf2
+!s100 >[hRI5I5bQMP=45kZLmG>3
+Z5 OL;C;2019.4;69
+33
+!s110 1611258203
+!i10b 1
+!s108 1611258203.000000
+Z6 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/in3160-new/oblig1/tb_first.vhd|
+Z7 !s107 /uio/hume/student-u81/rolfvh/in3160-new/oblig1/tb_first.vhd|
+!i113 0
+Z8 o-work work -2008 -explicit
+Z9 tExplicit 1 CvgOpt 0
+Efirst
+Z10 w1611258166
+Z11 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R0
+R1
+!i122 -1
+R2
+Z12 8/uio/hume/student-u81/rolfvh/in3160-new/oblig1/first.vhd
+Z13 F/uio/hume/student-u81/rolfvh/in3160-new/oblig1/first.vhd
+l0
+L5
+VWBe<8TcOW3mPkbVbd[RBe1
+!s100 S`gBk:o7781Wh?4b5Hkc40
+R5
+33
+Z14 !s110 1611260570
+!i10b 1
+Z15 !s108 1611260570.000000
+Z16 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/in3160-new/oblig1/first.vhd|
+Z17 !s107 /uio/hume/student-u81/rolfvh/in3160-new/oblig1/first.vhd|
+!i113 0
+R8
+R9
+Amy_first_arch
+R11
+R0
+R1
+DEx4 work 5 first 0 22 WBe<8TcOW3mPkbVbd[RBe1
+!i122 -1
+l26
+L22
+V_PO3aAiE0064`D1=aVMbo0
+!s100 43z>ehj;1UO:HPoQE1@O]3
+R5
+33
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R8
+R9
+Etest_first
+Z18 w1611260646
+R0
+R1
+!i122 -1
+R2
+R3
+R4
+l0
+L4
+V@2<J>@`Co8gb8om`MX=?60
+!s100 fUfV>[KJDY=V3A^2^UCX90
+R5
+33
+Z19 !s110 1611260656
+!i10b 1
+Z20 !s108 1611260655.000000
+R6
+R7
+!i113 0
+R8
+R9
+Atestbench
+R0
+R1
+Z21 DEx4 work 10 test_first 0 22 @2<J>@`Co8gb8om`MX=?60
+!i122 -1
+l38
+L8
+VjzB8Ycgd48;31;7@Z1Db73
+!s100 T96?nP[c9nUX8jROGWDzM2
+R5
+33
+R19
+!i10b 1
+R20
+R6
+R7
+!i113 0
+R8
+R9

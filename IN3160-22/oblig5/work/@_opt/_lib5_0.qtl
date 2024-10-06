@@ -1,0 +1,242 @@
+MODEL_TECH/..}
+R13
+Bbody
+DPx4 work 12 vital_memory 0 22 kaZ<]i`[HA8G2D_^LjE>g0
+R112
+R113
+R21
+R20
+31
+R114
+!i10b 1
+R3
+!i122 23
+8vhdl_src/vital2000/memory_b_2000.vhd
+Fvhdl_src/vital2000/memory_b_2000.vhd
+l0
+L239 1
+VkaNX_m[=oB^B^InB7`L4L1
+!s100 kaNX_m[=oB^B^InB7`L4L1
+R8
+R116
+!s90 -debuglib|-suppress|12110|-93|-work|ieee|-novital|-dirpath|$MODEL_TECH/..|vhdl_src/vital2000/memory_b_2000.vhd|
+!s107 vhdl_src/vital2000/memory_b_2000.vhd|
+!i113 1
+R117
+R13
+Pvital_primitives
+R113
+R21
+R20
+31
+b1
+!s110 1602644351
+!i10b 1
+R3
+b1
+!i122 21
+R115
+R5
+8vhdl_src/vital2000/prmtvs_p_2000.vhd
+Fvhdl_src/vital2000/prmtvs_p_2000.vhd
+l0
+L50 1
+VG>kiXP8Q9dRClKfK1Zn7j1
+!s100 G>kiXP8Q9dRClKfK1Zn7j1
+R8
+b1
+Z118 !s108 1602644350.000000
+!s90 -debuglib|-suppress|12110|-93|-work|ieee|-novital|-dirpath|$MODEL_TECH/..|vhdl_src/vital2000/prmtvs_p_2000.vhd|
+!s107 vhdl_src/vital2000/prmtvs_p_2000.vhd|
+!i113 1
+R117
+R13
+Bbody
+DPx4 work 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+R113
+R21
+R20
+31
+R114
+!i10b 1
+R3
+!i122 22
+8vhdl_src/vital2000/prmtvs_b_2000.vhd
+Fvhdl_src/vital2000/prmtvs_b_2000.vhd
+l0
+L33 1
+VL8@OL8nfVkLF;7TL8_DPa1
+!s100 L8@OL8nfVkLF;7TL8_DPa1
+R8
+!s108 1602644351.000000
+!s90 -debuglib|-suppress|12110|-93|-work|ieee|-novital|-dirpath|$MODEL_TECH/..|vhdl_src/vital2000/prmtvs_b_2000.vhd|
+!s107 vhdl_src/vital2000/prmtvs_b_2000.vhd|
+!i113 1
+R117
+R13
+Pvital_timing
+R21
+R20
+31
+b1
+Z119 !s110 1602644350
+!i10b 1
+R3
+b1
+!i122 20
+R115
+R5
+8vhdl_src/vital2000/timing_p_2000.vhd
+Fvhdl_src/vital2000/timing_p_2000.vhd
+l0
+R103
+VJ>EBealN09f8GzldA[z2>3
+!s100 J>EBealN09f8GzldA[z2>3
+R8
+b1
+R100
+!s90 -debuglib|-suppress|12110|-93|-work|ieee|-novital|-dirpath|$MODEL_TECH/..|vhdl_src/vital2000/timing_p_2000.vhd|
+!s107 vhdl_src/vital2000/timing_p_2000.vhd|
+!i113 1
+R117
+R13
+Bbody
+DPx4 work 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+R21
+R20
+31
+R119
+!i10b 1
+R3
+!i122 21
+8vhdl_src/vital2000/timing_b_2000.vhd
+Fvhdl_src/vital2000/timing_b_2000.vhd
+l0
+R22
+VKEim8d[eJ5dE^:mEG0P3S0
+!s100 KEim8d[eJ5dE^:mEG0P3S0
+R8
+R118
+!s90 -debuglib|-suppress|12110|-93|-work|ieee|-novital|-dirpath|$MODEL_TECH/..|vhdl_src/vital2000/timing_b_2000.vhd|
+!s107 vhdl_src/vital2000/timing_b_2000.vhd|
+!i113 1
+R117
+R13
+m255
+K4
+z2
+!s8c locked
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+!s95 MTI
+cModel Technology Builtin Library
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+d/bata/rhino/buildsites/2020.p/builds/linux/modeltech
+Penv
+32
+b1
+Z0 !s110 1602644280
+!i10b 1
+Z1 OL;C;2020.4;71
+b1
+!i122 1
+Z2 w1602644128
+Z3 d$MODEL_TECH/..
+Z4 8vhdl_src/std/env.vhd
+Z5 Fvhdl_src/std/env.vhd
+l0
+L1 1
+Vd?`1ck@NdeD@H3RZG7FgZ2
+!s100 d?`1ck@NdeD@H3RZG7FgZ2
+Z6 OE;C;2020.4;71
+b1
+Z7 !s108 1602644280.000000
+Z8 !s90 -debuglib|-suppress|12110|-work|std|-dirpath|$MODEL_TECH/..|vhdl_src/std/env.vhd|
+Z9 !s107 vhdl_src/std/env.vhd|
+!i113 1
+Z10 o-suppress 12110 -debuglib -work std -dirpath {$MODEL_TECH/..}
+Z11 tExplicit 1 CvgOpt 0
+Bbody
+DPx4 work 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+32
+R0
+!i10b 1
+R1
+!i122 1
+l0
+L15 1
+VGO=IeNa]6JLe2BRN4G<kA2
+!s100 GO=IeNa]6JLe2BRN4G<kA2
+R6
+R7
+R8
+R9
+!i113 1
+R10
+R11
+Pstandard
+33
+R0
+!i10b 1
+R1
+!i122 0
+R2
+R3
+8vhdl_src/std/standard.vhd
+Fvhdl_src/std/standard.vhd
+l0
+L8 1
+VofRa6alAEoSE^5WcJ^O]C2
+!s100 ofRa6alAEoSE^5WcJ^O]C2
+R6
+!s108 1602644279.000000
+!s90 -debuglib|-suppress|12110|-s|-2008|-work|std|-dirpath|$MODEL_TECH/..|vhdl_src/std/standard.vhd|
+!s107 vhdl_src/std/standard.vhd|
+!i113 1
+o-suppress 12110 -debuglib -s -2008 -work std -dirpath {$MODEL_TECH/..}
+R11
+Ptextio
+33
+b1
+R0
+!i10b 1
+R1
+b1
+!i122 2
+Z12 w1578762055
+R3
+Z13 8vhdl_src/std/textio.vhd
+Z14 Fvhdl_src/std/textio.vhd
+l0
+L1 1
+VzE1`LPoLg^DX3Oz^4Fj1K3
+!s100 zE1`LPoLg^DX3Oz^4Fj1K3
+R6
+b1
+R7
+Z15 !s90 -debuglib|-suppress|12110|-2008|-work|std|-dirpath|$MODEL_TECH/..|vhdl_src/std/textio.vhd|
+Z16 !s107 vhdl_src/std/textio.vhd|
+!i113 1
+Z17 o-suppress 12110 -debuglib -2008 -work std -dirpath {$MODEL_TECH/..}
+R11
+Bbody
+DPx4 work 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+33
+R0
+!i10b 1
+R1
+!i122 2
+l0
+L186 1
+VOBFf4Pj<FG4ZXfzD:k]VN1
+!s100 OBFf4Pj<FG4ZXfzD:k]VN1
+R6
+R7
+R15
+R16
+!i113 1
+R17
+R11

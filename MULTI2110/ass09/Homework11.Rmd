@@ -1,0 +1,99 @@
+---
+title: "Session11: Generalized Linear Models — MULTI2110"
+author: Mazunki Hoksaas
+date: "2023-11-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE, 
+                      error = FALSE, 
+                      message = FALSE, 
+                      warning = FALSE)
+
+# nifty code using the pacman package
+# it checks if the packages specified below are installed, if not, they will be installed, if yes, they will be loaded
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(rstudioapi, tidyverse, broom, languageR)
+
+# set the current working directory to the one where this file is
+current_working_dir <- dirname(rstudioapi::getActiveDocumentContext()$path)
+setwd(current_working_dir)
+
+```
+
+We are looking at a dataset from Winter, B., & Duffy, S. E. (2020). Can co-speech gestures alone carry the mental time line? Journal of Experimental Psychology: Learning, Memory, and Cognition, 46(9), 1768–1781. https://doi.org/10.1037/xlm0000836
+
+```{r}
+library(ggplot2)
+timeline <- read_csv("Winter_timeline.csv")
+
+# make relevant variables factors
+timeline$Response <- as.factor(timeline$Response)
+timeline$Respoinse <- factor(timeline$Response, levels=c("Monday", "Friday"))
+timeline$Language <- as.factor(timeline$Language)
+timeline$Gesture <- as.factor(timeline$Gesture)
+```
+
+In this dataset, the authors use the ambiguous question “Next Wednesday’s meeting has been moved forward two days, what day is it on now?” to show that people either respond “Monday” or “Friday” depending on gesture. They manipulated both language (using either the adverb “forward,” or the adverb “backward”) and gesture (forward and backward movement), thus creating matches and mismatches between speech and gesture. The question is how does the language interact with the gesture? 
+
+# analysis
+
+## logistic regression
+```{r}
+model <- glm(Response ~ Language * Gesture, data = timeline, family = "binomial")
+summary(model)
+```
+
+## visual plot
+```{r, warning=FALSE}
+new_data <- expand.grid(Language = levels(timeline$Language),
+                        Gesture = levels(timeline$Gesture))
+
+new_data$predicted_prob <- predict(model, newdata = new_data, type = "response")
+
+ggplot(new_data, aes(x = Language, y = predicted_prob, fill = Gesture)) +
+  geom_bar(stat = "identity", position = position_dodge()) +
+  labs(y = "Probability of listener assuming it's Monday", x = "Language", fill = "Gesture") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  theme_minimal()
+```
+
+# interpretation
+
+The plot we have displayed here seems to accurately reflect the data predicted by our regression model. If we apply the probability formula to our estimate values, we get the following values, which matches the predictions in the plot.
+```
+🐈: chance = lambda est: exp(est)/(1+exp(est))
+🐈: 
+🐈: "LangBack|GestBack → {:.2%}".format(chance(1.72))
+🐈: "LangBack|GestForw → {:.2%}".format(chance(1.72+0.1186))
+🐈: "LangForw|GestBack → {:.2%}".format(chance(1.72-1.25))
+🐈: "LangForw|GestForw → {:.2%}".format(chance(1.72-1.25+0.11-0.55))
+🐈:
+'LangBack|GestBack → 84.81%'
+'LangBack|GestForw → 86.28%'
+'LangForw|GestBack → 61.54%'
+'LangForw|GestForw → 50.75%'
+```
+
+## initial interpretation of data
+overall, we can see that backwards language has the biggest turnout in terms of carrying meaning to people, where four out of five people will understand you meant Monday. with forward language, people are not really sure, and will rely more heavily on gestures. if backward gestures are used, three out of five people will still think you meant monday, even if you used the opposite terminology! surprisingly, even if you both use forward language AND forward gestures, people will still be uncertain about what you meant, and just guess at random instead.
+
+the thing which I don't understand is why using a forward gesture in backward language will result in the best result overall. it seems like gestures carry different meanings depending on the context in which it was used, and are not entirely meaningful on their own? it could just be a random effect of our dataset.
+
+### p-values
+looking at the p-values in the regression model, we can see a few things: People are not randomly guessing when hearing backward language combined with a backward gesture. Furthermore, we can be pretty confident changing our language semantics affects people's interpretation. On the other hand, it seems like our considerations for the gestures are not statistically significant, and we can't make any solid assertions about the data we've analysed.
+
+based on this interpretation of the p-values, I conclude that my interpretation of gestures being contextual is a false hypothesis, and just a random artifact of our dataset.
+
+# takeaway conclusion
+in summary, people should say something like "we moved the meeting backwards by two days" if the change is from a Wednesday to a Monday. most people will correctly understand this.
+
+that said: this statement, on its own, will probably make people think "okay, so then i should say something like "we moved the meeting forward by two days" to convey a change from wednesday to friday, but based on our analysis this would be a false assumption! people will just be confused, and take a random guess, instead.
+
+if the meeting was changed from a wednesday to a friday, you could instead say something like "the meeting was changed to be on friday", instead.
+
+# further research
+
+we have more fields in our dataset, and i'm interested in knowing how fields such as age, gender, location (and thus culture), and language would affect the results. i would also like to know how people with different neurotypes are affected by language regarding stuff like this.

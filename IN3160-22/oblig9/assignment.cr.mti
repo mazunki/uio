@@ -1,0 +1,36 @@
+/uio/hume/student-u81/rolfvh/IN3160-22/oblig9/compute_rtl.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/IN3160-22/oblig9/compute_rtl.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling architecture rtl of compute
+-- Loading entity compute
+
+} {} {}} /uio/hume/student-u81/rolfvh/IN3160-22/oblig9/tb_compute.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/IN3160-22/oblig9/tb_compute.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_compute
+-- Compiling architecture beh of tb_compute
+
+} {} {}} /uio/hume/student-u81/rolfvh/IN3160-22/oblig9/compute_ent.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/IN3160-22/oblig9/compute_ent.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity compute
+
+} {} {}} /uio/hume/student-u81/rolfvh/IN3160-22/oblig9/tb_compute_pipelined.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /uio/hume/student-u81/rolfvh/IN3160-22/oblig9/tb_compute_pipelined.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_compute_pipelined
+-- Compiling architecture beh of tb_compute_pipelined
+
+} {} {}}

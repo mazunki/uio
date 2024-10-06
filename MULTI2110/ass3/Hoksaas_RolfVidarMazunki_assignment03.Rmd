@@ -1,0 +1,77 @@
+---
+title: "assignment 3 --- MULTI2110"
+author: "Mazunki Hoksaas"
+date: "2023-09-23"
+output: html_document
+---
+
+## Stats and words
+
+```{r}
+survey_data <- read.csv("survey.csv", header=TRUE)
+```
+
+### Words
+
+regarding data on people's own estimate of word usage per day. one of the fields contains NA as its input, which is why we strip it.
+
+```{r}
+means <- mean(survey_data$words, na.rm=TRUE)
+stds <- sd(survey_data$words, na.rm=TRUE)
+
+writeLines(c(
+  paste("average mean (words):", round(means, 2)),
+  paste("standard deviation (words):", round(stds, 2))
+))
+```
+
+### Statistics
+
+regarding data on people's own impression of their knowledge of statistics
+
+```{r}
+means <- mean(survey_data$stats_xp)
+stds <- sd(survey_data$stats_xp)
+
+writeLines(c(
+  paste("average mean (stats_xp):", round(means, 2)),
+  paste("standard deviation (stats_xp):", round(stds, 2))
+))
+```
+
+## Exploring pizza ratings
+
+```{r}
+library(ggplot2)
+ggplot(survey_data, aes(x = salami)) +
+  geom_histogram(col="black", fill="brown", bins=24) +
+  ggtitle("salami pizza")
+
+ggplot(survey_data, aes(x = mushroom)) +
+  geom_histogram(col="black", fill="salmon", bins=24) +
+  ggtitle("mushroom pizza")
+
+ggplot(survey_data, aes(x = pineapple)) +
+  geom_histogram(col="black", fill="yellow", bins=24) +
+  ggtitle("pineapple pizza")
+```
+
+when looking at the graphs, we can see an interesting fact: a high number of students have very strong feelings on salami vs mushroom pizza. we deduce this due to the peaks at values 0 and 100 on each of these graphs, which are the endpoints of the domains.
+
+for salami pizza, it seems the normal mean, after removing the zeroes, lays around 70-75, while for mushroom pizza the mean falls somewhat closer to 50.
+
+i believe it's reasonable to assume there's a large number of vegetarian students in the sample pool, skewing the results.
+
+pineapple pizza also has a high number of extreme values at zero, but we see the values a bit more over the place. there seems to be a normal distribution centered around 60 for pineapple pizza, but with a larger standard deviation than the other preferred toppings.
+
+## My R journey so far
+
+my experience so far with R has been kind of a mixed bag. during the last two assignments I spent a long time fighting R/Rstudio because I couldn't get the plots to be displayed. I eventually found out why: it's because I am running Gentoo, which requires one to be aware of USE flags (these are essentially like add-ons/extensions/mods choices when installing software), and for some reason the USE=png flag was disabled by default. while I thought I had fixed this during the first assignment, I didn't realize I was facing the same issue during the second assignment, as the Rstudio package didn't have any USE flags, but instead used the underlying R package (which had, for some reason, reverted my chosen flags). sufficient to say, I like to make my own life hard.
+
+this time I had a similar issue with ggplot2 not being available, but I figured out what was causing it quite quickly.
+
+i have never particularly liked the syntax of R, but I am aware of its potential. I think part of the reason I don't love it is because of its REPL-approach, which to me always felt like a testing playground, and not quite suited for reliable/repeatable coding. when I write my own software I tend to write overengineered pieces of libraries, instead. not exactly useful inline notebook documents.
+
+as for myself towards the future, personally, I don't think I will struggle much with the language itself, but I will have to spend some time focusing on the theory of statistics itself.
+
+as for the instructor, I don't have too much to say. I mostly prefer to study on my own, so I stay home for the most part, discussing the assignments with my peers. having a reverse classroom is quite nice in this sense, and having assignments to follow each week makes me not fall behind by getting distracted on other topics.

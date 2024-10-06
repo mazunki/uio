@@ -1,0 +1,1 @@
+-wto "fd41472625fe4a3eb5d99fed49f4c695" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "tb_pargen_behav" "xil_defaultlib.tb_pargen" -log "elaborate.log" 

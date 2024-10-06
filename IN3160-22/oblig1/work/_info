@@ -1,0 +1,104 @@
+m255
+K4
+z2
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/uio/hume/student-u81/rolfvh/IN3160-22/oblig1
+T_opt
+!s110 1643999582
+VzUa>ZMFdZWVN7chXS3Yh;2
+04 10 9 work test_first testbench 1
+=1-0050568068b4-61fd715e-36477-abc93
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+Efirst
+Z1 w1643995209
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 3
+R0
+Z5 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/first.vhd
+Z6 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/first.vhd
+l0
+L5 1
+V^PUaYCE_XG7;P5GJ8B13F2
+!s100 _kNUFlS74ciUN<g56lLZz1
+Z7 OL;C;2020.4;71
+33
+Z8 !s110 1643999560
+!i10b 1
+Z9 !s108 1643999560.000000
+Z10 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/first.vhd|
+Z11 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/first.vhd|
+!i113 0
+Z12 o-work work -2008 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Amy_first_arch
+R2
+R3
+R4
+DEx4 work 5 first 0 22 ^PUaYCE_XG7;P5GJ8B13F2
+!i122 3
+l25
+L20 33
+VQ8@OHz;<^=1oWDjCB:GU31
+!s100 aUIdD9i_lWV1a<`iSl>GF0
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Etest_first
+Z14 w1643995262
+R3
+R4
+!i122 2
+R0
+Z15 8/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/tb_first.vhd
+Z16 F/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/tb_first.vhd
+l0
+L4 1
+V@2<J>@`Co8gb8om`MX=?60
+!s100 fUfV>[KJDY=V3A^2^UCX90
+R7
+33
+Z17 !s110 1643999558
+!i10b 1
+Z18 !s108 1643999558.000000
+Z19 !s90 -reportprogress|300|-work|work|-2008|-explicit|-vopt|-stats=none|/uio/hume/student-u81/rolfvh/IN3160-22/oblig1/tb_first.vhd|
+Z20 !s107 /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/tb_first.vhd|
+!i113 0
+R12
+R13
+Atestbench
+R3
+R4
+DEx4 work 10 test_first 0 22 @2<J>@`Co8gb8om`MX=?60
+!i122 2
+l34
+L8 55
+VQXNI[8WZPchHC:>H[nLCL2
+!s100 @Fk[S<=8bR6<320X?D^GF2
+R7
+33
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 0
+R12
+R13

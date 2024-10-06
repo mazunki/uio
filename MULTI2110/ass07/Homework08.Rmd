@@ -1,0 +1,91 @@
+---
+title: "Homework08: Multiple regression — MULTI2110"
+author: "Mazunki Hoksaas"
+date: "2023-10-22"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r, setup, include=FALSE}
+
+# nifty code using the pacman package
+# it checks if the packages specified below are installed, if not, they will be installed, if yes, they will be loaded
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(rstudioapi, tidyverse, car)
+
+# set the current working directory to the one where this file is
+current_working_dir <- dirname(rstudioapi::getActiveDocumentContext()$path)
+setwd(current_working_dir)
+
+```
+
+```{r}
+vocab_growth <- read.csv("vocab_growth.csv", sep=";")
+```
+
+# Homework08:
+## (a) plotting raw values
+
+```{r, echo=FALSE}
+
+# we're combining both the age and the length into the same plot
+# since we're using the same y-values and want to compare the slope
+
+combined_output <- vocab_growth %>% 
+  gather(key="index", value = "values", -vocab)
+
+ggplot(combined_output, aes(x=values, y=vocab, color=index)) +
+  geom_point() +
+  facet_wrap(~index, scales="free_x") +  # skip the middle x-range
+  scale_color_manual(
+    values=c("blue", "red"),
+    labels=c("Length (cm)", "Age (months)"),
+    name="index")
+```
+
+we can see the age-vocab relationship is very tightly bound, but the length is kind of sparse. do note that each side of the plot is using a different unit, so we can't entirely study the slope visually. regardless, it feels like age~vocab forms a really tight linear relationship, while the regression for the length~vocab is kind of wobbly. 
+
+## (b) fitting the model
+```{r, echo=FALSE}
+fit <- lm(vocab ~ length + age, data=vocab_growth)
+summary(fit)
+```
+the linear model analysis seems to agree with our visual analysis. while the standard error doesn't use the same scale, we can see the p-value is extremely low in terms of age, meaning that it can't be random that babies learn more words as they age. weird, huh?
+
+## (c) 
+Check if the predictors of your model are collinear (see Winter 2019: 114f. or solutions to the in-class `Exercise08_solution.Rmd`).
+Interpret the values. Would you include both age and height in the model? Why / why not? 
+
+```{r, echo=FALSE}
+vif(fit)
+```
+
+the colinearity value of 3.49 suggests there is some collinearity between the variables and the vocabulary. the reason we're getting the same value for the vif value of each variable here is likely explained by the length and the age being correlational, meaning the length itself is probably redundant information for our case study.
+
+## (d)
+Are the residuals of the model homoskedastic?  
+Check and discuss whether model assumptions are met. (see Winter Ch.6.3)
+
+```{r, echo=FALSE}
+plot(fit, which = 1)
+```
+
+it seems like our predictions are properly giving some balanced "randomness", similar to the deviation in the original data, but the residuals seem to slightly grow as we increase the number of words the baby understands. my interpretation of that is that our model becomes less and less reliable as the baby grows older or bigger.
+
+
+```{r, echo=FALSE}
+res <- as.data.frame(resid(fit))
+fitt <- as.data.frame(fitted(fit))
+
+ggplot() +
+  geom_point(aes(x = fitt[,1], y = res[,1])) +
+  geom_smooth(aes(x = fitt[,1], y = res[,1]), method = "loess", formula=y~x) +
+  ggtitle("Residuals vs Fitted Values") +
+  xlab("Fitted Values") +
+  ylab("Difference from expected residuals")
+```
+
+this looks prettier but i find it slightly less obvious. we can see a subtle trend upwards if we look at the shaded area, but the blue line just looks like a wobbly horizontal friend.
+

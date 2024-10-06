@@ -1,0 +1,142 @@
+# //  Questa Sim-64
+# //  Version 2020.4 linux_x86_64 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project ass_proj
+# reading /projects/robin/CADlib/modelsimCADLIB.ini
+# Loading project ass_proj
+# Compile of decoder1.vhd was successful.
+# Compile of decoder2_arch.vhd failed with 1 errors.
+# Compile of decoder2_entity.vhd was successful.
+# 3 compiles, 1 failed with 1 error.
+# Compile of decoder1.vhd was successful.
+# Compile of decoder2_arch.vhd was successful.
+# Compile of decoder2_entity.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of decoder1.vhd was successful.
+# Compile of decoder2_arch.vhd was successful.
+# Compile of decoder2_entity.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of decoder1.vhd was successful.
+# Compile of decoder2_arch.vhd was successful.
+# Compile of decoder2_entity.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of decoder1.vhd was successful.
+# Compile of decoder2_arch.vhd was successful.
+# Compile of decoder2_entity.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim work.decoder1(decoder1_arch)
+# vsim work.decoder1(decoder1_arch) 
+# Start time: 09:07:23 on Feb 06,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.decoder1(decoder1_arch)#1
+do test_waveform.do
+vsim work.decoder2_entity(decoder2_arch)
+# End time: 09:10:19 on Feb 06,2022, Elapsed time: 0:02:56
+# Errors: 0, Warnings: 9
+# vsim work.decoder2_entity(decoder2_arch) 
+# Start time: 09:10:19 on Feb 06,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.decoder2_entity(decoder2_arch)#1
+do test_waveform2.do
+# ** UI-Msg: (vish-4014) No objects found matching '/decoder1/sw'.
+# Error in macro ./test_waveform2.do line 2
+# ** UI-Msg: (vish-4014) No objects found matching '/decoder1/sw'.
+#     while executing
+# "add wave -position insertpoint sim:/decoder1/sw"
+vsim work.decoder1 work.decoder2_entity
+# End time: 09:11:20 on Feb 06,2022, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 1
+# vsim work.decoder1 work.decoder2_entity 
+# Start time: 09:11:20 on Feb 06,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.decoder1(decoder1_arch)#1
+# Loading work.decoder2_entity(decoder2_arch)#1
+do test_waveform2.do
+# ** UI-Msg (suppressible): (vsim-4008) Object 'sim:/decoder1_entity/sw' not found.
+# Error in macro ./test_waveform2.do line 19
+# ** UI-Msg (suppressible): (vsim-4008) Object 'sim:/decoder1_entity/sw' not found.
+# 
+#     while executing
+# "force -freeze sim:/decoder1_entity/sw 2'h1 0"
+# Compile of decoder1.vhd was successful.
+# Compile of decoder2_arch.vhd was successful.
+# Compile of decoder2_entity.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim work.decoder1 work.decoder2_entity
+# End time: 09:12:42 on Feb 06,2022, Elapsed time: 0:01:22
+# Errors: 0, Warnings: 2
+# vsim work.decoder1 work.decoder2_entity 
+# Start time: 09:12:42 on Feb 06,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.decoder1(decoder1_arch)#1
+# Loading work.decoder2_entity(decoder2_arch)#1
+do test_waveform2.do
+# ** UI-Msg (suppressible): (vsim-4008) Object 'sim:/decoder1_entity/sw' not found.
+# Error in macro ./test_waveform2.do line 19
+# ** UI-Msg (suppressible): (vsim-4008) Object 'sim:/decoder1_entity/sw' not found.
+# 
+#     while executing
+# "force -freeze sim:/decoder1_entity/sw 2'h1 0"
+run 10 us
+vsim work.decoder1(decoder1_arch) work.decoder2_entity(decoder2_arch)
+# End time: 09:13:48 on Feb 06,2022, Elapsed time: 0:01:06
+# Errors: 0, Warnings: 1
+# vsim work.decoder1(decoder1_arch) work.decoder2_entity(decoder2_arch) 
+# Start time: 09:13:48 on Feb 06,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.decoder1(decoder1_arch)#1
+# Loading work.decoder2_entity(decoder2_arch)#1
+do test_waveform2.do
+# ** UI-Msg (suppressible): (vsim-4008) Object 'sim:/decoder1_entity/sw' not found.
+# Error in macro ./test_waveform2.do line 19
+# ** UI-Msg (suppressible): (vsim-4008) Object 'sim:/decoder1_entity/sw' not found.
+# 
+#     while executing
+# "force -freeze sim:/decoder1_entity/sw 2'h1 0"
+vsim work.decoder1(decoder1_arch) work.decoder2_entity(decoder2_arch)
+# End time: 09:14:48 on Feb 06,2022, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 1
+# vsim work.decoder1(decoder1_arch) work.decoder2_entity(decoder2_arch) 
+# Start time: 09:14:48 on Feb 06,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.decoder1(decoder1_arch)#1
+# Loading work.decoder2_entity(decoder2_arch)#1
+do test_waveform2.do
+# Break key hit
+# End time: 10:15:42 on Feb 08,2022, Elapsed time: 49:00:54
+# Errors: 0, Warnings: 1

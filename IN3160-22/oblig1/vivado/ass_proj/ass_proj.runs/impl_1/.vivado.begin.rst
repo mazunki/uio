@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="rolfvh" Host="aftur.ifi.uio.no" Pid="755094" HostCore="24" HostMemory="65687360">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="rolfvh" Host="aftur.ifi.uio.no" Pid="758132" HostCore="24" HostMemory="65687360">
+    </Process>
+</ProcessHandle>

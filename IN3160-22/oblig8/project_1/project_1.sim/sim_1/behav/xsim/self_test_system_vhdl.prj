@@ -1,0 +1,18 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../ROM.vhd" \
+"../../../../../bin2ssd_pck.vhd" \
+"../../../../project_1.srcs/sources_1/imports/oblig8/bin2ssd_pck.vhd" \
+"../../../../../input_sync.vhd" \
+"../../../../../output_sync.vhd" \
+"../../../../project_1.srcs/sources_1/imports/oblig8/pulse_width_modulator.vhd" \
+"../../../../../pulse_width_modulator.vhd" \
+"../../../../project_1.srcs/sources_1/imports/oblig8/quadrature_decoder.vhd" \
+"../../../../project_1.srcs/sources_1/imports/oblig8/seg7ctrl.vhd" \
+"../../../../project_1.srcs/sources_1/imports/oblig8/self_test_unit.vhd" \
+"../../../../../self_test_unit.vhd" \
+"../../../../project_1.srcs/sources_1/imports/oblig8/velocity_reader.vhd" \
+"../../../../project_1.srcs/sources_1/imports/oblig8/self_test_system.vhd" \
+
+# Do not sort compile order
+nosort

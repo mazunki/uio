@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1616443270">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BITSTR-SYSDEF" Name="self_test_system.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="self_test_system.ltx"/>
+  <File Type="BG-BGN" Name="self_test_system.bgn"/>
+  <File Type="NPI_FILE" Name="self_test_system.npi"/>
+  <File Type="BG-DRC" Name="self_test_system.drc"/>
+  <File Type="RNPI_FILE" Name="self_test_system.rnpi"/>
+  <File Type="CFI_FILE" Name="self_test_system.cfi"/>
+  <File Type="RCFI_FILE" Name="self_test_system.rcfi"/>
+  <File Type="PDI-FILE" Name="self_test_system.pdi"/>
+  <File Type="BITSTR-MMI" Name="self_test_system.mmi"/>
+  <File Type="BITSTR-BMM" Name="self_test_system_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="self_test_system.nky"/>
+  <File Type="BITSTR-RBT" Name="self_test_system.rbt"/>
+  <File Type="BITSTR-MSK" Name="self_test_system.msk"/>
+  <File Type="RBD_FILE" Name="self_test_system.rbd"/>
+  <File Type="BG-BIN" Name="self_test_system.bin"/>
+  <File Type="BG-BIT" Name="self_test_system.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="self_test_system_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="self_test_system_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="self_test_system_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="self_test_system.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="self_test_system_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="self_test_system_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="self_test_system_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="self_test_system_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="self_test_system_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="self_test_system_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="self_test_system_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="self_test_system_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="self_test_system_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="self_test_system_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="self_test_system_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="self_test_system_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="self_test_system_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="self_test_system_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="self_test_system_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="self_test_system_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="self_test_system_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="self_test_system_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="self_test_system_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="self_test_system_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="self_test_system_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="self_test_system_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="self_test_system_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="self_test_system_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="self_test_system_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="self_test_system_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="self_test_system_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="self_test_system_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="self_test_system_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="self_test_system_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="self_test_system_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="self_test_system_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="self_test_system_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="self_test_system_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="self_test_system_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="self_test_system_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="self_test_system_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="self_test_system_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="self_test_system_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="self_test_system_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="self_test_system_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="self_test_system_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="self_test_system_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="self_test_system.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="self_test_system_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="self_test_system_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="self_test_system_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="self_test_system_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="self_test_system_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="self_test_system_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="self_test_system_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="self_test_system.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../seg7ctrl.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../seg7ctrl_arch.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../self_test_unit.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../self_test_system.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../seg7model_ent.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../seg7model_beh.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../tb_seg7ctrl.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="self_test_system"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/bin2ssd_test_system.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/bin2ssd_test_system.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

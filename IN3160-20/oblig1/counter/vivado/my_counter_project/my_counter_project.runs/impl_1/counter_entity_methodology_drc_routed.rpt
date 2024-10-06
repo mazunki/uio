@@ -1,0 +1,60 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Wed Jan 22 19:50:50 2020
+| Host         : newport.ifi.uio.no running 64-bit Red Hat Enterprise Linux Workstation release 7.7 (Maipo)
+| Command      : report_methodology -file counter_entity_methodology_drc_routed.rpt -pb counter_entity_methodology_drc_routed.pb -rpx counter_entity_methodology_drc_routed.rpx
+| Design       : counter_entity
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 5
++-----------+----------+--------------------------+------------+
+| Rule      | Severity | Description              | Violations |
++-----------+----------+--------------------------+------------+
+| TIMING-23 | Warning  | Combinational loop found | 5          |
++-----------+----------+--------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-23#1 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between clk_OBUF_inst_i_1/I0 and clk_OBUF_inst_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#2 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between counter_OBUF[0]_inst_i_2/I2 and counter_OBUF[0]_inst_i_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#3 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between counter_OBUF[1]_inst_i_2/I2 and counter_OBUF[1]_inst_i_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#4 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between counter_OBUF[2]_inst_i_3/I4 and counter_OBUF[2]_inst_i_3/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#5 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between counter_OBUF[3]_inst_i_3/I3 and counter_OBUF[3]_inst_i_3/O to disable the timing loop
+Related violations: <none>
+
+

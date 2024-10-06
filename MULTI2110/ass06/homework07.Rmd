@@ -1,0 +1,150 @@
+---
+title: "Session07: Transformations — MULTI2110"
+author: "Mazunki Hoksaas"
+date: "2023-10-14"
+output: html_document
+---
+
+```{r, setup, include=FALSE}
+
+# nifty code using the pacman package
+# it checks if the packages specified below are installed, if not, they will be installed, if yes, they will be loaded
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(rstudioapi, tidyverse)
+
+# set the current working directory to the one where this file is
+current_working_dir <- dirname(rstudioapi::getActiveDocumentContext()$path)
+setwd(current_working_dir)
+
+```
+
+# Homework
+
+We will be using the nettle dataset again.
+
+```{r preprocessing1_nettle, warning=F, message=F, echo=F}
+
+nettle <- read_csv("nettle_1999_climate.csv")
+```
+
+## (a1) transforming the data
+```{r mutate1_nettle, warning=F, message=F, echo=F}
+
+nettle <- nettle %>%
+  mutate(
+    raw_area = 10^(Area),
+    raw_population = 10^(Population) * 1000
+  )
+summary(nettle)
+```
+
+### (a2) modelling the data, plotting
+
+```{r model1_nettle, warning=F, message=F, echo=F}
+model <- lm(raw_population ~ raw_area, data = nettle)
+plot(nettle$raw_area, nettle$raw_population)
+abline(model)
+```
+
+personally i prefer to visualize the logarithmic values, since the data doesn't conglomerate into a corner
+
+```{r model1_nettle_log, warning=F, message=F, echo=F}
+model_log <- lm(Population ~ Area, data = nettle)
+plot(nettle$Area, nettle$Population)
+abline(model_log)
+```
+
+## (b) inspecting the model
+
+```{r summary1_nettle, warning=F, message=F, echo=F}
+summary(model)
+```
+
+the intercept is the expected population when the area is at zero, and show up to be at 12M. it doesn't make much sense to have 12M people living in zero square meters, but it does give an intuition of how many people would need to come together to form a country.
+
+we can also see a standard deviation of 13M, which is to say we're likely going to be off by this much if we take a guesstimate of the population based on its area. the t-value is pretty high on the raw area, meaning there is a pretty strong relationship between the area and its population.
+
+## (c) centering the raw data
+
+```{r mutate2_nettle, warning=F, message=F, echo=F}
+nettle <- nettle %>%
+  mutate(
+    centered_raw_area = raw_area - mean(raw_area)
+  )
+centered_model <- lm(raw_population ~ centered_raw_area, data = nettle)
+```
+
+we shifted all the areas by the mean of the area, meaning an area of zero is equivalent to the mean, and we'll have negative areas for those areas which were under the mean. by doing this, we've managed to lower the standard deviation to 11M instead (although i can't say i fully understand how simply shifting the values causes the standard error to become lower (or minimal?)).
+
+## (d) reinterpreting the model
+```{r summary2_nettle, warning=F, message=F, echo=F}
+summary(centered_model)
+```
+
+since we've centered the data on the its area, we can now see the intercept at 33.7M instead. this means we can expect roughly ~33M people to live in a country given a country with an average area. since the standard error is now relatively smaller than the estimate for the intercept, the t-value increases (suggesting we can be more confident when discussing an average sized country)
+
+## (e) checking the residuals
+
+```{r residuals_nettle2, warning=F, message=F, echo=F}
+
+residuals <- resid(model)
+hist(residuals, breaks=9)
+```
+
+the residuals show me there's a concentration of 60 countries just below the mean, and one country off-shooting as an outlier at 800M. they are normally distributed, but it's not very meaningful to say this, given we have a population of 72 items.
+
+## (f) ignoring a single outlier
+
+```{r model3_nettle, warning=F, message=F, echo=F}
+# finding outliers
+residuals <- resid(model)
+outlier_indices <- order(abs(residuals), decreasing = TRUE)
+outlier_countries <- nettle$Country[outlier_indices]
+print(outlier_countries)
+
+print(outlier_countries[1])
+# removing a single outlier
+nettle_filtered_1 <- nettle[-outlier_indices[1], ]
+model_without_outlier <- lm(raw_population ~ raw_area, data = nettle_filtered_1)
+hist(resid(model_without_outlier), breaks=9)
+```
+
+since there is a single country causing havoc, we can just yeet it from our dataset, and analyze the other countries without it. this gives us a more meaningful view of the countries.
+
+```{r model3_summary, warning=F, message=F, echo=F}
+new_model_centered <- lm(raw_population ~ centered_raw_area, data = nettle_filtered_1)
+
+summary(model_without_outlier)
+```
+
+we can now see an even better statistical significance for the area, even without centering it.
+
+```{r model3_summary_centered, warning=F, message=F, echo=F}
+summary(new_model_centered)
+```
+
+we have a t-value of 4.04 now for the area, which is statisically much stronger than before. we have also increased the t-value for the intercept, meaning the size of an average country is statistically much more meaningful than before. the p-values are extremely low too, meaning there is a very strong relationship between our variables (aka it's super unlikely the values have occurred due to random chance).
+
+## (f2) ignoring 14 outliers
+```{r model4_nettle, warning=F, message=F, echo=F}
+# finding outliers
+residuals <- resid(model)
+outlier_indices <- order(abs(residuals), decreasing = TRUE)
+outlier_countries <- nettle$Country[outlier_indices]
+
+num_outliers <- 14
+print(outlier_countries[1:num_outliers])
+
+nettle_filtered_outliers <- nettle[-outlier_indices[1:num_outliers], ]
+model_without_many_outliers <- lm(raw_population ~ raw_area, data = nettle_filtered_outliers)
+hist(resid(model_without_many_outliers), breaks=9)
+```
+
+```{r model4_summary, warning=F, message=F, echo=F}
+model_without_many_outliers_centered <- lm(raw_population ~ centered_raw_area, data = nettle_filtered_outliers)
+
+summary(model_without_many_outliers_centered)
+```
+
+while ignoring the top 14 outliers is kind of a big deal, the p-value of 7.2e-08 is incredibly low!
+

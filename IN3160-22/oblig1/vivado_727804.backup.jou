@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Feb  4 22:07:21 2022
+# Process ID: 727804
+# Current directory: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1
+# Command line: vivado
+# Log file: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado.log
+# Journal file: /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /uio/hume/student-u81/rolfvh/IN3160-22/oblig1/vivado/ass_proj/ass_proj.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+set_property OFFCHIP_TERM NONE [get_ports [list clk]]
+set_property OFFCHIP_TERM NONE [get_ports [list clk]]
+save_constraints
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+open_run synth_1 -name synth_1
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+current_design synth_1
+refresh_design
+create_clock -period 20.000 -waveform {0.000 10.000} [get_ports clk]
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+current_design synth_1
+refresh_design

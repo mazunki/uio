@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../self_test_unit.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../../pulse_width_modulator.vhd" \
+"../../../../../ROM.vhd" \
+"../../../../../bin2ssd_pck.vhd" \
+"../../../../../input_sync.vhd" \
+"../../../../../output_sync.vhd" \
+"../../../../../quadrature_decoder.vhd" \
+"../../../../../seg7ctrl.vhd" \
+"../../../../../velocity_reader.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../../self_test_system.vhd" \
+
+# Do not sort compile order
+nosort
