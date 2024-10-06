@@ -16,6 +16,6 @@
 [submodule "IN3000/p0"]
 	path = IN3000/p0
 	url = git@github.uio.no:IN3000/IN3000-precode-P0.git
-[submodule "IN3000/p0"]
+[submodule "IN3000/p1"]
 	path = IN3000/p1
 	url = git@github.uio.no:IN3000/IN3000-precode-P1.git
