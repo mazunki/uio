@@ -19,3 +19,9 @@
 [submodule "IN4120/in3120-2024.git"]
 	path = IN4120/in3120-2024.git
 	url = git@github.com:mazunki/in3120.git
+[submodule "IN5020/ass1"]
+	path = IN5020/ass1
+	url = git@github.com:mazunki/in5020-ass1
+[submodule "IN5020/ass2"]
+	path = IN5020/ass2
+	url = git@github.com:mazunki/in5020-ass2
