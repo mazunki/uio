@@ -7,12 +7,6 @@
 [submodule "IN2140/oblig2-rev/in2140-v21"]
 	path = IN2140/oblig2-rev/in2140-v21
 	url = git@github.uio.no:IN2140v2/in2140-v21.git
-[submodule "IN3000/einarrk_rolfvh"]
-	path = IN3000/einarrk_rolfvh
-	url = git@github.uio.no:IN3000-V2023/einarrk_rolfvh
-[submodule "IN3000/gabriech_rolfvh"]
-	path = IN3000/gabriech_rolfvh
-	url = git@github.uio.no:IN3000-V2023/gabriech_rolfvh
 [submodule "IN3000/p0"]
 	path = IN3000/p0
 	url = git@github.uio.no:IN3000/IN3000-precode-P0.git
