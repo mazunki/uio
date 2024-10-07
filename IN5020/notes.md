@@ -124,3 +124,73 @@ _warm backup_: the primary backup acts as a synchronization device, locking the 
 
 we require a pair of views (eg p,q,r and q,r) to contain the same sequence/collection of events. at the end of the view-pair, we are required to synchronize the events.
 
+# 2024-10-07 (lecture 8)
+
+there's different communication paradigms, and they're suited for different infrastructures and requirements
+
+- **persistence**: fully persistent, fully transient, intermediate
+- **synchronicity**: fully sync, fully async, intermediate (middleware, mitm...)
+
+## paradigms
+
+*RPC*: remote procedure call
+*message-oriented*: focus of this lecture
+- raw socket
+- message-passing interface (mpi)
+- message-oriented middleware (mom)
+- publish/subscribe (e.g mqtt)
+*shared-memory models* are mostly used within data centers, not on the internet
+
+
+## message-programming interface (MPI)
+in high-performance computation you often use scattering to work on data in parallel
+
+addressing is done with logical addressing on nodes. it doesn't deal with failtures, and follows a transient model (not persistent)
+
+## message-oriented middleware (haha MOM)
+
+addressing is performed with logical queue names. data is persistent, and connection between nodes is fully decoupled (i.e nodes don't need to be online simultaneously)
+
+`put(msg, q)` and `get(q)`
+
+MOM is still used
+
+## publish/subscribe
+addrsesing is done through content (aka subscriptions)
+
+the broker is responsible of coordinating delivery and deciding on persistence of messages.
+
+it's used in many diverse places
+
+
+**semantic types**:
+- subscription to *topics* can be done hierarchically, e.g you can subscribe to `sports`, or `sports.football`, or even wildcards: `sports.foo*`
+- you can also subscribe to specific *types* (as opposed to topic), or both
+- we can use event *attributes* (we know which fields events take) to apply filter to events, and subscribe to a subset of constraints on the attribute/event space
+
+## multicast implementations
+
+through unicast: very bad
+
+underlay = network layer
+overlay = application layer
+
+*small-world phenomenon*: it turns out that if we graph out all the relationship between nodes in the world, we will have a short path to all destinations (up to ~6 hops in worst case). this was a sociological experiment, but also applies to networking!
+
+this makes overlay implementations of multicast quite effective, but the load won't be balanced evenly, and is vulnerable to failures. this can be improved with other types of overlay (e.g regular hypercube)
+
+overlay-based multicasting are both efficient and can guarantee delivery, but maintenance can quickly be costly
+
+## data gossipping
+we can also fix nodes in the same style of epidemic analysis: remove infected (aka failed) nodes
+
+fan-out: how many random nodes we want to send to (aka infect)
+
+push-approach: fast when *few nodes* are infected, wasteful when most nodes are already infected
+pull-approach: fast when *most nodes* are infected, wasteful when few nodes are infected
+combining both: fast for both, but always very wasteful
+
+ideally, we want a uniform partition (each node's view) of the network.
+
+features: it's very scalable, and reasonably fast (but not fastest!) and robust (but not guaranteed!). it can be used for failure detection, data aggregation (updates, invalidation, ...), process monitoring, 
+
