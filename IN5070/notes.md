@@ -1,7 +1,7 @@
 
 # IN5070 (future of internet protocols)
 
-** 2024-08-22 (lecture 1)
+# 2024-08-22 (lecture 1)
 
 - 11:15-14:00 (normally ~2 hours) @ perl
 - exam will be oral (30 minutes of preparation + making notes, 30 minutes oral examination using notes. tell and explain)
@@ -16,7 +16,7 @@
 - igmp = group management protocol
 - mgbp = border protocol
 
-** 2024-08-29 (lecture 2)
+# 2024-08-29 (lecture 2)
 
 caches need to store data and also manage store memory
 
@@ -48,7 +48,7 @@ csu : cache store unit
 
 - ns2 : network simulator
 
-** 2024-09-05 (lecture 3)
+# 2024-09-05 (lecture 3)
 [slides](https://www.uio.no/studier/emner/matnat/ifi/IN5070/h24/timeplan/manet-part1.pdf)
 manet = mobile adhoc net
 
@@ -84,7 +84,7 @@ includes a broadcast id to distinguish loops from lost-route
 - predicting where the node is moving based on velocity, and only broadcasting in that direction
 
 
-** 2024-09-12 (lecture 4)
+# 2024-09-12 (lecture 4)
 [slides](https://www.uio.no/studier/emner/matnat/ifi/IN5070/h22/timeplan/manet-part2.pdf)
 
 **dynamic source routing (DSR)**: instead of each router making a decision on which outgoing path to take towards destination, this responsibility is delegated to the source node instead. this requires the source node to know the topology ahead of time. if it doesn't, it can send a RREQ (route request).
@@ -126,7 +126,7 @@ cts: clear to send
 
 
 
-** 2024-09-12 (lecture 5)
+# 2024-09-12 (lecture 5)
 [slides](https://www.uio.no/studier/emner/matnat/ifi/IN5070/h22/timeplan/delaytolerantnetworking.pdf)
 [reference](vahdat&becker, techreport 2000)
 [transparencies]: taken from m. ammar (co-next 2005)
@@ -193,7 +193,7 @@ middle mobility, low density = message ferrying (mf) is required here (although 
 simulations done with ns3 = network simulator 3 (supports mobility models). discrete event simulator (async thingies)
 
 
-** 2024-09-26 (lecture 6)
+# 2024-09-26 (lecture 6)
 
 *NAT*: network address translation
 only a single device can use a single port at a time. udp and tcp ports have no correlation, they're different pools altogether.
@@ -225,7 +225,7 @@ for firewall punching to work, you generally have a temporary bootstrapping thir
 
 *ICE*: interactive connectivity establishment. meta protocol to figure out which protocol is best for communication between devices, given e.g. which ones they have available. servers aren't directly involved, but is used between clients
 
-** 2024-10-03 (lecture 7)
+# 2024-10-03 (lecture 7)
 
 - [tc](https://en.wikipedia.org/wiki/Tc_(Linux)): often used in combination with iptables to control priorities
 - *netem*: allows more control and nastiness (eg dropping packets, adding delay, reordering...) for certain source ip addresses. great for testing your network to simulate unreliable connectivity
@@ -251,4 +251,42 @@ voip generally works using SIP, driven by telephony providers
 pdf page 18, document 63:
 - blue: ebtables
 - green: iptables
+
+# 2024-10-10 (lecture 8)
+*ANA*: autonomic network architecture
+
+main issue of ip: no separation of identification and location. we can't look at the ip and know who we're sending to
+
+ip addresses target network cards, not computers
+
+pomodo: instead of ip addresses referring to nodes, it refers to channels. this wouldn't require the whole internet to change the addressation to reach the network (and we can treat groups of links as domains). another benefit is that the domains become authoritative of their channels. it's inspired by source routing.
+
+## ANA
+
+an interface specification/framework. essentially acts a wrapper for network protocols. 
+
+- *compartment*: handles membership. nodes joins compartments (same role as DHCP really)
+- *information channel*
+- *information dispatch point* (IDP): socket (common interface)
+- functional blocks
+
+users dump info into a buffer space. ANA tells the functional block to dispatch the data into the IDP.
+
+the goal of ANA is to allow different subnetworks (compartment) to decide which protocols they are using.
+
+meta-architecture
+
+uses minmex to configure functional blocks in whatever way we want
+
+## trotzki
+
+NFV (network function virtualization) = similar to BPF (berkeley packet filter), but much more flexible. the virtualization runs on the edge nodes
+
+trotzki suggest changing L3 (internet) to L3 (pipe) + L3.5 (global)
+
+the main difference between trotzki and ana is the focus on separating domains as part of the ip stack
+
+
+questions irt papers: what are the key assumptions? how is it incremental deployment achievend? what are the core abstractions, how are they related to ANA? what are the differences between ana and trotzki?
+
 
