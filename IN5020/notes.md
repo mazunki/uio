@@ -145,7 +145,7 @@ there's different communication paradigms, and they're suited for different infr
 ## message-programming interface (MPI)
 in high-performance computation you often use scattering to work on data in parallel
 
-addressing is done with logical addressing on nodes. it doesn't deal with failtures, and follows a transient model (not persistent)
+addressing is done with logical addressing on nodes. it doesn't deal with failures, and follows a transient model (not persistent)
 
 ## message-oriented middleware (haha MOM)
 
@@ -155,8 +155,10 @@ addressing is performed with logical queue names. data is persistent, and connec
 
 MOM is still used
 
+the responsibility of a broker here is to convert the messaging format from the source to the destination
+
 ## publish/subscribe
-addrsesing is done through content (aka subscriptions)
+addressing is done through content (aka subscriptions)
 
 the broker is responsible of coordinating delivery and deciding on persistence of messages.
 
@@ -182,6 +184,7 @@ this makes overlay implementations of multicast quite effective, but the load wo
 overlay-based multicasting are both efficient and can guarantee delivery, but maintenance can quickly be costly
 
 ## data gossipping
+
 we can also fix nodes in the same style of epidemic analysis: remove infected (aka failed) nodes
 
 fan-out: how many random nodes we want to send to (aka infect)
@@ -193,4 +196,61 @@ combining both: fast for both, but always very wasteful
 ideally, we want a uniform partition (each node's view) of the network.
 
 features: it's very scalable, and reasonably fast (but not fastest!) and robust (but not guaranteed!). it can be used for failure detection, data aggregation (updates, invalidation, ...), process monitoring, 
+
+## epidemic
+a method to perform multicasting, allows us to save bandwidth by not sending to everyone directly
+
+gossiping tells one person instead of everyone
+
+# 2024-10-14 (lecture 9)
+[slides](https://www.uio.no/studier/emner/matnat/ifi/IN5020/h24/pensumliste/2024-10-14-dmms.pdf)
+
+multimedia: combination of different types of medium
+
+media can either be *discrete* (time-independent, such as pictures or text) or *continuous* (like video or audio) where timing matters
+
+timing can be *asynchronous* even when discussing video, as long as we meet a deadline
+
+*synchronous*
+
+*isochronous* is super strict timing, usually with a very low delay requirement
+
+often, the different medias need to be *synchronized* (e.g audio/video mismatch is annoying)
+
+## programming models
+
+generally, when transmitting continuous data, we use *streams* which cannot be interrupted (often due to the timing constraint)
+
+often, we have QoS on both the server and the client, and one stream decoder per type of media. after decoding, stream synchronization is performed on the client.
+
+synchronization techniques:
+- *intra media*: maintain uniform time spacing of a single continuous media stream (synchronization already done during recording)
+- *inter media*: synchronization between several streams (aka merging in post, f.ex using lip synchronization, timestamps, or clapping)
+- *distributed state*: use time barriers where data has to be aligned after a deadline
+- *external*: independent data (e.g many webcams) from different sources are synchronized into one collection
+
+usually, synchronization is done on the receiver end. only in the case of having a single-server is it even worth considering doing something else. for this we need a *synchronization specification*
+
+in many cases, the QoS may need to be dynamically changed due to cost (e.g bandwidth consumption) and quality (e.g frame drop) reasons
+
+interface definition language (IDL): the *functional* (ideal) specification of what should be
+quality of service (QoS): the *non-functional* specification which defines how (well) the media should perform. essentially provides guarantees.
+
+QoS management:
+- QoS specification
+- QoS parameter translation and distribution
+- QoS negotiation
+- admission control/reservation
+- QoS monitoring
+- QoS renegotiation/adaptation / resource adaptation
+- Resource dellocation
+
+delay and throughput is often related
+
+QoS categories (example QoS dimensions):
+- timeliness (end-to-end delay, max allowed jitter)
+- volume (observed throughput as fps)
+- reliability (% frame loss, bit error rate per frame)
+
+the application level qos requirement can be passed to won to the resource managers, which is responsible for performing admission control and scheduling
 
